@@ -3,11 +3,13 @@ import type { Locale } from '../../languages';
 import type { ContentBlock_ConfigBase, ContentBlock_Localized } from './common.types';
 
 export type MarkdownContentBlock_Config<LocalizedValue extends ContentBlock_Localized = Locales_All<string>> =
-  ContentBlock_ConfigBase<'markdown'> & {
+  ContentBlock_ConfigBase & {
+    type: 'markdown';
     fileLocation: LocalizedValue;
   };
 
-export interface MarkdownContentBlock extends ContentBlock_ConfigBase<'markdown'> {
+export interface MarkdownContentBlock extends ContentBlock_ConfigBase {
+  type: 'markdown';
   locale: Locale;
   fileLocation: string;
 }

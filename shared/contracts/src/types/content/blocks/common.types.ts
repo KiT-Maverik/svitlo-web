@@ -2,9 +2,9 @@ import type { Locales_All, Locales_Single, Locales_Partial } from '../locale.typ
 
 export type ContentBlock_Type = 'text' | 'markdown' | 'code' | 'audio' | 'video' | 'youtube' | 'image' | 'scene';
 
-export interface ContentBlock_ConfigBase<T extends ContentBlock_Type> {
+export interface ContentBlock_ConfigBase {
   id: string;
-  blockType: T;
+  type: ContentBlock_Type;
 }
 
 export type ContentBlock_Localized<Value = string> = Locales_All<Value> | Locales_Partial<Value> | Locales_Single<Value>;

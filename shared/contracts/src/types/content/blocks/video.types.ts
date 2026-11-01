@@ -3,12 +3,14 @@ import type { Locale } from '../../languages';
 import type { ContentBlock_ConfigBase, ContentBlock_Localized } from './common.types';
 
 export type VideoContentBlock_Config<LocalizedValue extends ContentBlock_Localized = Locales_All<string>> =
-  ContentBlock_ConfigBase<'video'> & {
+  ContentBlock_ConfigBase & {
+    type: 'video';
     fileLocation: LocalizedValue;
     poster: LocalizedValue;
   };
 
-export interface VideoContentBlock extends ContentBlock_ConfigBase<'video'> {
+export interface VideoContentBlock extends ContentBlock_ConfigBase {
+  type: 'video';
   locale: Locale;
   fileLocation: string;
   poster: string;
