@@ -19,7 +19,7 @@ export const analyzeMinimalism_Skill_Data = buildSkillConfig({
     ko: '미니멀리즘 분석하기',
     tr: 'Minimalizmi incelemek',
     vi: 'Phân tích chủ nghĩa tối giản',
-    ta: 'குறைந்தபட்சவாதத்தைப் பகுப்பாய்வு செய்',
+    ta: 'குறைந்தபட்சவாதத்தைப் பகுப்பாய்வு செய்யுங்கள்',
     te: 'మినిమలిజాన్ని విశ్లేషించండి',
     mr: 'मिनिमलिझमचे विश्लेषण करा',
     ms: 'Menganalisis Minimalisme',

@@ -27,7 +27,7 @@ export const typographyAndLayout_SkillGroup_Data = buildSkillGroupConfig({
     ko: '타이포그래피 및 레이아웃',
     tr: 'Tipografi ve sayfa düzeni',
     vi: 'Kiểu chữ và bố cục',
-    ta: 'அச்சுக்கலையும் பக்க அமைப்பும்',
+    ta: 'எழுத்துருக் கலையும் பக்க அமைப்பும்',
     te: 'టైపోగ్రఫీ మరియు లేఅవుట్',
     mr: 'टायपोग्राफी आणि मांडणी',
     ms: 'Tipografi dan susun atur',

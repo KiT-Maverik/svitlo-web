@@ -19,7 +19,7 @@ export const analyzePopArt_Skill_Data = buildSkillConfig({
     ko: '팝아트 분석하기',
     tr: "Pop Art'ı incelemek",
     vi: 'Phân tích nghệ thuật Pop',
-    ta: 'பாப் கலையைப் பகுப்பாய்வு செய்',
+    ta: 'பாப் கலையைப் பகுப்பாய்வு செய்யுங்கள்',
     te: 'పాప్ ఆర్ట్‌ను విశ్లేషించండి',
     mr: 'पॉप आर्टचे विश्लेषण करा',
     ms: 'Menganalisis Seni Pop',

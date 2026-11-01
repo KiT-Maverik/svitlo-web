@@ -19,7 +19,7 @@ export const analyzeConceptualArt_Skill_Data = buildSkillConfig({
     ko: '개념미술 분석하기',
     tr: 'Kavramsal sanatı incelemek',
     vi: 'Phân tích nghệ thuật ý niệm',
-    ta: 'கருத்தியல் கலையைப் பகுப்பாய்வு செய்',
+    ta: 'கருத்தியல் கலையைப் பகுப்பாய்வு செய்யுங்கள்',
     te: 'భావనాత్మక కళను విశ్లేషించండి',
     mr: 'संकल्पनात्मक कलेचे विश्लेषण करा',
     ms: 'Menganalisis Seni Konseptual',

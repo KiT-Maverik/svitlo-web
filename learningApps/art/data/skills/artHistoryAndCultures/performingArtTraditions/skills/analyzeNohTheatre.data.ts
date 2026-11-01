@@ -19,7 +19,7 @@ export const analyzeNohTheatre_Skill_Data = buildSkillConfig({
     ko: '노 연극을 분석하기',
     tr: 'Nō tiyatrosunu analiz etmek',
     vi: 'Phân tích sân khấu Noh',
-    ta: 'நோ நாடகத்தைக் பகுப்பாய்வு செய்யுங்கள்',
+    ta: 'நோ நாடகத்தைப் பகுப்பாய்வு செய்யுங்கள்',
     te: 'నో నాటకాన్ని విశ్లేషించండి',
     mr: 'नोह नाट्यपरंपरेचे विश्लेषण करा',
     ms: 'Menganalisis Teater Noh',

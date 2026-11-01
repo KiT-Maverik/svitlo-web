@@ -19,7 +19,7 @@ export const analyzeInstallationArt_Skill_Data = buildSkillConfig({
     ko: '설치미술 분석하기',
     tr: 'Yerleştirme sanatını incelemek',
     vi: 'Phân tích nghệ thuật sắp đặt',
-    ta: 'நிறுவல் கலையைப் பகுப்பாய்வு செய்',
+    ta: 'நிறுவல் கலையைப் பகுப்பாய்வு செய்யுங்கள்',
     te: 'ఇన్‌స్టలేషన్ కళను విశ్లేషించండి',
     mr: 'इन्स्टॉलेशन कलेचे विश्लेषण करा',
     ms: 'Menganalisis Seni Pemasangan',
