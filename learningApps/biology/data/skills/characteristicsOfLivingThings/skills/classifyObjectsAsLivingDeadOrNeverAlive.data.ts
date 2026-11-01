@@ -6,7 +6,7 @@ export const classifyObjectsAsLivingDeadOrNeverAlive_Skill_Data = buildSkillConf
   name: {
     en: "Classify objects as living, dead, or never alive",
     zh: '将物体分为活的、死亡的或从未有过生命的',
-    hi: 'वस्तुओं को जीवित, मृत या कभी जीवित न रही श्रेणियों में बाँटना',
+    hi: 'वस्तुओं को जीवित, मृत या कभी जीवित न रही वस्तुओं के रूप में वर्गीकृत करना',
     es: 'Clasificar objetos como vivos, muertos o que nunca estuvieron vivos',
     ar: 'تصنيف الأشياء إلى حية أو ميتة أو لم تكن حية قط',
     fr: 'Classer les objets en vivants, morts ou n\'ayant jamais été vivants',
@@ -24,7 +24,7 @@ export const classifyObjectsAsLivingDeadOrNeverAlive_Skill_Data = buildSkillConf
     mr: 'वस्तूंचे सजीव, मृत किंवा कधीच सजीव नसलेल्या अशा गटांत वर्गीकरण करणे',
     ms: 'Mengelaskan objek sebagai hidup, mati atau tidak pernah hidup',
     he: 'מיון עצמים לחיים, מתים או כאלה שמעולם לא היו חיים',
-    pl: 'Klasyfikowanie obiektów jako żywych, martwych lub nigdy nieożywionych',
+    pl: 'Klasyfikowanie obiektów jako żywych, martwych lub takich, które nigdy nie były żywe',
     uk: 'Класифікувати об’єкти як живі, мертві або такі, що ніколи не були живими',
     lt: 'Skirstyti objektus į gyvus, mirusius ir niekada nebuvusius gyvus',
     lv: 'Klasificēt objektus kā dzīvus, mirušus vai nekad nedzīvojušus',
