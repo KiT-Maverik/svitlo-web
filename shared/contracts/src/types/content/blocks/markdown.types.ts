@@ -8,7 +8,7 @@ type ContentBlock_Markdown_Data = ContentBlock_Data_Meta & {
   locales: Locale_Config;
 };
 
-type ContentBlock_Markdown_Response = ContentBlock_Response_Meta & Locale_ResponseParams & {
+type ContentBlock_Markdown_Response = ContentBlock_Response_Meta<'markdown'> & Locale_ResponseParams & {
   text: string;
 };
 

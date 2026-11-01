@@ -9,7 +9,7 @@ type ContentBlock_Video_Data = ContentBlock_Data_Meta & {
   poster: Locale_Config;
 };
 
-type ContentBlock_Video_Response = ContentBlock_Response_Meta & Locale_ResponseParams & {
+type ContentBlock_Video_Response = ContentBlock_Response_Meta<'video'> & Locale_ResponseParams & {
   fileLocation: string;
   poster: string;
 };

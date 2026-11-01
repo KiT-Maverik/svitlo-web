@@ -9,7 +9,7 @@ type ContentBlock_Image_Data = ContentBlock_Data_Meta & {
   alt: Locale_Config;
 };
 
-type ContentBlock_Image_Response = ContentBlock_Response_Meta & Locale_ResponseParams & {
+type ContentBlock_Image_Response = ContentBlock_Response_Meta<'image'> & Locale_ResponseParams & {
   src: string;
   alt: string;
 };

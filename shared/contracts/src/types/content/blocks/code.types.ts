@@ -9,7 +9,7 @@ type ContentBlock_Code_Data = ContentBlock_Data_Meta & {
   codeParams: { selector: string; values: Locale_Config }[];
 };
 
-type ContentBlock_Code_Response = ContentBlock_Response_Meta & Locale_ResponseParams & {
+type ContentBlock_Code_Response = ContentBlock_Response_Meta<'code'> & Locale_ResponseParams & {
   fileLocation: string;
   codeParams: { selector: string; value: string }[];
 };

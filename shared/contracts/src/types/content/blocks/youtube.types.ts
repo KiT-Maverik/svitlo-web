@@ -13,7 +13,7 @@ type ContentBlock_Youtube_Data = ContentBlock_Data_Meta & {
   title?: Locale_Config;
 };
 
-type ContentBlock_Youtube_Response = ContentBlock_Response_Meta & Locale_ResponseParams & {
+type ContentBlock_Youtube_Response = ContentBlock_Response_Meta<'youtube'> & Locale_ResponseParams & {
   href: string;
   hint?: string;
   mode: ContentBlock_Youtube_Mode;

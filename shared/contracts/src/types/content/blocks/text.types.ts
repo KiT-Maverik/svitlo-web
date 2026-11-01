@@ -8,7 +8,7 @@ type ContentBlock_Text_Data = ContentBlock_Data_Meta & {
   value: Locale_Config;
 };
 
-type ContentBlock_Text_Response = ContentBlock_Response_Meta & Locale_ResponseParams & { value: string };
+type ContentBlock_Text_Response = ContentBlock_Response_Meta<'text'> & Locale_ResponseParams & { value: string };
 
 export type ContentBlock_Text<ConfigType extends ContentEntity_ConfigType> = {
   definition: ContentBlock_Text_Definition;

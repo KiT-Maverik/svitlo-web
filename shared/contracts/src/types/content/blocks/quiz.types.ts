@@ -33,11 +33,12 @@ type ContentBlock_Quiz_Data = ContentBlock_Data_Meta &
     questions: Record<string, Question_SelectOneAnswer<'data'>>;
   };
 
-type ContentBlock_Quiz_Response = ContentBlock_Response_Meta &
+type ContentBlock_Quiz_Response = ContentBlock_Response_Meta<'quiz'> &
   Locale_ResponseParams &
   Quiz_Settings & {
     welcome: string;
-    questions: Record<string, Question_SelectOneAnswer<'response'>>;
+    /** References to Lesson.questions.selectOneAnswer, not duplicated questions. */
+    questionSlugs: readonly string[];
   };
 
 export type ContentBlock_Quiz<ConfigType extends ContentEntity_ConfigType> = {
@@ -45,7 +46,3 @@ export type ContentBlock_Quiz<ConfigType extends ContentEntity_ConfigType> = {
   data: ContentBlock_Quiz_Data;
   response: ContentBlock_Quiz_Response;
 }[ConfigType];
-
-/** @deprecated Import Question_SelectOneAnswer from the questions catalog instead. */
-export type ContentBlock_Quiz_Question<ConfigType extends ContentEntity_ConfigType> =
-  Question_SelectOneAnswer<ConfigType>;
