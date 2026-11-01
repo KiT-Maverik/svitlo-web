@@ -44,6 +44,7 @@ export interface Lesson_Config {
   id: string;
   slug: string;
   requireQuiz: boolean;
+  languages: LanguageCode[];
   sections: {
     allowNavigation: boolean;
     allowSkipping: boolean;
