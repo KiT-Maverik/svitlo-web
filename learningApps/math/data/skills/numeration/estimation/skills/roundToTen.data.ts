@@ -63,7 +63,7 @@ export const roundToTen_Skill_Data = buildSkillConfig({
       uk: 'Порівнюй відстані до сусідніх круглих десятків, щоб вибрати найближчий. Рівно посередині потрібне правило округлення.',
       lt: 'Palygink atstumus iki dviejų gretimų dešimties kartotinių ir pasirink artimesnį. Tiksliai per vidurį reikia taisyklės.',
       lv: 'Salīdzini attālumus līdz abiem tuvākajiem desmitu daudzkārtņiem. Tieši vidū vajadzīgs noapaļošanas noteikums.',
-      et: 'Võrdle kaugusi lähimate kümne kordseteni ja vali lähem. Täpselt keskel olemiseks on vaja ümardamisreeglit.',
+      et: 'Võrdle kaugusi kahe lähima kümne kordse arvuni ja vali lähem. Kui arv asub täpselt nende keskel, kasuta kokkulepitud ümardamisreeglit.',
       be: 'Параўноўвай адлегласьці да суседніх круглых дзясяткаў, каб выбраць бліжэйшы. Дакладна пасярэдзіне патрэбнае правіла.',
       ka: 'შეადარე მანძილები უახლოეს ათის ჯერადებამდე და აირჩიე ახლო. ზუსტად შუაში დამრგვალების წესი საჭიროა.',
       kk: 'Екі көршілес ондық еселігіне дейінгі қашықтықты салыстырып, жақынын таңда. Дәл ортасында дөңгелектеу ережесі керек.',
