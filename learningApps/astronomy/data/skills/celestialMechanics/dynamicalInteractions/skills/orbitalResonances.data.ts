@@ -58,7 +58,7 @@ export const orbitalResonances_Skill_Data = buildSkillConfig({
       ms: 'Kenal pasti apabila hubungan masa yang berulang antara tempoh orbit mempengaruhi sesuatu sistem.',
       he: 'זהו מתי יחסים מחזוריים חוזרים בין זמני הקפה משפיעים על מערכת.',
       pl: 'Rozpoznawaj, kiedy powtarzające się zależności między okresami obiegu wpływają na układ.',
-      uk: 'Розпізнавайте, коли повторювані співвідношення періодів обертання орбітами впливають на систему.',
+      uk: 'Розпізнавайте, коли повторювані співвідношення між орбітальними періодами впливають на систему.',
       lt: 'Atpažinkite, kada pasikartojantys orbitinių periodų santykiai veikia sistemą.',
       lv: 'Atpazīstiet, kad atkārtotas attiecības starp apriņķošanas periodiem ietekmē sistēmu.',
       et: 'Tunne ära, millal korduvad tiirlemisperioodide suhted mõjutavad süsteemi.',
