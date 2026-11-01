@@ -6,6 +6,7 @@ export type ContentBlock_Definition_Meta<T extends ContentBlock_Type> = {
 
 export type ContentBlock_Data_Meta = {
   id: string;
+  slug: string;
 }
 
 export type ContentBlock_Response_Meta = {
