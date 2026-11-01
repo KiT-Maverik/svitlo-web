@@ -24,7 +24,7 @@ export const digitalImages_SkillGroup_Data = buildSkillGroupConfig({
     de: 'Digitale Bilder mit Pixeln, Formen, Ebenen und gezielten Bearbeitungen erstellen.',
     ja: 'ピクセル、図形、レイヤー、部分編集を使ってデジタル画像を作成する。',
     ko: '픽셀, 도형, 레이어 및 선택적 편집으로 디지털 그림 만들기.',
-    tr: 'Pikseller, şekiller, katmanlar ve seçici düzenlemelerle dijital görseller oluşturmak.',
+    tr: 'Dijital Görseller',
     vi: 'Tạo hình ảnh kỹ thuật số bằng điểm ảnh, hình dạng, lớp và chỉnh sửa chọn lọc.',
     ta: 'பிக்சல்கள், வடிவங்கள், அடுக்குகள் மற்றும் தேர்ந்தெடுத்த திருத்தங்களைக் கொண்டு மின்னிலக்கப் படங்களை உருவாக்குங்கள்.',
     te: 'డిజిటల్ చిత్రాలు',

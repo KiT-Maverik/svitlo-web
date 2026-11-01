@@ -17,7 +17,7 @@ export const assessCulturalAppropriation_Skill_Data = buildSkillConfig({
     de: 'Kulturelle Aneignung beurteilen',
     ja: '文化的盗用を評価する',
     ko: '문화적 전유 평가하기',
-    tr: 'Kültürel Ödünç Almayı Değerlendirmek',
+    tr: 'Kültürel Sahiplenmeyi Değerlendirmek',
     vi: 'Đánh giá sự chiếm dụng văn hóa',
     ta: 'பண்பாட்டுத் தன்வயப்படுத்தலை மதிப்பிடுங்கள்',
     te: 'సాంస్కృతిక స్వాధీనాన్ని అంచనా వేయండి',

@@ -50,7 +50,7 @@ export const interpretArchitecturalOrnament_Skill_Data = buildSkillConfig({
       de: 'Verbinde Baukörper und Freiräume zu einer ausgewogenen visuellen Form.',
       ja: '建物のボリュームと開放空間を組み合わせ、バランスの取れた形をつくりましょう。',
       ko: '건물의 매스와 열린 공간을 결합해 균형 잡힌 시각적 형태를 구성하세요.',
-      tr: 'Yapı kütlelerini ve açık alanları dengeli bir görsel biçimde birleştirin.',
+      tr: 'Mimari süslemenin tarihsel bağlamında ne anlattığını keşfedin.',
       vi: 'Kết hợp khối tích công trình và không gian mở thành hình thức thị giác cân bằng.',
       ta: 'கட்டிடத் தொகுதிகளையும் திறந்த இடங்களையும் இணைத்து சமநிலையான காட்சிவடிவத்தை உருவாக்குங்கள்.',
       te: 'చారిత్రక సందర్భంలో నిర్మాణ అలంకరణ ఏమి తెలియజేస్తుందో తెలుసుకోండి.',

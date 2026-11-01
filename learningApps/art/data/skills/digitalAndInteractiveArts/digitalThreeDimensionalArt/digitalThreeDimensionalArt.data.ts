@@ -24,7 +24,7 @@ export const digitalThreeDimensionalArt_SkillGroup_Data = buildSkillGroupConfig(
     de: 'Ausdrucksstarke virtuelle Räume durch Modellierung, Materialien, Licht und Komposition gestalten.',
     ja: 'モデリング、素材、光、構図を通じて表現豊かな仮想空間を構築する。',
     ko: '모델링, 재료, 조명 및 구성을 통해 표현력 있는 가상 공간 만들기.',
-    tr: 'Modelleme, malzemeler, ışık ve kompozisyon yoluyla etkileyici sanal mekânlar oluşturmak.',
+    tr: 'Üç Boyutlu Dijital Sanat',
     vi: 'Xây dựng không gian ảo giàu biểu cảm thông qua mô hình hóa, vật liệu, ánh sáng và bố cục.',
     ta: 'மாதிரியாக்கம், பொருட்கள், ஒளி மற்றும் அமைப்பு மூலம் வெளிப்பாட்டுமிக்க மெய்நிகர் இடங்களை உருவாக்குங்கள்.',
     te: 'త్రిమితీయ డిజిటల్ కళ',

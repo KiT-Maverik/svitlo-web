@@ -17,7 +17,7 @@ export const relateContrastToAttention_Skill_Data = buildSkillConfig({
     de: 'Kontrast und Aufmerksamkeit in Beziehung setzen',
     ja: 'コントラストと注意の関係を捉える',
     ko: '대비와 주의의 관계 이해하기',
-    tr: 'Karşıtlığı Dikkatle İlişkilendirmek',
+    tr: 'Kontrastın Dikkat Üzerindeki Etkisini Açıklamak',
     vi: 'Liên hệ sự tương phản với sự chú ý',
     ta: 'முரண்பாட்டையும் கவனத்தையும் தொடர்புபடுத்துங்கள்',
     te: 'వైరుధ్యాన్ని దృష్టితో అనుసంధానించండి',

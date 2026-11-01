@@ -50,7 +50,7 @@ export const maintainASteadyBeat_Skill_Data = buildSkillConfig({
       de: 'Halte den Grundschlag gleichmäßig, auch wenn sich der Rhythmus der Musik verändert.',
       ja: '音楽のリズムが変わっても、一定の拍を保ちましょう。',
       ko: '음악의 리듬이 바뀌어도 일정한 박을 유지하세요.',
-      tr: 'Müziğin ritmi değişse bile düzenli vuruşu sürdür.',
+      tr: 'Müziğin ritmi değişse bile düzenli vuruşu sürdürün.',
       vi: 'Giữ nhịp đều ngay cả khi tiết tấu âm nhạc thay đổi.',
       ta: 'இசையின் தாளம் மாறினாலும் நிலையான துடிப்பைப் பேணுங்கள்.',
       te: 'సంగీత లయ మారినా స్థిరమైన తాళాన్ని కొనసాగించండి.',
