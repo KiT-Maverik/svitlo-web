@@ -19,7 +19,7 @@ export const distinguishSexualAndAsexualReproduction_Skill_Data = buildSkillConf
     ko: '유성생식과 무성생식 구별하기',
     tr: 'Eşeyli ve eşeysiz üremeyi ayırmak',
     vi: 'Phân biệt sinh sản hữu tính và vô tính',
-    ta: 'பாலின மற்றும் பாலிலி இனப்பெருக்கத்தை வேறுபடுத்துதல்',
+    ta: 'பாலின மற்றும் பாலிலா இனப்பெருக்கத்தை வேறுபடுத்துதல்',
     te: 'లైంగిక, అలైంగిక ప్రజననాన్ని వేరు చేయడం',
     mr: 'लैंगिक आणि अलैंगिक प्रजननात फरक ओळखणे',
     ms: 'Membezakan pembiakan seks dan aseks',

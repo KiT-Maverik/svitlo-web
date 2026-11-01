@@ -51,7 +51,7 @@ export const relatePlantStructuralFeaturesToEnvironmentalConditions_Skill_Data =
       ko: '뿌리, 잎, 줄기의 구조가 서로 다른 환경에서 생존하는 데 어떻게 도움이 되는지 설명해 보세요.',
       tr: 'Köklerin, yaprakların ve sürgünlerin farklı koşullara neden uygun biçimlerde olduğunu açıkla.',
       vi: 'Giải thích cách cấu tạo của rễ, lá và thân cây giúp cây thích nghi với các điều kiện môi trường khác nhau.',
-      ta: 'வேர்கள், இலைகள், தளிர்கள் பல சூழல்களுக்கு ஏற்ற வடிவங்களில் இருப்பதன் காரணத்தை விளக்கு.',
+      ta: 'வேர், இலை, தண்டு ஆகியவற்றின் அமைப்புகள் வெவ்வேறு சூழல்களில் தாவரங்கள் உயிர்வாழ எவ்வாறு உதவுகின்றன என்பதை விளக்கு.',
       te: 'వేర్లు, ఆకులు, చిగుళ్లు వేర్వేరు పరిస్థితులకు అనుగుణంగా ఎందుకు ఉంటాయో వివరించండి.',
       mr: 'मुळे, पाने आणि प्ररोह वेगवेगळ्या परिस्थितींना अनुरूप आकाराचे का असतात ते स्पष्ट करा.',
       ms: 'Terangkan mengapa akar, daun dan pucuk mempunyai bentuk sesuai dengan keadaan berbeza.',

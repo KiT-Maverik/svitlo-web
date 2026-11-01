@@ -51,7 +51,7 @@ export const explainThePrincipleOfSelectiveBreeding_Skill_Data = buildSkillConfi
       ko: '선발 육종에서 원하는 유전 형질을 가진 개체를 여러 세대에 걸쳐 선택하고 번식시키는 원리를 알아보세요.',
       tr: 'Seçici yetiştirmenin kalıtsal özellikleri nesiller boyunca nasıl geliştirdiğini anla.',
       vi: 'Hiểu cách chọn giống lựa chọn và nhân giống các cá thể mang tính trạng di truyền mong muốn qua nhiều thế hệ.',
-      ta: 'தேர்ந்தெடுத்த இனப்பெருக்கம் பல தலைமுறைகளாக மரபுவழிப் பண்புகளை எவ்வாறு மேம்படுத்துகிறது என்பதைப் புரிந்துகொள்.',
+      ta: 'விரும்பிய மரபுவழிப் பண்புகளைக் கொண்ட உயிரினங்களைப் பல தலைமுறைகளாகத் தேர்ந்தெடுத்து இனப்பெருக்கம் செய்யும் முறையைப் புரிந்துகொள்.',
       te: 'ఎంపిక చేసిన సంతానోత్పత్తి తరతరాలుగా వారసత్వ లక్షణాలను ఎలా అభివృద్ధి చేస్తుందో అర్థం చేసుకోండి.',
       mr: 'निवडक प्रजननामुळे अनेक पिढ्यांमध्ये आनुवंशिक गुणधर्म कसे विकसित होतात हे समजून घ्या.',
       ms: 'Fahami cara pembiakbakaan terpilih mengembangkan ciri yang diwarisi merentas generasi.',
