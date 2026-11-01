@@ -5,7 +5,7 @@ export const planetaryGreenhouseEffects_Skill_Data = buildSkillConfig({
   id: '66ae24cf-6baa-4e12-bce0-7ffba96c90ad',
   name: {
     en: 'Planetary Greenhouse Effects',
-      zh: '行星温室效应',
+    zh: '行星温室效应',
     hi: 'ग्रहों पर ग्रीनहाउस प्रभाव',
     es: 'Efectos invernadero planetarios',
     ar: 'تأثيرات الاحتباس الحراري على الكواكب',
@@ -39,7 +39,7 @@ export const planetaryGreenhouseEffects_Skill_Data = buildSkillConfig({
       'Explain how atmospheric absorption and emission influence surface or atmospheric temperatures on different worlds.',
     frontend: {
       en: 'Explore how atmospheric gases trap and release heat on different planets.',
-          zh: '探索不同的行星上，大气中的气体如何吸收并向外释放热量。',
+      zh: '探索不同的行星上，大气中的气体如何吸收并向外释放热量。',
       hi: 'जानें कि अलग-अलग ग्रहों पर वायुमंडलीय गैसें ऊष्मा को कैसे रोकती और बाहर छोड़ती हैं।',
       es: 'Explora cómo los gases atmosféricos retienen y liberan calor en diferentes planetas.',
       ar: 'استكشف كيف تحتجز غازات الغلاف الجوي الحرارة وتطلقها على كواكب مختلفة.',
