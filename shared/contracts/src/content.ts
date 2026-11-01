@@ -20,5 +20,19 @@ export { defineLessonV2Data } from './types/content/lessonV2.types';
 export type * from './types/content/section.types';
 export type * from './types/content/quiz.types';
 export type * from './types/content/question.types';
+export type {
+  QuestionV2,
+  Question_Map,
+  Question_Type,
+  Question_AnswerWithNumber,
+  Question_AnswerWithText,
+  Question_BuildAnswerWithBlocks,
+  Question_FillBlanksWithBlocks,
+  Question_FillBlanksWithText,
+  Question_MatchBlocks,
+  Question_OrderSequence,
+  Question_SelectMultipleAnswers,
+  Question_SelectOneAnswer,
+} from './types/content/questions';
 export type * from './types/content/assessmentMethod.types';
 export { assessmentMethods_AssessmentMethod_Ids } from './types/content/assessmentMethod.ids';
