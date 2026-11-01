@@ -9,7 +9,7 @@ export const digits09_Skill_Data = buildSkillConfig({
     et: 'Numbrid 0–9 ja numbri tähendus',
     be: 'Лічбы 0–9 і розьніца паміж лічбай і лікам',
     ka: 'ციფრები 0–9 და განსხვავება ციფრსა და რიცხვს შორის',
-    kk: '0–9 цифрлары және цифрдың мағынасы',
+    kk: '0–9 цифрлары және цифр мен санның айырмашылығы',
     en: 'Digits 0–9 and the meaning of a digit',
     qm: '0–9 raqamları ve raqam manası',
     zh: '认识0至9的数字及数字与数的区别',
