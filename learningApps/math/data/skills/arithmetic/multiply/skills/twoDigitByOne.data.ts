@@ -26,7 +26,7 @@ export const twoDigitByOne_Skill_Data = buildSkillConfig({
     ko: '곱셈 — 2-자리 수×1-자리 수',
     tr: 'Çarpma — 2-basamaklı×1-basamaklı',
     vi: 'Phép nhân — Số có hai chữ số nhân số có một chữ số',
-    ta: 'பெருக்கல் — 2-இலக்க×1-இலக்க',
+    ta: 'பெருக்கல் — இரண்டு இலக்க எண்ணை ஒரு இலக்க எண்ணால் பெருக்கல்',
     te: 'గుణకారం — 2-అంకెల×1-అంకెల',
     mr: 'गुणाकार — 2-अंकी×1-अंकी',
     ms: 'Pendaraban — 2-digit×1-digit',
