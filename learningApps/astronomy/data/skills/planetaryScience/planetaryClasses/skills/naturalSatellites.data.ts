@@ -12,7 +12,7 @@ export const naturalSatellites_Skill_Data = buildSkillConfig({
     fr: 'Satellites naturels',
     bn: 'প্রাকৃতিক উপগ্রহ',
     pt: 'Satélites naturais',
-    ur: 'قدرتی سیارچے',
+    ur: 'قدرتی اقمار',
     id: 'Satelit alami',
     de: 'Natürliche Satelliten',
     ja: '天然衛星',

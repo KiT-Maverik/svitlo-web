@@ -59,7 +59,7 @@ export const radialVelocityDetection_Skill_Data = buildSkillConfig({
       ms: 'Gunakan perubahan spektrum gerakan bintang untuk menyimpulkan tarikan planet yang mengorbitnya.',
       he: 'השתמשו בשינויים בספקטרום הכוכב כדי להסיק את המשיכה של כוכב לכת המקיף אותו.',
       pl: 'Wykorzystaj zmiany w widmie gwiazdy, aby wywnioskować wpływ grawitacyjny krążącej planety.',
-      uk: 'За змінами у спектрі руху зорі визначайте гравітаційний вплив планети, що обертається навколо неї.',
+      uk: 'За змінами спектральних ліній зорі визначайте гравітаційний вплив планети, що обертається навколо неї.',
       lt: 'Pagal žvaigždės spektro poslinkius spręskite apie aplink ją skriejančios planetos trauką.',
       lv: 'Izmantojiet zvaigznes spektra izmaiņas, lai secinātu par planētas gravitācijas ietekmi.',
       et: 'Järelda tähe spektrimuutustest tema ümber tiirleva planeedi gravitatsioonilist mõju.',

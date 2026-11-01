@@ -22,7 +22,7 @@ export const limitsOfHabitabilityIndicators_Skill_Data = buildSkillConfig({
     ta: 'வாழத்தகுதிக்கான குறிகாட்டிகளின் வரம்புகள்',
     te: 'నివాసయోగ్యత సూచికల పరిమితులు',
     mr: 'वासयोग्यता दर्शकांच्या मर्यादा',
-    ms: 'Batas penunjuk kebolehdidikan',
+    ms: 'Had penunjuk kesesuaian untuk didiami',
     he: 'מגבלות של מדדי ישיבות',
     pl: 'Ograniczenia wskaźników zamieszkiwalności',
     uk: 'Обмеження показників потенційної населеності',

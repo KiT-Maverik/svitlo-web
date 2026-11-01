@@ -22,7 +22,7 @@ export const gravitationalMicrolensing_Skill_Data = buildSkillConfig({
     ta: 'ஈர்ப்பு நுண்வில்லையாக்கம்',
     te: 'గురుత్వ సూక్ష్మ కటక ప్రభావం',
     mr: 'गुरुत्वीय सूक्ष्मभिंग परिणाम',
-    ms: 'Pelenskapan mikro graviti',
+    ms: 'Pelensaan mikro graviti',
     he: 'מיקרו־עידוש כבידתי',
     pl: 'Mikrosoczewkowanie grawitacyjne',
     uk: 'Гравітаційне мікролінзування',
