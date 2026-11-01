@@ -64,7 +64,7 @@ export const analyzeGothicCathedralSculpture_Skill_Data = buildSkillConfig({
       lv: 'Uzzini, kā katedrāļu tēlotās figūras gotiskajā arhitektūrā vēsta stāstus.',
       et: 'Uuri, kuidas katedraalide raidfiguurid jutustavad lugusid gooti arhitektuuri kontekstis.',
       be: 'Даведайся, як разьбяныя постаці сабораў перадаюць гісторыі ў гатычнай архітэктуры.',
-      ka: 'გაიგე, როგორ გადმოსცემენ ტაძრების მოჩუქურთმებული ფიგურები ამბებს გოთიკურ არქიტექტურაში.',
+      ka: 'გაიგეთ, როგორ გადმოსცემენ ტაძრების მოჩუქურთმებული ფიგურები ამბებს გოთიკურ არქიტექტურაში.',
       kk: 'Готикалық сәулет аясында собордағы қашалған мүсіндердің оқиғаларды қалай жеткізетінін зертте.',
       qm: 'Gotik mimaride oyulğan katedral şekilleriniñ hikâyelerni nasıl añlatqanını ögren.',
     },

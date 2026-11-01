@@ -64,7 +64,7 @@ export const analyzeMexicanMuralism_Skill_Data = buildSkillConfig({
       lv: 'Uzzini, kā Meksikas muralisti saistīja publisko glezniecību ar vēsturi un sociālajām idejām.',
       et: 'Uuri, kuidas Mehhiko muralistid sidusid avaliku seinamaali ajaloo ja ühiskondlike ideedega.',
       be: 'Даведайся, як мексіканскія муралісты звязвалі публічны жывапіс з гісторыяй і грамадскімі ідэямі.',
-      ka: 'გაიგე, როგორ აკავშირებდნენ მექსიკელი მიურალისტები საჯარო მხატვრობას ისტორიასა და სოციალურ იდეებთან.',
+      ka: 'გაიგეთ, როგორ აკავშირებდნენ მექსიკელი მიურალისტები საჯარო მხატვრობას ისტორიასა და სოციალურ იდეებთან.',
       kk: 'Мексикалық муралистердің қоғамдық кескіндемені тарихпен және әлеуметтік идеялармен қалай байланыстырғанын зертте.',
       qm: 'Meksikalı muralistlerniñ cemaat içün resimni tarih ve içtimai fikirlernen nasıl bağlağanını ögren.',
     },

@@ -64,7 +64,7 @@ export const analyzeConstructivism_Skill_Data = buildSkillConfig({
       lv: 'Uzzini, kā konstruktīvisti apvienoja ģeometriskas formas, eksperimentālus materiālus un sociālas idejas.',
       et: 'Uuri, kuidas konstruktivistid ühendasid geomeetrilisi vorme, eksperimentaalseid materjale ja ühiskondlikke ideid.',
       be: 'Даведайся, як канструктывісты спалучалі геаметрычныя формы, эксперыментальныя матэрыялы і грамадскія ідэі.',
-      ka: 'გაიგე, როგორ აერთიანებდნენ კონსტრუქტივისტი მხატვრები გეომეტრიულ ფორმებს, ექსპერიმენტულ მასალებსა და სოციალურ იდეებს.',
+      ka: 'გაიგეთ, როგორ აერთიანებდნენ კონსტრუქტივისტი მხატვრები გეომეტრიულ ფორმებს, ექსპერიმენტულ მასალებსა და სოციალურ იდეებს.',
       kk: 'Конструктивист суретшілердің геометриялық пішіндерді, тәжірибелік материалдарды және қоғамдық идеяларды қалай ұштастырғанын зертте.',
       qm: 'Konstruktivist sanatçılarnıñ geometrik şekiller, tecribiy materiallar ve cemiyet fikirlerini nasıl birleştirgenini ögren.',
     },

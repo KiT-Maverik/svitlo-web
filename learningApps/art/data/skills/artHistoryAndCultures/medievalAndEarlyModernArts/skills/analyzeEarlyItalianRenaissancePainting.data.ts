@@ -64,7 +64,7 @@ export const analyzeEarlyItalianRenaissancePainting_Skill_Data = buildSkillConfi
       lv: 'Uzzini, kā agrīnās Itālijas renesanses gleznotāji pētīja telpu, cilvēku tēlus un stāstījumu.',
       et: 'Uuri, kuidas Itaalia vararenessansi maalijad käsitlesid ruumi, inimfiguure ja jutustust.',
       be: 'Даведайся, як мастакі ранняга італьянскага Адраджэння даследавалі прастору, чалавечыя фігуры і аповед.',
-      ka: 'გაიგე, როგორ იკვლევდნენ ადრეული იტალიური რენესანსის მხატვრები სივრცეს, ადამიანთა ფიგურებსა და თხრობას.',
+      ka: 'გაიგეთ, როგორ იკვლევდნენ ადრეული იტალიური რენესანსის მხატვრები სივრცეს, ადამიანთა ფიგურებსა და თხრობას.',
       kk: 'Ерте италиялық Қайта өрлеу суретшілерінің кеңістікті, адам бейнелерін және оқиғаны қалай зерттегенін біл.',
       qm: 'Erken İtalyan Rönesans ressamlarınıñ mekân, insan şekilleri ve hikâyeni nasıl araştırğanını ögren.',
     },

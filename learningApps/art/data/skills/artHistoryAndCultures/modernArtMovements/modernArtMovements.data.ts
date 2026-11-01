@@ -41,7 +41,7 @@ export const modernArtMovements_SkillGroup_Data = buildSkillGroupConfig({
     lv: 'Modernās mākslas kustības',
     et: 'Moodsa kunsti liikumised',
     be: 'Мастацкія плыні мадэрнізму',
-    ka: 'თანამედროვე ხელოვნების მიმდინარეობები',
+    ka: 'მოდერნისტული ხელოვნების მიმდინარეობები',
     kk: 'Заманауи өнер қозғалыстары',
     qm: 'Modern sanat areketleri',
   },

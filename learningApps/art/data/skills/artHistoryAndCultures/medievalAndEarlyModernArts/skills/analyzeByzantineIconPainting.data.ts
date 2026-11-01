@@ -64,7 +64,7 @@ export const analyzeByzantineIconPainting_Skill_Data = buildSkillConfig({
       lv: 'Uzzini, kā Bizantijas ikonas dievkalpojumos izmanto simboliskas formas un materiālus.',
       et: 'Uuri, kuidas Bütsantsi ikoonid kasutavad jumalateenistusel sümboolseid vorme ja materjale.',
       be: 'Даведайся, як візантыйскія іконы выкарыстоўваюць сімвалічныя формы і матэрыялы ў набажэнстве.',
-      ka: 'გაიგე, როგორ იყენებენ ბიზანტიური ხატები სიმბოლურ ფორმებსა და მასალებს ღვთისმსახურებაში.',
+      ka: 'გაიგეთ, როგორ იყენებენ ბიზანტიური ხატები სიმბოლურ ფორმებსა და მასალებს ღვთისმსახურებაში.',
       kk: 'Византия иконаларының құлшылықта нышандық пішіндер мен материалдарды қалай қолданатынын зертте.',
       qm: 'Bizans ikonlarınıñ ibadette remziy şekiller ve materiallarnı nasıl qullanğanını ögren.',
     },

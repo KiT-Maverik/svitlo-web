@@ -63,7 +63,7 @@ export const investigateArtworkProvenance_Skill_Data = buildSkillConfig({
       lv: 'Izseko dokumentēto mākslas darba īpašumtiesību vēsturi un pamani trūkstošo informāciju.',
       et: 'Jälgi kunstiteose dokumenteeritud omandiajalugu ja märka puuduvaid andmeid.',
       be: 'Адсочваць задакументаваную гісторыю ўласнасці на твор і выяўляць прабелы.',
-      ka: 'მიჰყევი ნამუშევრის დოკუმენტირებულ მფლობელობის ისტორიას და შენიშნე დაკარგული ინფორმაცია.',
+      ka: 'მიჰყევით ნამუშევრის მფლობელობის დოკუმენტირებულ ისტორიას და შენიშნეთ დაკარგული ინფორმაცია.',
       kk: 'Өнер туындысының құжатталған меншік тарихын қадағалап, жетіспейтін деректерді байқа.',
       qm: 'Sanat eseriniñ belgilengen saiplik tarihını izlep, eksik malümatnı fark et.',
     },

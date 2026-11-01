@@ -63,7 +63,7 @@ export const evaluateMuseumRepresentation_Skill_Data = buildSkillConfig({
       lv: 'Apsver, kuru vēsture un skatpunkti muzejos ir pārstāvēti un kuru trūkst.',
       et: 'Mõtle, kelle ajalugu ja vaatenurgad on muuseumides esindatud ning kelle omad puuduvad.',
       be: 'Разглядаць, чые гісторыі і погляды прадстаўлены ў музеях, а чые адсутнічаюць.',
-      ka: 'განიხილე, ვისი ისტორიები და ხედვებია მუზეუმებში წარმოდგენილი და ვისი — გამოტოვებული.',
+      ka: 'განიხილეთ, ვისი ისტორიები და ხედვებია მუზეუმებში წარმოდგენილი და ვისი — გამოტოვებული.',
       kk: 'Музейлерде кімдердің тарихы мен көзқарасы көрсетілгенін, кімдердікі жоқ екенін қарастыр.',
       qm: 'Muzeylerde kimlerniñ tarihları ve közqarışları körsetilgenini, kimlerniñki eksik qalğanını közden keçir.',
     },

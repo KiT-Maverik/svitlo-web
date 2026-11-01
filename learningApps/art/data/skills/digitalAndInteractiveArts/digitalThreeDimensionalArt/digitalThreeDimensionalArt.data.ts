@@ -37,7 +37,7 @@ export const digitalThreeDimensionalArt_SkillGroup_Data = buildSkillGroupConfig(
     lv: 'Veidot izteiksmīgas virtuālās telpas ar modelēšanu, materiāliem, gaismu un kompozīciju.',
     et: 'Väljendusrikaste virtuaalruumide loomine modelleerimise, materjalide, valguse ja kompositsiooni abil.',
     be: 'Трохвымернае лічбавае мастацтва',
-    ka: 'გამომსახველობითი ვირტუალური სივრცეების შექმნა მოდელირების, მასალების, განათებისა და კომპოზიციის საშუალებით.',
+    ka: 'სამგანზომილებიანი ციფრული ხელოვნება',
     kk: 'Модельдеу, материалдар, жарық және композиция арқылы мәнерлі виртуалды кеңістіктер құру.',
     qm: 'Modelleme, material, yarıq ve kompozitsiya vastasınen ifadeleyici sanal meydanlar qurmaq',
   },

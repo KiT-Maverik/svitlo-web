@@ -64,7 +64,7 @@ export const distinguishConservationAndRestoration_Skill_Data = buildSkillConfig
       lv: 'Izproti, kā oriģinālā materiāla saglabāšana atšķiras no zudušo iezīmju atjaunošanas.',
       et: 'Mõista, kuidas algmaterjali säilitamine erineb kadunud tunnuste taastamisest.',
       be: 'Зразумець, чым захаванне арыгінальнага матэрыялу адрозніваецца ад аднаўлення страчаных элементаў.',
-      ka: 'გაიგე, რით განსხვავდება ორიგინალი მასალის შენარჩუნება დაკარგული დეტალების აღდგენისგან.',
+      ka: 'გაიგეთ, რით განსხვავდება ორიგინალი მასალის შენარჩუნება დაკარგული დეტალების აღდგენისგან.',
       kk: 'Түпнұсқа материалды сақтаудың жоғалған белгілерді қайта жасаудан айырмасын түсін.',
       qm: 'Asıl materialnı saqlamaqnen coyulğan hususiyetlerni yañıdan yapmaq arasındaki farqnı añla.',
     },

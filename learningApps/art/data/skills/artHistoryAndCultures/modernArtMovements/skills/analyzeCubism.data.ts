@@ -64,7 +64,7 @@ export const analyzeCubism_Skill_Data = buildSkillConfig({
       lv: 'Uzzini, kā kubisti pārveidoja priekšmetus un vienā attēlā parādīja vairākus skatpunktus.',
       et: 'Uuri, kuidas kubistid kujutasid esemeid ümber ja näitasid ühel pildil mitut vaatenurka.',
       be: 'Даведайся, як кубісты пераасэнсоўвалі прадметы і паказвалі некалькі пунктаў гледжання ў адным відарысе.',
-      ka: 'გაიგე, როგორ გარდაქმნიდნენ კუბისტი მხატვრები საგნებს და ერთ გამოსახულებაში რამდენიმე ხედვის კუთხეს აერთიანებდნენ.',
+      ka: 'გაიგეთ, როგორ გარდაქმნიდნენ კუბისტი მხატვრები საგნებს და ერთ გამოსახულებაში რამდენიმე ხედვის კუთხეს აერთიანებდნენ.',
       kk: 'Кубист суретшілердің заттарды қалай қайта бейнелеп, бір суретте бірнеше көзқарасты көрсеткенін зертте.',
       qm: 'Kubist sanatçılarnıñ eşyalarnı nasıl yañıdan şekillendirip bir surette bir qaç baqış noqtasını köstergenini ögren.',
     },

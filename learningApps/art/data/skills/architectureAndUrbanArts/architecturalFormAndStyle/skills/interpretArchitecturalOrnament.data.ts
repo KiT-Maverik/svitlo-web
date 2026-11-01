@@ -63,7 +63,7 @@ export const interpretArchitecturalOrnament_Skill_Data = buildSkillConfig({
       lv: 'Apvieno ēkas apjomus un atklātās telpas līdzsvarotā vizuālā formā.',
       et: 'Ühenda hoonemahud ja avatud ruumid tasakaalustatud visuaalseks vormiks.',
       be: 'Дасьледуйце, што архітэктурны дэкор перадае ў сваім гістарычным кантэксьце.',
-      ka: 'შეუთავსეთ შენობის მოცულობები და ღია სივრცეები დაბალანსებულ ვიზუალურ ფორმად.',
+      ka: 'შეისწავლეთ, რას გადმოსცემს არქიტექტურული მორთულობა ისტორიულ კონტექსტში.',
       kk: 'Ғимарат көлемдері мен ашық кеңістіктерді үйлесімді көрнекі пішінге біріктіріңіз.',
 
       qm: 'Mimariy bezekniñ tarihiy şartlarda ne bildirgenini araştırıñız.',

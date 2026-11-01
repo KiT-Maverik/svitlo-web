@@ -31,7 +31,7 @@ export const drapeFabricOnAForm_Skill_Data = buildSkillConfig({
     lv: 'Drapēt audumu uz formas',
     et: 'Kanga drapeerimine vormile',
     be: 'Драпіраваць тканіну на форме',
-    ka: 'ქსოვილის ფორმაზე დрапირება',
+    ka: 'ქსოვილის დრაპირება ფორმაზე',
     kk: 'Пішінге мата драптау',
     qm: 'Kumaşı forma üstünde drape etmek',
   },

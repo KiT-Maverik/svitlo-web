@@ -77,7 +77,7 @@ export const architecturalFormAndStyle_SkillGroup_Data = buildSkillGroupConfig({
       lv: 'Atklāj, ko arhitektūras rotājumi pauž savā vēsturiskajā kontekstā.',
       et: 'Uuri, mida arhitektuursed kaunistused oma ajaloolises kontekstis väljendavad.',
       be: 'Дасьледуйце, як формы будынкаў і дэталі аздобы выяўляюць архітэктурныя ідэі.',
-      ka: 'შეისწავლეთ, რას გადმოსცემს არქიტექტურული მორთულობა ისტორიულ კონტექსტში.',
+      ka: 'შეისწავლეთ, როგორ გამოხატავს შენობების ფორმები და დეკორატიული დეტალები არქიტექტურულ იდეებს.',
       kk: 'Сәулеттік әшекейдің тарихи контексте нені білдіретінін зерттеңіз.',
       qm: 'Binalarnıñ şekilleri ve bezek tafsilâtları mimariy fikirlerni nasıl ifade etkenini keşf etiñiz.',
     },
