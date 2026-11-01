@@ -13,7 +13,7 @@ export const objectMembershipAndIsolation_Skill_Data = buildSkillConfig({
     bn: 'বস্তুর অন্তর্ভুক্তি ও বিচ্ছিন্নতা',
     pt: 'Pertencimento e isolamento dos objetos',
     ur: 'اجرام کی وابستگی اور تنہائی',
-    id: 'Keanggotaan dan keterasingan objek',
+    id: 'Keanggotaan dan isolasi objek',
     de: 'Zugehörigkeit und Isolation von Objekten',
     ja: '天体の所属と孤立',
     ko: '천체의 소속과 고립',
