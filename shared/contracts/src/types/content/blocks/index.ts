@@ -76,3 +76,5 @@ export type {
   ContentBlock_Video,
   ContentBlock_Youtube,
 };
+
+export type { ContentBlock_Type } from './common.types';

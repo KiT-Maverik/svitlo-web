@@ -4,9 +4,9 @@ import type { ContentEntity_ConfigType } from '../entity.types';
 import type { Question_Data_Meta, Question_Definition_Meta, Question_Response_Meta } from './common.types';
 
 type Question_SelectOneAnswer_Answers<ConfigType extends ContentEntity_ConfigType> = {
-  correct: Record<string, ContentBlock<ConfigType>>;
-  incorrect: Record<string, ContentBlock<ConfigType>>;
-  distractors: Record<string, ContentBlock<ConfigType>>;
+  correct: Readonly<Record<string, ContentBlock<ConfigType>>>;
+  incorrect: Readonly<Record<string, ContentBlock<ConfigType>>>;
+  distractors: Readonly<Record<string, ContentBlock<ConfigType>>>;
 };
 
 type Question_SelectOneAnswer_Definition = Question_Definition_Meta<'selectOneAnswer'>;

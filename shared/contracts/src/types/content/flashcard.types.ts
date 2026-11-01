@@ -8,20 +8,21 @@ type Flashcard_Definition = {
 type Flashcard_Data = {
   id: string;
   isDefault?: true;
-  front: ContentBlock<'data'>[];
-  back: ContentBlock<'data'>[];
-  hint: ContentBlock<'data'>[];
-  tags: string[];
-  flags: string[];
+  front: readonly ContentBlock<'data'>[];
+  back: readonly ContentBlock<'data'>[];
+  hint: readonly ContentBlock<'data'>[];
+  tags: readonly string[];
+  flags: readonly string[];
 };
 
 type Flashcard_Response = {
   id: string;
-  front: ContentBlock<'response'>[];
-  back: ContentBlock<'response'>[];
-  hint: ContentBlock<'response'>[];
-  tags: string[];
-  flags: string[];
+  isDefault?: true;
+  front: readonly ContentBlock<'response'>[];
+  back: readonly ContentBlock<'response'>[];
+  hint: readonly ContentBlock<'response'>[];
+  tags: readonly string[];
+  flags: readonly string[];
 };
 
 export type Flashcard<ConfigType extends ContentEntity_ConfigType> = {

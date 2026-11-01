@@ -31,7 +31,7 @@ type ContentBlock_Scene_Data<TLocales extends object> = ContentBlock_Data_Meta &
 type ContentBlock_Scene_Response<TLocales extends object> = ContentBlock_Response_Meta<'scene'> &
   Locale_ResponseParams & {
     /** Translated scene props, separate from the locale selection metadata. */
-    messages: TLocales & ContentBlock_Scene_Locales_Strings<TLocales>;
+    messages: ContentBlock_Scene_Locales_Strings<TLocales>;
     rendererKey: string;
   };
 
