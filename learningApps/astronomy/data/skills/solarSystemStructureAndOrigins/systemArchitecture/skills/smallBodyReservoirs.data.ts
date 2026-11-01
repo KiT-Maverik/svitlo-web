@@ -38,7 +38,7 @@ export const smallBodyReservoirs_Skill_Data = buildSkillConfig({
     methodological:
       'Locate and distinguish the asteroid belt, Kuiper Belt and hypothesized Oort Cloud as populations or reservoirs.',
     frontend: {
-      en: 'Locate the asteroid belt,
+      en: 'Locate the asteroid belt, Kuiper Belt and proposed distant Oort Cloud.',
       zh: "找出小行星带、柯伊伯带以及假设存在的遥远奥尔特云。",
       hi: "क्षुद्रग्रह पट्टी, काइपर बेल्ट और प्रस्तावित दूरस्थ ऊर्ट बादल की स्थिति पहचानें।",
       es: "Ubica el cinturón de asteroides, el cinturón de Kuiper y la hipotética y lejana nube de Oort.",
@@ -66,7 +66,7 @@ export const smallBodyReservoirs_Skill_Data = buildSkillConfig({
       be: "Знайдзіце пояс астэроідаў, пояс Койпэра і гіпатэтычнае далёкае воблака Оарта.",
       ka: "იპოვეთ ასტეროიდთა სარტყელი, კოიპერის სარტყელი და ჰიპოთეზური შორეული ოორტის ღრუბელი.",
       kk: "Астероидтар белдеуін, Койпер белдеуін және болжамды алыс Оорт бұлтын табыңыз.",
-      qm: "Asteroidler quşağını, Kuiper quşağını ve faraziy uzaq Oort bulutını tapıñız.", Kuiper Belt and proposed distant Oort Cloud.',
+      qm: "Asteroidler quşağını, Kuiper quşağını ve faraziy uzaq Oort bulutını tapıñız.",
     },
   },
 });
