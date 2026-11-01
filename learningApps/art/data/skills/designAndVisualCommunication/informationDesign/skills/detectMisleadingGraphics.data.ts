@@ -12,7 +12,7 @@ export const detectMisleadingGraphics_Skill_Data = buildSkillConfig({
     ar: 'اكتشاف الرسوم البيانية المضللة',
     fr: 'Détecter les graphiques trompeurs',
     bn: 'বিভ্রান্তিকর গ্রাফিক্স শনাক্ত করুন',
-    pt: 'Detetar gráficos enganadores',
+    pt: 'Detectar gráficos enganosos',
     ur: 'گمراہ کن گرافکس کی شناخت کریں',
     id: 'Mendeteksi grafik yang menyesatkan',
     de: 'Irreführende Grafiken erkennen',

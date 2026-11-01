@@ -81,7 +81,7 @@ export const graphicIdentity_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Стварайце пазнавальную візуальную ідэнтычнасць з дапамогай узгодненых графічных рашэнняў.',
       ka: 'შექმენით ცნობადი ვიზუალური იდენტობა ურთიერთდაკავშირებული გრაფიკული არჩევანით.',
       kk: 'Өзара үйлесімді графикалық шешімдер арқылы танылатын визуалды бірегейлік қалыптастырыңыз.',
-      qm: 'Bağlı grafik saylavları ile tanılğan vizual kimlik yaratın.',
+      qm: 'Bağlı grafik saylavları ile tanılğan vizual kimlik yaratıñız.',
     },
   },
 });

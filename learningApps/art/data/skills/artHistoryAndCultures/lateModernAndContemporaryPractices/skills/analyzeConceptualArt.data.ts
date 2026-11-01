@@ -19,7 +19,7 @@ export const analyzeConceptualArt_Skill_Data = buildSkillConfig({
     ko: '개념미술 분석하기',
     tr: 'Kavramsal sanatı incelemek',
     vi: 'Phân tích nghệ thuật ý niệm',
-    ta: 'கருத்தியல் கலையைப் பகுப்பாய்வு செய்',
+    ta: 'கருத்தியல் கலையைப் பகுப்பாய்வு செய்யுங்கள்',
     te: 'భావనాత్మక కళను విశ్లేషించండి',
     mr: 'संकल्पनात्मक कलेचे विश्लेषण करा',
     ms: 'Menganalisis Seni Konseptual',
@@ -32,7 +32,7 @@ export const analyzeConceptualArt_Skill_Data = buildSkillConfig({
     be: 'Аналізаваць канцэптуальнае мастацтва',
     ka: 'კონცეპტუალური ხელოვნების გაანალიზება',
     kk: 'Тұжырымдамалық өнерді талдау',
-    qm: 'Kavramsal sanatı incelemek',
+    qm: 'Kontseptual sanatnı tahlil etüv',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const analyzeConceptualArt_Skill_Data = buildSkillConfig({
       be: 'Пазнаёмцеся з мастацтвам, дзе ідэя або інструкцыя не менш важная за аб’ект.',
       ka: 'გაეცანით ხელოვნებას, სადაც იდეა ან ინსტრუქცია ფიზიკური ობიექტის ტოლად მნიშვნელოვანია.',
       kk: 'Тұжырымдама не нұсқау физикалық нысанмен бірдей маңызды өнерді зерттеңіз.',
-      qm: 'Fikrin veya talimatın fiziksel nesne kadar önemli olduğu sanatı keşfedin.',
+      qm: 'Fikir ya da talimat maddiy obyekt qadar mühim olğan sanatnı tahlil etiñiz.',
     },
   },
 });

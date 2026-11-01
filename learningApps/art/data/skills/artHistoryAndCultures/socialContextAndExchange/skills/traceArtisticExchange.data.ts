@@ -46,7 +46,7 @@ export const traceArtisticExchange_Skill_Data = buildSkillConfig({
       bn: 'অনুসরণ করুন, বিভিন্ন সংস্কৃতির সংস্পর্শ কীভাবে শিল্পকৌশল ও ধারণা বদলে দেয়।',
       pt: 'Acompanhe como o contato entre culturas transforma técnicas e ideias artísticas.',
       ur: 'دیکھیں کہ ثقافتوں کے باہمی رابطے سے فنّی طریقے اور خیالات کیسے بدلتے ہیں۔',
-      id: 'Telusuri bagaimana hubungan ant budaya mengubah teknik dan gagasan seni.',
+      id: 'Telusuri bagaimana kontak antarbudaya mengubah teknik dan gagasan artistik.',
       de: 'Verfolge, wie kulturelle Kontakte künstlerische Techniken und Ideen verändern.',
       ja: '文化間の接触によって芸術の技法や考え方がどのように変化するかをたどります。',
       ko: '문화 간 접촉이 예술 기법과 관념을 어떻게 바꾸는지 추적해 보세요.',

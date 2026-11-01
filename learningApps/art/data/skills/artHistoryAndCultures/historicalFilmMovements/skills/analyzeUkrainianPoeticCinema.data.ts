@@ -66,7 +66,7 @@ export const analyzeUkrainianPoeticCinema_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як украінскае паэтычнае кіно выкарыстоўвае візуальную сімволіку і лірычнае апавяданне.',
       ka: 'გაიგეთ, როგორ იყენებს უკრაინული პოეტური კინო ვიზუალურ სიმბოლიკასა და ლირიკულ თხრობას.',
       kk: 'Біліңіз: украин поэтикалық киносы визуалды символика мен лирикалық баяндауды қалай қолданады.',
-      qm: 'Ukrayna şiirsel sinemasının görsel remizler ve lirik hikâye anlatımını nasıl kullandığını keşfedin.',
+      qm: 'Ukrayna şiirsel sinemasının görsel remizler ve lirik hikâye anlatımını nasıl kullandığını keşf etiñiz.',
     },
   },
 });

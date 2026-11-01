@@ -27,7 +27,7 @@ export const createAMovementMotif_Skill_Data = buildSkillConfig({
     pl: 'Stwórz motyw ruchowy',
     uk: 'Створюйте руховий мотив',
     lt: 'Sukurkite judesio motyvą',
-    lv: 'Izveidojiet kustību motīvu',
+    lv: 'Izveidot kustību motīvu',
     et: 'Loo liikumismotiiv',
     be: 'Стварыце рухавы матыў',
     ka: 'შექმენით მოძრაობის მოტივი',
@@ -65,7 +65,7 @@ export const createAMovementMotif_Skill_Data = buildSkillConfig({
       be: 'Прыдумайце кароткую, пазнавальную паслядоўнасць танцавальных рухаў.',
       ka: 'მოიფიქრეთ მოკლე, ადვილად ამოსაცნობი საცეკვაო მოძრაობების მიმდევრობა.',
       kk: 'Ойдан қысқа әрі танылатын би қимылдарының тізбегін жасаңыз.',
-      qm: 'Qısqa ve tanınabilir aqay areketleri silsilesini icat etiñiz',
+      qm: 'Qısqa ve tanınabilir oyun areketleri silsilesini icat etiñiz',
     },
   },
 });

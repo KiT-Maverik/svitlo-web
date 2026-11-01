@@ -27,7 +27,7 @@ export const choreographToMusic_Skill_Data = buildSkillConfig({
     pl: 'Twórz choreografię do muzyki',
     uk: 'Створюйте хореографію під музику',
     lt: 'Kurkite choreografiją pagal muziką',
-    lv: 'Veidojiet horeogrāfiju mūzikai',
+    lv: 'Veidot horeogrāfiju mūzikai',
     et: 'Loo koreograafia muusika järgi',
     be: 'Стварайце харэаграфію пад музыку',
     ka: 'შექმენით ქორეოგრაფია მუსიკის მიხედვით',

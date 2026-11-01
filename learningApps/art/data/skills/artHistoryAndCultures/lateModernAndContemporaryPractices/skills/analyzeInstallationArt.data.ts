@@ -19,7 +19,7 @@ export const analyzeInstallationArt_Skill_Data = buildSkillConfig({
     ko: '설치미술 분석하기',
     tr: 'Yerleştirme sanatını incelemek',
     vi: 'Phân tích nghệ thuật sắp đặt',
-    ta: 'நிறுவல் கலையைப் பகுப்பாய்வு செய்',
+    ta: 'நிறுவல் கலையைப் பகுப்பாய்வு செய்யுங்கள்',
     te: 'ఇన్‌స్టలేషన్ కళను విశ్లేషించండి',
     mr: 'इन्स्टॉलेशन कलेचे विश्लेषण करा',
     ms: 'Menganalisis Seni Pemasangan',
@@ -32,7 +32,7 @@ export const analyzeInstallationArt_Skill_Data = buildSkillConfig({
     be: 'Аналізаваць мастацтва інсталяцыі',
     ka: 'ინსტალაციური ხელოვნების გაანალიზება',
     kk: 'Инсталляциялық өнерді талдау',
-    qm: 'Yerleştirme sanatını incelemek',
+    qm: 'İnstallatsiya sanatını tahlil etüv',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const analyzeInstallationArt_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як інсталяцыя змяняе прастору, па якой рухаюцца гледачы.',
       ka: 'გაიგეთ, როგორ ცვლის ინსტალაციური ხელოვნება მაყურებლის გასავლელ სივრცეს.',
       kk: 'Инсталляциялық өнер көрермендер жүретін кеңістікті қалай өзгертетінін біліңіз.',
-      qm: 'Yerleştirme sanatının izleyicilerin dolaştığı mekânı nasıl dönüştürdüğünü keşfedin.',
+      qm: 'İnstallatsiya sanatınıñ seyirciler içinde areket etken mekânnı nasıl deñiştirgenini tahlil etiñiz.',
     },
   },
 });

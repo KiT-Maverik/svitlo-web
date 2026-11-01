@@ -59,10 +59,10 @@ export const composeASpatialSequence_Skill_Data = buildSkillConfig({
       he: 'סדרו חללים מחוברים כדי ליצור שינויים מכוונים בתחושת הפתיחות ובמוקד הקשב.',
       pl: 'Rozmieść połączone przestrzenie tak, aby celowo zmieniać wrażenie otwartości i skupienia.',
       uk: 'Розташовуйте поєднані простори так, щоб цілеспрямовано змінювати відчуття відкритості та фокус уваги.',
-      lt: 'Išdėstyk sujungtas erdves taip, kad sąmoningai keistųsi atvirumo ir dėmesio pojūtis.',
-      lv: 'Sakārto savienotas telpas, lai apzināti mainītu atvērtības un uzmanības fokusu.',
+      lt: 'Išdėstykite sujungtas erdves taip, kad sąmoningai keistųsi atvirumo ir dėmesio pojūtis.',
+      lv: 'Sakārtojiet savienotas telpas, lai apzināti mainītu atvērtības un uzmanības fokusu.',
       et: 'Paiguta ühendatud ruumid nii, et avatus ja tähelepanu fookus muutuksid sihipäraselt.',
-      be: 'Размяшчай злучаныя прасторы так, каб мэтанакіравана змяняць адчуванне адкрытасці й фокус увагі.',
+      be: 'Разьмяшчайце злучаныя прасторы, каб мэтанакіравана зьмяняць адчуваньне адкрытасьці і фокус увагі.',
       ka: 'დაალაგეთ დაკავშირებული სივრცეები ისე, რომ მიზანმიმართულად შეიცვალოს გახსნილობისა და ყურადღების ფოკუსი.',
       kk: 'Ашықтық пен назар фокусын мақсатты түрде өзгерту үшін байланысқан кеңістіктерді орналастырыңыз.',
 

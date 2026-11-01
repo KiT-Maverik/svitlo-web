@@ -12,7 +12,7 @@ export const designAVisualDiagram_Skill_Data = buildSkillConfig({
     ar: 'تصميم مخطط بصري',
     fr: 'Concevoir un diagramme visuel',
     bn: 'দৃশ্যগত চিত্র নকশা করুন',
-    pt: 'Conceber um diagrama visual',
+    pt: 'Criar um diagrama visual',
     ur: 'بصری خاکہ ڈیزائن کریں',
     id: 'Merancang diagram visual',
     de: 'Ein visuelles Diagramm gestalten',

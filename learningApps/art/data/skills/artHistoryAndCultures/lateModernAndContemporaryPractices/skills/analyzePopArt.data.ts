@@ -19,7 +19,7 @@ export const analyzePopArt_Skill_Data = buildSkillConfig({
     ko: '팝아트 분석하기',
     tr: "Pop Art'ı incelemek",
     vi: 'Phân tích nghệ thuật Pop',
-    ta: 'பாப் கலையைப் பகுப்பாய்வு செய்',
+    ta: 'பாப் கலையைப் பகுப்பாய்வு செய்யுங்கள்',
     te: 'పాప్ ఆర్ట్‌ను విశ్లేషించండి',
     mr: 'पॉप आर्टचे विश्लेषण करा',
     ms: 'Menganalisis Seni Pop',
@@ -32,7 +32,7 @@ export const analyzePopArt_Skill_Data = buildSkillConfig({
     be: 'Аналізаваць поп-арт',
     ka: 'პოპ-არტის გაანალიზება',
     kk: 'Поп-артты талдау',
-    qm: "Pop Art'ı incelemek",
+    qm: "Pop-artnı tahlil etüv",
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const analyzePopArt_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як мастакі поп-арту выкарыстоўвалі рэкламу, спажывецкія тавары і масмедыя.',
       ka: 'გაიგეთ, როგორ იყენებდნენ პოპ-არტის მხატვრები რეკლამას, სამომხმარებლო პროდუქტებსა და მასმედიას.',
       kk: 'Біліңіз: поп-арт суретшілері жарнаманы, тұтыну тауарларын және бұқаралық ақпарат құралдарын қалай қолданды.',
-      qm: 'Pop sanatçılarının reklamları, tüketim ürünlerini ve kitle iletişim araçlarını nasıl kullandığını öğrenin.',
+      qm: 'Pop-art sanatkârlarınıñ reklama, iste\'mal malları ve kütleviy haberleşüv vastalarını nasıl qullanğanını tahlil etiñiz.',
     },
   },
 });

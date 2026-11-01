@@ -66,7 +66,7 @@ export const analyzeClassicMayaReliefSculpture_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як на рэльефах помнікаў мая класічнага перыяду паказаны постаці, надпісы і дынастычныя вобразы.',
       ka: 'გაიგეთ, როგორ ასახავს კლასიკური მაიას ძეგლების რელიეფები ფიგურებს, წარწერებსა და დინასტიურ სახეებს.',
       kk: 'Біліңіз: классикалық майя ескерткіштерінің бедерлерінде тұлғалар, жазулар және әулеттік бейнелер қалай көрсетілген.',
-      qm: 'Klasik Maya alanlarındaki kabartmaların figürleri, yazıtları ve hanedan imgelerini nasıl yansıttığını keşfedin.',
+      qm: 'Klasik Maya alanlarındaki kabartmaların figürleri, yazıtları ve hanedan imgelerini nasıl yansıttığını keşf etiñiz.',
     },
   },
 });
