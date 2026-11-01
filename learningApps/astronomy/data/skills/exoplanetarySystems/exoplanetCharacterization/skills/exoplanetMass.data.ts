@@ -5,7 +5,7 @@ export const exoplanetMass_Skill_Data = buildSkillConfig({
   id: '4da7390d-cd26-4fae-b487-4267e589523b',
   name: {
     en: 'Exoplanet Mass',
-      zh: '系外行星质量',
+    zh: '系外行星质量',
     hi: 'बहिर्ग्रह का द्रव्यमान',
     es: 'Masa de los exoplanetas',
     ar: 'كتلة الكواكب الخارجية',
@@ -38,7 +38,7 @@ export const exoplanetMass_Skill_Data = buildSkillConfig({
     methodological: "Infer a planet's mass from orbital effects, including limits set by viewing geometry and models.",
     frontend: {
       en: "Explore how a planet's gravitational effects help estimate its mass.",
-          zh: '探索如何通过行星的引力影响来估算其质量。',
+      zh: '探索如何通过行星的引力影响来估算其质量。',
       hi: 'जानें कि ग्रह के गुरुत्वीय प्रभावों से उसके द्रव्यमान का अनुमान कैसे लगाया जाता है।',
       es: 'Explora cómo los efectos gravitatorios de un planeta ayudan a estimar su masa.',
       ar: 'استكشف كيف تساعد التأثيرات الجاذبية للكوكب على تقدير كتلته.',
