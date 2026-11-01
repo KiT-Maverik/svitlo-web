@@ -13,7 +13,7 @@ export const orbitsAndRotations_SkillGroup_Data = buildSkillGroupConfig({
   id: 'c4e000d1-4bc6-4622-9691-9372bcb72c85',
   name: {
     en: 'Orbits and Rotations',
-      zh: '轨道与自转',
+    zh: '轨道与自转',
     hi: 'कक्षाएँ और घूर्णन',
     es: 'Órbitas y rotaciones',
     ar: 'المدارات والدورانات',
@@ -54,7 +54,7 @@ export const orbitsAndRotations_SkillGroup_Data = buildSkillGroupConfig({
       'Orbital shapes and body orientations are specified through distinct physical parameters that affect long-term celestial behavior.',
     frontend: {
       en: 'Describe and compare the shapes, periods and orientations of celestial motions.',
-          zh: '描述并比较天体运动的轨道形状、周期和方向。',
+      zh: '描述并比较天体运动的轨道形状、周期和方向。',
       hi: 'खगोलीय गतियों की कक्षाओं के आकार, अवधियों और दिशाओं का वर्णन तथा तुलना करें।',
       es: 'Describe y compara las formas, los períodos y las orientaciones de los movimientos celestes.',
       ar: 'صِف وقارن أشكال الحركات السماوية ودوراتها الزمنية واتجاهاتها.',
