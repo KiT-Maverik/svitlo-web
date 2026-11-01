@@ -60,7 +60,7 @@ describe('assembleLessonResponse', () => {
   });
   it('rejects contradictory locale fallback provenance', () => {
     const raw = fixture();
-    raw.config.localeSources['/title'].code = 'en';
+    (raw.config.localeSources as Record<string, { code: string }>)['/title'].code = 'en';
     expect(() => assembleLessonResponse('1', 'howLightMoves', 'uk', raw)).toThrow(/Contradictory fallback metadata/);
   });
   it('rejects inconsistent section ordering', () => {
