@@ -9,7 +9,7 @@ export const arrayModel_Skill_Data = buildSkillConfig({
     et: 'Korrutamine — ristkülikukujuline punktimudel',
     be: 'Множаньне — прамавугольны масіў',
     ka: 'გამრავლება — მართკუთხა მასივის მოდელი',
-    kk: 'Көбейту — тікбұрышты массив моделі',
+    kk: 'Көбейту — тікбұрышты қатарлар мен бағандар моделі',
     en: 'Multiplication — Array model',
     qm: 'Arttıruv — satır ve sütun modeli',
     zh: '乘法 — 阵列模型',
