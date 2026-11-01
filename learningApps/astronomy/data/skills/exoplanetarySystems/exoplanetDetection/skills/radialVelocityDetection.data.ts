@@ -20,7 +20,7 @@ export const radialVelocityDetection_Skill_Data = buildSkillConfig({
     tr: 'Radyal hız yöntemi',
     vi: 'Phát hiện bằng vận tốc xuyên tâm',
     ta: 'ஆரவேக முறையால் கண்டறிதல்',
-    te: 'రేఖీయ వేగం ద్వారా గుర్తింపు',
+    te: 'దృష్టిరేఖా వేగం ద్వారా గుర్తింపు',
     mr: 'त्रिज्यीय वेगाने शोध',
     ms: 'Pengesanan halaju jejari',
     he: 'גילוי באמצעות מהירות רדיאלית',
