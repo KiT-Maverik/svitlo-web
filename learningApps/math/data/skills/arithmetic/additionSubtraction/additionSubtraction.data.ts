@@ -44,7 +44,7 @@ export const additionSubtraction_SkillGroup_Data = buildSkillGroupConfig({
     vi: 'Kết hợp phép cộng và phép trừ',
     ta: 'கூட்டலையும் கழித்தலையும் இணைத்தல்',
     te: 'కూడిక మరియు తీసివేతను కలిపి ఉపయోగించడం',
-    mr: 'बेरीज आणि वजाबाकीचा संयुक्त वापर',
+    mr: 'बेरीज आणि वजाबाकी यांतील परस्परसंबंध',
     ms: 'Gabungan penambahan dan penolakan',
     he: 'שילוב חיבור וחיסור',
     pl: 'Łączenie dodawania i odejmowania',
