@@ -18,7 +18,7 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
     ar: 'الضرب — 3-أرقام×1-أرقام',
     fr: 'Multiplication — 3-chiffres×1-chiffres',
     bn: 'গুণ — 3-অঙ্কের×1-অঙ্কের',
-    pt: 'Multiplicação — 3-algarismos×1-algarismos',
+    pt: 'Multiplicação — Número de três algarismos por um de um algarismo',
     ur: 'ضرب — 3-ہندسوں×1-ہندسوں',
     id: 'Perkalian — 3-angka×1-angka',
     de: 'Multiplikation — 3-stellige×1-stellige',
