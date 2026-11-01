@@ -61,6 +61,12 @@ jobs:
       - name: Install parser dependency
         run: npm ci --ignore-scripts --no-audit --no-fund
 
+      - name: Validate artifact generator syntax
+        run: |
+          node --check scripts/generate-translation-review-artifacts.mjs
+          node --check scripts/generate-skills-taxonomy.mjs
+          node scripts/generate-translation-review-artifacts.mjs --help > /dev/null
+
       - name: Generate requested review artifacts
         shell: bash
         run: |
@@ -104,6 +110,11 @@ jobs:
               echo '- No manifest produced; inspect earlier job logs.'
             fi
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verify no source file changes
+        if: always()
+        shell: bash
+        run: git diff --exit-code && test -z "$(git status --porcelain --untracked-files=normal)"
 
       - name: Remove temporary runner files
         if: always()
