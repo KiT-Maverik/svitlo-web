@@ -62,7 +62,7 @@ export const animalDiversity_SkillGroup_Data = buildSkillGroupConfig({
       hi: 'प्राणियों के प्रमुख समूहों की अलग-अलग विशेषताओं को जानें।',
       es: 'Explora las diferentes características de los principales grupos de animales.',
       ar: 'تعرّف إلى المجموعات الرئيسية من الحيوانات من خلال سمات جسمية موثوقة، لا أوجه الشبه السطحية.',
-      fr: 'Découvre les caractéristiques des grands groupes d\'animaux.',
+      fr: 'Reconnais les grands groupes d\'animaux grâce à des caractères anatomiques fiables plutôt qu\'à des ressemblances superficielles.',
       bn: 'প্রাণীদের প্রধান দলগুলোর নানা বৈশিষ্ট্য আবিষ্কার করো।',
       pt: 'Explore as diferentes características dos principais grupos de animais.',
       ur: 'جانوروں کے بڑے گروہوں کو محض ظاہری مشابہت کے بجائے ان کی قابلِ اعتماد جسمانی خصوصیات سے پہچانیں۔',

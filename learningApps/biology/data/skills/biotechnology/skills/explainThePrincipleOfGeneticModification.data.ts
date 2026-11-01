@@ -41,7 +41,7 @@ export const explainThePrincipleOfGeneticModification_Skill_Data = buildSkillCon
       hi: 'समझाएँ कि आनुवंशिक संशोधन डीएनए को कैसे बदलता है और यह प्रजनन के लिए माता-पिता चुनने से कैसे अलग है।',
       es: 'Explica cómo la modificación genética cambia el ADN, a diferencia de elegir progenitores para la cría.',
       ar: 'اشرح كيف يغيّر التعديل الوراثي الحمض النووي، بخلاف اختيار الكائنات الأبوية للتربية الانتقائية.',
-      fr: 'Explique comment la modification génétique change l\'ADN, contrairement au choix de parents pour la reproduction sélective.',
+      fr: 'Explique comment la modification génétique change l\'ADN, contrairement à la sélection d\'organismes reproducteurs pour l\'élevage ou la culture.',
       bn: 'প্রজননের জন্য পিতামাতা বেছে নেওয়ার বিপরীতে জিনগত পরিবর্তন কীভাবে ডিএনএ বদলায় তা ব্যাখ্যা করো।',
       pt: 'Explique como a modificação genética altera o DNA, diferentemente da escolha dos progenitores para reprodução.',
       ur: 'وضاحت کریں کہ جینیاتی ترمیم ڈی این اے کو کیسے بدلتی ہے اور یہ افزائش کے لیے والدینی جانداروں کے انتخاب سے کیسے مختلف ہے۔',
