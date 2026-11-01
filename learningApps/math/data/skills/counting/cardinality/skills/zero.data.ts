@@ -11,7 +11,7 @@ export const zero_Skill_Data = buildSkillConfig({
     et: 'Nulli mõistmine tühja hulgana',
     be: 'Разуменьне нуля як адсутнасьці колькасьці',
     ka: 'ნულის როგორც ცარიელი რაოდენობის გაგება',
-    kk: 'Нөлді бос жиын ретінде түсіну',
+    kk: 'Нөлді бос жиындағы элементтер саны ретінде түсіну',
     zh: '理解零表示没有物品',
     hi: 'शून्य को खाली मात्रा के रूप में समझना',
     es: 'Comprender el cero como cantidad nula',

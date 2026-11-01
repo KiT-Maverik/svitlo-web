@@ -30,7 +30,7 @@ export const roundToTen_Skill_Data = buildSkillConfig({
     te: 'దగ్గరి పదికి సవరించడం',
     mr: 'जवळच्या दहापर्यंत पूर्णांकित करणे',
     ms: 'Membundarkan kepada puluh terdekat',
-    he: 'עיגול לעשרת הקרובה',
+    he: 'עיגול לעשרות',
     pl: 'Zaokrąglanie do najbliższej dziesiątki',
     uk: 'Округлення до найближчого десятка',
   },

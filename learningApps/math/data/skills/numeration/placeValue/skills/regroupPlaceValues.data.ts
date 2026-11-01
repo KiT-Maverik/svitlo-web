@@ -58,7 +58,7 @@ export const regroupPlaceValues_Skill_Data = buildSkillConfig({
       te: 'ఒక వందను పది పదులుగా లేదా ఒక పదిని పది ఒకట్లుగా మార్చి, తిరిగి మార్చండి. మొత్తం విలువ మారదు.',
       mr: 'एक शतक दहा दशकांत किंवा एक दशक दहा एककांत बदला व उलट करा. एकूण मूल्य बदलत नाही.',
       ms: 'Tukar satu ratus kepada sepuluh puluh atau satu puluh kepada sepuluh sa, dan sebaliknya. Jumlah kekal sama.',
-      he: 'החליפו מאה אחת בעשר עשרות או עשרת אחת בעשר אחדות, וגם להפך, בלי לשנות את הסכום.',
+      he: 'החליפו מאה אחת בעשר עשרות או עשרייה אחת בעשר אחדות, וגם להפך, בלי לשנות את הסכום.',
       pl: 'Zamień jedną setkę na dziesięć dziesiątek albo jedną dziesiątkę na dziesięć jedności i odwrotnie. Suma zostaje taka sama.',
       uk: 'Обмінюй одну сотню на десять десятків або десяток на десять одиниць і навпаки. Загальне значення не змінюється.',
       lt: 'Pakeisk vieną šimtą dešimčia dešimčių arba vieną dešimtį dešimčia vienetų ir atvirkščiai. Bendra vertė nekinta.',

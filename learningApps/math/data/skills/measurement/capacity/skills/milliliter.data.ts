@@ -65,7 +65,7 @@ export const milliliter_Skill_Data = buildSkillConfig({
       lv: 'Vari mērīt ietilpību mililitros un pārvērst litrus mililitros un otrādi, zinot, ka 1 litrs = 1000 mililitru.',
       et: 'Saad mahutavust milliliitrites mõõta ning liitreid milliliitriteks ja tagasi teisendada, teades, et 1 liiter = 1000 milliliitrit.',
       be: 'Ты можаш вымяраць умяшчальнасьць у мілілітрах і пераводзіць літры ў мілілітры й наадварот, ведаючы, што 1 л = 1000 мл.',
-      ka: 'შეგიძლია ტევადობა მილილიტრებში გაზომო და ლიტრები მილილიტრებში გადაიყვანო ან პირიქით, რადგან 1 ლიტრი = 1000 მილილიტრს.',
+      ka: 'შეგიძლია ტევადობა მილილიტრებში გაზომო და ლიტრები მილილიტრებში გადაიყვანო ან პირიქით, რადგან 1 ლიტრი = 1000 მილილიტრი.',
       kk: 'Сыйымдылықты миллилитрмен өлшеп, 1 литр = 1000 миллилитр екенін біліп, литр мен миллилитрді өзара айналдыра аласың.',
     },
   },

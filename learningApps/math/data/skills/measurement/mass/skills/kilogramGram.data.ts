@@ -65,7 +65,7 @@ export const kilogramGram_Skill_Data = buildSkillConfig({
       lv: 'Vari mērīt masu kilogramos vai gramos un pārvērst vienības, zinot, ka 1 kilograms = 1000 gramu.',
       et: 'Saad mõõta massi kilogrammides või grammides ja ühikuid teisendada, teades, et 1 kilogramm = 1000 grammi.',
       be: 'Ты можаш вымяраць масу ў кіляграмах і грамах ды пераводзіць адзінкі, ведаючы, што 1 кг = 1000 г.',
-      ka: 'შეგიძლია მასა კილოგრამებსა და გრამებში გაზომო და ერთეულები გადაიყვანო, რადგან 1 კილოგრამი = 1000 გრამს.',
+      ka: 'შეგიძლია მასა კილოგრამებსა და გრამებში გაზომო და ერთეულები გადაიყვანო, რადგან 1 კილოგრამი = 1000 გრამი.',
       kk: 'Массаны килограмм не граммен өлшеп, 1 килограмм = 1000 грамм екенін біліп бірліктерді ауыстыра аласың.',
     },
   },

@@ -9,7 +9,7 @@ export const unknownDividend_Skill_Data = buildSkillConfig({
     lt: 'Nežinomo dalinio radimas',
     lv: 'Nezināmā dalāmā atrašana',
     et: 'Tundmatu jagatava leidmine',
-    be: 'Знаходжаньне невядомага дзялімага',
+    be: 'Знаходжаньне невядомага дзеліва',
     ka: 'უცნობი გასაყოფის პოვნა',
     kk: 'Белгісіз бөлінгішті табу',
     zh: '求未知被除数',

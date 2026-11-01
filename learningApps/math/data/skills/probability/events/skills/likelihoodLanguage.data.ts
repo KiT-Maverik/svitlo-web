@@ -65,7 +65,7 @@ export const likelihoodLanguage_Skill_Data = buildSkillConfig({
       lv: 'Vari salīdzināt, kuri ikdienas notikumi noteiktos apstākļos ir vairāk vai mazāk ticami, nepieņemot, ka visiem iznākumiem ir vienādas iespējas.',
       et: 'Saad võrrelda, millised igapäevased sündmused on antud tingimustel tõenäolisemad või vähem tõenäolised, eeldamata, et kõik tulemused on võrdselt tõenäolised.',
       be: 'Ты можаш параўнаць, якія штодзённыя падзеі больш ці менш імаверныя за зададзеных умоваў, не мяркуючы, што ўсе вынікі аднолькава імаверныя.',
-      ka: 'შეგიძლია მოცემულ პირობებში შეადარო ყოველდღიური მოვლენების ალბათობები ისე, რომ ყველა შედეგი თანაბრად შესაძლებლად არ ჩათვალო.',
+      ka: 'შეგიძლია მოცემულ პირობებში შეადარო ყოველდღიური მოვლენების ალბათობები ისე, რომ არ ივარაუდო, თითქოს ყველა შედეგის ალბათობა ერთნაირია.',
       kk: 'Берілген жағдайда күнделікті оқиғалардың қайсысы ықтималырақ не ықтималдығы төмен екенін салыстыра аласың, барлық нәтиженің ықтималдығы тең деп есептемей.',
     },
   },
