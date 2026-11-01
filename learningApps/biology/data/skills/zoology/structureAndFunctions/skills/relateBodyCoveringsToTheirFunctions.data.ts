@@ -43,7 +43,7 @@ export const relateBodyCoveringsToTheirFunctions_Skill_Data = buildSkillConfig({
       ar: 'اشرح كيف يحمي الفرو والريش والحراشف والجلد أجسام الحيوانات.',
       fr: 'Explique comment la fourrure, les plumes, les écailles et la peau protègent le corps des animaux.',
       bn: 'লোম, পালক, আঁশ ও ত্বক কীভাবে প্রাণীদের দেহ রক্ষা করে তা ব্যাখ্যা করো।',
-      pt: 'Explique como pelos, penas, escamas e pele protegem o corpo dos animais.',
+      pt: 'Explique como pelos, penas, escamas e pele ajudam a proteger, conservar o calor ou reduzir a perda de água dos animais.',
       ur: 'بتائیں کہ بال، پر، چھلکے اور جلد جانوروں کے جسم کی حفاظت کیسے کرتے ہیں۔',
       id: 'Jelaskan bagaimana bulu, rambut, sisik, dan kulit melindungi tubuh hewan.',
       de: 'Erkläre, wie Fell, Federn, Schuppen und Haut den Körper von Tieren schützen.',

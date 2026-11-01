@@ -43,7 +43,7 @@ export const relatePlantStructuralFeaturesToEnvironmentalConditions_Skill_Data =
       ar: 'اشرح لماذا تتخذ الجذور والأوراق والبراعم أشكالًا تناسب الظروف المختلفة.',
       fr: 'Explique pourquoi les racines, les feuilles et les pousses ont des formes adaptées à différentes conditions.',
       bn: 'মূল, পাতা ও অঙ্কুরের আকৃতি কেন বিভিন্ন পরিবেশের জন্য উপযোগী তা ব্যাখ্যা করো।',
-      pt: 'Explique por que raízes, folhas e brotos apresentam formas adaptadas a diferentes condições.',
+      pt: 'Explique como as estruturas de raízes, folhas e caules ajudam as plantas a sobreviver em diferentes condições ambientais.',
       ur: 'بتائیں کہ جڑوں، پتوں اور نئی شاخوں کی شکلیں مختلف حالات کے موافق کیوں ہوتی ہیں۔',
       id: 'Jelaskan mengapa akar, daun, dan tunas memiliki bentuk yang sesuai dengan kondisi yang berbeda.',
       de: 'Erkläre, warum Wurzeln, Blätter und Sprosse unter verschiedenen Bedingungen unterschiedliche Formen haben.',

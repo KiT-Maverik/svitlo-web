@@ -43,7 +43,7 @@ export const explainThePrincipleOfSelectiveBreeding_Skill_Data = buildSkillConfi
       ar: 'افهم كيف تُنمّي التربية الانتقائية الصفات الوراثية عبر الأجيال.',
       fr: 'Comprends comment la sélection artificielle développe des caractères héréditaires au fil des générations.',
       bn: 'নির্বাচিত প্রজনন কীভাবে প্রজন্মের পর প্রজন্ম ধরে বংশগত বৈশিষ্ট্য গড়ে তোলে তা বোঝো।',
-      pt: 'Entenda como a reprodução seletiva desenvolve características hereditárias ao longo das gerações.',
+      pt: 'Entenda como a seleção e a reprodução de organismos com características hereditárias desejadas, ao longo de gerações, permitem desenvolver variedades e raças.',
       ur: 'سمجھیں کہ انتخابی افزائش نسل در نسل موروثی خصوصیات کو کیسے فروغ دیتی ہے۔',
       id: 'Pahami bagaimana pemuliaan selektif mengembangkan sifat yang diwariskan dari generasi ke generasi.',
       de: 'Verstehe, wie durch gezielte Zucht erbliche Merkmale über Generationen gefördert werden.',

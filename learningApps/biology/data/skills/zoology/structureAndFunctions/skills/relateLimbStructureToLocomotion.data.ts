@@ -43,7 +43,7 @@ export const relateLimbStructureToLocomotion_Skill_Data = buildSkillConfig({
       ar: 'اربط أشكال الأطراف بالمشي والسباحة والحفر والطيران.',
       fr: 'Relie la forme des membres à la marche, à la nage, au creusement ou au vol.',
       bn: 'অঙ্গপ্রত্যঙ্গের আকৃতির সঙ্গে হাঁটা, সাঁতার, গর্ত খোঁড়া বা ওড়ার সম্পর্ক বোঝাও।',
-      pt: 'Relacione as formas dos membros com andar, nadar, cavar ou voar.',
+      pt: 'Relacione a forma de pernas, nadadeiras e asas aos movimentos de andar, nadar, cavar ou voar.',
       ur: 'اعضا کی شکل کو چلنے، تیرنے، کھودنے یا اڑنے سے جوڑیں۔',
       id: 'Hubungkan bentuk anggota gerak dengan berjalan, berenang, menggali, atau terbang.',
       de: 'Verbinde die Form von Gliedmaßen mit dem Gehen, Schwimmen, Graben oder Fliegen.',

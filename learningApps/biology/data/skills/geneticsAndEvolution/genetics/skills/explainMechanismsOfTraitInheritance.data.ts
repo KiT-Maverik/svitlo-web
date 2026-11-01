@@ -11,7 +11,7 @@ export const explainMechanismsOfTraitInheritance_Skill_Data = buildSkillConfig({
     ar: 'شرح آليات توريث الصفات',
     fr: 'Expliquer les mécanismes de transmission des caractères',
     bn: 'বৈশিষ্ট্যের বংশগতির প্রক্রিয়া ব্যাখ্যা করা',
-    pt: 'Explicar os mecanismos de herança dos traços',
+    pt: 'Explicar os mecanismos de herança das características',
     ur: 'صفات کی وراثت کے طریقوں کی وضاحت',
     id: 'Menjelaskan mekanisme pewarisan sifat',
     de: 'Mechanismen der Merkmalsvererbung erklären',

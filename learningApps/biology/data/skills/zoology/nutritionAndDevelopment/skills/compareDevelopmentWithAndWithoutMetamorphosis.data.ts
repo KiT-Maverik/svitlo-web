@@ -43,7 +43,7 @@ export const compareDevelopmentWithAndWithoutMetamorphosis_Skill_Data = buildSki
       ar: 'قارن بين الحيوانات التي يتغير شكلها أثناء النمو وتلك التي لا يتغير شكلها.',
       fr: 'Compare les animaux dont la forme change au cours du développement avec ceux dont elle ne change pas.',
       bn: 'বিকাশের সময় যেসব প্রাণীর দেহের রূপ বদলায় এবং যাদের বদলায় না, তাদের তুলনা করো।',
-      pt: 'Compare animais que mudam de forma durante o desenvolvimento com aqueles que não mudam.',
+      pt: 'Compare ciclos de vida com grandes transformações do corpo e ciclos em que os jovens já se parecem com os adultos.',
       ur: 'ان جانوروں کا موازنہ کریں جن کی شکل نشوونما کے دوران بدلتی ہے اور جن کی نہیں بدلتی۔',
       id: 'Bandingkan hewan yang berubah bentuk selama perkembangan dengan hewan yang tidak mengalaminya.',
       de: 'Vergleiche Tiere, die während ihrer Entwicklung ihre Gestalt verändern, mit solchen, bei denen das nicht geschieht.',
