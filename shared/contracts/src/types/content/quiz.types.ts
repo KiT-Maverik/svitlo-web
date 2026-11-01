@@ -4,7 +4,7 @@ import type {
   ContentBlock_Config,
   TextContentBlock,
   TextContentBlock_Config,
-} from './blocks/contentBlock.types';
+} from './blocks/common.types';
 import type { NonEmptyArray } from '../misc.types';
 
 type QuizQuestion = Question_Config & { number: number; weight: number };
