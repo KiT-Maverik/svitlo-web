@@ -5,7 +5,7 @@ export const planetaryInteriorStructure_Skill_Data = buildSkillConfig({
   id: '50cc2606-dfa0-47de-aa2d-304ea053ac42',
   name: {
     en: 'Planetary Interior Structure',
-      zh: '行星内部结构',
+    zh: '行星内部结构',
     hi: 'ग्रहों की आंतरिक संरचना',
     es: 'Estructura interna de los planetas',
     ar: 'التركيب الداخلي للكواكب',
@@ -38,7 +38,7 @@ export const planetaryInteriorStructure_Skill_Data = buildSkillConfig({
     methodological: 'Infer cores, mantles or other layers from density, seismic, magnetic and gravitational evidence.',
     frontend: {
       en: "Use indirect evidence to explore a planet's core and interior layers.",
-          zh: '借助间接证据探索行星的核心与内部各层。',
+      zh: '借助间接证据探索行星的核心与内部各层。',
       hi: 'अप्रत्यक्ष प्रमाणों से ग्रह के केंद्र और भीतर की परतों का अध्ययन करें।',
       es: 'Utiliza pruebas indirectas para explorar el núcleo y las capas internas de un planeta.',
       ar: 'استخدم أدلة غير مباشرة لاستكشاف لب الكوكب وطبقاته الداخلية.',
