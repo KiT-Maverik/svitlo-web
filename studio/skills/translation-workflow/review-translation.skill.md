@@ -40,6 +40,8 @@ The generator reads `shared/contracts/src/types/languages.ts` for the real langu
 
 ### Preferred: CI on a specific PR branch
 
+**A PR must already exist before its comment can trigger CI.** If starting a review with no source changes yet, create a branch from the current `main`, add a small **temporary** `.agent-ci-artifacts/review-request.md` marker (review purpose only), and open a **draft PR** into `main`. This seed marker is overwritten by generation and deleted during final cleanup; it must never be merged. Keep the PR in **Draft** while reviewing, since marking it Ready for review initiates cleanup.
+
 A single **permanent** workflow, [Agent CI Artifacts](../../../.github/workflows/translation-review.yml), accepts an owner-authorized command posted in the PR conversation:
 
 ```text
