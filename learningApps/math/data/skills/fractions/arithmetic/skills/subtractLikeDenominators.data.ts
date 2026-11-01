@@ -26,7 +26,7 @@ export const subtractLikeDenominators_Skill_Data = buildSkillConfig({
     ko: '같은 전체를 기준으로 분모가 같은 분수 빼기',
     tr: 'Bir bütün içinde paydaları eşit kesirleri çıkarma',
     vi: 'Trừ các phân số cùng mẫu số của cùng một toàn thể',
-    ta: 'ஒரு முழுமைக்குள் ஒரே கீழெண் கொண்ட பின்னங்களைக் கழித்தல்',
+    ta: 'ஒரே முழுமையின் ஒரே கீழெண் கொண்ட பின்னங்களைக் கழித்தல்',
     te: 'ఒక మొత్తం పరిధిలో ఒకే హారం గల భిన్నాలను తీసివేయడం',
     mr: 'एका पूर्णाच्या मर्यादेत समान छेदाचे अपूर्णांक वजा करणे',
     ms: 'Menolak pecahan berpenyebut sama dalam satu keseluruhan',
