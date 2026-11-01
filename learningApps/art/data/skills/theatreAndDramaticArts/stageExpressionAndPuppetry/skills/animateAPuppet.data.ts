@@ -28,7 +28,7 @@ export const animateAPuppet_Skill_Data = buildSkillConfig({
     uk: 'Оживляти ляльку',
     lt: 'Atgaivinti lėlę',
     lv: 'Iedzīvināt lelli',
-    et: 'Nukule animeerimine',
+    et: 'Nuku elustamine',
     be: 'Ажыўляць ляльку',
     ka: 'თოჯინის გაცოცხლება',
     kk: 'Қуыршақты жандандыру',
