@@ -18,7 +18,7 @@ export const designDanceFormations_Skill_Data = buildSkillConfig({
     ja: 'ダンスのフォーメーションを設計する',
     ko: '춤 대형 설계하기',
     tr: 'Dans düzenlerini tasarlayın',
-    vi: 'Concevoir des formations de danse',
+    vi: 'Thiết kế đội hình múa',
     ta: 'நடன அணிவகுப்புகளை வடிவமைக்குங்கள்',
     te: 'నృత్య విన్యాసాలను రూపొందించండి',
     mr: 'नृत्याच्या रचना आखा',

@@ -12,7 +12,7 @@ export const designAnEditorialSpread_Skill_Data = buildSkillConfig({
     ar: 'تصميم صفحة تحريرية',
     fr: 'Concevoir une double page éditoriale',
     bn: 'সম্পাদকীয় পৃষ্ঠা বিন্যাস নকশা করুন',
-    pt: 'Conceber uma composição editorial',
+    pt: 'Projetar uma página dupla editorial',
     ur: 'ادارتی صفحات کا لے آؤٹ ڈیزائن کریں',
     id: 'Merancang tata letak editorial',
     de: 'Ein redaktionelles Layout gestalten',

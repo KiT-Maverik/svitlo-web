@@ -11,7 +11,7 @@ export const analyzeDanceInCulturalContext_Skill_Data = buildSkillConfig({
     ar: 'حلّل الرقص في سياقه الثقافي',
     fr: 'Analyser la danse dans son contexte culturel',
     bn: 'সাংস্কৃতিক প্রেক্ষাপটে নৃত্য বিশ্লেষণ করুন',
-    pt: 'Analise a dança em seu contexto cultural',
+    pt: 'Analisar a dança em seu contexto cultural',
     ur: 'ثقافتی تناظر میں رقص کا تجزیہ کریں',
     id: 'Menganalisis Tari dalam Konteks Budaya',
     de: 'Tanz im kulturellen Kontext analysieren',

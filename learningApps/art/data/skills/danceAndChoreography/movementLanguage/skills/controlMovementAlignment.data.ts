@@ -15,7 +15,7 @@ export const controlMovementAlignment_Skill_Data = buildSkillConfig({
     ur: 'حرکت کے دوران جسم کی سیدھ پر قابو رکھیں',
     id: 'Kendalikan keselarasan gerak tubuh',
     de: 'Körperausrichtung bei Bewegungen kontrollieren',
-    ja: '動きの身体の整列をコントロールする',
+    ja: '踊りの身体の軸と姿勢を整える',
     ko: '동작의 신체 정렬 조절하기',
     tr: 'Hareket sırasında beden hizasını kontrol edin',
     vi: 'Kiểm soát sự căn chỉnh cơ thể khi chuyển động',

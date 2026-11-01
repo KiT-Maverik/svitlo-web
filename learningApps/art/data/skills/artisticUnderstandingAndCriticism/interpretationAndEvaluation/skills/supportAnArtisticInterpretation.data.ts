@@ -59,7 +59,7 @@ export const supportAnArtisticInterpretation_Skill_Data = buildSkillConfig({
       he: 'היעזרו בפרטים מתוך היצירה כדי להסביר את הפרשנות שלכם ולבסס אותה.',
       pl: 'Wykorzystuj szczegóły dzieła, aby wyjaśnić i uzasadnić swoją interpretację.',
       uk: 'Використовуйте деталі твору, щоб пояснити й обґрунтувати своє тлумачення.',
-      lt: 'Pasitelk kūrinio detales, kad paaiškintum ir pagrįstum savo interpretaciją.',
+      lt: 'Pasitelkite kūrinio detales, kad paaiškintumėte ir pagrįstumėte savo interpretaciją.',
       lv: 'Izmantojiet darba detaļas, lai izskaidrotu un pamatotu savu interpretāciju.',
       et: 'Kasuta teose üksikasju, et oma tõlgendust selgitada ja põhjendada.',
       be: 'Выкарыстоўвай дэталі твора, каб растлумачыць і абгрунтаваць сваю інтэрпрэтацыю.',
