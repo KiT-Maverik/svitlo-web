@@ -66,7 +66,7 @@ export const keplersThirdLaw_Skill_Data = buildSkillConfig({
       be: 'Зьвязвайце пэрыяд абарачэньня цела з памерам яго арбіты і масай, якая выклікае гравітацыйнае прыцягненьне.',
       ka: 'დააკავშირეთ სხეულის ორბიტული პერიოდი მისი ორბიტის ზომასა და მიზიდულობის გამომწვევ მასასთან.',
       kk: 'Дененің орбиталық периодын орбитасының өлшемімен және тартылыс күшін тудыратын массамен байланыстырыңыз.',
-      qm: 'Bir cisımniñ orbita devrini onıñ orbitasınıñ büyükligi ve yer çekimini peyda etken kütle ile bağlañız.',
+      qm: 'Bir cisimniñ orbita devrini onıñ orbitasınıñ büyükligi ve yer çekimini peyda etken kütle ile bağlañız.',
     },
   },
 });
