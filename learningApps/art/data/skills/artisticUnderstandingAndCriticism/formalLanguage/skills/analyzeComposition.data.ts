@@ -46,7 +46,7 @@ export const analyzeComposition_Skill_Data = buildSkillConfig({
       bn: 'শিল্পীরা কীভাবে অবস্থান, আকার ও ভারসাম্য ব্যবহার করে আপনার মনোযোগ পরিচালনা করেন, তা দেখুন।',
       pt: 'Veja como os artistas usam a posição, a escala e o equilíbrio para direcionar sua atenção.',
       ur: 'دیکھیں کہ فنکار جگہ، پیمانے اور توازن کے ذریعے آپ کی توجہ کیسے مرکوز کرتے ہیں۔',
-      id: 'Amati bagaimana seniman menggunakan penempatan, skala, dan keseimbangan untuk mengarahkan perhatianmu.',
+      id: 'Amati bagaimana seniman menggunakan penempatan, skala, dan keseimbangan untuk mengarahkan perhatian Anda.',
       de: 'Sieh dir an, wie Kunstschaffende mit Platzierung, Maßstab und Gleichgewicht deine Aufmerksamkeit lenken.',
       ja: '配置、スケール、バランスを使って、作家がどのように視線を導くかを見てみましょう。',
       ko: '작가가 배치, 크기, 균형을 활용해 시선을 어떻게 이끄는지 살펴보세요.',
