@@ -48,7 +48,7 @@ export const virology_SkillDomain_Data = buildSkillDomainConfig({
       en: "Explore what viruses are, how they reproduce in host cells and how they spread.",
       zh: "了解病毒是什么、它们如何在宿主细胞内复制以及如何传播。",
       hi: "जानें कि विषाणु क्या हैं, वे मेज़बान कोशिकाओं में कैसे अपनी प्रतियाँ बनाते हैं और कैसे फैलते हैं।",
-      es: "Explora qué son los virus, cómo se reproducen en las células huésped y cómo se propagan।",
+      es: "Explora qué son los virus, cómo se reproducen en las células huésped y cómo se propagan.",
       ar: "تعرّف على الفيروسات وكيف تتكاثر داخل خلايا العائل وكيف تنتشر.",
       fr: "Découvre ce que sont les virus, comment ils se multiplient dans les cellules hôtes et comment ils se propagent.",
       bn: "ভাইরাস কী, তারা পোষক কোষের ভেতরে কীভাবে বংশবৃদ্ধি করে এবং কীভাবে ছড়ায় তা জানো।",
