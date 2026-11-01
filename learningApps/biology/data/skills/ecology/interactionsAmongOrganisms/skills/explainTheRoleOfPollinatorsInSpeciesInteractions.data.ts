@@ -49,7 +49,7 @@ export const explainTheRoleOfPollinatorsInSpeciesInteractions_Skill_Data = build
       de: 'Erkläre, wie Bestäuber und Blütenpflanzen voneinander abhängen.',
       ja: '送粉者と花を咲かせる植物がどのように互いを必要とするか説明しよう。',
       ko: '꽃가루받이 동물과 꽃식물이 서로 어떻게 의존하는지 설명해 보세요.',
-      tr: 'Tozlayıcılarla çiçekli bitkilerin birbirlerine nasıl bağımlı olduğunu açıkla.',
+      tr: 'Tozlayıcıların çiçekli bitkilerin üremesine nasıl katkı sağladığını ve çiçeklerden nasıl besin elde ettiğini açıkla.',
       vi: 'Giải thích cách động vật thụ phấn và thực vật có hoa phụ thuộc lẫn nhau.',
       ta: 'மகரந்தச் சேர்க்கையாளர்களும் பூக்கும் தாவரங்களும் எவ்வாறு ஒன்றையொன்று சார்ந்துள்ளன என்பதை விளக்குங்கள்.',
       te: 'పరాగసంపర్క జీవులు, పుష్పించే మొక్కలు ఒకదానిపై మరొకటి ఎలా ఆధారపడతాయో వివరించండి.',
