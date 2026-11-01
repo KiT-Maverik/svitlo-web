@@ -38,7 +38,7 @@ export const hertzsprungRussellDiagram_Skill_Data = buildSkillConfig({
     methodological:
       'Interpret the distribution of stars by luminosity and temperature and identify major evolutionary regions.',
     frontend: {
-      en: 'Read a Hertzsprung–Russell diagram to compare temperatures,
+      en: 'Read a Hertzsprung–Russell diagram to compare temperatures, luminosities and stellar stages.',
       zh: "学会阅读赫罗图，比较恒星的温度、光度和演化阶段。",
       hi: "हर्ट्ज़स्प्रुंग–रसेल आरेख पढ़कर तारों के तापमान, दीप्ति और विकास अवस्थाओं की तुलना करें।",
       es: "Interpreta un diagrama de Hertzsprung–Russell para comparar temperaturas, luminosidades y etapas estelares.",
@@ -66,7 +66,7 @@ export const hertzsprungRussellDiagram_Skill_Data = buildSkillConfig({
       be: "Чытайце дыяграму Гэрцшпрунга — Расэла, каб параўноўваць тэмпэратуры, сьвяцільнасьці і стадыі эвалюцыі зорак.",
       ka: "წაიკითხეთ ჰერცშპრუნგ–რასელის დიაგრამა, რათა შეადაროთ ვარსკვლავების ტემპერატურა, ნათობა და ევოლუციის ეტაპები.",
       kk: "Герцшпрунг–Рассел диаграммасы арқылы жұлдыздардың температурасын, жарқырауын және эволюция кезеңдерін салыстырыңыз.",
-      qm: "Hertzsprung–Russell diagrammasını oqup yulduzlarnıñ sıcaqlığını, yarıq quvetini ve evolyutsiya basamaqalarını muqayese etiñiz.", luminosities and stellar stages.',
+      qm: "Hertzsprung–Russell diagrammasını oqup yulduzlarnıñ sıcaqlığını, yarıq quvetini ve evolyutsiya basamaqalarını muqayese etiñiz.",
     },
   },
 });
