@@ -29,7 +29,7 @@ export const twoDigitByOne_Skill_Data = buildSkillConfig({
     ta: 'பெருக்கல் — 2-இலக்க×1-இலக்க',
     te: 'గుణకారం — 2-అంకెల×1-అంకెల',
     mr: 'गुणाकार — 2-अंकी×1-अंकी',
-    ms: 'Pendaraban — 2-digit×1-digit',
+    ms: 'Pendaraban — 2 digit × 1 digit',
     he: 'כפל — 2-ספרות×1-ספרות',
     pl: 'Mnożenie — 2-cyfrowe×1-cyfrowe',
     uk: 'Множення — 2-цифрові×1-цифрові',
