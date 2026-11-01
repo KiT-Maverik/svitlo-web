@@ -46,7 +46,7 @@ export const stellarLuminosity_Skill_Data = buildSkillConfig({
       fr: 'Distinguez la puissance totale rayonnée par une étoile de son éclat apparent vu depuis la Terre.',
       bn: 'নক্ষত্র মোট কত শক্তি বিকিরণ করে এবং পৃথিবী থেকে কত উজ্জ্বল দেখায়—এই দুইয়ের পার্থক্য বোঝো।',
       pt: 'Diferencie a energia emitida por uma estrela de seu brilho aparente visto da Terra.',
-      ur: 'ستارے کی خارج کردہ کل توانائی اور زمین سے نظر آنے والی چمک میں فرق کریں۔',
+      ur: 'ستارے کی فی سیکنڈ خارج کردہ کل توانائی اور زمین سے نظر آنے والی چمک میں فرق کریں۔',
       id: 'Bedakan energi yang dipancarkan bintang dan kecerlangan yang tampak dari Bumi.',
       de: 'Unterscheide die gesamte Strahlungsleistung eines Sterns von seiner scheinbaren Helligkeit am Himmel.',
       ja: '星が放出するエネルギーの量と、地球から見た明るさを区別しましょう。',
