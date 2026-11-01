@@ -61,7 +61,7 @@ export const maintainASteadyBeat_Skill_Data = buildSkillConfig({
       uk: 'Зберігайте рівномірний пульс, навіть коли ритм музики змінюється.',
       lt: 'Išlaikykite tolygų pulsą, net kai keičiasi muzikos ritmas.',
       lv: 'Saglabājiet vienmērīgu pulsu, pat ja mainās mūzikas ritms.',
-      et: 'Hoidke ühtlast pulssi ka siis, kui muusika rütm muutub.',
+      et: 'Hoia ühtlast pulssi ka siis, kui muusika rütm muutub.',
       be: 'Захоўвайце раўнамерны пульс, нават калі рытм музыкі змяняецца.',
       ka: 'შეინარჩუნეთ თანაბარი პულსი მაშინაც, როცა მუსიკის რიტმი იცვლება.',
       kk: 'Музыка ырғағы өзгерсе де, бірқалыпты ырғақты сақтаңыз.',

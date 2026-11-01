@@ -61,7 +61,7 @@ export const followMusicalPhrases_Skill_Data = buildSkillConfig({
       uk: 'Стеж за тим, де музична думка починається, розвивається й завершується.',
       lt: 'Sekite, kur muzikinė mintis prasideda, plėtojasi ir baigiasi.',
       lv: 'Sekojiet, kur muzikālā doma sākas, attīstās un noslēdzas.',
-      et: 'Jälgige, kust muusikaline mõte algab, areneb ja lõpeb.',
+      et: 'Jälgi, kust muusikaline mõte algab, areneb ja lõpeb.',
       be: 'Сачыце за тым, дзе музычная думка пачынаецца, развіваецца і завяршаецца.',
       ka: 'მიჰყევით, სად იწყება მუსიკალური ფრაზა, როგორ ვითარდება და სად სრულდება.',
       kk: 'Музыкалық ойдың қайдан басталып, қалай дамып, қайда аяқталатынын қадағалаңыз.',
