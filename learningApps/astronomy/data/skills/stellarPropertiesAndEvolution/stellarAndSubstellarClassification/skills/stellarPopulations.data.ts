@@ -38,7 +38,7 @@ export const stellarPopulations_Skill_Data = buildSkillConfig({
     methodological:
       'Distinguish stellar populations by typical ages, chemical abundances and locations without treating the categories as absolute.',
     frontend: {
-      en: 'Compare populations of stars with different ages,
+      en: 'Compare populations of stars with different ages, compositions and locations.',
       zh: "比较年龄、化学成分和位置各不相同的恒星族群。",
       hi: "अलग-अलग आयु, रासायनिक संरचना और स्थान वाली तारकीय आबादियों की तुलना करें।",
       es: "Compara poblaciones de estrellas de distintas edades, composiciones y ubicaciones.",
@@ -66,7 +66,7 @@ export const stellarPopulations_Skill_Data = buildSkillConfig({
       be: "Параўнайце групы зорак рознага ўзросту, складу і разьмяшчэньня.",
       ka: "შეადარეთ განსხვავებული ასაკის, შემადგენლობისა და მდებარეობის ვარსკვლავური პოპულაციები.",
       kk: "Жасы, құрамы және орналасуы әртүрлі жұлдыз популяцияларын салыстырыңыз.",
-      qm: "Yaşı, terkibi ve yerleşken yeri farqlı yulduz toplulıqlarını muqayese etiñiz.", compositions and locations.',
+      qm: "Yaşı, terkibi ve yerleşken yeri farqlı yulduz toplulıqlarını muqayese etiñiz.",
     },
   },
 });
