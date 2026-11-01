@@ -60,7 +60,7 @@ export const analyzeCubism_Skill_Data = buildSkillConfig({
       he: 'גלו כיצד אמני הקוביזם עיצבו מחדש חפצים והציגו כמה נקודות מבט בתמונה אחת.',
       pl: 'Poznaj, jak kubiści przekształcali przedmioty i ukazywali kilka punktów widzenia na jednym obrazie.',
       uk: 'Досліджуй, як кубісти переосмислювали предмети й показували кілька точок зору в одному зображенні.',
-      lt: 'Sužinok, kaip kubistai keitė daiktų formas ir viename vaizde rodė kelis požiūrio taškus.',
+      lt: 'Sužinokite, kaip kubistai skaidė ir iš naujo kūrė daiktų formas, viename vaizde rodydami kelis požiūrio taškus.',
       lv: 'Uzziniet, kā kubisti pārveidoja priekšmetus un vienā attēlā parādīja vairākus skatpunktus.',
       et: 'Uuri, kuidas kubistid kujutasid esemeid ümber ja näitasid ühel pildil mitut vaatenurka.',
       be: 'Даведайся, як кубісты пераасэнсоўвалі прадметы і паказвалі некалькі пунктаў гледжання ў адным відарысе.',

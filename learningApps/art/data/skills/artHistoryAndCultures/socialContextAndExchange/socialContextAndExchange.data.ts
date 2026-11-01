@@ -65,7 +65,7 @@ export const socialContextAndExchange_SkillGroup_Data = buildSkillGroupConfig({
       ja: '人々、制度、技術が時代とともに芸術交流をどのように形づくるかを考察します。',
       ko: '사람, 기관, 기술이 시간의 흐름에 따라 예술적 교류를 어떻게 형성하는지 살펴보세요.',
       tr: 'İnsanların, kurumların ve teknolojilerin zaman içinde sanatsal etkileşimi nasıl şekillendirdiğini inceleyin.',
-      vi: 'Examinez comment les personnes, les institutions et les technologies façonnent les échanges artistiques au fil du temps.',
+      vi: 'Xem xét cách con người, các thiết chế và công nghệ định hình sự giao lưu nghệ thuật qua thời gian.',
       ta: 'காலப்போக்கில் மக்கள், நிறுவனங்கள், தொழில்நுட்பங்கள் கலைப் பரிமாற்றத்தை எவ்வாறு வடிவமைக்கின்றன என்பதை ஆராயுங்கள்.',
       te: 'కాలక్రమంలో వ్యక్తులు, సంస్థలు, సాంకేతికతలు కళాత్మక మార్పిడిని ఎలా ప్రభావితం చేస్తాయో పరిశీలించండి.',
       mr: 'काळानुसार लोक, संस्था आणि तंत्रज्ञान कलात्मक देवाणघेवाणीला कसा आकार देतात ते तपासा.',

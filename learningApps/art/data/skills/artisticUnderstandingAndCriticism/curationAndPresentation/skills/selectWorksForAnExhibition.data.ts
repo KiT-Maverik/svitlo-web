@@ -59,7 +59,7 @@ export const selectWorksForAnExhibition_Skill_Data = buildSkillConfig({
       he: 'בחרו יצירות שמשתלבות זו בזו עבור נושא וקהל מסוימים.',
       pl: 'Wybierz dzieła, które pasują do siebie w ramach określonego tematu i dla danej publiczności.',
       uk: 'Добирайте твори, які поєднуються між собою для певної теми й аудиторії.',
-      lt: 'Parink kūrinius, kurie dera tarpusavyje pagal konkrečią temą ir auditoriją.',
+      lt: 'Parinkite kūrinius, kurie dera tarpusavyje pagal konkrečią temą ir auditoriją.',
       lv: 'Izvēlieties darbus, kas saskan ar konkrētu tēmu un auditoriju.',
       et: 'Vali teosed, mis sobivad kokku kindla teema ja publikuga.',
       be: 'Выбірай творы, якія спалучаюцца паміж сабой для пэўнай тэмы й аўдыторыі.',
