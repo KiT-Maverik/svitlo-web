@@ -46,7 +46,7 @@ export const analyzeFilmShots_Skill_Data = buildSkillConfig({
       ar: 'لاحظ كيف تغيّر اللقطات القريبة وزوايا الكاميرا ما يوصله المشهد.',
       fr: 'Observez comment les gros plans et les angles de caméra modifient le sens d’une scène.',
       bn: 'ক্লোজ-আপ ও ক্যামেরার কোণ কীভাবে দৃশ্যের বার্তা বদলে দেয় তা দেখুন।',
-      pt: 'Observe como os grandes planos e os ângulos de câmara alteram a mensagem de uma cena.',
+      pt: 'Observe como os planos fechados e os ângulos de câmera mudam o sentido de uma cena.',
       ur: 'دیکھیں کہ کلوز اپ اور کیمرے کے زاویے منظر کے پیغام کو کیسے بدلتے ہیں۔',
       id: 'Amati bagaimana close-up dan sudut kamera mengubah pesan sebuah adegan.',
       de: 'Erkenne, wie Nahaufnahmen und Kamerawinkel die Aussage einer Szene verändern.',

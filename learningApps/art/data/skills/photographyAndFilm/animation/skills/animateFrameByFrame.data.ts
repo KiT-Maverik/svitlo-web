@@ -12,7 +12,7 @@ export const animateFrameByFrame_Skill_Data = buildSkillConfig({
     ar: 'إنشاء رسوم متحركة إطارًا بإطار',
     fr: 'Animer image par image',
     bn: 'ফ্রেম ধরে অ্যানিমেশন তৈরি করুন',
-    pt: 'Animar fotograma a fotograma',
+    pt: 'Criar animações quadro a quadro',
     ur: 'فریم بہ فریم اینیمیشن بنائیں',
     id: 'Membuat animasi bingkai demi bingkai',
     de: 'Bild für Bild animieren',

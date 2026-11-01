@@ -60,7 +60,7 @@ export const animation_SkillGroup_Data = buildSkillGroupConfig({
       ar: 'أضف الحياة إلى الرسومات أو الأشياء من خلال تخطيط تغيراتها بمرور الوقت.',
       fr: 'Donnez vie aux dessins ou aux objets en planifiant leurs changements au fil du temps.',
       bn: 'সময়ের সঙ্গে পরিবর্তনের পরিকল্পনা করে আঁকা ছবি বা বস্তুকে প্রাণবন্ত করুন।',
-      pt: 'Dê vida a desenhos ou objetos, planeando as suas mudanças ao longo do tempo.',
+      pt: 'Dê vida a desenhos ou objetos, planejando suas mudanças ao longo do tempo.',
       ur: 'وقت کے ساتھ تبدیلیوں کی منصوبہ بندی کرکے تصویروں یا اشیا میں حرکت پیدا کریں۔',
       id: 'Hidupkan gambar atau benda dengan merencanakan perubahan dari waktu ke waktu.',
       de: 'Erwecke Zeichnungen oder Gegenstände zum Leben, indem du Veränderungen über die Zeit planst.',
