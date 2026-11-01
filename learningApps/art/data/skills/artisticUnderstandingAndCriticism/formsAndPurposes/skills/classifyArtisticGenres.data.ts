@@ -61,7 +61,7 @@ export const classifyArtisticGenres_Skill_Data = buildSkillConfig({
       pl: 'Rozpoznawaj popularne gatunki sztuki i dostrzegaj dzieła, które je łączą lub podważają.',
       uk: 'Розпізнавайте поширені мистецькі жанри й помічайте твори, що поєднують їх або кидають їм виклик.',
       lt: 'Atpažink įprastus meno žanrus ir pastebėk kūrinius, kurie juos jungia ar kvestionuoja.',
-      lv: 'Atpazīsti ierastus mākslas žanrus un ievēro darbus, kas tos apvieno vai apšauba.',
+      lv: 'Atpazīstiet ierastus mākslas žanrus un ievērojiet darbus, kas tos apvieno vai apšauba.',
       et: 'Tunne levinud kunstiliike ning märka ka teoseid, mis neid ühendavad või proovile panevad.',
       be: 'Распазнавай пашыраныя мастацкія жанры й заўважай творы, якія іх спалучаюць або аспрэчваюць.',
       ka: 'ამოიცანით ხელოვნების გავრცელებული ჟანრები და შენიშნეთ ნამუშევრები, რომლებიც მათ აერთიანებს ან ეჭვქვეშ აყენებს.',

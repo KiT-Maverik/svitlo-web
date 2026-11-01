@@ -61,7 +61,7 @@ export const distinguishArtisticMedia_Skill_Data = buildSkillConfig({
       pl: 'Zobacz, jak obrazy, dźwięki, ruch, słowa i przestrzeń przekazują treści w różnych formach sztuki.',
       uk: 'Дізнайтеся, як зображення, звуки, рух, слова й простір передають зміст у різних видах мистецтва.',
       lt: 'Sužinok, kaip vaizdai, garsai, judesys, žodžiai ir erdvės perteikia mintis skirtingose meno formose.',
-      lv: 'Uzzini, kā attēli, skaņas, kustība, vārdi un telpa pauž nozīmi dažādos mākslas veidos.',
+      lv: 'Uzziniet, kā attēli, skaņas, kustība, vārdi un telpa pauž nozīmi dažādos mākslas veidos.',
       et: 'Vaata, kuidas pildid, helid, liikumine, sõnad ja ruum väljendavad eri kunstivormides tähendusi.',
       be: 'Паглядзі, як выявы, гукі, рух, словы й прастора перадаюць сэнс у розных відах мастацтва.',
       ka: 'ნახეთ, როგორ გადმოსცემს გამოსახულებები, ხმები, მოძრაობა, სიტყვები და სივრცე აზრს ხელოვნების სხვადასხვა ფორმაში.',
