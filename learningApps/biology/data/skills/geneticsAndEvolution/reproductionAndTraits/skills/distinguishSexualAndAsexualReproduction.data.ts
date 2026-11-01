@@ -55,7 +55,7 @@ export const distinguishSexualAndAsexualReproduction_Skill_Data = buildSkillConf
       te: 'లైంగిక కణాల కలయికతో జరిగే ప్రజననాన్ని, అటువంటి కలయిక లేకుండా జరిగేదాని నుంచి వేరు చేయండి.',
       mr: 'लैंगिक पेशींचे संयोग असलेले प्रजनन आणि असा संयोग नसलेले प्रजनन यांतील फरक ओळखा.',
       ms: 'Bezakan pembiakan dengan percantuman sel seks daripada pembiakan tanpa percantuman itu.',
-      he: 'הבחן בין רבייה הכוללת איחוי תאי מין לבין רבייה ללא איחוי כזה.',
+      he: 'הבחינו בין רבייה הכוללת איחוי תאי מין לבין רבייה ללא איחוי כזה.',
       pl: 'Odróżnij rozmnażanie z połączeniem komórek płciowych od rozmnażania bez ich połączenia.',
       uk: 'Розрізняй розмноження зі злиттям статевих клітин і без такого злиття.',
       lt: 'Atskirk dauginimąsi susiliejant lytinėms ląstelėms nuo dauginimosi be jų susiliejimo.',

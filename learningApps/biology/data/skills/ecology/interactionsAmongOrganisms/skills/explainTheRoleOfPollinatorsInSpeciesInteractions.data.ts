@@ -55,7 +55,7 @@ export const explainTheRoleOfPollinatorsInSpeciesInteractions_Skill_Data = build
       te: 'పరాగసంపర్క జీవులు, పుష్పించే మొక్కలు ఒకదానిపై మరొకటి ఎలా ఆధారపడతాయో వివరించండి.',
       mr: 'परागण करणारे सजीव आणि फुलझाडे एकमेकांवर कसे अवलंबून असतात ते स्पष्ट करा.',
       ms: 'Terangkan bagaimana pendebunga dan tumbuhan berbunga saling bergantung.',
-      he: 'הסבר כיצד מאביקים וצמחים פורחים תלויים אלה באלה.',
+      he: 'הסבירו כיצד מאביקים וצמחים פורחים תלויים אלה באלה.',
       pl: 'Wyjaśnij, jak zapylacze i rośliny kwitnące zależą od siebie.',
       uk: 'Пояснюй, як запилювачі та квіткові рослини залежать одне від одного.',
       lt: 'Paaiškink, kaip apdulkintojai ir žydintys augalai priklauso vieni nuo kitų.',
