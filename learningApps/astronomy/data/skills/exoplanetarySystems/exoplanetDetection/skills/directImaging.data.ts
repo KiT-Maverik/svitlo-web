@@ -5,7 +5,7 @@ export const directImaging_Skill_Data = buildSkillConfig({
   id: 'efc5c6f9-3591-4c20-a199-4f573e335d69',
   name: {
     en: 'Direct Imaging',
-      zh: '直接成像',
+    zh: '直接成像',
     hi: 'प्रत्यक्ष चित्रण',
     es: 'Obtención de imágenes directas',
     ar: 'التصوير المباشر',
@@ -39,7 +39,7 @@ export const directImaging_Skill_Data = buildSkillConfig({
       'Explain when a planet can be resolved separately from its host star and why brightness contrast is challenging.',
     frontend: {
       en: 'Explore why photographing a planet beside its bright host star is difficult.',
-          zh: '探索为什么难以在明亮的宿主恒星旁直接拍摄行星。',
+      zh: '探索为什么难以在明亮的宿主恒星旁直接拍摄行星。',
       hi: 'जानें कि चमकीले मूल तारे के बगल में ग्रह की तस्वीर लेना कठिन क्यों है।',
       es: 'Explora por qué es difícil fotografiar un planeta junto a su brillante estrella anfitriona.',
       ar: 'استكشف سبب صعوبة تصوير كوكب بجوار نجمه المضيف شديد السطوع.',
