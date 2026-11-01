@@ -5,6 +5,7 @@ export const hubbleLemaitreRelation_Skill_Data = buildSkillConfig({
   id: '9443ff1b-9dea-4004-8f01-c5ccfeb9e76b',
   name: {
     en: 'Hubble–Lemaître Relation',
+    qm: 'Hubble–Lemaître munasebeti',
     zh: '哈勃–勒梅特关系',
     hi: 'हबल–लेमैत्रे संबंध',
     es: 'Relación de Hubble–Lemaître',
@@ -38,6 +39,7 @@ export const hubbleLemaitreRelation_Skill_Data = buildSkillConfig({
       'Relate galaxy recession measurements and distance to empirical evidence for expansion within its domain of applicability.',
     frontend: {
       en: 'Relate measured galaxy distances and redshifts to evidence for cosmic expansion.',
+      qm: 'Galaktikalarnıñ ölçengen uzaqlığı ve qırmızığa tayuvını kosmik keñeyüv delilleri ile bağlañız.',
       zh: '联系星系的测量距离与红移，理解宇宙膨胀的证据。',
       hi: 'आकाशगंगाओं की मापी गई दूरियों और लाल विस्थापनों को विस्तार के प्रमाणों से जोड़ें।',
       es: 'Relaciona las distancias medidas de galaxias y sus corrimientos al rojo con la expansión cósmica.',

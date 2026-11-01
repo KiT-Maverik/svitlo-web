@@ -5,6 +5,7 @@ export const expansionVersusBoundSystems_Skill_Data = buildSkillConfig({
   id: 'ef9a941e-dbf1-43dd-aa82-a640e15ed9d0',
   name: {
     en: 'Expansion Versus Bound Systems',
+    qm: 'Keñeyüv ve cazibe ile bağlı sistemalar',
     zh: '宇宙膨胀与束缚系统',
     hi: 'विस्तार और बँधी हुई प्रणालियाँ',
     es: 'Expansión y sistemas ligados',
@@ -38,6 +39,7 @@ export const expansionVersusBoundSystems_Skill_Data = buildSkillConfig({
       'Explain why the expansion of the Universe does not automatically enlarge gravitationally bound local systems.',
     frontend: {
       en: 'See why expanding space does not simply stretch planets, stars or galaxies apart.',
+      qm: 'Fezanıñ keñeyüvi planetalarnı, yıldızlarnı ve galaktikalarnı ne içün öz-özünden ayırmağanını ögreniñiz.',
       zh: '理解为什么空间膨胀不会直接拉开行星、恒星或星系。',
       hi: 'समझें कि अंतरिक्ष के विस्तार से ग्रह, तारे या आकाशगंगाएँ सीधे खिंचकर अलग क्यों नहीं होतीं।',
       es: 'Comprende por qué el espacio en expansión no separa simplemente planetas, estrellas o galaxias.',

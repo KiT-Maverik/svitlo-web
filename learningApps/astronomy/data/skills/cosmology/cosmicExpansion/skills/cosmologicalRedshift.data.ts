@@ -5,6 +5,7 @@ export const cosmologicalRedshift_Skill_Data = buildSkillConfig({
   id: 'd1522bd1-c728-4c03-aa86-bc5642447d6d',
   name: {
     en: 'Cosmological Redshift',
+    qm: 'Kosmologik qırmızığa tayuv',
     zh: '宇宙学红移',
     hi: 'ब्रह्मांडीय लाल विस्थापन',
     es: 'Corrimiento al rojo cosmológico',
@@ -38,6 +39,7 @@ export const cosmologicalRedshift_Skill_Data = buildSkillConfig({
       'Explain wavelength stretching associated with the expansion of space, distinguishing it from local Doppler motion.',
     frontend: {
       en: 'Understand how expanding space stretches the wavelengths of travelling light.',
+      qm: 'Keñeygen fezada yol alğan yarıq dalğalarınıñ uzunlığı nasıl artqanını añlañız.',
       zh: '理解膨胀的空间如何拉长传播中光的波长。',
       hi: 'समझें कि फैलता अंतरिक्ष यात्रा करती रोशनी की तरंगदैर्घ्य कैसे बढ़ाता है।',
       es: 'Comprende cómo la expansión del espacio estira la longitud de onda de la luz que viaja.',

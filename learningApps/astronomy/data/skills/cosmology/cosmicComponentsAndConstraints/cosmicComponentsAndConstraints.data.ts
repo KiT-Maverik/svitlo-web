@@ -11,6 +11,7 @@ export const cosmicComponentsAndConstraints_SkillGroup_Data = buildSkillGroupCon
   id: 'd7b419e2-0983-4fb1-853a-7705e41cce82',
   name: {
     en: 'Cosmic Components and Constraints',
+    qm: 'Kosmik terkibler ve sıñırlar',
     zh: '宇宙组成与约束',
     hi: 'ब्रह्मांड के घटक और सीमाएँ',
     es: 'Componentes cósmicos y límites',
@@ -49,6 +50,7 @@ export const cosmicComponentsAndConstraints_SkillGroup_Data = buildSkillGroupCon
       'Gravitational and expansion measurements constrain otherwise unseen components, while cosmological parameters and theoretical uncertainties limit the interpretations that can be supported by available evidence.',
     frontend: {
       en: 'Learn how cosmic measurements point to components and questions we cannot yet fully explain.',
+      qm: 'Kosmik ölçüvlerniñ alâ daa tam añlatıp olamağan terkibler ve sualler aqqında ne köstergenini ögreniñiz.',
       zh: '了解宇宙观测如何揭示我们尚无法完全解释的成分和问题。',
       hi: 'जानें कि ब्रह्मांडीय माप उन घटकों और सवालों की ओर कैसे संकेत करते हैं जिन्हें हम पूरी तरह नहीं समझ पाए हैं।',
       es: 'Aprende cómo las mediciones cósmicas señalan componentes y preguntas que aún no podemos explicar por completo.',
