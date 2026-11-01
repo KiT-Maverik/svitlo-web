@@ -41,7 +41,7 @@ export const stellarAndSubstellarClassification_SkillGroup_Data = buildSkillGrou
     be: 'Клясыфікацыя зорак і субзорных аб\'ектаў',
     ka: 'ვარსკვლავებისა და სუბვარსკვლავური ობიექტების კლასიფიკაცია',
     kk: 'Жұлдыздар мен жұлдыз асты денелерін жіктеу',
-    qm: 'Yulduzlar ve yulduzdan kiçik cisimlerniñ tasnifi',
+    qm: 'Yıldızlar ve yıldızdan kiçik cisimlerniñ tasnifi',
   },
   skills: {
     binaryAndMultipleStars: binaryAndMultipleStars_Skill_Data,
@@ -83,7 +83,7 @@ export const stellarAndSubstellarClassification_SkillGroup_Data = buildSkillGrou
       be: 'Дасьледуйце розныя тыпы зорак і роднасных аб\'ектаў паводле спэктраў, масы і яркасьці.',
       ka: 'შეისწავლეთ სხვადასხვა ტიპის ვარსკვლავები და მონათესავე ობიექტები სპექტრის, მასისა და სიკაშკაშის მიხედვით.',
       kk: 'Жұлдыздар мен оларға ұқсас денелердің түрлерін спектрі, массасы және жарықтығы бойынша зерттеңіз.',
-      qm: 'Yulduzlar ve olarğa yaqın cisimlerni spektri, kütlesi ve parlaqlığına köre ögreniñiz.',
+      qm: 'Yıldızlar ve olarğa yaqın cisimlerni spektri, kütlesi ve parlaqlığına köre ögreniñiz.',
     },
   },
 });

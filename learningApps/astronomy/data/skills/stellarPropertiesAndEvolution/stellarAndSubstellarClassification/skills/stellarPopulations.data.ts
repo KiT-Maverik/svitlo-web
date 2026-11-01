@@ -32,7 +32,7 @@ export const stellarPopulations_Skill_Data = buildSkillConfig({
     be: 'Зорныя папуляцыі',
     ka: 'ვარსკვლავური პოპულაციები',
     kk: 'Жұлдыздық популяциялар',
-    qm: 'Yulduz toplulıqları',
+    qm: 'Yıldız toplulıqları',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const stellarPopulations_Skill_Data = buildSkillConfig({
       be: 'Параўнайце групы зорак рознага ўзросту, складу і разьмяшчэньня.',
       ka: 'შეადარეთ განსხვავებული ასაკის, შემადგენლობისა და მდებარეობის ვარსკვლავური პოპულაციები.',
       kk: 'Жасы, құрамы және орналасуы әртүрлі жұлдыз популяцияларын салыстырыңыз.',
-      qm: 'Yaşı, terkibi ve yerleşken yeri farqlı yulduz toplulıqlarını muqayese etiñiz.',
+      qm: 'Yaşı, terkibi ve yerleşken yeri farqlı yıldız toplulıqlarını muqayese etiñiz.',
     },
   },
 });

@@ -32,7 +32,7 @@ export const redGiants_Skill_Data = buildSkillConfig({
     be: 'Чырвоныя гіганты',
     ka: 'წითელი გიგანტები',
     kk: 'Қызыл алыптар',
-    qm: 'Qırmızı dev yulduzlar',
+    qm: 'Qırmızı dev yıldızlar',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const redGiants_Skill_Data = buildSkillConfig({
       be: 'Дасьледуйце, як зоркі пашыраюцца і іх паверхні астываюць, калі яны робяцца чырвонымі гігантамі.',
       ka: 'შეისწავლეთ, როგორ ფართოვდებიან ვარსკვლავები და როგორ ცივდება მათი ზედაპირი წითელ გიგანტებად ქცევისას.',
       kk: 'Жұлдыздар қызыл алыптарға айналғанда қалай кеңейіп, беттері салқындайтынын зерттеңіз.',
-      qm: 'Yulduzlar qırmızı devlerge aylanganda nasıl keñeygenini ve yüzleriniñ sıcaqlığı nasıl azayğanını ögreniñiz.',
+      qm: 'Yıldızlar qırmızı devlerge aylanganda nasıl keñeygenini ve yüzleriniñ sıcaqlığı nasıl azayğanını ögreniñiz.',
     },
   },
 });

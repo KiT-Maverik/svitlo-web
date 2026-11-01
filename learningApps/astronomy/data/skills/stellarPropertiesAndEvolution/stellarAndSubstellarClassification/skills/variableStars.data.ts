@@ -32,7 +32,7 @@ export const variableStars_Skill_Data = buildSkillConfig({
     be: 'Зьменныя зоркі',
     ka: 'ცვალებადი ვარსკვლავები',
     kk: 'Айнымалы жұлдыздар',
-    qm: 'Parlaqlığı deñişken yulduzlar',
+    qm: 'Parlaqlığı deñişken yıldızlar',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const variableStars_Skill_Data = buildSkillConfig({
       be: 'Распазнавайце розныя прычыны зьмены яркасьці зоркі.',
       ka: 'გაიგეთ ვარსკვლავის სიკაშკაშის ცვლილების სხვადასხვა მიზეზი.',
       kk: 'Жұлдыз жарықтығының өзгеруінің әртүрлі себептерін анықтаңыз.',
-      qm: 'Yulduznıñ parlaqlığı türlü sebeplerden ne içün deñişkenini ögreniñiz.',
+      qm: 'Yıldıznıñ parlaqlığı türlü sebeplerden ne içün deñişkenini ögreniñiz.',
     },
   },
 });

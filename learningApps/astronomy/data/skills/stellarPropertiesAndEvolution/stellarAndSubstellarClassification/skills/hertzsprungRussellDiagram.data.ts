@@ -66,7 +66,7 @@ export const hertzsprungRussellDiagram_Skill_Data = buildSkillConfig({
       be: 'Чытайце дыяграму Гэрцшпрунга — Расэла, каб параўноўваць тэмпэратуры, сьвяцільнасьці і стадыі эвалюцыі зорак.',
       ka: 'წაიკითხეთ ჰერცშპრუნგ–რასელის დიაგრამა, რათა შეადაროთ ვარსკვლავების ტემპერატურა, ნათობა და ევოლუციის ეტაპები.',
       kk: 'Герцшпрунг–Рассел диаграммасы арқылы жұлдыздардың температурасын, жарқырауын және эволюция кезеңдерін салыстырыңыз.',
-      qm: 'Hertzsprung–Russell diagrammasını oqup yulduzlarnıñ sıcaqlığını, yarıq quvetini ve evolyutsiya basamaqalarını muqayese etiñiz.',
+      qm: 'Hertzsprung–Russell diagrammasını oqup yıldızlarnıñ sıcaqlığını, yarıq quvetini ve evolyutsiya basamaqalarını muqayese etiñiz.',
     },
   },
 });

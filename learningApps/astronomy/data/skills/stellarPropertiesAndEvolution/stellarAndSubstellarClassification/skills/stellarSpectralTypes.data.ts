@@ -32,7 +32,7 @@ export const stellarSpectralTypes_Skill_Data = buildSkillConfig({
     be: 'Спэктральныя клясы зорак',
     ka: 'ვარსკვლავების სპექტრული კლასები',
     kk: 'Жұлдыздардың спектрлік кластары',
-    qm: 'Yulduzlarnıñ spektr sınıfları',
+    qm: 'Yıldızlarnıñ spektr sınıfları',
   },
   description: {
     methodological: 'Classify stars by temperature-sensitive spectral characteristics rather than by color alone.',
@@ -65,7 +65,7 @@ export const stellarSpectralTypes_Skill_Data = buildSkillConfig({
       be: 'Вызначайце спэктральныя клясы зорак паводле асаблівасьцяў іхнага сьвятла.',
       ka: 'ამოიცანით ვარსკვლავების სპექტრული კლასები მათი სინათლის ნიშნებით.',
       kk: 'Жұлдыздардың спектрлік кластарын жарығындағы белгілер бойынша анықтаңыз.',
-      qm: 'Yulduz yarığınıñ belgilerine köre spektr sınıflarını belgileñiz.',
+      qm: 'Yıldız yarığınıñ belgilerine köre spektr sınıflarını belgileñiz.',
     },
   },
 });

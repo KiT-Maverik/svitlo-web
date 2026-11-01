@@ -32,7 +32,7 @@ export const advancedStellarFusion_Skill_Data = buildSkillConfig({
     be: 'Позьнія стадыі тэрмаядзернага сынтэзу ў зорках',
     ka: 'ვარსკვლავებში ბირთვული სინთეზის გვიანი ეტაპები',
     kk: 'Жұлдыздардағы ядролық синтездің кейінгі кезеңдері',
-    qm: 'Yulduzlarda soñki devri yadroviy qoşulma',
+    qm: 'Yıldızlarda soñki devri yadroviy qoşulma',
   },
   description: {
     methodological: 'Explain how later nuclear-burning stages depend on stellar mass and can create heavier nuclei.',
@@ -65,7 +65,7 @@ export const advancedStellarFusion_Skill_Data = buildSkillConfig({
       be: 'Дасьледуйце, як некаторыя зоркі на позьніх этапах існаваньня зьліваюць цяжэйшыя элемэнты.',
       ka: 'შეისწავლეთ, როგორ აერთებს ზოგიერთი ვარსკვლავი მძიმე ელემენტებს ბირთვული სინთეზით სიცოცხლის გვიან ეტაპებზე.',
       kk: 'Кейбір жұлдыздар өмірінің соңғы кезеңдерінде ауыр элементтерді ядролық синтез арқылы қалай түзетінін зерттеңіз.',
-      qm: 'Bazı yulduzlar ömürleriniñ soñki devrinde ağır elementlerni yadroviy qoşulma vastasınen nasıl peyda etkenini ögreniñiz.',
+      qm: 'Bazı yıldızlar ömürleriniñ soñki devrinde ağır elementlerni yadroviy qoşulma vastasınen nasıl peyda etkenini ögreniñiz.',
     },
   },
 });

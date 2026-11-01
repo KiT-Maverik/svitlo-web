@@ -66,7 +66,7 @@ export const mainSequence_Skill_Data = buildSkillConfig({
       be: 'Растлумачце, чаму зоркі праводзяць большую частку жыцьця, зьліваючы вадарод у ядрах.',
       ka: 'ახსენით, რატომ ატარებენ ვარსკვლავები სიცოცხლის უმეტეს ნაწილს ბირთვში წყალბადის შერწყმაში.',
       kk: 'Жұлдыздар өмірінің басым бөлігін өзегінде сутегі синтезімен неге өткізетінін түсіндіріңіз.',
-      qm: 'Yulduzlar ömürleriniñ esas qısmında merkezlerinde vodorodnı ne içün yadroviy qoşulmağa kirsetkenini añlatıñız.',
+      qm: 'Yıldızlar ömürleriniñ esas qısmında merkezlerinde vodorodnı ne içün yadroviy qoşulmağa kirsetkenini añlatıñız.',
     },
   },
 });
