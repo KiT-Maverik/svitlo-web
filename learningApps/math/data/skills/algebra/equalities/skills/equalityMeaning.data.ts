@@ -28,7 +28,7 @@ export const equalityMeaning_Skill_Data = buildSkillConfig({
     vi: 'Hiểu ý nghĩa dấu bằng',
     ta: 'சமக்குறியின் பொருளைப் புரிதல்',
     te: 'సమాన చిహ్నం అర్థం చేసుకోవడం',
-    mr: 'बरोबर चिन्हाचा अर्थ समजणे',
+    mr: 'बरोबरीच्या चिन्हाचा अर्थ समजणे',
     ms: 'Memahami tanda sama dengan',
     he: 'הבנת סימן השוויון',
     pl: 'Rozumienie znaku równości',
