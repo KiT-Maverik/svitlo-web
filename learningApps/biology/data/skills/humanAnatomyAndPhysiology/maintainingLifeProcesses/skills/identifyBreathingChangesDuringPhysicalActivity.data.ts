@@ -39,7 +39,7 @@ export const identifyBreathingChangesDuringPhysicalActivity_Skill_Data = buildSk
     frontend: {
       en: "Explain why breathing changes during physical activity.",
       zh: '解释为什么身体活动时呼吸会发生变化。',
-      hi: 'समझाएँ कि शारीरिक गतिविधि के दौरान साँस लेने में बदलाव क्यों आता है।',
+      hi: 'शारीरिक गतिविधि के दौरान साँस लेने की दर और गहराई में होने वाले बदलावों को पहचानें।',
       es: 'Identifica cómo cambian la frecuencia y la profundidad de la respiración durante la actividad física.',
       ar: 'اشرح لماذا يتغير التنفس أثناء النشاط البدني.',
       fr: 'Expliquez pourquoi la respiration change pendant l\'activité physique.',
