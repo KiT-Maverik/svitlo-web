@@ -32,7 +32,7 @@ export const protostellarDisks_Skill_Data = buildSkillConfig({
     be: 'Пратазорныя дыскі',
     ka: 'პროტოვარსკვლავური დისკოები',
     kk: 'Протожұлдыздық дискілер',
-    qm: 'İlk yıldız diskleri',
+    qm: 'Protoyıldız diskleri',
   },
   description: {
     methodological:

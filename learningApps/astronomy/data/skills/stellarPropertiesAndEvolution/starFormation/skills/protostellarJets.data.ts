@@ -32,7 +32,7 @@ export const protostellarJets_Skill_Data = buildSkillConfig({
     be: 'Пратазорныя струмені',
     ka: 'პროტოვარსკვლავური ჭავლები',
     kk: 'Протожұлдыздық ағындар',
-    qm: 'İlk yıldızlarnıñ dar aqımları',
+    qm: 'Protoyıldızlarnıñ dar aqımları',
   },
   description: {
     methodological:

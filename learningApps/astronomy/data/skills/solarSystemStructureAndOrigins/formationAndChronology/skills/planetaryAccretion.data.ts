@@ -32,7 +32,7 @@ export const planetaryAccretion_Skill_Data = buildSkillConfig({
     be: 'Плянэтная акрэцыя',
     ka: 'პლანეტური აკრეცია',
     kk: 'Планеталық аккреция',
-    qm: 'Planetarnıñ toplanıp büyüvi',
+    qm: 'Seyyare cisimleriniñ toplanıp büyüvi',
   },
   description: {
     methodological: 'Describe how collisions and gravitational growth build larger bodies from smaller solid material.',

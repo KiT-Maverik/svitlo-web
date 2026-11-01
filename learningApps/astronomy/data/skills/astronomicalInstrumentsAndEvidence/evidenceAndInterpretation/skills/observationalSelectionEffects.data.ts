@@ -39,7 +39,7 @@ export const observationalSelectionEffects_Skill_Data = buildSkillConfig({
       'Identify how detection thresholds and survey methods bias the populations of celestial objects that appear in catalogs.',
     frontend: {
       en: 'Discover why telescopes and surveys detect some objects more easily than others.',
-      qm: 'Teleskoplar ve közetüv programları bazı cisimlerni başqalarından ne içün daha qolay tapqanını ögreniñiz.',
+      qm: 'Teleskoplar ve közetüv programları bazı cisimlerni başqalarından ne içün daa qolay tapqanını ögreniñiz.',
       bn: 'দূরবীক্ষণ যন্ত্র ও সমীক্ষা কেন কিছু জ্যোতিষ্ক অন্যদের তুলনায় সহজে খুঁজে পায়, তা জানো।',
       ur: 'جانیں کہ دوربینیں اور فلکیاتی سروے بعض اجرام کو دوسروں کے مقابلے میں آسانی سے کیوں دریافت کرتے ہیں۔',
       ta: 'தொலைநோக்கிகளும் வானியல் ஆய்வுகளும் சில விண்பொருட்களை மற்றவற்றைவிட எளிதாக ஏன் கண்டறிகின்றன என்பதை அறியுங்கள்.',

@@ -66,7 +66,7 @@ export const circumstellarHabitableZones_Skill_Data = buildSkillConfig({
       be: 'Зразумейце, што зона патэнцыйнай населенасьці зоркі можа, а чаго ня можа паведаміць пра вадкую ваду.',
       ka: 'გაიგეთ, რას გვამცნობს და რას ვერ ამტკიცებს ვარსკვლავის სასიცოცხლო ზონა თხევადი წყლის შესახებ.',
       kk: 'Жұлдыздың тіршілікке қолайлы аймағы сұйық су туралы нені айта алатынын және нені дәлелдей алмайтынын түсініңіз.',
-      qm: 'Yıldıznıñ yaşavğa elverişli zonası sıvı suv aqqında neni bildirgenini ve neni isbat etmegenini añlañız.',
+      qm: 'Yıldıznıñ yaşavğa elverişli zonası sıyıq suv aqqında neni bildirgenini ve neni isbat etmegenini añlañız.',
     },
   },
 });

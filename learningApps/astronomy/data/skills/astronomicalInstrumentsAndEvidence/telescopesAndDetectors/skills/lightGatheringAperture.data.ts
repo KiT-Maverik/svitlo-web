@@ -39,7 +39,7 @@ export const lightGatheringAperture_Skill_Data = buildSkillConfig({
       'Explain how telescope aperture affects collected light and the visibility of faint astronomical sources.',
     frontend: {
       en: 'Find out why a larger telescope aperture can reveal fainter celestial objects.',
-      qm: 'Teleskopnıñ açıqlığı büyügende ne içün daha zayıf kök cisimleri körünebilgenini ögreniñiz.',
+      qm: 'Teleskopnıñ açıqlığı büyügende ne içün daa zayıf kök cisimleri körünebilgenini ögreniñiz.',
       bn: 'জেনে নাও, দূরবীক্ষণ যন্ত্রের আলো প্রবেশের মুখ বড় হলে কেন আরও ক্ষীণ জ্যোতিষ্ক দেখা যায়।',
       ur: 'جانیں کہ دوربین کا بڑا دہانہ کم روشن اجرامِ فلکی کو دیکھنے میں کیوں مدد دیتا ہے۔',
       ta: 'தொலைநோக்கியின் துளை பெரியதாக இருந்தால் மங்கலான விண்பொருட்களையும் ஏன் காண முடிகிறது என்பதை அறியுங்கள்.',

@@ -32,7 +32,7 @@ export const protostars_Skill_Data = buildSkillConfig({
     be: 'Пратазоркі',
     ka: 'პროტოვარსკვლავები',
     kk: 'Протожұлдыздар',
-    qm: 'İlk yıldızlar',
+    qm: 'Protoyıldızlar',
   },
   description: {
     methodological:

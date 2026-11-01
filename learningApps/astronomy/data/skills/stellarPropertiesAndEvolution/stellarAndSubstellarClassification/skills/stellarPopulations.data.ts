@@ -32,7 +32,7 @@ export const stellarPopulations_Skill_Data = buildSkillConfig({
     be: 'Зорныя папуляцыі',
     ka: 'ვარსკვლავური პოპულაციები',
     kk: 'Жұлдыздық популяциялар',
-    qm: 'Yıldız toplulıqları',
+    qm: 'Yıldız nesilleri',
   },
   description: {
     methodological:
