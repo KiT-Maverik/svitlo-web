@@ -49,7 +49,7 @@ export const analyzeChineseInkPainting_Skill_Data = buildSkillConfig({
       ur: 'جانیں کہ چینی روشنائی کی مصوری میں پُراثر برش اسٹروک، جگہ اور تحریری عبارتیں کیسے یکجا ہوتی ہیں۔',
       id: 'Pelajari bagaimana lukisan tinta Tiongkok memadukan sapuan kuas yang ekspresif, ruang, dan inskripsi.',
       de: 'Entdecke, wie chinesische Tuschemalerei ausdrucksstarke Pinselstriche, Raum und Inschriften verbindet.',
-      ja: '中国水墨画が、表現豊かな筆づかい、空間、書き込みをどのように組み合わせているかを学びます。',
+      ja: '中国水墨画で筆づかい、空間表現、画中の題詩や落款がどのように結びつくかを学びます。',
       ko: '중국 수묵화가 표현력 있는 붓질, 공간, 글씨를 어떻게 결합하는지 살펴보세요.',
       tr: 'Çin mürekkep resminin etkileyici fırça darbelerini, mekânı ve yazıları nasıl birleştirdiğini keşfedin.',
       vi: 'Khám phá cách tranh thủy mặc Trung Hoa kết hợp nét bút biểu cảm, không gian và chữ đề.',
