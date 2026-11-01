@@ -5,7 +5,7 @@ export const solarActivityCycle_Skill_Data = buildSkillConfig({
   id: '6a79e86a-9c8c-4588-881e-b661f7a6a0c1',
   name: {
     en: 'Solar Activity Cycle',
-    qm: 'Küneş faoliyeti devri',
+    qm: 'Küneş faaliyeti devri',
     bn: 'সৌর কার্যকলাপের চক্র',
     ur: 'شمسی سرگرمی کا چکر',
     ta: 'சூரியச் செயல்பாட்டுச் சுழற்சி',

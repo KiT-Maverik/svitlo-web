@@ -32,7 +32,7 @@ export const binaryAndMultipleStars_Skill_Data = buildSkillConfig({
     be: 'Падвойныя і кратныя зоркі',
     ka: 'ორმაგი და მრავალჯერადი ვარსკვლავები',
     kk: 'Қос және көптік жұлдыздар',
-    qm: 'Eki ve bir qaç yulduzlı sistemalar',
+    qm: 'Eki ve bir qaç yıldızlı sistemalar',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const binaryAndMultipleStars_Skill_Data = buildSkillConfig({
       be: 'Дасьледуйце, як пары і групы зорак абарачаюцца адна вакол адной.',
       ka: 'შეისწავლეთ, როგორ ბრუნავენ ვარსკვლავების წყვილები და ჯგუფები ერთმანეთის გარშემო.',
       kk: 'Жұлдыздар жұптары мен топтарының бірін-бірі қалай айналатынын зерттеңіз.',
-      qm: 'Yulduz çiftleri ve topluları bir-biri etrafında nasıl aylanğanını ögreniñiz.',
+      qm: 'Yıldız çiftleri ve topluları bir-biri etrafında nasıl aylanğanını ögreniñiz.',
     },
   },
 });

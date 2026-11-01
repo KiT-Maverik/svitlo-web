@@ -66,7 +66,7 @@ export const brownDwarfs_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, чым карычневыя карлікі адрозьніваюцца ад зорак і целаў плянэтнай масы.',
       ka: 'გაიგეთ, რით განსხვავდებიან ყავისფერი ჯუჯები ვარსკვლავებისა და პლანეტური მასის ობიექტებისგან.',
       kk: 'Қоңыр ергежейлілердің жұлдыздар мен планеталық массалы денелерден айырмасын біліңіз.',
-      qm: 'Qoñur cüce cisimler yulduzlardan ve planeta kütlesindeki cisimlerden nasıl farqlı olğanını ögreniñiz.',
+      qm: 'Qoñur cüce cisimler yıldızlardan ve planeta kütlesindeki cisimlerden nasıl farqlı olğanını ögreniñiz.',
     },
   },
 });

@@ -66,7 +66,7 @@ export const molecularCloudCollapse_Skill_Data = buildSkillConfig({
       be: 'Растлумачце, як шчыльныя вобласьці газу могуць сьціскацца і пачынаць утварэньне зорак.',
       ka: 'ახსენით, როგორ იწყება ვარსკვლავების წარმოქმნა მკვრივი გაზის უბნების კოლაფსით.',
       kk: 'Тығыз газ аймақтары сығылып, жұлдыздардың түзілуін қалай бастайтынын түсіндіріңіз.',
-      qm: 'Qoyu gaz bölgeleri çekim quveti tesirinen sıqılıp yulduzlarnıñ peyda oluvını nasıl başlatqanını añlatıñız.',
+      qm: 'Qoyu gaz bölgeleri cazibe quveti tesirinen sıqılıp yıldızlarnıñ peyda oluvını nasıl başlatqanını añlatıñız.',
     },
   },
 });

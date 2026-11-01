@@ -39,7 +39,7 @@ export const starFormation_SkillGroup_Data = buildSkillGroupConfig({
     be: 'Утварэньне зорак',
     ka: 'ვარსკვლავების წარმოქმნა',
     kk: 'Жұлдыздардың түзілуі',
-    qm: 'Yulduzlarnıñ peyda oluvı',
+    qm: 'Yıldızlarnıñ peyda oluvı',
   },
   skills: {
     molecularCloudCollapse: molecularCloudCollapse_Skill_Data,
@@ -79,7 +79,7 @@ export const starFormation_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Дасьледуйце, як зоркі нараджаюцца ў вялізных воблаках газу і пылу.',
       ka: 'გამოიკვლიეთ, როგორ იბადებიან ვარსკვლავები გაზისა და მტვრის უზარმაზარ ღრუბლებში.',
       kk: 'Жұлдыздардың орасан газ бен шаң бұлттарының ішінде қалай пайда болатынын зерттеңіз.',
-      qm: 'Yulduzlar büyük gaz ve toz bulutlarınıñ içinde nasıl peyda olğanını araştırıñız.',
+      qm: 'Yıldızlar büyük gaz ve toz bulutlarınıñ içinde nasıl peyda olğanını araştırıñız.',
     },
   },
 });

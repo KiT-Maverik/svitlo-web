@@ -32,7 +32,7 @@ export const protostars_Skill_Data = buildSkillConfig({
     be: 'Пратазоркі',
     ka: 'პროტოვარსკვლავები',
     kk: 'Протожұлдыздар',
-    qm: 'İlk yulduzlar',
+    qm: 'İlk yıldızlar',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const protostars_Skill_Data = buildSkillConfig({
       be: 'Распазнавайце раньнюю стадыю маладой зоркі да пачатку ўстойлівага сынтэзу вадароду.',
       ka: 'ამოიცანით ახალგაზრდა ვარსკვლავის ადრეული ეტაპი, სანამ წყალბადის სტაბილური ბირთვული შერწყმა დაიწყება.',
       kk: 'Тұрақты сутегі синтезі басталмаған жас жұлдыздың алғашқы кезеңін таныңыз.',
-      qm: 'Vodorodnıñ devamlı yadroviy qoşulması başlanmağance yaş yulduznıñ ilk devrini tanıñız.',
+      qm: 'Vodorodnıñ devamlı yadroviy qoşulması başlanmağance yaş yıldıznıñ ilk devrini tanıñız.',
     },
   },
 });

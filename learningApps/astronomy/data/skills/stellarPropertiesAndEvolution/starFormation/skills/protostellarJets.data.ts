@@ -32,7 +32,7 @@ export const protostellarJets_Skill_Data = buildSkillConfig({
     be: 'Пратазорныя струмені',
     ka: 'პროტოვარსკვლავური ჭავლები',
     kk: 'Протожұлдыздық ағындар',
-    qm: 'İlk yulduzlarnıñ dar aqımları',
+    qm: 'İlk yıldızlarnıñ dar aqımları',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const protostellarJets_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, чаму маладыя зоркі могуць выкідаць вузкія хуткія струмені рэчыва.',
       ka: 'გაიგეთ, რატომ შეიძლება ახალგაზრდა ვარსკვლავებმა გამოუშვან ნივთიერების ვიწრო და სწრაფი ჭავლები.',
       kk: 'Жас жұлдыздардың неге жылдам қозғалатын заттың жіңішке ағындарын шығара алатынын біліңіз.',
-      qm: 'Yaş yulduzlar ne içün tar ve tez aqğan madde aqımlarını tışarı çıqara bilgenini ögreniñiz.',
+      qm: 'Yaş yıldızlar ne içün tar ve tez aqğan madde aqımlarını tışarı çıqara bilgenini ögreniñiz.',
     },
   },
 });

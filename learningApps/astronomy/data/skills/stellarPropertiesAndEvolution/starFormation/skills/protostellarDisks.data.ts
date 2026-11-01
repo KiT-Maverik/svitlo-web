@@ -32,7 +32,7 @@ export const protostellarDisks_Skill_Data = buildSkillConfig({
     be: 'Пратазорныя дыскі',
     ka: 'პროტოვარსკვლავური დისკოები',
     kk: 'Протожұлдыздық дискілер',
-    qm: 'İlk yulduz diskleri',
+    qm: 'İlk yıldız diskleri',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const protostellarDisks_Skill_Data = buildSkillConfig({
       be: 'Дасьледуйце, як дыск рэчыва забясьпечвае матэрыялам зорку, якая фармуецца.',
       ka: 'შეისწავლეთ, როგორ აწვდის ნივთიერების დისკო მასალას ფორმირებად ვარსკვლავს.',
       kk: 'Зат дискісінің қалыптасып жатқан жұлдызға материалды қалай жеткізетінін зерттеңіз.',
-      qm: 'Madde diski peyda olğan yulduzğa nasıl madde yetkizgenini ögreniñiz.',
+      qm: 'Madde diski peyda olğan yıldızğa nasıl madde yetkizgenini ögreniñiz.',
     },
   },
 });
