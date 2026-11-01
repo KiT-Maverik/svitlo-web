@@ -18,7 +18,7 @@ export const solarLuminosity_Skill_Data = buildSkillConfig({
     ka: 'მზის ნათობა',
     kk: 'Күннің жарқырауы',
     uk: 'Світність Сонця',
-    pl: 'Jasność absolutna Słońca',
+    pl: 'Moc promieniowania Słońca',
     es: 'Luminosidad solar',
     fr: 'Luminosité solaire',
     de: 'Leuchtkraft der Sonne',
