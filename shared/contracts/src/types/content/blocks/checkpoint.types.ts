@@ -3,7 +3,7 @@ import type { ContentEntity_ConfigType } from '../entity.types';
 import type { Locale_Config, Locale_ResponseParams } from '../locale.types';
 import type { ContentBlock_Audio } from './audio.types';
 import type { ContentBlock_Code } from './code.types';
-import type { ContentBlock_Data_Meta, ContentBlock_Definition_Meta, ContentBlock_Response_Meta<'checkpoint'> } from './common.types';
+import type { ContentBlock_Data_Meta, ContentBlock_Definition_Meta, ContentBlock_Response_Meta } from './common.types';
 import type { ContentBlock_Image } from './image.types';
 import type { ContentBlock_Markdown } from './markdown.types';
 import type { ContentBlock_Scene } from './scene.types';

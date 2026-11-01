@@ -1,4 +1,4 @@
-import type { ContentBlock_Data_Meta, ContentBlock_Definition_Meta, ContentBlock_Response_Meta<'markdown'> } from './common.types';
+import type { ContentBlock_Data_Meta, ContentBlock_Definition_Meta, ContentBlock_Response_Meta } from './common.types';
 import type { ContentEntity_ConfigType } from '../entity.types';
 import type { Locale_Config, Locale_ResponseParams } from '../locale.types';
 
