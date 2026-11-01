@@ -76,7 +76,7 @@ export const cosmicComponentsAndConstraints_SkillGroup_Data = buildSkillGroupCon
       lv: 'Uzzini, kā kosmiskie mērījumi atklāj sastāvdaļas un jautājumus, ko vēl pilnībā neizprotam.',
       et: 'Õpi, kuidas kosmilised mõõtmised viitavad osadele ja küsimustele, mida me veel täielikult ei selgita.',
       be: 'Даведайся, як касьмічныя вымярэньні паказваюць на складнікі й пытаньні, якія мы яшчэ ня можам цалкам растлумачыць.',
-      ka: 'გაიგე, როგორ მიუთითებს კოსმოსური გაზომვები კომპონენტებსა და კითხვებზე, რომლებსაც ჯერ ბოლომდე ვერ ვხსნით.',
+      ka: 'გაიგე, როგორ მიუთითებენ კოსმოსური გაზომვები სამყაროს შემადგენლობაზე და რა კითხვები რჩება ჯერ კიდევ პასუხგაუცემელი.',
       kk: 'Ғарыштық өлшеулер әлі толық түсіндіре алмайтын құрамдастар мен сұрақтарды қалай көрсететінін біл.',
     },
   },

@@ -25,7 +25,7 @@ export const galaxyInteractionsAndMergers_Skill_Data = buildSkillConfig({
     mr: 'आकाशगंगांचे परस्परसंवाद आणि विलीनीकरण',
     ms: 'Interaksi dan Percantuman Galaksi',
     he: 'אינטראקציות ומיזוגים של גלקסיות',
-    pl: 'Oddziaływania i zderzenia galaktyk',
+    pl: 'Oddziaływania i łączenie się galaktyk',
     uk: 'Взаємодії та злиття галактик',
     lt: 'Galaktikų sąveikos ir susiliejimai',
     lv: 'Galaktiku mijiedarbības un saplūšanas',

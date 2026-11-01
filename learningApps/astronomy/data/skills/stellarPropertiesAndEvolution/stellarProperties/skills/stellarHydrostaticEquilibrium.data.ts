@@ -64,7 +64,7 @@ export const stellarHydrostaticEquilibrium_Skill_Data = buildSkillConfig({
       lv: 'Izprotiet, kā gravitācija un iekšējais spiediens notur zvaigzni līdzsvarā.',
       et: 'Mõista, kuidas gravitatsioon ja siserõhk hoiavad tähte tasakaalus.',
       be: 'Зразумейце, як гравітацыя і ўнутраны ціск падтрымліваюць раўнавагу зоркі.',
-      ka: 'გაიგეთ, როგორ ინარჩუნებს გრავიტაცია და შიდა წნევა ვარსკვლავის წონასწორობას.',
+      ka: 'გაიგეთ, როგორ ინარჩუნებენ გრავიტაცია და შიდა წნევა ვარსკვლავის წონასწორობას.',
       kk: 'Гравитация мен ішкі қысым жұлдыз тепе-теңдігін қалай сақтайтынын түсініңіз.',
       qm: 'Cazibe quveti ve içki basım yıldıznıñ muvanazatını nasıl saqlağanını añlañız.',
     },
