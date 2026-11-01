@@ -1,5 +1,5 @@
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine';
-import { defineLessonV2Data, type LessonV2, type Question_Catalog_DataFor } from '@svitlo/engine/content';
+import { defineLessonV2Data, type LessonV2 } from '@svitlo/engine/content';
 import type { howLightMovesDefinition } from '@/data/lessons/1/howLightMoves/howLightMoves.definition';
 import { howLightMoves_Locale } from './howLightMoves';
 import { howLightMovesQuestionsData } from './questions/index.data';
@@ -23,7 +23,7 @@ export const howLightMovesData = defineLessonV2Data({
       showIndexes: true,
     },
   },
-  questions: howLightMovesQuestionsData satisfies Question_Catalog_DataFor<typeof howLightMovesDefinition.questions>,
+  questions: howLightMovesQuestionsData,
   sections: {
     theory: theoryData,
     practice: practiceData,

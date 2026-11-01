@@ -1,5 +1,4 @@
-import type { Question_Catalog_DataFor } from '@svitlo/engine/content';
-import type { howLightMovesQuestionsDefinition } from '@/data/lessons/1/howLightMoves/questions/index.definition';
+import type { Question_Catalog } from '@svitlo/engine/content';
 import { airVacuumSpeed_Question_Data } from './airVacuumSpeed.data';
 import { fastestMedium_Question_Data } from './fastestMedium.data';
 import { lightRayDirection_Question_Data } from './lightRayDirection.data';
@@ -16,4 +15,4 @@ export const howLightMovesQuestionsData = {
     airVacuumSpeed: airVacuumSpeed_Question_Data,
     opaqueObjectShadow: opaqueObjectShadow_Question_Data,
   },
-} satisfies Question_Catalog_DataFor<typeof howLightMovesQuestionsDefinition>;
+} satisfies Question_Catalog<'data'>;

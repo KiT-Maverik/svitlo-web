@@ -1,7 +1,6 @@
 import {
   defineContentBlockCatalog,
   type ContentBlock_Quiz,
-  type Question_SelectOneAnswer,
   type ContentBlock_Catalog_DataFor,
   type Section,
 } from '@svitlo/engine/content';
@@ -24,10 +23,7 @@ const quizBlock = {
     allowQuestionNavigation: true,
     skippable: true,
   },
-  questions: howLightMovesQuestionsData.selectOneAnswer satisfies Record<
-    keyof typeof quizDefinition.content.quiz.quiz.questions,
-    Question_SelectOneAnswer<'data'>
-  >,
+  questions: howLightMovesQuestionsData.selectOneAnswer,
   results: { visibility: 'immediate', showScore: true },
   screen: {
     ending: { success: { showDefaultContent: true }, fail: { showDefaultContent: true } },

@@ -25,19 +25,20 @@ type Quiz_Settings = {
   };
 };
 
-type ContentBlock_Quiz_Definition = ContentBlock_Definition_Meta<'quiz'> & {
-  questions: Record<string, Question_SelectOneAnswer<'definition'>>;
-};
+type ContentBlock_Quiz_Definition = ContentBlock_Definition_Meta<'quiz'>;
 
-type ContentBlock_Quiz_Data = ContentBlock_Data_Meta & Quiz_Settings & {
-  welcome: Locale_Config;
-  questions: Record<string, Question_SelectOneAnswer<'data'>>;
-};
+type ContentBlock_Quiz_Data = ContentBlock_Data_Meta &
+  Quiz_Settings & {
+    welcome: Locale_Config;
+    questions: Record<string, Question_SelectOneAnswer<'data'>>;
+  };
 
-type ContentBlock_Quiz_Response = ContentBlock_Response_Meta & Locale_ResponseParams & Quiz_Settings & {
-  welcome: string;
-  questions: Record<string, Question_SelectOneAnswer<'response'>>;
-};
+type ContentBlock_Quiz_Response = ContentBlock_Response_Meta &
+  Locale_ResponseParams &
+  Quiz_Settings & {
+    welcome: string;
+    questions: Record<string, Question_SelectOneAnswer<'response'>>;
+  };
 
 export type ContentBlock_Quiz<ConfigType extends ContentEntity_ConfigType> = {
   definition: ContentBlock_Quiz_Definition;
@@ -46,4 +47,5 @@ export type ContentBlock_Quiz<ConfigType extends ContentEntity_ConfigType> = {
 }[ConfigType];
 
 /** @deprecated Import Question_SelectOneAnswer from the questions catalog instead. */
-export type ContentBlock_Quiz_Question<ConfigType extends ContentEntity_ConfigType> = Question_SelectOneAnswer<ConfigType>;
+export type ContentBlock_Quiz_Question<ConfigType extends ContentEntity_ConfigType> =
+  Question_SelectOneAnswer<ConfigType>;
