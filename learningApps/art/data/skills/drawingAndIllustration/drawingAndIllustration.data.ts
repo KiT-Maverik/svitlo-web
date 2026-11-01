@@ -36,7 +36,7 @@ export const drawingAndIllustration_SkillDomain_Data = buildSkillDomainConfig({
     be: 'Маляванне і ілюстрацыя',
     ka: 'ხატვა და ილუსტრაცია',
     kk: 'Сурет салу және иллюстрация',
-    qm: 'Çizim ve illüstrasyon',
+    qm: 'Sızuv ve illüstratsiya',
   },
   groups: {
     illustrativeStorytelling: illustrativeStorytelling_SkillGroup_Data,
@@ -75,7 +75,7 @@ export const drawingAndIllustration_SkillDomain_Data = buildSkillDomainConfig({
       be: 'Даведайцеся, як малюнак адлюстроўвае ўбачанае, а ілюстрацыя расказвае гісторыі ці перадае ідэі.',
       ka: 'შეისწავლეთ, როგორ ასახავს ნახატი დანახულს და როგორ გადმოსცემს ილუსტრაცია ამბებსა თუ იდეებს.',
       kk: 'Бейнелеу көргенімізді қалай көрсететінін, ал иллюстрация оқиғалар мен идеяларды қалай жеткізетінін үйреніңіз.',
-      qm: 'Çizimin gördüklerimizi nasıl yansıttığını, illüstrasyonun ise hikâye ve fikirleri nasıl aktardığını öğrenin.',
+      qm: 'Sızuv körgenlerimizni tasvir etmege, illüstratsiya ise ikâyelerni ve fikirlerni bildirmege nasıl yardım etkenini ögreniñiz.',
     },
   },
 });
