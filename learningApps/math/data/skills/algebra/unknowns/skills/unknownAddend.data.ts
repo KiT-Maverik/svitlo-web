@@ -56,7 +56,7 @@ export const unknownAddend_Skill_Data = buildSkillConfig({
       vi: 'Bạn có thể tìm số hạng chưa biết bằng cách lấy tổng trừ số hạng đã biết, rồi kiểm tra bằng phép cộng.',
       ta: 'கூட்டுத்தொகையிலிருந்து தெரிந்த கூட்டெண்ணைக் கழித்து தெரியாத கூட்டெண்ணைக் கண்டுபிடித்து, கூட்டலால் சரிபார்க்கலாம்.',
       te: 'మొత్తం నుంచి తెలిసిన కూడే సంఖ్యను తీసివేసి తెలియని కూడే సంఖ్యను కనుగొని, కూడికతో సరిచూడవచ్చు.',
-      mr: 'बेरीजेतून माहीत असलेली मिळवलेली संख्या वजा करून अज्ञात संख्या शोधता येते व बेरजेने तपासता येते.',
+      mr: 'बेरीजेतून माहीत असलेले बेरीजपद वजा करून अज्ञात बेरीजपद शोधता येते व बेरजेने तपासता येते.',
       ms: 'Kamu boleh mencari nombor tambah yang tidak diketahui dengan menolak nombor tambah yang diketahui daripada jumlah, kemudian menyemak melalui tambah.',
       he: 'אפשר למצוא מחובר חסר על ידי חיסור המחובר הידוע מהסכום, ואז לבדוק בחיבור.',
       pl: 'Możesz znaleźć nieznany składnik dodawania, odejmując znany składnik od sumy, a potem sprawdzić przez dodawanie.',
