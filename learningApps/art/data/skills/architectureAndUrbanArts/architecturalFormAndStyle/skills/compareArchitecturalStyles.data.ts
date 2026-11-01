@@ -62,7 +62,7 @@ export const compareArchitecturalStyles_Skill_Data = buildSkillConfig({
       lt: 'Lygink architektūros stilius pagal jų formas ir kultūrinį kontekstą.',
       lv: 'Salīdziniet arhitektūras stilus pēc to formām un kultūras konteksta.',
       et: 'Võrdle arhitektuuristiile nende vormide ja kultuurikonteksti põhjal.',
-      be: 'Параўноўвай архітэктурныя стылі паводле іх формаў і культурных кантэкстаў.',
+      be: 'Параўноўвайце архітэктурныя стылі паводле іх формаў і культурнага кантэксту.',
       ka: 'შეადარეთ არქიტექტურული სტილები მათი ფორმებისა და კულტურული კონტექსტის მიხედვით.',
       kk: 'Сәулет стильдерін пішіндері мен мәдени контексті бойынша салыстырыңыз.',
       qm: 'Mimariy üslüplerni şekilleri ve medeniy bağlamları boyunca qarşılaştırıñız.',
