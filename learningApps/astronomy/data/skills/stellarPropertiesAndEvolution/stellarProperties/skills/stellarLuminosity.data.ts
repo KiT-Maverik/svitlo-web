@@ -48,7 +48,7 @@ export const stellarLuminosity_Skill_Data = buildSkillConfig({
       pt: 'Diferencie a energia emitida por uma estrela de seu brilho aparente visto da Terra.',
       ur: 'ستارے کی خارج کردہ کل توانائی اور زمین سے نظر آنے والی چمک میں فرق کریں۔',
       id: 'Bedakan energi yang dipancarkan bintang dan kecerlangan yang tampak dari Bumi.',
-      de: 'Unterscheide die abgestrahlte Energie eines Sterns von seiner scheinbaren Helligkeit von der Erde aus.',
+      de: 'Unterscheide die gesamte Strahlungsleistung eines Sterns von seiner scheinbaren Helligkeit am Himmel.',
       ja: '星が放出するエネルギーの量と、地球から見た明るさを区別しましょう。',
       ko: '별이 방출하는 에너지와 지구에서 보이는 겉보기 밝기를 구분해 보세요.',
       tr: 'Bir yıldızın yaydığı toplam enerji ile Dünya\'dan görünen parlaklığını ayırt edin.',

@@ -47,7 +47,7 @@ export const advancedStellarFusion_Skill_Data = buildSkillConfig({
       pt: 'Descubra como algumas estrelas realizam fusão de elementos mais pesados nas fases finais de suas vidas.',
       ur: 'جانیں کہ بعض ستارے زندگی کے آخری مراحل میں بھاری عناصر کو جوہری عمل سے کیسے ملاتے ہیں۔',
       id: 'Pelajari bagaimana beberapa bintang menggabungkan unsur-unsur lebih berat melalui fusi pada tahap akhir hidupnya.',
-      de: 'Entdecke, wie manche Sterne in späteren Lebensphasen schwerere Elemente durch Kernfusion verschmelzen.',
+      de: 'Entdecke, wie in späteren Entwicklungsphasen mancher Sterne durch Kernfusion schwerere Atomkerne entstehen.',
       ja: '一部の星が進化の後期に重い元素の核融合を行う仕組みを探りましょう。',
       ko: '일부 별이 생애 후반에 더 무거운 원소를 핵융합하는 과정을 알아보세요.',
       tr: 'Bazı yıldızların yaşamlarının sonraki evrelerinde daha ağır elementleri nasıl kaynaştırdığını keşfedin.',

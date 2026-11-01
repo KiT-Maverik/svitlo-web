@@ -56,7 +56,7 @@ export const solarLuminosity_Skill_Data = buildSkillConfig({
       pl: 'Zrozum, ile energii w sumie wypromieniowuje Słońce i jak ilość docierającego światła zmienia się z odległością.',
       es: 'Comprende la energía total que emite el Sol y cómo cambia la luz recibida con la distancia.',
       fr: 'Comprends la quantité totale d’énergie émise par le Soleil et comment la lumière reçue varie selon la distance.',
-      de: 'Verstehe, wie viel Energie die Sonne insgesamt abstrahlt und wie das empfangene Licht von der Entfernung abhängt.',
+      de: 'Verstehe, wie viel Energie die Sonne pro Sekunde abstrahlt und wie das empfangene Licht von der Entfernung abhängt.',
       pt: 'Entenda a energia total emitida pelo Sol e como a luz recebida varia com a distância.',
       id: 'Pahami total energi yang dipancarkan Matahari dan bagaimana cahaya yang diterima berubah menurut jarak.',
       tr: 'Güneş\'in toplam enerji yayımını ve alınan ışığın uzaklıkla nasıl değiştiğini anla.',
