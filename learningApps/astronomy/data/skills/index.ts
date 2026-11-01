@@ -1,0 +1,13 @@
+export { astrobiology_SkillDomain_Data } from './astrobiology/astrobiology.data';
+export { astronomicalInstrumentsAndEvidence_SkillDomain_Data } from './astronomicalInstrumentsAndEvidence/astronomicalInstrumentsAndEvidence.data';
+export { celestialMechanics_SkillDomain_Data } from './celestialMechanics/celestialMechanics.data';
+export { cosmicObjects_SkillDomain_Data } from './cosmicObjects/cosmicObjects.data';
+export { cosmology_SkillDomain_Data } from './cosmology/cosmology.data';
+export { earthMoonAndSun_SkillDomain_Data } from './earthMoonAndSun/earthMoonAndSun.data';
+export { exoplanetarySystems_SkillDomain_Data } from './exoplanetarySystems/exoplanetarySystems.data';
+export { interstellarAndGalacticAstronomy_SkillDomain_Data } from './interstellarAndGalacticAstronomy/interstellarAndGalacticAstronomy.data';
+export { observingTheSky_SkillDomain_Data } from './observingTheSky/observingTheSky.data';
+export { planetaryScience_SkillDomain_Data } from './planetaryScience/planetaryScience.data';
+export { solarAstronomy_SkillDomain_Data } from './solarAstronomy/solarAstronomy.data';
+export { solarSystemStructureAndOrigins_SkillDomain_Data } from './solarSystemStructureAndOrigins/solarSystemStructureAndOrigins.data';
+export { stellarPropertiesAndEvolution_SkillDomain_Data } from './stellarPropertiesAndEvolution/stellarPropertiesAndEvolution.data';
