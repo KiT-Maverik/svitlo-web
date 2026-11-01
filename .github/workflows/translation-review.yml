@@ -1,91 +1,72 @@
-name: Translation Review Artifacts
+name: Agent CI Artifacts
 
-# Deliberately opt-in, reusable, and independent of FastGate.
-# GitHub requires workflow_dispatch definitions to be present on the default branch.
+# One reusable CI tool, invoked only on demand or when a draft PR becomes ready.
+# This workflow must exist on the default branch before comment/manual triggers work.
 on:
-  # An owner can ask the connected GitHub agent to post a guarded command in a PR.
   issue_comment:
     types: [created]
   workflow_dispatch:
     inputs:
-      source_ref:
-        description: 'Branch, tag, or commit to review (empty = selected workflow branch)'
-        required: false
-        type: string
-        default: ''
-      package:
-        description: 'Textbook path, e.g. learningApps/astronomy (ignored when all_packages=true)'
+      pr_number:
+        description: 'Existing same-repository pull request number to operate on'
         required: true
-        type: string
-        default: 'learningApps/astronomy'
-      all_packages:
-        description: 'Generate all available Code Skills taxonomies'
+        type: number
+      operation:
+        description: 'Generate complete reference library, or remove it from this PR'
         required: true
-        type: boolean
-        default: false
-      locale:
-        description: 'Language key, e.g. qm (ignored when all_locales=true)'
-        required: true
-        type: string
-        default: 'qm'
-      all_locales:
-        description: 'Generate every supported language from the live language registry'
-        required: true
-        type: boolean
-        default: false
+        type: choice
+        default: generate
+        options:
+          - generate
+          - cleanup
+  pull_request:
+    branches: [main]
+    types: [ready_for_review]
 
 permissions:
   contents: read
-  pull-requests: read
+
+concurrency:
+  group: agent-ci-artifacts-${{ github.event.issue.number || github.event.pull_request.number || inputs.pr_number }}
+  cancel-in-progress: false
 
 jobs:
-  generate:
-    name: Generate temporary localized Markdown views
-    runs-on: ubuntu-latest
-    timeout-minutes: 45
+  resolve:
+    name: Authorize command and resolve source PR
     if: >-
       github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'pull_request' ||
       (github.event_name == 'issue_comment' &&
        github.event.issue.pull_request &&
        github.event.comment.author_association == 'OWNER' &&
-       startsWith(github.event.comment.body, '/review-translation '))
+       (github.event.comment.body == '/agent-artifacts generate' ||
+        github.event.comment.body == '/agent-artifacts cleanup'))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      pr: ${{ steps.request.outputs.pr }}
+      head_sha: ${{ steps.request.outputs.head_sha }}
+      branch: ${{ steps.request.outputs.branch }}
+      operation: ${{ steps.request.outputs.operation }}
     steps:
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '24'
-
-      # Owner-only, explicit slash command; cannot be invoked by arbitrary PR commenters.
-      # Always checks out the current head SHA of the PR containing the command.
-      - name: Resolve PR comment scope
-        id: comment_scope
-        if: github.event_name == 'issue_comment'
-        shell: bash
+      - name: Resolve trusted PR context without checking out code
+        id: request
         env:
           GH_TOKEN: ${{ github.token }}
+        shell: bash
         run: |
           node --input-type=module <<'NODE'
           import fs from 'node:fs';
           const event = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'));
-          const tokens = event.comment.body.trim().split(/\s+/);
-          if (tokens.shift() !== '/review-translation') throw new Error('Unknown command');
-          const scope = { package: 'learningApps/astronomy', locale: 'qm', allPackages: false, allLocales: false };
-          let explicitPackage = false;
-          let explicitLocale = false;
-          for (const token of tokens) {
-            if (token === 'all-packages') scope.allPackages = true;
-            else if (token === 'all-locales') scope.allLocales = true;
-            else if (/^package=learningApps\/[a-z][a-z0-9-]*$/i.test(token)) {
-              scope.package = token.slice('package='.length);
-              explicitPackage = true;
-            } else if (/^locale=[a-z][a-z-]*$/.test(token)) {
-              scope.locale = token.slice('locale='.length);
-              explicitLocale = true;
-            } else throw new Error('Invalid /review-translation option: ' + token);
-          }
-          if (scope.allPackages && explicitPackage) throw new Error('Choose package=... OR all-packages');
-          if (scope.allLocales && explicitLocale) throw new Error('Choose locale=... OR all-locales');
-          const pr = event.issue.number;
+          const isComment = process.env.GITHUB_EVENT_NAME === 'issue_comment';
+          const isPR = process.env.GITHUB_EVENT_NAME === 'pull_request';
+          const pr = isComment ? event.issue.number : isPR ? event.pull_request.number : Number(event.inputs.pr_number);
+          if (!Number.isSafeInteger(pr) || pr < 1) throw Error('Valid PR number required');
+          const operation = isPR ? 'cleanup'
+            : isComment ? event.comment.body.trim().split(' ')[1] : event.inputs.operation;
+          if (!['generate', 'cleanup'].includes(operation)) throw Error('Invalid operation');
           const response = await fetch('https://api.github.com/repos/' +
             process.env.GITHUB_REPOSITORY + '/pulls/' + pr, {
               headers: {
@@ -94,103 +75,134 @@ jobs:
                 'x-github-api-version': '2022-11-28',
               },
             });
-          if (!response.ok) throw new Error('Failed to resolve source PR: HTTP ' + response.status);
+          if (!response.ok) throw Error('Unable to read PR: HTTP ' + response.status);
           const pull = await response.json();
+          if (pull.state !== 'open') throw Error('PR must be open');
           if (pull.head.repo?.full_name !== process.env.GITHUB_REPOSITORY) {
-            throw new Error('Cross-repository PR head is not supported for unattended reviews');
+            throw Error('Only PR branches from this repository are allowed');
           }
-          const values = {
-            source_ref: pull.head.sha,
-            package: scope.package,
-            all_packages: String(scope.allPackages),
-            locale: scope.locale,
-            all_locales: String(scope.allLocales),
+          if (pull.head.ref === pull.base.repo.default_branch) {
+            throw Error('Cannot write artifacts to the default branch');
+          }
+          if (!/^[a-zA-Z0-9][a-zA-Z0-9._\/-]*$/.test(pull.head.ref) ||
+              pull.head.ref.includes('..') || pull.head.ref.endsWith('/') ||
+              pull.head.ref.startsWith('-')) throw Error('Unsafe branch ref');
+          const entries = {
+            pr: String(pr), head_sha: pull.head.sha,
+            branch: pull.head.ref, operation,
           };
           fs.appendFileSync(process.env.GITHUB_OUTPUT,
-            Object.entries(values).map(([key, value]) => key + '=' + value).join('\n') + '\n');
+            Object.entries(entries).map(([k,v]) => k + '=' + v).join('\n') + '\n');
           NODE
 
-      - name: Check out requested source ref
-        uses: actions/checkout@v4
+  generate:
+    name: Build complete Markdown reference library (read-only source)
+    needs: resolve
+    if: needs.resolve.outputs.operation == 'generate'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
         with:
-          ref: ${{ steps.comment_scope.outputs.source_ref || inputs.source_ref || github.ref_name }}
+          ref: ${{ needs.resolve.outputs.head_sha }}
           persist-credentials: false
-
-      # Install only the TypeScript parser used by the existing generator.
-      # Do not install the monorepo or build any textbook application.
-      - name: Install lightweight parser dependency
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install only the TypeScript parser, not the full monorepo
         shell: bash
         run: |
           set -euo pipefail
-          npm install --prefix "$RUNNER_TEMP/review-tools" --no-save --ignore-scripts --no-audit --no-fund 'typescript@5'
+          npm install --prefix "$RUNNER_TEMP/agent-tools" --no-save --ignore-scripts --no-audit --no-fund 'typescript@5'
           mkdir -p node_modules
-          ln -s "$RUNNER_TEMP/review-tools/node_modules/typescript" node_modules/typescript
-
-      - name: Validate artifact generator syntax
+          ln -s "$RUNNER_TEMP/agent-tools/node_modules/typescript" node_modules/typescript
+      - name: Generate every textbook in every supported language
         run: |
           node --check scripts/generate-translation-review-artifacts.mjs
           node --check scripts/generate-skills-taxonomy.mjs
-          node scripts/generate-translation-review-artifacts.mjs --help > /dev/null
-
-      - name: Generate requested review artifacts
-        shell: bash
-        env:
-          REVIEW_PACKAGE: ${{ steps.comment_scope.outputs.package || inputs.package }}
-          REVIEW_ALL_PACKAGES: ${{ steps.comment_scope.outputs.all_packages || inputs.all_packages }}
-          REVIEW_LOCALE: ${{ steps.comment_scope.outputs.locale || inputs.locale }}
-          REVIEW_ALL_LOCALES: ${{ steps.comment_scope.outputs.all_locales || inputs.all_locales }}
-        run: |
-          set -euo pipefail
-          args=(--out-dir "$RUNNER_TEMP/translation-review")
-          if [[ "$REVIEW_ALL_PACKAGES" == 'true' ]]; then
-            args+=(--all-packages)
-          else
-            args+=(--package "$REVIEW_PACKAGE")
-          fi
-          if [[ "$REVIEW_ALL_LOCALES" == 'true' ]]; then
-            args+=(--all-locales)
-          else
-            args+=(--locale "$REVIEW_LOCALE")
-          fi
-          node scripts/generate-translation-review-artifacts.mjs "${args[@]}"
-
-      - name: Upload short-lived Markdown bundle
-        if: always()
+          node scripts/generate-translation-review-artifacts.mjs
+      - name: Upload isolated CI result for trusted publish job
+        if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: translation-review-${{ github.run_id }}-${{ github.run_attempt }}
-          path: ${{ runner.temp }}/translation-review/
+          name: agent-reference-library
+          path: .agent-ci-artifacts/
+          include-hidden-files: true
+          if-no-files-found: error
           retention-days: 1
-          if-no-files-found: warn
-
-      - name: Report review scope and artifact lifecycle
+      - name: Remove runner-only data
         if: always()
-        shell: bash
-        env:
-          REVIEW_SOURCE_REF: ${{ steps.comment_scope.outputs.source_ref || inputs.source_ref || github.ref_name }}
         run: |
-          {
-            echo '### Translation review artifacts'
-            echo "- Run: ${{ github.run_id }} / attempt ${{ github.run_attempt }}"
-            echo "- Requested source: $REVIEW_SOURCE_REF"
-            echo '- Generated Markdown exists only in this run artifact; no commit or source edits are made.'
-            echo '- Uploaded archive expires automatically after **1 day**.'
-            echo '- Runner temp files are removed by the final cleanup step.'
-            if [[ -f "$RUNNER_TEMP/translation-review/manifest.json" ]]; then
-              node -e 'const m=require(process.argv[1]); console.log("- Source commit: `"+(m.sourceCommit||"unknown")+"`"); console.log("- Generated: **"+m.generated.length+"**; failures: **"+m.failures.length+"**"); if(m.failures.length) console.log("- Failed scope(s): "+m.failures.map(x=>x.textbook+"/"+x.locale).join(", "));' "$RUNNER_TEMP/translation-review/manifest.json"
-            else
-              echo '- No manifest produced; inspect earlier job logs.'
-            fi
-          } >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Verify no source file changes
-        if: always()
-        shell: bash
-        run: git diff --exit-code && test -z "$(git status --porcelain --untracked-files=normal)"
-
-      - name: Remove temporary runner files
-        if: always()
-        shell: bash
-        run: |
-          rm -rf -- "$RUNNER_TEMP/translation-review" "$RUNNER_TEMP/review-tools"
+          rm -rf -- .agent-ci-artifacts "$RUNNER_TEMP/agent-tools"
           rm -f -- node_modules/typescript
+
+  publish:
+    name: Commit review documents to source PR branch
+    needs: [resolve, generate]
+    if: needs.resolve.outputs.operation == 'generate' && needs.generate.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.resolve.outputs.head_sha }}
+          persist-credentials: true
+      - name: Replace previous PR-scoped reference library
+        shell: bash
+        run: rm -rf -- .agent-ci-artifacts
+      - uses: actions/download-artifact@v4
+        with:
+          name: agent-reference-library
+          path: .agent-ci-artifacts/
+      - name: Validate downloaded files and commit only agent artifacts
+        env:
+          TARGET_BRANCH: ${{ needs.resolve.outputs.branch }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s .agent-ci-artifacts/manifest.json
+          test -n "$(find .agent-ci-artifacts/taxonomies -type f -name '*.md' -print -quit)"
+          if find .agent-ci-artifacts -type l -print -quit | grep -q .; then
+            echo 'Refusing symlinks in agent artifacts'; exit 1
+          fi
+          if find .agent-ci-artifacts -type f ! -name '*.md' ! -name 'manifest.json' -print -quit | grep -q .; then
+            echo 'Refusing unexpected artifact file type'; exit 1
+          fi
+          git add -A -- .agent-ci-artifacts
+          if git diff --cached --quiet; then
+            echo 'Agent reference library is unchanged'; exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore(agent-ci): refresh temporary review reference library'
+          git push origin "HEAD:refs/heads/$TARGET_BRANCH"
+
+  cleanup:
+    name: Remove PR-scoped artifacts before merge
+    needs: resolve
+    if: needs.resolve.outputs.operation == 'cleanup'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.resolve.outputs.head_sha }}
+          persist-credentials: true
+      - name: Delete tracked reference library from the PR branch
+        env:
+          TARGET_BRANCH: ${{ needs.resolve.outputs.branch }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rm -r --ignore-unmatch -- .agent-ci-artifacts
+          if git diff --cached --quiet; then
+            echo 'No tracked agent artifacts remain'; exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore(agent-ci): clean temporary review artifacts before merge'
+          git push origin "HEAD:refs/heads/$TARGET_BRANCH"
