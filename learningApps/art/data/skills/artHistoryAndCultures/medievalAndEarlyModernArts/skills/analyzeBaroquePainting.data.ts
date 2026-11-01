@@ -61,7 +61,7 @@ export const analyzeBaroquePainting_Skill_Data = buildSkillConfig({
       pl: 'Poznaj, jak malarze barokowi wykorzystywali dramatyczne światło, ruch i kompozycję.',
       uk: 'Досліджувати, як художники бароко використовували драматичне світло, рух і композицію.',
       lt: 'Sužinok, kaip baroko tapytojai naudojo dramatišką šviesą, veiksmą ir kompoziciją.',
-      lv: 'Uzzini, kā baroka gleznotāji izmantoja dramatisku gaismu, kustību un kompozīciju.',
+      lv: 'Uzziniet, kā baroka gleznotāji izmantoja dramatisku gaismu, kustību un kompozīciju.',
       et: 'Uuri, kuidas barokkmaalijad kasutasid dramaatilist valgust, liikumist ja kompositsiooni.',
       be: 'Даведайся, як мастакі барока выкарыстоўвалі драматычнае святло, рух і кампазіцыю.',
       ka: 'გაიგე, როგორ იყენებდნენ ბაროკოს მხატვრები დრამატულ სინათლეს, მოძრაობასა და კომპოზიციას.',
