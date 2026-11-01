@@ -75,7 +75,7 @@ export const formalLanguage_SkillGroup_Data = buildSkillGroupConfig({
       he: 'גלו כיצד קווים, צבעים, צורות ומאפיינים נוספים מכוונים את חוויית האמנות שלנו.',
       pl: 'Odkryj, jak linie, kolory, kształty i inne cechy kierują naszym odbiorem sztuki.',
       uk: 'Дізнайтеся, як лінії, кольори, форми та інші елементи спрямовують наше сприйняття мистецтва.',
-      lt: 'Sužinok, kaip linijos, spalvos, formos ir kiti elementai nukreipia mūsų meno patyrimą.',
+      lt: 'Sužinokite, kaip linijos, spalvos, formos ir kiti elementai nukreipia mūsų meno patyrimą.',
       lv: 'Uzziniet, kā līnijas, krāsas, formas un citas iezīmes ietekmē mūsu mākslas uztveri.',
       et: 'Avasta, kuidas jooned, värvid, kujundid ja muud omadused suunavad meie kunstikogemust.',
       be: 'Даведайся, як лініі, колеры, формы й іншыя элемэнты ўплываюць на нашае ўспрыманьне мастацтва.',

@@ -60,7 +60,7 @@ export const interpretArtisticIntent_Skill_Data = buildSkillConfig({
       he: 'היעזרו ברמזים ביצירת אמנות כדי לברר מה ייתכן שהיוצר התכוון להביע.',
       pl: 'Wykorzystaj wskazówki zawarte w dziele, by zastanowić się, co twórca mógł zamierzać.',
       uk: 'Використовуйте підказки в мистецькому творі, щоб дослідити, що міг задумати його автор.',
-      lt: 'Pasinaudok kūrinio užuominomis ir išsiaiškink, ką jo kūrėjas galėjo norėti išreikšti.',
+      lt: 'Remdamiesi kūrinio užuominomis išsiaiškinkite, ką jo kūrėjas galėjo norėti išreikšti.',
       lv: 'Izmantojiet mākslas darba norādes, lai izpētītu, ko tā radītājs, iespējams, bija iecerējis.',
       et: 'Kasuta kunstiteose vihjeid, et uurida, mida selle looja võis tahta väljendada.',
       be: 'Выкарыстоўвай падказкі ў творы мастацтва, каб высьветліць, што мог задумаць ягоны аўтар.',

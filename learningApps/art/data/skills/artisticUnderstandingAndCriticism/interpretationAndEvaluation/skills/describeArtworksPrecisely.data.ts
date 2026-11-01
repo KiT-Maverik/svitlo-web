@@ -60,7 +60,7 @@ export const describeArtworksPrecisely_Skill_Data = buildSkillConfig({
       he: 'תארו את הפרטים שאתם יכולים ממש לראות או לשמוע לפני שתסבירו את משמעותם.',
       pl: 'Opisz szczegóły, które rzeczywiście widzisz lub słyszysz, zanim wyjaśnisz ich znaczenie.',
       uk: 'Спочатку опишіть деталі, які справді бачите або чуєте, а вже потім пояснюйте їхнє значення.',
-      lt: 'Pirmiausia apibūdink tai, ką iš tikrųjų matai ar girdi, o tik tada aiškink prasmę.',
+      lt: 'Pirmiausia apibūdinkite tai, ką iš tikrųjų matote ar girdite, o tik tada aiškinkite prasmę.',
       lv: 'Vispirms aprakstiet detaļas, ko patiešām redzat vai dzirdat, un tikai tad skaidrojiet to nozīmi.',
       et: 'Kirjelda esmalt üksikasju, mida sa tegelikult näed või kuuled, ja alles siis selgita nende tähendust.',
       be: 'Спачатку апісвай дэталі, якія сапраўды бачыш або чуеш, а потым тлумач іх значэнне.',
