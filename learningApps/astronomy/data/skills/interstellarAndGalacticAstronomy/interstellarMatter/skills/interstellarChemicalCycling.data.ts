@@ -39,7 +39,7 @@ export const interstellarChemicalCycling_Skill_Data = buildSkillConfig({
       'Explain how stellar outflows and explosive events replenish and alter material available for new star formation.',
     frontend: {
       en: 'Explore how dying stars return material to space for new generations of stars.',
-      qm: 'Ölgen yıldızlarnıñ maddenı fezağa qaytarıp, yañı yıldız nesillerine malzeme bergenini araştırıñız.',
+      qm: 'Ölgen yıldızlarnıñ maddeni fezağa qaytarıp, yañı yıldız nesillerine malzeme bergenini araştırıñız.',
       zh: '了解衰亡恒星如何将物质送回太空，供新一代恒星形成。',
       hi: 'जानें कि मरते हुए तारे नई पीढ़ी के तारों के लिए पदार्थ अंतरिक्ष में कैसे लौटाते हैं।',
       es: 'Descubre cómo las estrellas moribundas devuelven materia al espacio para formar nuevas generaciones de estrellas.',

@@ -45,7 +45,7 @@ export const cosmicStructureAndEvolution_SkillGroup_Data = buildSkillGroupConfig
       "Density perturbations, gravity and cosmic expansion shape the cosmic web over time. This branch focuses on spatial organization and dynamical evolution, as distinct from the initial hot state or the physical nature of the Universe's dark components.",
     frontend: {
       en: 'Investigate how gravity shapes matter into large structures over cosmic history.',
-      qm: 'Cazibe quveti milyarlarca yıl devamında maddeni büyük quruluşlarğa nasıl toplamağanını araştırıñız.',
+      qm: 'Cazibe quveti milyarlarca yıl devamında maddeni büyük quruluşlarğa nasıl toplağanını araştırıñız.',
       zh: '研究引力如何在漫长的宇宙历史中塑造大尺度物质结构。',
       hi: 'जानें कि गुरुत्वाकर्षण ब्रह्मांड के इतिहास में पदार्थ से विशाल संरचनाएँ कैसे बनाता है।',
       es: 'Investiga cómo la gravedad da forma a grandes estructuras a lo largo de la historia cósmica.',

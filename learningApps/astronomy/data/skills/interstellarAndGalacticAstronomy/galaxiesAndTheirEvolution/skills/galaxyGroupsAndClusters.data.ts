@@ -38,7 +38,7 @@ export const galaxyGroupsAndClusters_Skill_Data = buildSkillConfig({
     methodological: 'Interpret gravitationally associated galaxy populations and their larger-scale environments.',
     frontend: {
       en: 'Discover how gravity gathers galaxies into groups and clusters.',
-      qm: 'Cazibe quveti galaktikalarnı nasıl gruplarğa ve büyük toplulıqlarğa toplamağanını ögreniñiz.',
+      qm: 'Cazibe quveti galaktikalarnı nasıl gruplarğa ve büyük toplulıqlarğa toplağanını ögreniñiz.',
       zh: '了解引力如何将星系聚集成群和星系团。',
       hi: 'जानें कि गुरुत्वाकर्षण आकाशगंगाओं को समूहों और गुच्छों में कैसे बाँधता है।',
       es: 'Descubre cómo la gravedad reúne galaxias en grupos y cúmulos.',
