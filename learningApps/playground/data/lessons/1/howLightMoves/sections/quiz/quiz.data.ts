@@ -1,7 +1,7 @@
 import {
   defineContentBlockCatalog,
   type ContentBlock_Quiz,
-  type ContentBlock_Quiz_Question,
+  type Question_SelectOneAnswer,
   type ContentBlock_Catalog_DataFor,
   type Section,
 } from '@svitlo/engine/content';
@@ -36,7 +36,7 @@ const quizBlock = {
     lightSpeedInWater: lightSpeedInWater_Question_Data,
     airVacuumSpeed: airVacuumSpeed_Question_Data,
     opaqueObjectShadow: opaqueObjectShadow_Question_Data,
-  } satisfies Record<keyof typeof quizDefinition.content.quiz.quiz.questions, ContentBlock_Quiz_Question<'data'>>,
+  } satisfies Record<keyof typeof quizDefinition.content.quiz.quiz.questions, Question_SelectOneAnswer<'data'>>,
   results: { visibility: 'immediate', showScore: true },
   screen: {
     ending: { success: { showDefaultContent: true }, fail: { showDefaultContent: true } },
