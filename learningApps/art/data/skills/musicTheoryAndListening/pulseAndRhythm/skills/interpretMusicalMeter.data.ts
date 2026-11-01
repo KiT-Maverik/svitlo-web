@@ -50,7 +50,7 @@ export const interpretMusicalMeter_Skill_Data = buildSkillConfig({
       de: 'Höre, wie wiederkehrende starke und schwache Schläge ein musikalisches Muster strukturieren.',
       ja: '強拍と弱拍の繰り返しが、音楽のパターンをどのように形づくるか聴いてみましょう。',
       ko: '강박과 약박의 반복이 음악적 패턴을 어떻게 구성하는지 들어 보세요.',
-      tr: 'Tekrarlanan güçlü ve zayıf vuruşların müzikal bir örüntüyü nasıl oluşturduğunu dinle.',
+      tr: 'Tekrarlanan güçlü ve zayıf vuruşların müzikal bir örüntüyü nasıl oluşturduğunu dinleyin.',
       vi: 'Lắng nghe cách các phách mạnh và nhẹ lặp lại tạo nên cấu trúc của một mẫu nhạc.',
       ta: 'மீண்டும் மீண்டும் வரும் வலுவான, மெலிந்த துடிப்புகள் இசை வடிவத்தை எவ்வாறு அமைக்கின்றன என்பதைக் கேளுங்கள்.',
       te: 'పునరావృతమయ్యే బలమైన, బలహీనమైన తాళాలు సంగీత నమూనాను ఎలా క్రమబద్ధం చేస్తాయో వినండి.',
