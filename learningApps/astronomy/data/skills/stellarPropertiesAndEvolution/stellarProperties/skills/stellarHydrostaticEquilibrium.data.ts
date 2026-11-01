@@ -19,7 +19,7 @@ export const stellarHydrostaticEquilibrium_Skill_Data = buildSkillConfig({
     ko: '별의 정역학적 평형',
     tr: 'Yıldızlarda hidrostatik denge',
     vi: 'Cân bằng thủy tĩnh của sao',
-    ta: 'விண்மீன் நீர்நிலைச் சமநிலை',
+    ta: 'விண்மீனின் அழுத்த–ஈர்ப்பு சமநிலை',
     te: 'నక్షత్రాల హైడ్రోస్టాటిక్ సమతుల్యత',
     mr: 'ताऱ्यांचे द्रवस्थैतिक संतुलन',
     ms: 'Keseimbangan hidrostatik bintang',

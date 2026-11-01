@@ -49,7 +49,7 @@ export const sampleReturnEvidence_Skill_Data = buildSkillConfig({
       lt: 'Tyrinėk, ką atskleidžia iš kosmoso pargabenti mėginiai ir kaip užterštumas gali paveikti tyrimų išvadas.',
       lv: 'Izpēti, ko atklāj no kosmosa atvestie paraugi un kā piesārņojums var ietekmēt secinājumus.',
       et: 'Uuri, mida kosmosest Maale toodud proovid näitavad ja kuidas saastumine võib järeldusi mõjutada.',
-      be: 'Дасьледуй, што могуць паказаць ўзоры, дастаўленыя з космасу, і як забруджваньне можа паўплываць на высновы.',
+      be: 'Дасьледуй, што могуць паказаць узоры, дастаўленыя з космасу, і як забруджваньне можа паўплываць на высновы.',
       ka: 'გაიგე, რას გვიჩვენებს კოსმოსიდან ჩამოტანილი ნიმუშები და როგორ შეიძლება დაბინძურებამ შედეგებზე იმოქმედოს.',
       kk: 'Ғарыштан жеткізілген үлгілер нені көрсететінін және ластану қорытындыларға қалай әсер ететінін зертте.',
       uk: 'Досліджуй, що можна дізнатися зі зразків, повернутих із космосу, та як забруднення може вплинути на висновки.',
