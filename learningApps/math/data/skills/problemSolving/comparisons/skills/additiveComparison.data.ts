@@ -23,7 +23,7 @@ export const additiveComparison_Skill_Data = buildSkillConfig({
     id: 'Menyelesaikan perbandingan aditif',
     de: 'Additive Vergleichsaufgaben lösen',
     ja: '差による比較問題を解く',
-    ko: '덧셈 비교 문제 풀기',
+    ko: '차이로 비교하는 문제 풀기',
     tr: 'Toplamsal karşılaştırma problemlerini çözme',
     vi: 'Giải bài toán so sánh hơn kém',
     ta: 'கூட்டல் ஒப்பீட்டுக் கணக்கைத் தீர்த்தல்',
