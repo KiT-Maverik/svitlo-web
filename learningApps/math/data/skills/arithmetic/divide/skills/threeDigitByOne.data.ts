@@ -12,7 +12,7 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
     kk: 'Бөлу — үш таңбалы санды бір таңбалы санға',
     en: 'Division — 3-digit÷1-digit',
     qm: 'Bölüv — üç raqamlı sayını bir raqamlı sayığa bölüv',
-    zh: '除法 — 3-位数÷1-位数',
+    zh: '除法 — 三位数除以一位数',
     hi: 'भाग — 3-अंकीय÷1-अंकीय',
     es: 'División — 3-cifras÷1-cifras',
     ar: 'القسمة — 3-أرقام÷1-أرقام',
