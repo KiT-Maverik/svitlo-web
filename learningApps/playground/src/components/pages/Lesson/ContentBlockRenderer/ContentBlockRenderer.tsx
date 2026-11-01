@@ -98,12 +98,25 @@ function CheckpointBlock({
       <div role={response.renderAsGroup ? 'group' : undefined}>
         {response.items.map((item, index) => {
           const checkable = item.check === true || (item.check === undefined && response.enableChecks === true);
+          const adornments = (position: 'left' | 'right') => (
+            <>
+              {response.showIndices !== false && (response.indexPosition ?? 'left') === position && (
+                <span aria-hidden="true">{index + 1}. </span>
+              )}
+              {response.showIcon && (response.iconPosition ?? 'left') === position && (
+                <span aria-hidden="true">✦ </span>
+              )}
+              {response.showChevron !== false && (response.chevronPosition ?? 'right') === position && (
+                <span aria-hidden="true">▸ </span>
+              )}
+            </>
+          );
           return (
             <details key={index}>
-              <summary>
-                {response.showIndices !== false && <span aria-hidden="true">{index + 1}. </span>}
-                {response.showIcon && <span aria-hidden="true">✦ </span>}
-                {item.question}
+              <summary style={{ listStyle: 'none', cursor: 'pointer' }}>
+                {adornments('left')}
+                <span>{item.question}</span>
+                {adornments('right')}
               </summary>
               <div>
                 {item.answer.map((block, blockIndex) => (
