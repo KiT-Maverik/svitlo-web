@@ -27,7 +27,7 @@ export const layerElectronicRhythms_Skill_Data = buildSkillConfig({
     pl: 'Nakładaj warstwy rytmów elektronicznych',
     uk: 'Нашаровуйте електронні ритми',
     lt: 'Sluoksniuokite elektroninius ritmus',
-    lv: 'Veidojiet elektronisko ritmu slāņus',
+    lv: 'Veidot elektronisko ritmu slāņus',
     et: 'Kihista elektroonilisi rütme',
     be: 'Стварайце пласты электронных рытмаў',
     ka: 'ელექტრონული რიტმების ფენებად დალაგება',

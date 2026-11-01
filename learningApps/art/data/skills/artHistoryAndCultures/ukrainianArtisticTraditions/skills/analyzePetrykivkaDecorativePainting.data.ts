@@ -66,7 +66,7 @@ export const analyzePetrykivkaDecorativePainting_Skill_Data = buildSkillConfig({
       be: 'Пазнаёмцеся з кветкавымі матывамі і тэхнікамі пэндзля ў традыцыі петрыкаўскага роспісу.',
       ka: 'გაეცანით პეტრიკივკის მხატვრობის ტრადიციის ყვავილოვან მოტივებსა და ფუნჯის ტექნიკას.',
       kk: 'Петриковка кескіндеме дәстүріндегі гүл өрнектері мен қылқалам тәсілдерін біліңіз.',
-      qm: 'Petrıkivka resim ananesiniñ çiçek naqışları ve fırça usullarını ögreniniz.',
+      qm: 'Petrıkivka resim ananesiniñ çiçek naqışları ve fırça usullarını ögreniñiz.',
     },
   },
 });

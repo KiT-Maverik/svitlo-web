@@ -67,7 +67,7 @@ export const buildAVisualIdentity_Skill_Data = buildSkillConfig({
       be: 'Спалучайце колеры, шрыфты і формы ў цэласную візуальную ідэнтычнасць.',
       ka: 'შეუთავსეთ ფერები, ასოები და ფორმები თანმიმდევრულ ვიზუალურ იდენტობად.',
       kk: 'Түстерді, қаріптерді және пішіндерді біріктіріп, біртұтас визуалды бірегейлік жасаңыз.',
-      qm: 'Renklerni, yazı şekillerini ve şekillerni birleştirip tutarlı vizual kimlik yaratın.',
+      qm: 'Renklerni, yazı şekillerini ve şekillerni birleştirip tutarlı vizual kimlik yaratıñız.',
     },
   },
 });

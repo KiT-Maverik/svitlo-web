@@ -22,7 +22,7 @@ export const useDepthOfField_Skill_Data = buildSkillConfig({
     vi: 'Sử dụng độ sâu trường ảnh',
     ta: 'குவிய ஆழத்தைப் பயன்படுத்தவும்',
     te: 'ఫీల్డ్ డెప్త్‌ను ఉపయోగించండి',
-    mr: 'क्षेत्राची खोली वापरा',
+    mr: 'छायाचित्रणातील क्षेत्रगहनता वापरा',
     ms: 'Menggunakan kedalaman medan',
     he: 'שימוש בעומק שדה',
     pl: 'Korzystanie z głębi ostrości',

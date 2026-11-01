@@ -19,7 +19,7 @@ export const analyzePerformanceArt_Skill_Data = buildSkillConfig({
     ko: '퍼포먼스 아트 분석하기',
     tr: 'Performans sanatını incelemek',
     vi: 'Phân tích nghệ thuật trình diễn',
-    ta: 'செயல்திறன் கலையைப் பகுப்பாய்வு செய்',
+    ta: 'நேரடி நிகழ்த்துக் கலையைப் பகுப்பாய்வு செய்யுங்கள்',
     te: 'పెర్ఫార్మెన్స్ కళను విశ్లేషించండి',
     mr: 'परफॉर्मन्स कलेचे विश्लेषण करा',
     ms: 'Menganalisis Seni Persembahan',
@@ -32,7 +32,7 @@ export const analyzePerformanceArt_Skill_Data = buildSkillConfig({
     be: 'Аналізаваць перформанс',
     ka: 'პერფორმანსული ხელოვნების გაანალიზება',
     kk: 'Перформанс өнерін талдау',
-    qm: 'Performans sanatını incelemek',
+    qm: 'Performans sanatını tahlil etüv',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const analyzePerformanceArt_Skill_Data = buildSkillConfig({
       be: 'Пазнаёмцеся з перформансамі, дзе жывая дзея і прысутнасць гледачоў становяцца мастацтвам.',
       ka: 'გაეცანით პერფორმანსებს, სადაც ცოცხალი მოქმედება და მაყურებლის დასწრება ხელოვნებად იქცევა.',
       kk: 'Зерттеңіз: тірі әрекет пен көрерменнің қатысуы өнерге айналатын перформанстарды.',
-      qm: 'Canlı eylemin ve izleyici varlığının sanata dönüştüğü performansları keşfedin.',
+      qm: 'Canlı areket ve seyirciniñ iştiraki sanatqa çevrilgen performanslarnı tahlil etiñiz.',
     },
   },
 });

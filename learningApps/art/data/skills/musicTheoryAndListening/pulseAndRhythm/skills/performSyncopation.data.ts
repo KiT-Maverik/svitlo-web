@@ -59,7 +59,7 @@ export const performSyncopation_Skill_Data = buildSkillConfig({
       he: 'הדגישו פעימות בלתי צפויות תוך שמירה על הפעמה הבסיסית.',
       pl: 'Akcentuj nieoczekiwane uderzenia, zachowując podstawowy puls.',
       uk: 'Наголошуй на неочікуваних долях, зберігаючи основний пульс.',
-      lt: 'Pabrėžkite netikėtus taktus išlaikydami pagrindinį pulsą.',
+      lt: 'Pabrėžkite netikėtas ritmo vietas, išlaikydami pagrindinį pulsą.',
       lv: 'Uzsveriet negaidītus sitienus, saglabājot pamata pulsu.',
       et: 'Rõhuta ootamatuid lööke, säilitades samal ajal põhipulsi.',
       be: 'Падкрэслівайце нечаканыя долі, захоўваючы асноўны пульс.',

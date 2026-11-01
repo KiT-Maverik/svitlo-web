@@ -9,7 +9,7 @@ export const analyzeGeledeMasqueradeTraditions_Skill_Data = buildSkillConfig({
     hi: 'गेलेडे मुखौटा परंपराओं का विश्लेषण करें',
     es: 'Analizar las tradiciones de mascarada Gelede',
     ar: 'تحليل تقاليد أقنعة غيلِدي',
-    fr: 'Analyser les traditions du mascarade Gelede',
+    fr: 'Analyser les traditions de la mascarade Gelede',
     bn: 'গেলেদে মুখোশধারী ঐতিহ্য বিশ্লেষণ করুন',
     pt: 'Analisar as tradições de mascarada Gelede',
     ur: 'گیلےڈے کے نقاب پوش روایات کا تجزیہ کریں',

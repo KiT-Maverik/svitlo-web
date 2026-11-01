@@ -12,7 +12,7 @@ export const designReadableText_Skill_Data = buildSkillConfig({
     ar: 'تصميم نص مقروء',
     fr: 'Concevoir un texte lisible',
     bn: 'পাঠযোগ্য লেখা নকশা করুন',
-    pt: 'Conceber texto legível',
+    pt: 'Criar textos legíveis',
     ur: 'قابل مطالعہ متن ڈیزائن کریں',
     id: 'Merancang teks yang mudah dibaca',
     de: 'Lesbaren Text gestalten',

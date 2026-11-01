@@ -12,7 +12,7 @@ export const designAPictogramFamily_Skill_Data = buildSkillConfig({
     ar: 'تصميم مجموعة من الرموز التصويرية',
     fr: 'Concevoir une famille de pictogrammes',
     bn: 'চিত্রলিপির একটি পরিবার নকশা করুন',
-    pt: 'Conceber uma família de pictogramas',
+    pt: 'Projetar uma família de pictogramas',
     ur: 'تصویری علامات کا مجموعہ ڈیزائن کریں',
     id: 'Merancang keluarga piktogram',
     de: 'Eine Piktogrammfamilie gestalten',

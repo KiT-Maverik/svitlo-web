@@ -11,7 +11,7 @@ export const expressCharacterThroughGesture_Skill_Data = buildSkillConfig({
     ar: 'التعبير عن الشخصية بالإيماءات',
     fr: 'Exprimer un personnage par le geste',
     bn: 'অঙ্গভঙ্গির মাধ্যমে চরিত্র প্রকাশ করুন',
-    pt: 'Expressar a personagem por meio de gestos',
+    pt: 'Expressar o personagem por meio de gestos',
     ur: 'اشاروں کے ذریعے کردار کا اظہار کریں',
     id: 'Mengekspresikan karakter melalui gestur',
     de: 'Eine Figur durch Gesten ausdrücken',

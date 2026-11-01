@@ -27,7 +27,7 @@ export const varyAMovementMotif_Skill_Data = buildSkillConfig({
     pl: 'Zmieniaj motyw ruchowy',
     uk: 'Змінюйте руховий мотив',
     lt: 'Keiskite judesio motyvą',
-    lv: 'Variējiet kustību motīvu',
+    lv: 'Variēt kustību motīvu',
     et: 'Muuda liikumismotiivi',
     be: 'Змяняйце рухавы матыў',
     ka: 'შეცვალეთ მოძრაობის მოტივი',

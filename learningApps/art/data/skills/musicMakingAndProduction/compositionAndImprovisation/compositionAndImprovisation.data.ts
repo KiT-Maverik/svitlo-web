@@ -62,7 +62,7 @@ export const compositionAndImprovisation_SkillGroup_Data = buildSkillGroupConfig
       bn: 'সঙ্গীতের ধারণা উদ্ভাবন, সমন্বয় ও বিন্যাস করে পূর্ণাঙ্গ রচনা তৈরি করুন।',
       pt: 'Invente, combine e organize ideias musicais em peças completas.',
       ur: 'موسیقی کے خیالات تخلیق کریں، یکجا کریں اور مکمل دھنوں میں ترتیب دیں۔',
-      id: 'Cipta, gabungkan dan susun idea muzik menjadi karya yang lengkap.',
+      id: 'Ciptakan, gabungkan, dan susun gagasan musik menjadi karya yang utuh.',
       de: 'Erfinde, kombiniere und ordne musikalische Ideen zu vollständigen Stücken.',
       ja: '音楽のアイデアを生み出し、組み合わせ、構成して一つの作品にしましょう。',
       ko: '음악적 아이디어를 만들고 결합하고 구성해 완성된 곡으로 만드세요.',

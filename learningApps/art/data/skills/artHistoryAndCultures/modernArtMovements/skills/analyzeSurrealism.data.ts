@@ -65,7 +65,7 @@ export const analyzeSurrealism_Skill_Data = buildSkillConfig({
       et: 'Uuri, kuidas sürrealistid uurisid unenägusid ja ootamatuid kombinatsioone.',
       be: 'Даведайцеся, як мастакі-сюррэалісты даследавалі сны і нечаканыя спалучэнні.',
       ka: 'გაიგეთ, როგორ იკვლევდნენ სიურრეალისტი მხატვრები სიზმრებსა და მოულოდნელ შეხამებებს.',
-      kk: 'Сюрреалист суретшілердің түстер мен тосын үйлесімдерді қалай зерттегенін біліңіз.',
+      kk: 'Сюрреалист суретшілердің түс көруден туған бейнелер мен күтпеген үйлесімдерді қалай зерттегенін біліңіз.',
       qm: 'Sürrealist sanatçılarnıñ ruyalarnı ve beklenmegen birleşmelerni nasıl araştırğanını ögreniniz.',
     },
   },

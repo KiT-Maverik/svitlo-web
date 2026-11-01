@@ -23,7 +23,7 @@ export const produceArtisticStudies_Skill_Data = buildSkillConfig({
     te: 'కళాత్మక అధ్యయనాలను రూపొందించండి',
     mr: 'कलात्मक अभ्यास तयार करा',
     ms: 'Menghasilkan Kajian Artistik',
-    he: 'יצירת מחקרים אמנותיים',
+    he: 'יצירת סקיצות וניסויים אמנותיים',
     pl: 'Tworzyć studia artystyczne',
     uk: 'Створювати мистецькі етюди',
     lt: 'Kurti menines studijas',

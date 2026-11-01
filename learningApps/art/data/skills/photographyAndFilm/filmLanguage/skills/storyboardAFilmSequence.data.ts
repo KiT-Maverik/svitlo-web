@@ -33,7 +33,7 @@ export const storyboardAFilmSequence_Skill_Data = buildSkillConfig({
     be: 'Ствараць раскадроўку кінасцэны',
     ka: 'ფილმის ეპიზოდის სტორიბორდის შექმნა',
     kk: 'Фильм көрінісінің сторибордын жасау',
-    qm: 'Film sekansı için taslak kareler hazırlamak',
+    qm: 'Film sekansı içün taslak kareler hazırlamak',
   },
   description: {
     methodological:
@@ -47,7 +47,7 @@ export const storyboardAFilmSequence_Skill_Data = buildSkillConfig({
       ar: 'خطّط للمشهد من خلال سلسلة من الرسومات التي تعرض زوايا الكاميرا الأساسية.',
       fr: 'Planifiez une scène à l’aide d’une suite d’images présentant les principaux points de vue de caméra.',
       bn: 'প্রধান ক্যামেরা দৃশ্য দেখানো ছবির ধারাবাহিকতার মাধ্যমে চলচ্চিত্রের দৃশ্য পরিকল্পনা করুন।',
-      pt: 'Planeie uma cena através de uma sequência de imagens que mostre os principais enquadramentos.',
+      pt: 'Planeje uma cena por meio de uma sequência de imagens que mostre os principais enquadramentos.',
       ur: 'اہم کیمرہ مناظر دکھانے والی تصویروں کی ترتیب سے فلمی منظر کی منصوبہ بندی کریں۔',
       id: 'Rencanakan adegan film melalui rangkaian gambar yang menunjukkan sudut kamera utama.',
       de: 'Plane eine Filmszene anhand einer Bildfolge mit den wichtigsten Kameraperspektiven.',
