@@ -5,6 +5,7 @@ export const astronomicalInterferometry_Skill_Data = buildSkillConfig({
   id: 'ba50b84c-d46d-4223-b9fb-4dc052116e31',
   name: {
     en: 'Astronomical Interferometry',
+    qm: 'Astronomik interferometriya',
     bn: 'জ্যোতির্বৈজ্ঞানিক ব্যতিচারমিতি',
     ur: 'فلکیاتی تداخل پیمائی',
     ta: 'வானியல் குறுக்கீட்டளவியல்',
@@ -38,6 +39,7 @@ export const astronomicalInterferometry_Skill_Data = buildSkillConfig({
       'Explain how correlated signals from separated receivers constrain angular structure in radio and optical astronomy and why baseline geometry matters.',
     frontend: {
       en: 'Understand how combining signals from separated telescopes can reveal finer detail.',
+      qm: 'Birbirinden uzaq teleskoplarnıñ signallarını birleştirüv nasıl ince tefsilâtnı köstergenini añlañız.',
       bn: 'বোঝো, দূরে দূরে থাকা দূরবীক্ষণ যন্ত্রের সংকেত একত্র করলে কীভাবে আরও সূক্ষ্ম বিবরণ জানা যায়।',
       ur: 'سمجھیں کہ ایک دوسرے سے دور نصب دوربینوں کے اشارے ملا کر مزید باریک تفصیلات کیسے دیکھی جا سکتی ہیں۔',
       ta: 'தொலைவில் தனித்தனியாக அமைந்த தொலைநோக்கிகளின் சமிக்ஞைகளை இணைப்பது மேலும் நுணுக்கமான விவரங்களைக் காண எவ்வாறு உதவுகிறது என்பதைப் புரிந்துகொள்ளுங்கள்.',

@@ -5,6 +5,7 @@ export const auroralProcesses_Skill_Data = buildSkillConfig({
   id: 'b312d955-8ecf-4a11-b641-32987159bab8',
   name: {
     en: 'Auroral Processes',
+    qm: 'Qutup şavleleriniñ peyda oluvı',
     bn: 'মেরুজ্যোতি সৃষ্টির প্রক্রিয়া',
     ur: 'قطبی روشنی بننے کے عمل',
     ta: 'துருவ ஒளிகள் உருவாகும் செயல்முறை',
@@ -38,6 +39,7 @@ export const auroralProcesses_Skill_Data = buildSkillConfig({
       'Explain how energetic charged particles interacting with an atmosphere and magnetic field produce auroral emissions.',
     frontend: {
       en: 'Explain how charged particles and atmospheric gases produce auroras.',
+      qm: 'Elektrik yüklü zerreler ve atmosfera gazları qutup şavlelerini nasıl peyda etkenini añlatıñız.',
       bn: 'ব্যাখ্যা করো, আধানযুক্ত কণা বায়ুমণ্ডলের গ্যাসের সঙ্গে ক্রিয়া করে কীভাবে মেরুজ্যোতি তৈরি করে।',
       ur: 'وضاحت کریں کہ بار دار ذرات فضائی گیسوں سے تعامل کر کے قطبی روشنیاں کیسے پیدا کرتے ہیں۔',
       ta: 'மின்னூட்டம் கொண்ட துகள்கள் வளிமண்டல வாயுக்களுடன் வினைபுரிந்து துருவ ஒளிகளை எவ்வாறு உருவாக்குகின்றன என்பதை விளக்குங்கள்.',

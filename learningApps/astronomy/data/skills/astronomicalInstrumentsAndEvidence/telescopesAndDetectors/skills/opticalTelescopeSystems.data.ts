@@ -5,6 +5,7 @@ export const opticalTelescopeSystems_Skill_Data = buildSkillConfig({
   id: 'b14e2df7-c6e3-4503-aa9d-33e0c858d39b',
   name: {
     en: 'Optical Telescope Systems',
+    qm: 'Optik teleskop sistemaları',
     bn: 'আলোকীয় দূরবীক্ষণ ব্যবস্থাসমূহ',
     ur: 'بصری دوربینوں کے نظام',
     ta: 'ஒளியியல் தொலைநோக்கி அமைப்புகள்',
@@ -38,6 +39,7 @@ export const opticalTelescopeSystems_Skill_Data = buildSkillConfig({
       'Interpret the scientific roles of refractors, reflectors and optical configurations without designing their mechanical construction.',
     frontend: {
       en: 'Compare how refracting and reflecting telescopes collect and focus light.',
+      qm: 'Yarıqnı sındırğan ve aks ettirgen teleskoplarnıñ yarıqnı toplav ve fokuslav usullarını teñeştiriñiz.',
       bn: 'লেন্সযুক্ত ও দর্পণযুক্ত দূরবীক্ষণ যন্ত্র কীভাবে আলো সংগ্রহ করে ও কেন্দ্রীভূত করে, তা তুলনা করো।',
       ur: 'موازنہ کریں کہ عدسوں والی اور آئینوں والی دوربینیں روشنی کیسے جمع اور مرکوز کرتی ہیں۔',
       ta: 'ஒளிவிலகல் தொலைநோக்கிகளும் பிரதிபலிப்புத் தொலைநோக்கிகளும் ஒளியை எவ்வாறு சேகரித்துக் குவிக்கின்றன என்பதை ஒப்பிடுங்கள்.',

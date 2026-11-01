@@ -5,6 +5,7 @@ export const solarWind_Skill_Data = buildSkillConfig({
   id: 'c4838113-08a4-4146-ba4b-aff8d6e59012',
   name: {
     en: 'Solar Wind',
+    qm: 'Küneş yeli',
     bn: 'সৌর বায়ু',
     ur: 'شمسی ہوا',
     ta: 'சூரியக் காற்று',
@@ -38,6 +39,7 @@ export const solarWind_Skill_Data = buildSkillConfig({
       'Explain the outward flow of charged solar particles and their transport of magnetic fields through space.',
     frontend: {
       en: 'Explore the stream of charged particles flowing outward from the Sun.',
+      qm: 'Küneşten tışqarı aqqan elektrik yüklü zerreler aqımını araştırıñız.',
       bn: 'সূর্য থেকে মহাকাশের দিকে বয়ে যাওয়া আধানযুক্ত কণার প্রবাহ সম্পর্কে জানো।',
       ur: 'سورج سے باہر خلا کی طرف بہنے والے بار دار ذرات کے بہاؤ کے بارے میں جانیں۔',
       ta: 'சூரியனிலிருந்து விண்வெளியை நோக்கி வெளியேறும் மின்னூட்டம் கொண்ட துகள்களின் ஓட்டத்தை ஆராயுங்கள்.',

@@ -5,6 +5,7 @@ export const spaceWeather_Skill_Data = buildSkillConfig({
   id: '78d330ce-dffd-4f9a-92bd-f46c8b7f33e4',
   name: {
     en: 'Space Weather',
+    qm: 'Kosmik ava',
     bn: 'মহাকাশের আবহাওয়া',
     ur: 'خلائی موسم',
     ta: 'விண்வெளி வானிலை',
@@ -38,6 +39,7 @@ export const spaceWeather_Skill_Data = buildSkillConfig({
       'Interpret solar-driven changes that can affect spacecraft, radio systems and near-Earth space without equating them with terrestrial weather.',
     frontend: {
       en: 'Learn how solar activity can disrupt space technology and communications.',
+      qm: 'Küneş faoliyeti kosmik tehnikağa ve haberleşüvge nasıl zarar ketirebilgenini ögreniñiz.',
       bn: 'সৌর কার্যকলাপ কীভাবে মহাকাশ প্রযুক্তি ও যোগাযোগব্যবস্থায় বিঘ্ন ঘটাতে পারে তা জানো।',
       ur: 'جانیں کہ شمسی سرگرمیاں خلائی ٹیکنالوجی اور مواصلات میں خلل کیسے ڈال سکتی ہیں۔',
       ta: 'சூரியச் செயல்பாடு விண்வெளித் தொழில்நுட்பத்தையும் தகவல்தொடர்பையும் எவ்வாறு பாதிக்கலாம் என்பதை அறியுங்கள்.',

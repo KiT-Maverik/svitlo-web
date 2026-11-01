@@ -5,6 +5,7 @@ export const astronomicalDetectors_Skill_Data = buildSkillConfig({
   id: '5efae9fa-b69e-48b7-971c-bcd47d89c157',
   name: {
     en: 'Astronomical Detectors',
+    qm: 'Astronomik detektorlar',
     bn: 'জ্যোতির্বৈজ্ঞানিক শনাক্তকারী',
     ur: 'فلکیاتی آشکارے',
     ta: 'வானியல் உணர்கருவிகள்',
@@ -38,6 +39,7 @@ export const astronomicalDetectors_Skill_Data = buildSkillConfig({
       'Explain how detectors capture light or other signals and why exposure, noise, calibration and sensitivity matter.',
     frontend: {
       en: 'See how astronomical detectors measure faint signals and why noise and calibration matter.',
+      qm: 'Astronomik detektorlar zayıf signallarnı nasıl ölçkenini, şavqı ve ayarlavnıñ ne içün müim olğanını ögreniñiz.',
       bn: 'জ্যোতির্বৈজ্ঞানিক শনাক্তকারী কীভাবে ক্ষীণ সংকেত মাপে এবং পরিমাপে গোলযোগ ও ক্রমাঙ্কন কেন গুরুত্বপূর্ণ, তা জানো।',
       ur: 'جانیں کہ فلکیاتی آشکارے کمزور اشاروں کو کیسے ناپتے ہیں اور شور اور معیار بندی کیوں اہم ہیں۔',
       ta: 'வானியல் உணர்கருவிகள் மிக வலுவற்ற சமிக்ஞைகளை எவ்வாறு அளவிடுகின்றன, இரைச்சலும் அளவுத்திருத்தமும் ஏன் முக்கியம் என்பதை அறியுங்கள்.',
