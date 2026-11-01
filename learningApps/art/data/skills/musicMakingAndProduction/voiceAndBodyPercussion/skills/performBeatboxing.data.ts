@@ -54,7 +54,7 @@ export const performBeatboxing_Skill_Data = buildSkillConfig({
       vi: 'Tạo groove nhịp nhàng bằng các âm thanh bộ gõ giọng nói có kiểm soát.',
       ta: 'கட்டுப்படுத்தப்பட்ட குரல் தாள ஒலிகளால் ஓர் இசைநடையை உருவாக்குங்கள்.',
       te: 'నియంత్రిత వోకల్ పెర్కషన్ శబ్దాలతో లయబద్ధమైన గ్రూవ్‌ను సృష్టించండి.',
-      mr: 'नियंत्रित आवाजेतील तालवाद्य ध्वनी वापरून लयबद्ध ग्रूव्ह तयार करा.',
+      mr: 'नियंत्रित मुखतालवाद्य ध्वनी वापरून लयबद्ध ग्रूव्ह तयार करा.',
       ms: 'Hasilkan groove berirama dengan bunyi perkusi vokal yang terkawal.',
       he: 'צרו גרוב קצבי באמצעות צלילי כלי הקשה קוליים מבוקרים.',
       pl: 'Twórz rytmiczny groove za pomocą kontrolowanych dźwięków wokalnej perkusji.',
