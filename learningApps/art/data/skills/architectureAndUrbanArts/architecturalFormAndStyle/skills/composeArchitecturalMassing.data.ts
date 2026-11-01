@@ -62,7 +62,7 @@ export const composeArchitecturalMassing_Skill_Data = buildSkillConfig({
       lt: 'Sujunk pastatų tūrius ir atviras erdves į subalansuotą vizualinę formą.',
       lv: 'Apvieno ēku apjomus un atklātās telpas līdzsvarotā vizuālā formā.',
       et: 'Ühenda hoonemahud ja avatud ruumid tasakaalustatud visuaalseks tervikuks.',
-      be: 'Аб’ядноўвай аб’ёмы будынкаў і адкрытыя прасторы ў збалансаваную візуальную форму.',
+      be: 'Аб’ядноўвайце аб’ёмы будынкаў і адкрытыя прасторы ў збалянсаваную візуальную форму.',
       ka: 'შეაერთეთ შენობების მოცულობები და ღია სივრცეები დაბალანსებულ ვიზუალურ ფორმად.',
       kk: 'Ғимарат көлемдері мен ашық кеңістіктерді үйлесімді көрнекі пішінге біріктіріңіз.',
       qm: 'Bina hacimleri ve açıq meydanlarnı teñleşken körüniş şekline birleştiriñiz.',

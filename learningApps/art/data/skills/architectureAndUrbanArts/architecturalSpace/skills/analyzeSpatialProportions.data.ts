@@ -62,7 +62,7 @@ export const analyzeSpatialProportions_Skill_Data = buildSkillConfig({
       lt: 'Atkreipk dėmesį, kaip patalpų dydis ir angos veikia mastelio pojūtį bei atmosferą.',
       lv: 'Pievērs uzmanību tam, kā telpu izmēri un atvērumi ietekmē mēroga izjūtu un atmosfēru.',
       et: 'Pane tähele, kuidas ruumide suurus ja avad mõjutavad mõõtkavatunnet ja õhustikku.',
-      be: 'Звярні ўвагу, як памеры пакояў і праёмы ўплываюць на адчуванне маштабу й атмасферу.',
+      be: 'Зьвярніце ўвагу, як памеры пакояў і праёмаў уплываюць на адчуваньне маштабу й атмасфэру.',
       ka: 'დააკვირდით, როგორ მოქმედებს ოთახების ზომა და ღიობები მასშტაბის შეგრძნებასა და ატმოსფეროზე.',
       kk: 'Бөлме өлшемдері мен ойықтардың ауқым сезімі мен атмосфераға әсерін байқаңыз.',
 

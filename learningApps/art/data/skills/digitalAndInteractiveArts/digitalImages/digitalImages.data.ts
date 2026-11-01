@@ -36,7 +36,7 @@ export const digitalImages_SkillGroup_Data = buildSkillGroupConfig({
     lt: 'Kurti skaitmeninius vaizdus naudojant pikselius, formas, sluoksnius ir atrankinį redagavimą.',
     lv: 'Veidot digitālus attēlus ar pikseļiem, formām, slāņiem un selektīvu rediģēšanu.',
     et: 'Digipiltide loomine pikslite, kujundite, kihtide ja valikulise töötlusega.',
-    be: 'Ствараць лічбавыя выявы з дапамогай пікселяў, фігур, слаёў і выбарачнага рэдагавання.',
+    be: 'Лічбавыя выявы',
     ka: 'ციფრული სურათების შექმნა პიქსელებით, ფორმებით, ფენებითა და შერჩევითი რედაქტირებით.',
     kk: 'Пиксельдер, пішіндер, қабаттар және іріктеп өңдеу арқылы цифрлық суреттер жасау.',
     qm: 'Pikseller, şekiller, qatlar ve saylanğan deñiştirmeler ile raqemiy suretler yaratmaq',

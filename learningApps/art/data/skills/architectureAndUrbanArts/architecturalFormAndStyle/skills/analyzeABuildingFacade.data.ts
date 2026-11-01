@@ -62,7 +62,7 @@ export const analyzeABuildingFacade_Skill_Data = buildSkillConfig({
       lt: 'Įžvelk pastato išorės sienų, langų ir angų vizualinį ritmą.',
       lv: 'Izlasi ēkas ārējo sienu, logu un aiļu vizuālo rakstu.',
       et: 'Loe hoone väliskülje seinte, akende ja avade visuaalset mustrit.',
-      be: 'Прааналізуй візуальны рытм сцен, вокнаў і праёмаў на знешнім баку будынка.',
+      be: 'Прааналізуйце візуальны рытм сьценаў, вокнаў і праёмаў на фасадзе будынка.',
       ka: 'წაიკითხეთ შენობის გარე კედლების, ფანჯრებისა და ღიობების ვიზუალური წყობა.',
       kk: 'Ғимараттың сыртқы қабырғалары, терезелері мен ойықтарының көрнекі өрнегін талдаңыз.',
       qm: 'Bina dış yüzündeki divar, pencereler ve açılışlarnıñ körüniş tertibini oquñız.',

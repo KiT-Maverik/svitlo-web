@@ -29,7 +29,7 @@ export const blockAStageScene_Skill_Data = buildSkillConfig({
     lt: 'Surežisuoti scenos mizanscenas',
     lv: 'Veidot skatuves mizanscēnu',
     et: 'Kavandada lavastseeni liikumine',
-    be: 'Блакаваць сцэну',
+    be: 'Плянаваць перамяшчэньні актораў на сцэне',
     ka: 'სცენის მიზანსცენის დაგეგმვა',
     kk: 'Сахналық көріністің мизансценасын құру',
     qm: 'Sahne mizansenini qurmaq',

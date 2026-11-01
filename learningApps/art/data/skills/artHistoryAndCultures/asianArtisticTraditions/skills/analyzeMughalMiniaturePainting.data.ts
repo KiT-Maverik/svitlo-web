@@ -29,7 +29,7 @@ export const analyzeMughalMiniaturePainting_Skill_Data = buildSkillConfig({
     lt: 'Analizuoti Mogolų miniatiūrinę tapybą',
     lv: 'Analizēt Mogolu miniatūrglezniecību',
     et: 'Analüüsida Mogulite miniatuurmaali',
-    be: 'Аналізаваць магольскую мініяцюрны жывапіс',
+    be: 'Аналізаваць магольскі мініяцюрны жывапіс',
     ka: 'მუღალთა მინიატურული მხატვრობის გაანალიზება',
     kk: 'Моғол миниатюралық кескіндемесін талдау',
     qm: 'Babür minyatür resmini tahlil etmek',
