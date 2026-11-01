@@ -22,7 +22,7 @@ export const addLikeDenominators_Skill_Data = buildSkillConfig({
     ur: 'ایک مکمل کے اندر یکساں مخرج والے کسر جمع کرنا',
     id: 'Menjumlahkan pecahan berpenyebut sama dalam satu keseluruhan',
     de: 'Brüche mit gleichem Nenner innerhalb eines Ganzen addieren',
-    ja: '1の範囲で分母が同じ分数を足す',
+    ja: '同じ全体を基準に分母が同じ分数を足す',
     ko: '한 전체 범위에서 분모가 같은 분수 더하기',
     tr: 'Bir bütün içinde paydaları eşit kesirleri toplama',
     vi: 'Cộng các phân số cùng mẫu số trong phạm vi một đơn vị',
