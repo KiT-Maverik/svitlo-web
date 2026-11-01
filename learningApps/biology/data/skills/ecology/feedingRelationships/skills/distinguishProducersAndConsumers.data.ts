@@ -21,7 +21,7 @@ export const distinguishProducersAndConsumers_Skill_Data = buildSkillConfig({
     vi: 'Phân biệt sinh vật sản xuất và sinh vật tiêu thụ',
     ta: 'உற்பத்தியாளர்களையும் நுகர்வோரையும் வேறுபடுத்துதல்',
     te: 'ఉత్పత్తిదారులు, వినియోగదారులను వేరు చేయడం',
-    mr: 'उत्पादक आणि भक्षक यांत फरक ओळखणे',
+    mr: 'उत्पादक आणि उपभोक्ता यांत फरक ओळखणे',
     ms: 'Membezakan pengeluar dan pengguna',
     he: 'הבחנה בין יצרנים לצרכנים',
     pl: 'Odróżnianie producentów i konsumentów',

@@ -21,7 +21,7 @@ export const distinguishHereditaryAndAcquiredTraits_Skill_Data = buildSkillConfi
     vi: 'Phân biệt tính trạng di truyền và tính trạng mắc phải',
     ta: 'மரபுவழி மற்றும் பெறப்பட்ட பண்புகளை வேறுபடுத்துதல்',
     te: 'వారసత్వ, ఆర్జిత లక్షణాలను వేరు చేయడం',
-    mr: 'आनुवंशिक आणि संपादित गुणधर्मांत फरक ओळखणे',
+    mr: 'आनुवंशिक आणि अर्जित गुणधर्मांत फरक ओळखणे',
     ms: 'Membezakan ciri diwarisi dan diperoleh',
     he: 'הבחנה בין תכונות תורשתיות לנרכשות',
     pl: 'Odróżnianie cech dziedzicznych i nabytych',

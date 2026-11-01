@@ -53,7 +53,7 @@ export const explainThePrincipleOfSelectiveBreeding_Skill_Data = buildSkillConfi
       vi: 'Hiểu cách chọn giống phát triển các tính trạng di truyền qua nhiều thế hệ.',
       ta: 'தேர்ந்தெடுத்த இனப்பெருக்கம் பல தலைமுறைகளாக மரபுவழிப் பண்புகளை எவ்வாறு மேம்படுத்துகிறது என்பதைப் புரிந்துகொள்.',
       te: 'ఎంపిక చేసిన సంతానోత్పత్తి తరతరాలుగా వారసత్వ లక్షణాలను ఎలా అభివృద్ధి చేస్తుందో అర్థం చేసుకోండి.',
-      mr: 'निवडक प्रजननामुळे अनेक पिढ्यांमध्ये आनुवंशिक गुणधर्म कसे विकसित होतात हे समजून घ्या.',
+      mr: 'निवडक प्रजननामुळे अनेक पिढ्यांमध्ये इच्छित आनुवंशिक गुणधर्मांचे प्रमाण कसे वाढू शकते ते समजून घ्या.',
       ms: 'Fahami cara pembiakbakaan terpilih mengembangkan ciri yang diwarisi merentas generasi.',
       he: 'הבינו כיצד רבייה בררנית מטפחת תכונות תורשתיות לאורך דורות.',
       pl: 'Zrozum, jak hodowla selektywna rozwija cechy dziedziczne przez kolejne pokolenia.',

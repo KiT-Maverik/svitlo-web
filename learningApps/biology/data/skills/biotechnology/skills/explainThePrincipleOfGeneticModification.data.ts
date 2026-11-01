@@ -53,7 +53,7 @@ export const explainThePrincipleOfGeneticModification_Skill_Data = buildSkillCon
       vi: 'Giải thích biến đổi gen làm thay đổi ADN như thế nào, khác với việc chọn bố mẹ để nhân giống.',
       ta: 'இனப்பெருக்கத்திற்குப் பெற்றோர் உயிரினங்களைத் தேர்ந்தெடுப்பதிலிருந்து வேறுபட்டு, மரபணு மாற்றம் டிஎன்ஏவை எவ்வாறு மாற்றுகிறது என்பதை விளக்கு.',
       te: 'సంతానోత్పత్తికి తల్లిదండ్రులను ఎంచుకోవడంలా కాకుండా, జన్యు మార్పిడి DNAను ఎలా మారుస్తుందో వివరించండి.',
-      mr: 'प्रजननासाठी पालक निवडण्यापेक्षा जनुकीय बदलात डीएनए कसा बदलतो हे स्पष्ट करा.',
+      mr: 'प्रजननासाठी पालक सजीव निवडण्यापेक्षा जनुकीय बदलात थेट डीएनए कसा बदलला जातो हे स्पष्ट करा.',
       ms: 'Terangkan cara pengubahsuaian genetik mengubah DNA, berbeza daripada memilih induk untuk pembiakan.',
       he: 'הסבירו כיצד שינוי גנטי משנה את ה-DNA, בשונה מבחירת הורים לרבייה בררנית.',
       pl: 'Wyjaśnij, jak modyfikacja genetyczna zmienia DNA, w odróżnieniu od wyboru rodziców do hodowli.',
