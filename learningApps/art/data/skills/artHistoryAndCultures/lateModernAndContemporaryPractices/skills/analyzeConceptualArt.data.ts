@@ -66,7 +66,7 @@ export const analyzeConceptualArt_Skill_Data = buildSkillConfig({
       be: 'Пазнаёмцеся з мастацтвам, дзе ідэя або інструкцыя не менш важная за аб’ект.',
       ka: 'გაეცანით ხელოვნებას, სადაც იდეა ან ინსტრუქცია ფიზიკური ობიექტის ტოლად მნიშვნელოვანია.',
       kk: 'Тұжырымдама не нұсқау физикалық нысанмен бірдей маңызды өнерді зерттеңіз.',
-      qm: 'Fikrin veya talimatın fiziksel nesne kadar önemli olduğu sanatı keşfedin.',
+      qm: 'Fikrin veya talimatın fiziksel nesne kadar önemli olduğu sanatı keşf etiñiz.',
     },
   },
 });

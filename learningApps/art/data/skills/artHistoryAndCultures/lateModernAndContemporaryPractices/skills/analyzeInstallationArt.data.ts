@@ -66,7 +66,7 @@ export const analyzeInstallationArt_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як інсталяцыя змяняе прастору, па якой рухаюцца гледачы.',
       ka: 'გაიგეთ, როგორ ცვლის ინსტალაციური ხელოვნება მაყურებლის გასავლელ სივრცეს.',
       kk: 'Инсталляциялық өнер көрермендер жүретін кеңістікті қалай өзгертетінін біліңіз.',
-      qm: 'Yerleştirme sanatının izleyicilerin dolaştığı mekânı nasıl dönüştürdüğünü keşfedin.',
+      qm: 'Yerleştirme sanatının izleyicilerin dolaştığı mekânı nasıl dönüştürdüğünü keşf etiñiz.',
     },
   },
 });

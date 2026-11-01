@@ -66,7 +66,7 @@ export const analyzeAndeanWeavingTraditions_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як узоры і значэнні тканін адрозніваюцца ў супольнасцях і эпохах Анд.',
       ka: 'გაიგეთ, როგორ განსხვავდება ქსოვის ნიმუშები და მათი მნიშვნელობები ანდების სხვადასხვა თემსა და ეპოქაში.',
       kk: 'Зерттеңіз: Анд қауымдары мен кезеңдерінде тоқымашылық өрнектері мен мағыналары қалай өзгереді.',
-      qm: 'And toplulukları ve devirleri arasında dokuma naqışları ve manaları nasıl değişkenini keşfedin.',
+      qm: 'And toplulukları ve devirleri arasında dokuma naqışları ve manaları nasıl değişkenini keşf etiñiz.',
     },
   },
 });
