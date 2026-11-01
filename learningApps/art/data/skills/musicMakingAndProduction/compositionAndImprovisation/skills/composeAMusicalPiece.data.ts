@@ -9,7 +9,7 @@ export const composeAMusicalPiece_Skill_Data = buildSkillConfig({
     hi: 'एक संगीत रचना तैयार करें',
     es: 'Componer una pieza musical',
     ar: 'ألّف مقطوعة موسيقية',
-    fr: 'Composez une pièce musicale',
+    fr: 'Composer une pièce musicale',
     bn: 'একটি সংগীত রচনা করুন',
     pt: 'Compor uma peça musical',
     ur: 'ایک موسیقی کا ٹکڑا ترتیب دیں',

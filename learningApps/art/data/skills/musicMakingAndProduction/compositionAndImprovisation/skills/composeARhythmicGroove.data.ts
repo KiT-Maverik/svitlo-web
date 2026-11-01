@@ -9,7 +9,7 @@ export const composeARhythmicGroove_Skill_Data = buildSkillConfig({
     hi: 'एक लयबद्ध ग्रूव बनाएँ',
     es: 'Crear un patrón rítmico',
     ar: 'أنشئ إيقاعًا متكررًا',
-    fr: 'Créez un groove rythmique',
+    fr: 'Créer un groove rythmique',
     bn: 'একটি ছন্দময় গ্রুভ তৈরি করুন',
     pt: 'Criar um groove rítmico',
     ur: 'ایک ردھمی لے ترتیب دیں',

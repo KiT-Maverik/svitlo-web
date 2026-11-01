@@ -43,7 +43,7 @@ export const analyzeMexicanMuralism_Skill_Data = buildSkillConfig({
       hi: 'जानें कि मैक्सिकन भित्तिचित्र कलाकारों ने सार्वजनिक चित्रकला को इतिहास और सामाजिक विचारों से कैसे जोड़ा।',
       es: 'Descubre cómo los muralistas mexicanos vincularon la pintura pública con la historia y las ideas sociales.',
       ar: 'اكتشف كيف ربط رسامو الجداريات المكسيكيون بين الرسم العام والتاريخ والأفكار الاجتماعية.',
-      fr: "Découvrir comment les muralistes mexicains ont relié la peinture publique à l'histoire et aux idées sociales.",
+      fr: 'Découvrez comment les muralistes mexicains ont relié la peinture publique à l’histoire et aux idées sociales.',
       bn: 'জানুন, মেক্সিকান ম্যুরাল শিল্পীরা কীভাবে জনসমক্ষে আঁকা চিত্রের সঙ্গে ইতিহাস ও সামাজিক ভাবনা যুক্ত করেছেন।',
       pt: 'Veja como os muralistas mexicanos relacionaram a pintura pública à história e às ideias sociais.',
       ur: 'دیکھیں کہ میکسیکن دیواری مصوروں نے عوامی مصوری کو تاریخ اور سماجی خیالات سے کیسے جوڑا۔',

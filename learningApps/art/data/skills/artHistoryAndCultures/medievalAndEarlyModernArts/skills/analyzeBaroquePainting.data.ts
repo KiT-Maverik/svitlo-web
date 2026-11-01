@@ -43,7 +43,7 @@ export const analyzeBaroquePainting_Skill_Data = buildSkillConfig({
       hi: 'जानें कि बारोक चित्रकारों ने नाटकीय प्रकाश, गति और संयोजन का उपयोग कैसे किया।',
       es: 'Explora cómo los pintores barrocos usaron la luz dramática, la acción y la composición.',
       ar: 'اكتشف كيف استخدم رسامو الباروك الضوء الدرامي والحركة والتكوين.',
-      fr: "Découvrir comment les peintres baroques ont utilisé la lumière dramatique, l'action et la composition.",
+      fr: 'Découvrez comment les peintres baroques ont utilisé la lumière dramatique, le mouvement et la composition.',
       bn: 'জানুন, বারোক চিত্রশিল্পীরা কীভাবে নাটকীয় আলো, গতি ও বিন্যাস ব্যবহার করেছেন।',
       pt: 'Explore como os pintores barrocos usaram luz dramática, ação e composição.',
       ur: 'دیکھیں کہ باروک مصوروں نے ڈرامائی روشنی، حرکت اور ترتیب کیسے استعمال کی۔',
