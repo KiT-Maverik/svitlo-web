@@ -74,7 +74,7 @@ export const animalDiversity_SkillGroup_Data = buildSkillGroupConfig({
       vi: 'Khám phá những đặc điểm khác nhau của các nhóm động vật chính.',
       ta: 'விலங்குகளின் முக்கியக் குழுக்களில் உள்ள பல்வேறு பண்புகளை ஆராய்.',
       te: 'ప్రధాన జంతు వర్గాల విభిన్న లక్షణాలను తెలుసుకోండి.',
-      mr: 'प्राण्यांच्या प्रमुख गटांची विविध वैशिष्ट्ये जाणून घ्या.',
+      mr: 'केवळ बाह्य साम्य नव्हे, तर शरीराच्या विश्वासार्ह रचनात्मक वैशिष्ट्यांवरून प्राण्यांचे प्रमुख गट ओळखा.',
       ms: 'Terokai ciri berbeza bagi kumpulan utama haiwan.',
       he: 'גלו את המאפיינים השונים של קבוצות בעלי החיים העיקריות.',
       pl: 'Poznaj różne cechy głównych grup zwierząt.',

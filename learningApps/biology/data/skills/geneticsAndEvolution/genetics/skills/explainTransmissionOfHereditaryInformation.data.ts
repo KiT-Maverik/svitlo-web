@@ -21,7 +21,7 @@ export const explainTransmissionOfHereditaryInformation_Skill_Data = buildSkillC
     vi: 'Giải thích sự truyền thông tin di truyền',
     ta: 'மரபுத் தகவல் கடத்தப்படுவதை விளக்குதல்',
     te: 'వారసత్వ సమాచార ప్రసారాన్ని వివరించడం',
-    mr: 'आनुवंशिक माहितीचे संक्रमण स्पष्ट करणे',
+    mr: 'आनुवंशिक माहितीचे हस्तांतरण स्पष्ट करणे',
     ms: 'Menerangkan pemindahan maklumat keturunan',
     he: 'הסבר על העברת מידע תורשתי',
     pl: 'Wyjaśnianie przekazywania informacji dziedzicznej',

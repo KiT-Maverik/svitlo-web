@@ -53,7 +53,7 @@ export const distinguishProducersAndConsumers_Skill_Data = buildSkillConfig({
       vi: 'Nhận biết sinh vật sản xuất và tiêu thụ qua cách chúng thu nhận chất hữu cơ.',
       ta: 'உயிரினங்கள் கரிமப் பொருட்களை எவ்வாறு பெறுகின்றன என்பதன் அடிப்படையில் உற்பத்தியாளர்களையும் நுகர்வோரையும் அறியுங்கள்.',
       te: 'జీవులు సేంద్రీయ పదార్థాలను ఎలా పొందుతాయనే ఆధారంగా ఉత్పత్తిదారులను, వినియోగదారులను గుర్తించండి.',
-      mr: 'सजीव सेंद्रिय पदार्थ कसे मिळवतात यावरून उत्पादक आणि भक्षक ओळखा.',
+      mr: 'सजीव सेंद्रिय पदार्थ कसे मिळवतात यावरून उत्पादक आणि उपभोक्ता ओळखा.',
       ms: 'Kenal pasti pengeluar dan pengguna mengikut cara mereka memperoleh bahan organik.',
       he: 'זהה יצרנים וצרכנים לפי האופן שבו הם משיגים חומרים אורגניים.',
       pl: 'Rozpoznaj producentów i konsumentów według sposobu zdobywania substancji organicznych.',
