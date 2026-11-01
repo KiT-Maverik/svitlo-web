@@ -6,7 +6,7 @@ export const fractionsContext_Skill_Data = buildSkillConfig({
   name: {
     lt: 'Vienetinės dalies radimas iš dydžio',
     lv: 'Vienības daļas atrašana no lieluma',
-    et: 'Ühikmurru osa leidmine hulgast',
+    et: 'Suuruse ühikmurdosa leidmine',
     be: 'Знаходжаньне адзінкавай долі колькасьці',
     ka: 'რაოდენობის ერთეული წილადის პოვნა',
     kk: 'Шаманың бірлік бөлшегін табу',
