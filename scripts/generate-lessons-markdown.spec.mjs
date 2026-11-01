@@ -4,7 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { describe, it } from 'node:test';
 import { discoverLessons, generate, parseArguments } from './generate-lessons-markdown.mjs';
-import { localizeReviewValue, renderLessonMarkdown, sourceIndex, supportedLanguages } from './lib/lesson-markdown.mjs';
+import { inferBlockType, localizeReviewValue, renderLessonMarkdown, sourceIndex, supportedLanguages } from './lib/lesson-markdown.mjs';
 
 const T = (en, uk) => uk === undefined ? { fallback: 'en', en } : { en, uk };
 const text = (id, en, uk) => ({ id, slug: id, value: T(en, uk) });
@@ -124,6 +124,14 @@ describe('Lesson → Markdown review projection', () => {
       assert.equal(fs.readFileSync(path.join(tmp.lessonDir, 'light.data.ts'), 'utf8'), "export const light = { id: 'lesson-1' };\n");
       await assert.rejects(generate({ ...opts, lesson: '1/doesNotExist' }, { root: tmp.root, loader }), /No matching canonical lessons/);
     } finally { tmp.cleanup(); }
+  });
+
+  it('recognizes nested media and scenes without rendering them', () => {
+    assert.equal(inferBlockType({ id: 'i', locales: T('asset.png', 'asset.png'), alt: T('Lamp', 'Лампа') }), 'image');
+    assert.equal(inferBlockType({ id: 'a', fileLocation: T('audio.mp3'), title: T('Track'), description: T('About') }), 'audio');
+    assert.equal(inferBlockType({ id: 'v', fileLocation: T('video.mp4'), poster: T('poster.png') }), 'video');
+    assert.equal(inferBlockType({ id: 'y', href: T('https://youtu.be/example') }), 'youtube');
+    assert.equal(inferBlockType({ id: 's', locales: { labels: { start: T('Start') } } }), 'scene');
   });
 
   it('rejects symlink sources instead of traversing them', () => {
