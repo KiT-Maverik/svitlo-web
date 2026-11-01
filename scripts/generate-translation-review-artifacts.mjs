@@ -137,7 +137,7 @@ manifest.summary = {
 saveManifest();
 process.stdout.write(
   'Lesson reference library: ' + lessonStats.generated + ' documents from ' +
-  lessonStats.discoveredLessons + ' lessons; ' + lessonStats.failures + ' failed\\n',
+  lessonStats.discoveredLessons + ' lessons; ' + lessonStats.failures + ' failed\n',
 );
 process.stdout.write(
   'Agent review library: ' + manifest.generated.length + ' documents (Skills + Lessons), ' +
