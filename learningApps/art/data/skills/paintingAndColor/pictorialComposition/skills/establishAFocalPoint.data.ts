@@ -61,7 +61,7 @@ export const establishAFocalPoint_Skill_Data = buildSkillConfig({
       uk: 'Спрямовуйте погляд глядача до найважливішої частини картини.',
       lt: 'Nukreipkite žiūrovo žvilgsnį į svarbiausią paveikslo dalį.',
       lv: 'Virziet skatītāja skatienu uz vissvarīgāko gleznas daļu.',
-      et: 'Suunake vaataja pilk maali kõige olulisemale osale.',
+      et: 'Suuna vaataja pilk maali kõige olulisemale osale.',
       be: 'Накіроўвайце позірк гледача да найважнейшай часткі карціны.',
       ka: 'მაყურებლის მზერა ნახატის ყველაზე მნიშვნელოვანი ნაწილისკენ მიმართეთ.',
       kk: 'Көрерменнің назарын картинаның ең маңызды бөлігіне бағыттаңыз.',
