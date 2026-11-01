@@ -14,7 +14,7 @@ export const makeTenStrategy_Skill_Data = buildSkillConfig({
     qm: 'Qoşuv — onluqnı tamamlav',
     zh: '加法 — 凑十法',
     hi: 'जोड़ — दस पूरा करना',
-    es: 'Suma — Completar diez',
+    es: 'Suma — Completar la decena',
     ar: 'الجمع — إكمال العشرة',
     fr: 'Addition — Compléter à dix',
     bn: 'যোগ — দশ পূর্ণ করা',
