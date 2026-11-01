@@ -28,7 +28,7 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
     vi: 'Phép nhân — 3-chữ số×1-chữ số',
     ta: 'பெருக்கல் — 3-இலக்க×1-இலக்க',
     te: 'గుణకారం — 3-అంకెల×1-అంకెల',
-    mr: 'गुणाकार — 3-अंकी×1-अंकी',
+    mr: 'गुणाकार — तीन अंकी संख्येला एक अंकी संख्येने गुणणे',
     ms: 'Pendaraban — 3-digit×1-digit',
     he: 'כפל — 3-ספרות×1-ספרות',
     pl: 'Mnożenie — 3-cyfrowe×1-cyfrowe',
