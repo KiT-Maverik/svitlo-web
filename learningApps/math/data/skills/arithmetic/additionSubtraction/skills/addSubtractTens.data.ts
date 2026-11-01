@@ -13,7 +13,7 @@ export const addSubtractTens_Skill_Data = buildSkillConfig({
     en: 'Addition and subtraction — Whole tens',
     qm: 'Qoşuv ve çıqaruv — tolu onluqlar',
     zh: '加减法 — 整十数',
-    hi: 'जोड़ और घटाव — पूरे दहाई',
+    hi: 'जोड़ और घटाव — पूरी दहाइयाँ',
     es: 'Suma y resta — Decenas completas',
     ar: 'الجمع والطرح — العشرات الكاملة',
     fr: 'Addition et soustraction — Dizaines entières',

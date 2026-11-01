@@ -63,7 +63,7 @@ export const angleTypes_Skill_Data = buildSkillConfig({
       uk: 'Розрізняй гострі кути (менше 90°), прямі (90°) і тупі (між 90° та 180°).',
       lt: 'Atskirk smailiuosius (mažiau nei 90°), stačiuosius (90°) ir bukuosius (tarp 90° ir 180°) kampus.',
       lv: 'Atšķir šaurus leņķus (zem 90°), taisnus (90°) un platus (starp 90° un 180°).',
-      et: 'Erista teravnurki (alla 90°), täisnurki (90°) ja nürinurki (90° kuni 180° vahel).',
+      et: 'Erista teravnurki (alla 90°), täisnurki (90°) ja nürinurki (üle 90°, kuid alla 180°).',
       be: 'Адрозьнівай вострыя куты (менш за 90°), прамыя (90°) і тупыя (паміж 90° і 180°).',
       ka: 'განასხვავე მახვილი (90°-ზე ნაკლები), მართი (90°) და ბლაგვი (90°-სა და 180°-ს შორის) კუთხეები.',
       kk: 'Сүйір (90°-тан кем), тік (90°) және доғал (90° пен 180° арасында) бұрыштарды ажырат.',

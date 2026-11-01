@@ -13,7 +13,7 @@ export const roundTens_Skill_Data = buildSkillConfig({
     en: 'Division — Whole tens',
     qm: 'Bölüv — tolu onluqlar',
     zh: '除法 — 整十数',
-    hi: 'भाग — पूरे दहाई',
+    hi: 'भाग — पूरी दहाइयाँ',
     es: 'División — Decenas completas',
     ar: 'القسمة — العشرات الكاملة',
     fr: 'Division — Dizaines entières',

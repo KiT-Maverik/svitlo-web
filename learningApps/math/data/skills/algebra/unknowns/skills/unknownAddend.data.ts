@@ -23,7 +23,7 @@ export const unknownAddend_Skill_Data = buildSkillConfig({
     id: 'Mencari suku penjumlahan yang tidak diketahui',
     de: 'Einen unbekannten Summanden finden',
     ja: '未知の加数を求める',
-    ko: '모르는 덧셈 항 구하기',
+    ko: '모르는 더하는 수 구하기',
     tr: 'Bilinmeyen toplananı bulma',
     vi: 'Tìm số hạng chưa biết của phép cộng',
     ta: 'தெரியாத கூட்டல் உறுப்பைக் காணுதல்',
