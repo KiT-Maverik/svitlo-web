@@ -92,7 +92,7 @@ export const additionSubtraction_SkillGroup_Data = buildSkillGroupConfig({
       he: 'לומדים איך חיבור וחיסור מקשרים בין חלקים לשלם, ומשתמשים בערך המקום, באומדן ובפעולות הפוכות כדי לחשב ולבדוק תוצאות.',
       pl: 'Poznaj, jak dodawanie i odejmowanie łączą części z całością, i korzystaj z wartości pozycyjnej, szacowania oraz działań odwrotnych do obliczania i sprawdzania wyników.',
       uk: 'Дізнайся, як додавання й віднімання пов’язують частини з цілим, і використовуй розряди, оцінювання та обернені дії для обчислення й перевірки.',
-      lt: 'Sužinok, kaip sudėtis ir atimtis sieja dalis su visuma, ir naudokis vietine verte, vertinimais bei atvirkštiniais veiksmais skaičiuodamas ir tikrindamas.',
+      lt: 'Sužinok, kaip sudėtis ir atimtis sieja dalis su visuma, ir skaičiuodamas bei tikrindamas naudokis skaičių skyrių vertėmis, apytikriu vertinimu ir atvirkštiniais veiksmais.',
       lv: 'Uzzini, kā saskaitīšana un atņemšana sasaista daļas ar veselo, un izmanto šķiru vērtības, novērtējumus un pretējās darbības, lai rēķinātu un pārbaudītu.',
       et: 'Õpi, kuidas liitmine ja lahutamine seovad osad tervikuga, ning kasuta arvutamiseks ja kontrollimiseks kohaväärtusi, hinnanguid ja pöördtehteid.',
       be: 'Даведайся, як складаньне і адніманьне зьвязваюць часткі з цэлым, і карыстайся разрадамі, ацэнкай ды адваротнымі дзеяньнямі для вылічэньня і праверкі.',
