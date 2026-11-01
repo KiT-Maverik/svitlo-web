@@ -26,7 +26,7 @@ export const printmaking_SkillGroup_Data = buildSkillGroupConfig({
     ko: '판화',
     tr: 'Baskı resim',
     vi: 'Nghệ thuật in',
-    ta: 'அச்சுக்கலை',
+    ta: 'அச்சுப்படக் கலை',
     te: 'ముద్రణ కళ',
     mr: 'मुद्रणकला',
     ms: 'Seni cetakan',
