@@ -55,7 +55,7 @@ export const stellarAndSubstellarClassification_SkillGroup_Data = buildSkillGrou
     methodological:
       'Spectra, temperature, luminosity, mass, multiplicity and composition provide complementary ways to group luminous stars and related substellar bodies, while observational class need not imply a unique evolutionary history.',
     frontend: {
-      en: 'Explore different kinds of stars and related objects through spectra,
+      en: 'Explore different kinds of stars and related objects through spectra, mass and brightness.',
       zh: "研究如何根据光谱、质量和亮度区分不同的恒星及相关天体。",
       hi: "वर्णक्रम, द्रव्यमान और चमक के आधार पर अलग-अलग तारों तथा संबंधित पिंडों को समझें।",
       es: "Explora los distintos tipos de estrellas y objetos relacionados según sus espectros, masas y brillo.",
@@ -83,7 +83,7 @@ export const stellarAndSubstellarClassification_SkillGroup_Data = buildSkillGrou
       be: "Дасьледуйце розныя тыпы зорак і роднасных аб'ектаў паводле спэктраў, масы і яркасьці.",
       ka: "შეისწავლეთ სხვადასხვა ტიპის ვარსკვლავები და მონათესავე ობიექტები სპექტრის, მასისა და სიკაშკაშის მიხედვით.",
       kk: "Жұлдыздар мен оларға ұқсас денелердің түрлерін спектрі, массасы және жарықтығы бойынша зерттеңіз.",
-      qm: "Yulduzlar ve olarğa yaqın cisimlerni spektri, kütlesi ve parlaqlığına köre ögreniñiz.", mass and brightness.',
+      qm: "Yulduzlar ve olarğa yaqın cisimlerni spektri, kütlesi ve parlaqlığına köre ögreniñiz.",
     },
   },
 });
