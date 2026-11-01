@@ -6,7 +6,7 @@ export const cosmicElementEnrichment_Skill_Data = buildSkillConfig({
   name: {
     en: 'Cosmic Element Enrichment',
     zh: '宇宙元素富集',
-    hi: 'ब्रह्मांड में तत्वों की वृद्धि',
+    hi: 'ब्रह्मांड में तत्वों का संवर्धन',
     es: 'Enriquecimiento cósmico de elementos',
     ar: 'إثراء الكون بالعناصر',
     fr: 'Enrichissement cosmique en éléments',
