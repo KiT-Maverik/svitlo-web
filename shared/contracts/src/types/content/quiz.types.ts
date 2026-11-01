@@ -1,5 +1,5 @@
 import type { Question, Question_Config } from './question.types';
-import type { Resource, Resource_Config, TextResource, TextResource_Config } from './resource.types';
+import type { ContentBlock, ContentBlock_Config, TextContentBlock, TextContentBlock_Config } from './contentBlock.types';
 import type { NonEmptyArray } from '../misc.types';
 
 type QuizQuestion = Question_Config & { number: number; weight: number };
@@ -7,11 +7,11 @@ type QuizQuestion = Question_Config & { number: number; weight: number };
 export type Quiz_EndingScreen_Config =
   | {
       showDefaultContent: true;
-      resources?: NonEmptyArray<Resource_Config>;
+      contentBlocks?: NonEmptyArray<ContentBlock_Config>;
     }
   | {
       showDefaultContent: false;
-      resources: NonEmptyArray<Resource_Config>;
+      contentBlocks: NonEmptyArray<ContentBlock_Config>;
     };
 
 export interface Quiz_EndingScreens_Config {
@@ -38,14 +38,14 @@ export interface Quiz_Config {
     skippable: boolean;
   };
   maxDuration?: number;
-  name: TextResource_Config;
+  name: TextContentBlock_Config;
   questionBank: [QuizQuestion, ...QuizQuestion[]];
   results: {
     visibility: 'immediate' | 'after-review' | 'hidden';
     showScore: boolean;
   };
   screen: {
-    welcome?: { resources: NonEmptyArray<Resource_Config> };
+    welcome?: { contentBlocks: NonEmptyArray<ContentBlock_Config> };
     ending?: Quiz_EndingScreens_Config;
   };
   sectionId: string;
@@ -54,11 +54,11 @@ export interface Quiz_Config {
 export type Quiz_EndingScreen =
   | {
       showDefaultContent: true;
-      resources?: NonEmptyArray<Resource>;
+      contentBlocks?: NonEmptyArray<ContentBlock>;
     }
   | {
       showDefaultContent: false;
-      resources: NonEmptyArray<Resource>;
+      contentBlocks: NonEmptyArray<ContentBlock>;
     };
 
 export interface Quiz_EndingScreens {
@@ -67,10 +67,10 @@ export interface Quiz_EndingScreens {
 }
 
 export interface Quiz extends Omit<Quiz_Config, 'name' | 'questionBank' | 'screen'> {
-  name: TextResource;
+  name: TextContentBlock;
   questionBank: NonEmptyArray<Question & { number: number; weight: number }>;
   screen: {
-    welcome?: { resources: NonEmptyArray<Resource> };
+    welcome?: { contentBlocks: NonEmptyArray<ContentBlock> };
     ending?: Quiz_EndingScreens;
   };
 }

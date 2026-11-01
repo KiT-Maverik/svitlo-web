@@ -1,18 +1,18 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '../../types/languages';
-import type { TextResource_AllLanguages_Config } from '../../content';
-import { createTextResource } from './createTextResource.utils';
+import type { TextContentBlock_AllLanguages_Config } from '../../content';
+import { createTextContentBlock } from './createTextContentBlock.utils';
 
 const values = Object.fromEntries(
   DEFAULT_SUPPORTED_LANGUAGES.map(({ language }) => [language, language]),
-) as TextResource_AllLanguages_Config;
+) as TextContentBlock_AllLanguages_Config;
 
 describe('Utils', () => {
-  describe('CreateTextResource', () => {
+  describe('CreateTextContentBlock', () => {
     describe('Metadata', () => {
       it('should create a text configuration that declares all locales by default', () => {
-        assert.deepEqual(createTextResource('title', values), {
+        assert.deepEqual(createTextContentBlock('title', values), {
           id: 'title',
           blockType: 'text',
           allLocales: true,
@@ -22,7 +22,7 @@ describe('Utils', () => {
 
       it('should create a configuration for explicitly selected locales', () => {
         assert.deepEqual(
-          createTextResource(
+          createTextContentBlock(
             'title',
             { uk: 'Світло' },
             {
@@ -39,7 +39,7 @@ describe('Utils', () => {
       });
 
       it('should support inclusion-based locale selection', () => {
-        const result = createTextResource('title', values, {
+        const result = createTextContentBlock('title', values, {
           locales: { include: ['pl'] },
         });
         assert.equal(result.allLocales, false);
@@ -52,8 +52,8 @@ describe('Utils', () => {
             language,
             language,
           ]),
-        ) as Record<Exclude<keyof TextResource_AllLanguages_Config, 'en'>, string>;
-        const result = createTextResource('title', withoutEnglish, {
+        ) as Record<Exclude<keyof TextContentBlock_AllLanguages_Config, 'en'>, string>;
+        const result = createTextContentBlock('title', withoutEnglish, {
           locales: { exclude: ['en'] },
         });
         assert.equal(result.allLocales, false);
@@ -61,7 +61,7 @@ describe('Utils', () => {
       });
 
       it('should retain an empty identifier and empty selected translation as supplied', () => {
-        const result = createTextResource(
+        const result = createTextContentBlock(
           '',
           { uk: '' },
           {
@@ -74,14 +74,14 @@ describe('Utils', () => {
 
     describe('Input identity', () => {
       it('should preserve the supplied values object by reference', () => {
-        const result = createTextResource('title', values);
+        const result = createTextContentBlock('title', values);
         assert.strictEqual(result.value, values);
       });
 
       it('should not change the supplied localized values', () => {
         const original = { uk: 'Світло', pl: 'Światło' };
         const before = { ...original };
-        createTextResource('title', original, { locales: { only: ['uk', 'pl'] } });
+        createTextContentBlock('title', original, { locales: { only: ['uk', 'pl'] } });
         assert.deepEqual(original, before);
       });
     });

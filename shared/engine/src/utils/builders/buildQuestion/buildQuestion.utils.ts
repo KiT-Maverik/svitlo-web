@@ -1,34 +1,34 @@
 import type { Locale } from '../../../types/languages';
 import type { DeepReadonly } from '@svitlo/contracts/content';
-import type { Resource, Resource_Config } from '@svitlo/contracts/content';
+import type { ContentBlock, ContentBlock_Config } from '@svitlo/contracts/content';
 import type { Question, Question_Config } from '@svitlo/contracts/content';
-import { buildResource, buildTextResource } from '../buildResource/buildResource.utils';
+import { buildContentBlock, buildTextContentBlock } from '../buildContentBlock/buildContentBlock.utils';
 
 export function buildQuestion(config: DeepReadonly<Question_Config>, locale: Locale): Question {
   const base = {
     id: config.id,
     assessmentMethodId: config.assessmentMethodId,
     restrictions: [...config.restrictions],
-    content: config.content.map(resource => buildResource(resource, locale)) as [
-      ReturnType<typeof buildResource>,
-      ...ReturnType<typeof buildResource>[],
+    content: config.content.map(contentBlock => buildContentBlock(contentBlock, locale)) as [
+      ReturnType<typeof buildContentBlock>,
+      ...ReturnType<typeof buildContentBlock>[],
     ],
-    explanation: config.explanation && buildTextResource(config.explanation, locale),
+    explanation: config.explanation && buildTextContentBlock(config.explanation, locale),
     flashcardConfig: config.flashcardConfig,
   };
-  const resources = (items: readonly DeepReadonly<Resource_Config>[]) => items.map(item => buildResource(item, locale));
-  const nonEmptyResources = (
-    items: readonly [DeepReadonly<Resource_Config>, ...DeepReadonly<Resource_Config>[]],
-  ): [Resource, ...Resource[]] => items.map(item => buildResource(item, locale)) as [Resource, ...Resource[]];
+  const contentBlocks = (items: readonly DeepReadonly<ContentBlock_Config>[]) => items.map(item => buildContentBlock(item, locale));
+  const nonEmptyContentBlocks = (
+    items: readonly [DeepReadonly<ContentBlock_Config>, ...DeepReadonly<ContentBlock_Config>[]],
+  ): [ContentBlock, ...ContentBlock[]] => items.map(item => buildContentBlock(item, locale)) as [ContentBlock, ...ContentBlock[]];
   switch (config.type) {
     case 'select-one-answer':
       return {
         ...base,
         type: config.type,
         answers: {
-          correct: buildResource(config.answers.correct, locale),
-          incorrect: nonEmptyResources(config.answers.incorrect),
-          distractors: nonEmptyResources(config.answers.distractors),
+          correct: buildContentBlock(config.answers.correct, locale),
+          incorrect: nonEmptyContentBlocks(config.answers.incorrect),
+          distractors: nonEmptyContentBlocks(config.answers.distractors),
         },
       };
     case 'select-multiple-answers':
@@ -36,9 +36,9 @@ export function buildQuestion(config: DeepReadonly<Question_Config>, locale: Loc
         ...base,
         type: config.type,
         answers: {
-          correct: nonEmptyResources(config.answers.correct),
-          incorrect: nonEmptyResources(config.answers.incorrect),
-          distractors: nonEmptyResources(config.answers.distractors),
+          correct: nonEmptyContentBlocks(config.answers.correct),
+          incorrect: nonEmptyContentBlocks(config.answers.incorrect),
+          distractors: nonEmptyContentBlocks(config.answers.distractors),
         },
       };
     case 'answer-with-number':
@@ -46,46 +46,46 @@ export function buildQuestion(config: DeepReadonly<Question_Config>, locale: Loc
         ...base,
         type: config.type,
         correctAnswer: [...config.correctAnswer],
-        placeholder: buildTextResource(config.placeholder, locale),
+        placeholder: buildTextContentBlock(config.placeholder, locale),
       };
     case 'answer-with-text':
       return {
         ...base,
         type: config.type,
-        correctAnswer: config.correctAnswer.map(answer => buildTextResource(answer, locale)),
-        placeholder: buildTextResource(config.placeholder, locale),
+        correctAnswer: config.correctAnswer.map(answer => buildTextContentBlock(answer, locale)),
+        placeholder: buildTextContentBlock(config.placeholder, locale),
       };
     case 'build-answer-with-blocks':
       return {
         ...base,
         type: config.type,
-        correctSequence: config.correctSequence.map(item => buildTextResource(item, locale)) as [
-          ReturnType<typeof buildTextResource>,
-          ...ReturnType<typeof buildTextResource>[],
+        correctSequence: config.correctSequence.map(item => buildTextContentBlock(item, locale)) as [
+          ReturnType<typeof buildTextContentBlock>,
+          ...ReturnType<typeof buildTextContentBlock>[],
         ],
-        distractors: config.distractors.map(item => buildTextResource(item, locale)),
-        placeholder: buildTextResource(config.placeholder, locale),
+        distractors: config.distractors.map(item => buildTextContentBlock(item, locale)),
+        placeholder: buildTextContentBlock(config.placeholder, locale),
       };
     case 'fill-blanks-with-blocks':
       return {
         ...base,
         type: config.type,
-        placeholder: buildTextResource(config.placeholder, locale),
-        distractors: config.distractors.map(item => buildTextResource(item, locale)),
+        placeholder: buildTextContentBlock(config.placeholder, locale),
+        distractors: config.distractors.map(item => buildTextContentBlock(item, locale)),
         slots: config.slots.map(slot => ({
           selector: slot.selector,
-          correctAnswer: buildTextResource(slot.correctAnswer, locale),
+          correctAnswer: buildTextContentBlock(slot.correctAnswer, locale),
         })),
       };
     case 'fill-blanks-with-text':
       return {
         ...base,
         type: config.type,
-        placeholder: buildTextResource(config.placeholder, locale),
-        distractors: config.distractors.map(item => buildTextResource(item, locale)),
+        placeholder: buildTextContentBlock(config.placeholder, locale),
+        distractors: config.distractors.map(item => buildTextContentBlock(item, locale)),
         slots: config.slots.map(slot => ({
           selector: slot.selector,
-          correctAnswer: buildTextResource(slot.correctAnswer, locale),
+          correctAnswer: buildTextContentBlock(slot.correctAnswer, locale),
         })),
       };
     case 'match-blocks':
@@ -93,10 +93,10 @@ export function buildQuestion(config: DeepReadonly<Question_Config>, locale: Loc
         ...base,
         type: config.type,
         map: {
-          left: resources(config.map.left) as [ReturnType<typeof buildResource>, ...ReturnType<typeof buildResource>[]],
-          right: resources(config.map.right) as [
-            ReturnType<typeof buildResource>,
-            ...ReturnType<typeof buildResource>[],
+          left: contentBlocks(config.map.left) as [ReturnType<typeof buildContentBlock>, ...ReturnType<typeof buildContentBlock>[]],
+          right: contentBlocks(config.map.right) as [
+            ReturnType<typeof buildContentBlock>,
+            ...ReturnType<typeof buildContentBlock>[],
           ],
         },
       };
@@ -104,9 +104,9 @@ export function buildQuestion(config: DeepReadonly<Question_Config>, locale: Loc
       return {
         ...base,
         type: config.type,
-        sequence: resources(config.sequence) as [
-          ReturnType<typeof buildResource>,
-          ...ReturnType<typeof buildResource>[],
+        sequence: contentBlocks(config.sequence) as [
+          ReturnType<typeof buildContentBlock>,
+          ...ReturnType<typeof buildContentBlock>[],
         ],
       };
   }

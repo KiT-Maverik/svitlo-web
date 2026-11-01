@@ -20,7 +20,7 @@ function countLanguageEntries(source: string, language: string): number {
   return [...source.matchAll(new RegExp(`(?:^|\\s)["']?${language}["']?\\s*:`, 'gm'))].length;
 }
 
-describe('Extended locale resource coverage', () => {
+describe('Extended locale contentBlock coverage', () => {
   it('registers each extended locale with its intended language code', () => {
     for (let index = 0; index < newLocales.length; index++) {
       expect(DEFAULT_SUPPORTED_LANGUAGES.find(item => item.locale === newLocales[index])?.language).toBe(

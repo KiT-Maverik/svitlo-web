@@ -20,23 +20,23 @@ function countLanguageEntries(source: string, language: string): number {
 }
 
 describe('Playground internationalization', () => {
-  it('includes localized values for every light-lesson text resource', () => {
+  it('includes localized values for every light-lesson text contentBlock', () => {
     const files = collectFiles(join(root, 'src/data/howLightMoves')).filter(file => file.endsWith('.data.ts'));
 
     for (const file of files) {
       const source = readFileSync(file, 'utf8');
-      const resources = source.split('createTextResource(').length - 1;
-      if (!resources) continue;
+      const contentBlocks = source.split('createTextContentBlock(').length - 1;
+      if (!contentBlocks) continue;
       for (const language of newLanguages) {
         expect(countLanguageEntries(source, language), `${file}: missing ${language}`).toBeGreaterThanOrEqual(
-          resources,
+          contentBlocks,
         );
       }
     }
   });
 
-  it('provides every new language with each of the three theory Markdown resources', () => {
-    const folder = join(root, 'src/data/howLightMoves/sections/theory/resources/markdown');
+  it('provides every new language with each of the three theory Markdown contentBlocks', () => {
+    const folder = join(root, 'src/data/howLightMoves/sections/theory/contentBlocks/markdown');
     for (const section of ['01', '02', '03']) {
       for (const language of newLanguages) {
         const source = readFileSync(join(folder, section, `${language}.md`), 'utf8');

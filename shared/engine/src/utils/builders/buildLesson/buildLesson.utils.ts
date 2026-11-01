@@ -9,7 +9,7 @@ import type {
   Quiz_Config,
 } from '@svitlo/contracts/content';
 import { FALLBACK_LANGUAGE, getLanguageCode } from '../../../types/languages';
-import { buildResource, buildTextResource } from '../buildResource/buildResource.utils';
+import { buildContentBlock, buildTextContentBlock } from '../buildContentBlock/buildContentBlock.utils';
 import { buildQuiz } from '../buildQuiz/buildQuiz.utils';
 
 function isQuiz(value: DeepReadonly<LessonSection_Content>): value is DeepReadonly<Quiz_Config> {
@@ -39,7 +39,7 @@ export function buildLesson(
   catalog: LessonContentCatalog,
 ): Lesson {
   const title = catalog.text[config.title];
-  if (!title || title.id !== config.title) throw new Error(`Missing text resource for lesson title: ${config.title}`);
+  if (!title || title.id !== config.title) throw new Error(`Missing text contentBlock for lesson title: ${config.title}`);
 
   return {
     collection: config.collection,
@@ -47,7 +47,7 @@ export function buildLesson(
     slug: config.slug,
     requireQuiz: config.requireQuiz,
     sceneLocale: selectSceneLocales(config.sceneLocales, locale),
-    title: buildTextResource(title, locale),
+    title: buildTextContentBlock(title, locale),
     sections: {
       allowNavigation: config.sections.allowNavigation,
       allowSkipping: config.sections.allowSkipping,
@@ -62,8 +62,8 @@ export function buildLesson(
         if (isQuiz(section)) return buildQuiz(section, locale);
         return {
           ...section,
-          name: buildTextResource(section.name, locale),
-          content: section.content.map(block => buildResource(block, locale)) as LessonSection['content'],
+          name: buildTextContentBlock(section.name, locale),
+          content: section.content.map(block => buildContentBlock(block, locale)) as LessonSection['content'],
         };
       }) as Lesson['sections']['content'],
     },

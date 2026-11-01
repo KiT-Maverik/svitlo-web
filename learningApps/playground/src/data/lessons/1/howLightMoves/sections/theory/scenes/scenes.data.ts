@@ -1,6 +1,6 @@
 import { createElement } from 'react';
-import type { SceneResource_Config } from '@svitlo/engine/content';
-import { theory_SceneResources_Ids } from './index.ids';
+import type { SceneContentBlock_Config } from '@svitlo/engine/content';
+import { theory_SceneContentBlocks_Ids } from './index.ids';
 import { LightRayDiagram } from './LightRayDiagram/LightRayDiagram';
 import { LightPropagationSimulation } from './LightPropagationSimulation/LightPropagationSimulation';
 import { Checkpoint } from './Checkpoint/Checkpoint';
@@ -21,4 +21,4 @@ export const theory_Scenes = {
     blockType: 'scene',
     component: createElement(Checkpoint),
   },
-} satisfies Record<'lightRayDiagram' | 'lightPropagationSimulation' | 'theoryCheckpoint', SceneResource_Config>;
+} satisfies Record<'lightRayDiagram' | 'lightPropagationSimulation' | 'theoryCheckpoint', SceneContentBlock_Config>;

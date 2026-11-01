@@ -1,17 +1,17 @@
 import type { LanguageCode } from '../../types/languages';
-import type { TextResource_AllLanguages_Config, TextResource_ChosenLanguages_Config } from '../../content';
-import { createTextResource } from './createTextResource.utils';
+import type { TextContentBlock_AllLanguages_Config, TextContentBlock_ChosenLanguages_Config } from '../../content';
+import { createTextContentBlock } from './createTextContentBlock.utils';
 
-declare const allValues: TextResource_AllLanguages_Config;
-const all = createTextResource('title', allValues);
+declare const allValues: TextContentBlock_AllLanguages_Config;
+const all = createTextContentBlock('title', allValues);
 const allLocales: true = all.allLocales;
 const english: string = all.value['en'];
-// @ts-expect-error Resource metadata is readonly.
+// @ts-expect-error ContentBlock metadata is readonly.
 all.id = 'other';
 // @ts-expect-error Localized values are readonly.
 all.value['en'] = 'Other';
 
-const chosen = createTextResource(
+const chosen = createTextContentBlock(
   'title',
   { uk: 'Світло', pl: 'Światło' },
   {
@@ -27,14 +27,14 @@ chosen.value['uk'] = 'Other';
 const excluded = chosen.value['en'];
 
 // @ts-expect-error Every selected locale needs a value.
-createTextResource('title', { uk: 'Світло' }, { locales: { only: ['uk', 'pl'] } });
+createTextContentBlock('title', { uk: 'Світло' }, { locales: { only: ['uk', 'pl'] } });
 // @ts-expect-error A locale outside only is not part of this value object.
-createTextResource('title', { uk: 'Світло', en: 'Light' }, { locales: { only: ['uk'] } });
+createTextContentBlock('title', { uk: 'Світло', en: 'Light' }, { locales: { only: ['uk'] } });
 // @ts-expect-error Only cannot be combined with include or exclude.
-createTextResource('title', { uk: 'Світло' }, { locales: { only: ['uk'], include: ['pl'] } });
+createTextContentBlock('title', { uk: 'Світло' }, { locales: { only: ['uk'], include: ['pl'] } });
 
-declare const withoutEnglish: TextResource_ChosenLanguages_Config<Exclude<LanguageCode, 'en'>>;
-const filtered = createTextResource('title', withoutEnglish, { locales: { exclude: ['en'] } });
+declare const withoutEnglish: TextContentBlock_ChosenLanguages_Config<Exclude<LanguageCode, 'en'>>;
+const filtered = createTextContentBlock('title', withoutEnglish, { locales: { exclude: ['en'] } });
 // @ts-expect-error Excluded locales are not present in the result.
 const filteredEnglish = filtered.value['en'];
 

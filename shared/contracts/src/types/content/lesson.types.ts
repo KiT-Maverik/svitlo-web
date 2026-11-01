@@ -1,4 +1,4 @@
-import type { Resource, Resource_Config, TextResource, TextResource_Config } from './resource.types';
+import type { ContentBlock, ContentBlock_Config, TextContentBlock, TextContentBlock_Config } from './contentBlock.types';
 import type { Quiz, Quiz_Config, QuizState } from './quiz.types';
 import type { Collection, NonEmptyArray } from '../misc.types';
 import type { LanguageCode } from '../languages';
@@ -6,10 +6,10 @@ import type { DeepReadonly } from '../readonly.types';
 
 export interface LessonSection_Config<TIcon = unknown> {
   readonly collection: Extract<Collection, 'lessonSection'>;
-  content: NonEmptyArray<Resource_Config>;
+  content: NonEmptyArray<ContentBlock_Config>;
   id: string;
   lessonId: Lesson_Config['id'];
-  name: TextResource_Config;
+  name: TextContentBlock_Config;
   skippable: boolean;
   /** Presentation payload interpreted by the consuming application. */
   icon?: TIcon;
@@ -17,10 +17,10 @@ export interface LessonSection_Config<TIcon = unknown> {
 
 export interface LessonSection<TIcon = unknown> {
   readonly collection: Extract<Collection, 'lessonSection'>;
-  content: NonEmptyArray<Resource>;
+  content: NonEmptyArray<ContentBlock>;
   id: string;
   lessonId: Lesson['id'];
-  name: TextResource;
+  name: TextContentBlock;
   skippable: boolean;
   /** Presentation payload interpreted by the consuming application. */
   icon?: TIcon;
@@ -30,7 +30,7 @@ export type LessonSection_Content = LessonSection_Config | Quiz_Config;
 
 /** Definitions referenced by a lesson's stable IDs. */
 export interface LessonContentCatalog {
-  text: Readonly<Record<string, TextResource_Config>>;
+  text: Readonly<Record<string, TextContentBlock_Config>>;
   sections: Readonly<Record<string, DeepReadonly<LessonSection_Content>>>;
 }
 
@@ -61,7 +61,7 @@ export interface Lesson {
     showIndexes: boolean;
     content: NonEmptyArray<LessonSection | Quiz>;
   };
-  title: TextResource;
+  title: TextContentBlock;
   /** Only the selected locale is included in the rendered lesson. */
   sceneLocale?: Readonly<object>;
 }

@@ -31,9 +31,9 @@ const section = buildLessonSectionConfig({
   name: { id: 'title', blockType: 'text', allLocales: false, value: { en: 'Title' } },
   content: [{ id: 'body', blockType: 'text', allLocales: false, value: { en: 'Body' } }],
 });
-// @ts-expect-error Resource arrays in a section are readonly.
+// @ts-expect-error ContentBlock arrays in a section are readonly.
 section.content.push({ id: 'other', blockType: 'text', allLocales: false, value: { en: 'Other' } });
-// @ts-expect-error Localized resource strings are readonly.
+// @ts-expect-error Localized contentBlock strings are readonly.
 section.name.value.en = 'Changed';
 
 const names = {} as Skill_Config['name'];

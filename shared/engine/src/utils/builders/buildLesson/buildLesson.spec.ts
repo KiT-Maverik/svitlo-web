@@ -6,11 +6,11 @@ import type {
   LessonContentCatalog,
   LessonSection_Config,
   Quiz_Config,
-  TextResource_Config,
+  TextContentBlock_Config,
 } from '../../../content';
 import { buildLesson } from './buildLesson.utils';
 
-const text = (id: string, english: string, ukrainian = english): TextResource_Config => ({
+const text = (id: string, english: string, ukrainian = english): TextContentBlock_Config => ({
   id,
   blockType: 'text',
   allLocales: false,
@@ -130,7 +130,7 @@ describe('Utils', () => {
           const definitions = catalog();
           assert.throws(
             () => buildLesson({ ...config, title: 'missing' }, 'en-US', definitions),
-            /Missing text resource/,
+            /Missing text contentBlock/,
           );
           assert.throws(
             () =>
@@ -147,7 +147,7 @@ describe('Utils', () => {
           );
         });
 
-        it('should localize the section name and all resource blocks', () => {
+        it('should localize the section name and all contentBlock blocks', () => {
           const result = build('uk-UA');
           const section = result.sections.content[0];
           if ('questionBank' in section) return assert.fail('Expected a lesson section');
@@ -172,7 +172,7 @@ describe('Utils', () => {
           });
         });
 
-        it('should preserve a scene resource and its position', () => {
+        it('should preserve a scene contentBlock and its position', () => {
           const result = build('en-US');
           const section = result.sections.content[0];
           if ('questionBank' in section) return assert.fail('Expected a lesson section');
@@ -265,7 +265,7 @@ describe('Utils', () => {
       });
 
       describe('Input integrity', () => {
-        it('should not mutate lesson content, nested resources, or quiz configuration', () => {
+        it('should not mutate lesson content, nested contentBlocks, or quiz configuration', () => {
           const config = lesson();
           const definitions = catalog();
           config.sections.content.push('quiz-section');

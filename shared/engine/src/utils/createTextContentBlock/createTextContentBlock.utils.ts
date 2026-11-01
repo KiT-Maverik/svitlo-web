@@ -1,9 +1,9 @@
 import type { LanguageCode } from '../../types/languages';
 import type {
-  TextResource_AllLanguages_Config,
-  TextResource_ChosenLanguages_Config,
-  TextResource_AllLocales_Config,
-  TextResource_ChosenLocales_Config,
+  TextContentBlock_AllLanguages_Config,
+  TextContentBlock_ChosenLanguages_Config,
+  TextContentBlock_AllLocales_Config,
+  TextContentBlock_ChosenLocales_Config,
 } from '@svitlo/contracts/content';
 
 type LocaleSelection =
@@ -17,22 +17,22 @@ type SelectedLocales<T extends LocaleSelection> = Exclude<
   T extends { exclude: readonly (infer L extends LanguageCode)[] } ? (LanguageCode extends L ? never : L) : never
 >;
 
-type ReadonlyTextResource<T extends TextResource_AllLocales_Config | TextResource_ChosenLocales_Config> = Readonly<
+type ReadonlyTextContentBlock<T extends TextContentBlock_AllLocales_Config | TextContentBlock_ChosenLocales_Config> = Readonly<
   Omit<T, 'value'>
 > & { readonly value: Readonly<T['value']> };
 
-export function createTextResource(
+export function createTextContentBlock(
   id: string,
-  value: TextResource_AllLanguages_Config,
-): ReadonlyTextResource<TextResource_AllLocales_Config>;
-export function createTextResource<const T extends LocaleSelection>(
+  value: TextContentBlock_AllLanguages_Config,
+): ReadonlyTextContentBlock<TextContentBlock_AllLocales_Config>;
+export function createTextContentBlock<const T extends LocaleSelection>(
   id: string,
-  value: TextResource_ChosenLanguages_Config<NoInfer<SelectedLocales<T>>>,
+  value: TextContentBlock_ChosenLanguages_Config<NoInfer<SelectedLocales<T>>>,
   config: { locales: T },
-): ReadonlyTextResource<TextResource_ChosenLocales_Config<SelectedLocales<T>>>;
-export function createTextResource(
+): ReadonlyTextContentBlock<TextContentBlock_ChosenLocales_Config<SelectedLocales<T>>>;
+export function createTextContentBlock(
   id: string,
-  value: TextResource_AllLanguages_Config | TextResource_ChosenLanguages_Config,
+  value: TextContentBlock_AllLanguages_Config | TextContentBlock_ChosenLanguages_Config,
   config?: { locales: LocaleSelection },
 ) {
   if (config) {

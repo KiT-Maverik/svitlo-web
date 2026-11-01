@@ -3,7 +3,7 @@ import type {
   LessonContentCatalog,
   LessonSection_Config,
   Quiz_Config,
-  TextResource_Config,
+  TextContentBlock_Config,
 } from '@svitlo/engine/content';
 import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/engine/content';
 
@@ -32,7 +32,7 @@ export const demoIds = {
   explanation: 'd9e71f5b-902b-5e2c-a790-0fc5cbabf18c',
 } as const;
 
-function text(id: string, en: string, uk: string): TextResource_Config {
+function text(id: string, en: string, uk: string): TextContentBlock_Config {
   return { id, blockType: 'text', allLocales: false, value: { en, uk } };
 }
 

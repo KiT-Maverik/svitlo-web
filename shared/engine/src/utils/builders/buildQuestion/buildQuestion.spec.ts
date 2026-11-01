@@ -1,10 +1,10 @@
 import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/contracts/content';
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import type { Question_Config, TextResource_Config } from '../../../content';
+import type { Question_Config, TextContentBlock_Config } from '../../../content';
 import { buildQuestion } from './buildQuestion.utils';
 
-const text = (id: string, english: string, ukrainian = english): TextResource_Config => ({
+const text = (id: string, english: string, ukrainian = english): TextContentBlock_Config => ({
   id,
   blockType: 'text',
   allLocales: false,
@@ -15,7 +15,7 @@ const base = {
   id: 'question',
   assessmentMethodId: assessmentMethods_AssessmentMethod_Ids.interpretation,
   restrictions: [],
-  content: [text('prompt', 'Question', 'Запитання')] as [TextResource_Config],
+  content: [text('prompt', 'Question', 'Запитання')] as [TextContentBlock_Config],
   explanation: text('explanation', 'Because', 'Тому що'),
   flashcardConfig: { includeInLessonSet: true },
 };
@@ -78,7 +78,7 @@ describe('Utils', () => {
       });
 
       describe('Choice answers', () => {
-        it('should localize correct, incorrect, and distractor resources for one answer', () => {
+        it('should localize correct, incorrect, and distractor contentBlocks for one answer', () => {
           const result = buildQuestion(
             {
               ...base,
@@ -259,7 +259,7 @@ describe('Utils', () => {
           );
         });
 
-        it('should retain both sides and original ordering of matched resources', () => {
+        it('should retain both sides and original ordering of matched contentBlocks', () => {
           const result = buildQuestion(
             {
               ...base,
@@ -283,7 +283,7 @@ describe('Utils', () => {
           );
         });
 
-        it('should preserve the order of a sequence and localize its resources', () => {
+        it('should preserve the order of a sequence and localize its contentBlocks', () => {
           const result = buildQuestion(
             {
               ...base,

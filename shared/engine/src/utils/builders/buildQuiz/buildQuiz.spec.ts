@@ -1,10 +1,10 @@
 import { assessmentMethods_AssessmentMethod_Ids } from '@svitlo/contracts/content';
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import type { Quiz_Config, TextResource_Config } from '../../../content';
+import type { Quiz_Config, TextContentBlock_Config } from '../../../content';
 import { buildQuiz } from './buildQuiz.utils';
 
-const text = (id: string, english: string, ukrainian = english): TextResource_Config => ({
+const text = (id: string, english: string, ukrainian = english): TextContentBlock_Config => ({
   id,
   blockType: 'text',
   allLocales: false,
@@ -105,18 +105,18 @@ describe('Utils', () => {
           assert.deepEqual(result.screen, { welcome: undefined, ending: undefined });
         });
 
-        it('should localize every welcome-screen resource', () => {
+        it('should localize every welcome-screen contentBlock', () => {
           const config = quiz();
           config.screen.welcome = {
-            resources: [text('welcome-1', 'First', 'Перший'), text('welcome-2', 'Second', 'Другий')],
+            contentBlocks: [text('welcome-1', 'First', 'Перший'), text('welcome-2', 'Second', 'Другий')],
           };
           const result = buildQuiz(config, 'uk-UA');
           assert.deepEqual(
-            result.screen.welcome?.resources.map(item => item.id),
+            result.screen.welcome?.contentBlocks.map(item => item.id),
             ['welcome-1', 'welcome-2'],
           );
           assert.deepEqual(
-            result.screen.welcome?.resources.map(item => (item.blockType === 'text' ? item.value : '')),
+            result.screen.welcome?.contentBlocks.map(item => (item.blockType === 'text' ? item.value : '')),
             ['Перший', 'Другий'],
           );
         });
@@ -124,21 +124,21 @@ describe('Utils', () => {
         it('should retain custom ending content and its visibility flag', () => {
           const config = quiz();
           config.screen.ending = {
-            success: { showDefaultContent: false, resources: [text('success', 'Done', 'Готово')] },
-            fail: { showDefaultContent: true, resources: [text('fail', 'Retry', 'Повторіть')] },
+            success: { showDefaultContent: false, contentBlocks: [text('success', 'Done', 'Готово')] },
+            fail: { showDefaultContent: true, contentBlocks: [text('fail', 'Retry', 'Повторіть')] },
           };
           const result = buildQuiz(config, 'uk-UA');
           assert.deepEqual(result.screen.ending?.success, {
             showDefaultContent: false,
-            resources: [{ id: 'success', blockType: 'text', locale: 'uk-UA', value: 'Готово' }],
+            contentBlocks: [{ id: 'success', blockType: 'text', locale: 'uk-UA', value: 'Готово' }],
           });
           assert.deepEqual(result.screen.ending?.fail, {
             showDefaultContent: true,
-            resources: [{ id: 'fail', blockType: 'text', locale: 'uk-UA', value: 'Повторіть' }],
+            contentBlocks: [{ id: 'fail', blockType: 'text', locale: 'uk-UA', value: 'Повторіть' }],
           });
         });
 
-        it('should enable default ending content when no custom resources are configured', () => {
+        it('should enable default ending content when no custom contentBlocks are configured', () => {
           const config = quiz();
           config.screen.ending = {
             success: { showDefaultContent: true },
@@ -155,7 +155,7 @@ describe('Utils', () => {
       describe('Input integrity', () => {
         it('should not mutate a quiz or its nested question configurations', () => {
           const config = quiz();
-          config.screen.welcome = { resources: [text('welcome', 'Welcome')] };
+          config.screen.welcome = { contentBlocks: [text('welcome', 'Welcome')] };
           const before = structuredClone(config);
           buildQuiz(config, 'uk-UA');
           assert.deepEqual(config, before);

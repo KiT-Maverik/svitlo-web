@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import type { TextResource_Config } from '../../../content';
-import { buildResource, buildTextResource } from './buildResource.utils';
+import type { TextContentBlock_Config } from '../../../content';
+import { buildContentBlock, buildTextContentBlock } from './buildContentBlock.utils';
 
-const text: TextResource_Config = {
+const text: TextContentBlock_Config = {
   id: 'title',
   blockType: 'text',
   allLocales: false,
@@ -12,10 +12,10 @@ const text: TextResource_Config = {
 
 describe('Utils', () => {
   describe('Builders', () => {
-    describe('BuildResource', () => {
+    describe('BuildContentBlock', () => {
       describe('Localization', () => {
         it('should select the requested locale when its translation is available', () => {
-          assert.deepEqual(buildTextResource(text, 'uk-UA'), {
+          assert.deepEqual(buildTextContentBlock(text, 'uk-UA'), {
             id: 'title',
             blockType: 'text',
             locale: 'uk-UA',
@@ -24,7 +24,7 @@ describe('Utils', () => {
         });
 
         it('should fall back to English when the requested locale is unavailable', () => {
-          assert.deepEqual(buildTextResource(text, 'pl-PL'), {
+          assert.deepEqual(buildTextContentBlock(text, 'pl-PL'), {
             id: 'title',
             blockType: 'text',
             locale: 'pl-PL',
@@ -33,38 +33,38 @@ describe('Utils', () => {
         });
 
         it('should fall back to the first configured locale when English is unavailable', () => {
-          const configured: TextResource_Config = {
+          const configured: TextContentBlock_Config = {
             id: 'only-uk',
             blockType: 'text',
             allLocales: false,
             value: { uk: 'Українською', pl: 'Po polsku' },
           };
-          assert.equal(buildTextResource(configured, 'fr-FR').value, 'Українською');
+          assert.equal(buildTextContentBlock(configured, 'fr-FR').value, 'Українською');
         });
 
         it('should preserve an intentionally empty translation instead of falling back', () => {
-          const configured: TextResource_Config = {
+          const configured: TextContentBlock_Config = {
             ...text,
             value: { en: 'Hello', uk: '' },
           };
-          assert.equal(buildTextResource(configured, 'uk-UA').value, '');
+          assert.equal(buildTextContentBlock(configured, 'uk-UA').value, '');
         });
 
-        it('should reject a malformed resource that has no localized values', () => {
+        it('should reject a malformed contentBlock that has no localized values', () => {
           // Invalid by design: verify the runtime error at the untyped data boundary.
-          const malformed = { ...text, value: {} } as unknown as TextResource_Config;
-          assert.throws(() => buildTextResource(malformed, 'uk-UA'), /Resource has no value for uk-UA/);
+          const malformed = { ...text, value: {} } as unknown as TextContentBlock_Config;
+          assert.throws(() => buildTextContentBlock(malformed, 'uk-UA'), /ContentBlock has no value for uk-UA/);
         });
       });
 
-      describe('Resource kinds', () => {
-        it('should build a text resource using the text builder contract', () => {
-          assert.deepEqual(buildResource(text, 'en-US'), buildTextResource(text, 'en-US'));
+      describe('ContentBlock kinds', () => {
+        it('should build a text contentBlock using the text builder contract', () => {
+          assert.deepEqual(buildContentBlock(text, 'en-US'), buildTextContentBlock(text, 'en-US'));
         });
 
-        it('should localize a markdown resource file location', () => {
+        it('should localize a markdown contentBlock file location', () => {
           assert.deepEqual(
-            buildResource(
+            buildContentBlock(
               {
                 id: 'md',
                 blockType: 'markdown',
@@ -84,7 +84,7 @@ describe('Utils', () => {
 
         it('should localize audio path, title, and description independently', () => {
           assert.deepEqual(
-            buildResource(
+            buildContentBlock(
               {
                 id: 'audio',
                 blockType: 'audio',
@@ -108,7 +108,7 @@ describe('Utils', () => {
 
         it('should localize video path and poster independently', () => {
           assert.deepEqual(
-            buildResource(
+            buildContentBlock(
               {
                 id: 'video',
                 blockType: 'video',
@@ -130,7 +130,7 @@ describe('Utils', () => {
 
         it('should localize image path and alternative text independently', () => {
           assert.deepEqual(
-            buildResource(
+            buildContentBlock(
               {
                 id: 'image',
                 blockType: 'image',
@@ -152,7 +152,7 @@ describe('Utils', () => {
 
         it('should preserve code parameter order and selectors while localizing values', () => {
           assert.deepEqual(
-            buildResource(
+            buildContentBlock(
               {
                 id: 'code',
                 blockType: 'code',
@@ -179,7 +179,7 @@ describe('Utils', () => {
         });
 
         it('should return an empty parameter list for code without parameters', () => {
-          const resource = buildResource(
+          const contentBlock = buildContentBlock(
             {
               id: 'code',
               blockType: 'code',
@@ -189,16 +189,16 @@ describe('Utils', () => {
             },
             'en-US',
           );
-          assert.equal(resource.blockType, 'code');
-          if (resource.blockType !== 'code') return assert.fail('Expected a code resource');
-          assert.deepEqual(resource.codeParams, []);
+          assert.equal(contentBlock.blockType, 'code');
+          if (contentBlock.blockType !== 'code') return assert.fail('Expected a code contentBlock');
+          assert.deepEqual(contentBlock.codeParams, []);
         });
       });
 
       describe('Input integrity', () => {
         it('should not mutate the original localized text configuration', () => {
           const original = structuredClone(text);
-          buildTextResource(text, 'uk-UA');
+          buildTextContentBlock(text, 'uk-UA');
           assert.deepEqual(text, original);
         });
 
@@ -211,7 +211,7 @@ describe('Utils', () => {
             codeParams: [{ selector: 'name', values: { 'en-US': 'original' } }],
           };
           const original = structuredClone(config);
-          buildResource(config, 'uk-UA');
+          buildContentBlock(config, 'uk-UA');
           assert.deepEqual(config, original);
         });
       });

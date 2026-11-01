@@ -1,4 +1,4 @@
-import type { Resource_Config, TextResource_AllLocales_Config } from '@svitlo/contracts/content';
+import type { ContentBlock_Config, TextContentBlock_AllLocales_Config } from '@svitlo/contracts/content';
 import type { NonEmptyArray } from '@svitlo/contracts/content';
 
 export type DynamicQuestion_ArgumentType = 'string' | 'number' | 'boolean';
@@ -76,11 +76,11 @@ export interface DynamicQuestion_Config<TArguments extends DynamicQuestion_Argum
   buildVariants: (config: DynamicQuestion_Config<TArguments>) => DynamicQuestion_Variant<TArguments>[];
   checkConstraints: (variant: DynamicQuestion_Variant<TArguments>) => boolean;
   content: {
-    question: NonEmptyArray<Resource_Config[]>;
-    explanation: NonEmptyArray<Resource_Config[]>;
-    answer: NonEmptyArray<Resource_Config[]>;
+    question: NonEmptyArray<ContentBlock_Config[]>;
+    explanation: NonEmptyArray<ContentBlock_Config[]>;
+    answer: NonEmptyArray<ContentBlock_Config[]>;
   };
-  name: TextResource_AllLocales_Config;
+  name: TextContentBlock_AllLocales_Config;
 }
 
 export interface DynamicQuestion<TArguments extends DynamicQuestion_Arguments = DynamicQuestion_Arguments> {

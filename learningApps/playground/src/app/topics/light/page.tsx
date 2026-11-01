@@ -6,7 +6,7 @@ import { resolveLocale } from '@/i18n/resolveLocale';
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine/localization';
 import { howLightMoves_Lesson_Data } from '@/data/howLightMoves/index.data';
 import { howLightMovesCatalog } from '@/data/howLightMoves/howLightMoves.catalog';
-import { buildTextResource } from '@svitlo/engine/builders';
+import { buildTextContentBlock } from '@svitlo/engine/builders';
 
 export async function generateMetadata({ searchParams }: PageProps<'/topics/light'>): Promise<Metadata> {
   const locale = resolveLocale(
@@ -15,7 +15,7 @@ export async function generateMetadata({ searchParams }: PageProps<'/topics/ligh
     'uk-UA',
   );
   return {
-    title: `${buildTextResource(howLightMovesCatalog.text[howLightMoves_Lesson_Data.title], locale).value} — Світло`,
+    title: `${buildTextContentBlock(howLightMovesCatalog.text[howLightMoves_Lesson_Data.title], locale).value} — Світло`,
     description: 'Перша інтерактивна тема: світловий промінь, малюнок і анімована сцена.',
   };
 }
