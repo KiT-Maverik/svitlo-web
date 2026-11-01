@@ -40,7 +40,8 @@ export const spaceBasedObservation_Skill_Data = buildSkillConfig({
     frontend: {
       en: "Compare observations from space with those made through Earth's atmosphere.",
       
-      qm: 'Fezadan yapılğan közetüvlerni Yer atmosferası arqalı yapılğan közetüvlernen teñeştiriñiz.',bn: 'মহাকাশ থেকে করা পর্যবেক্ষণের সঙ্গে পৃথিবীর বায়ুমণ্ডল ভেদ করে করা পর্যবেক্ষণের তুলনা করো।',
+      qm: 'Fezadan yapılğan közetüvlerni Yer atmosferası arqalı yapılğan közetüvlernen teñeştiriñiz.',
+      bn: 'মহাকাশ থেকে করা পর্যবেক্ষণের সঙ্গে পৃথিবীর বায়ুমণ্ডল ভেদ করে করা পর্যবেক্ষণের তুলনা করো।',
       ur: 'خلا سے کیے گئے مشاہدات کا موازنہ زمین کے کرۂ ہوائی کے پار سے کیے گئے مشاہدات سے کریں۔',
       ta: 'விண்வெளியிலிருந்து செய்யும் கண்காணிப்புகளையும் பூமியின் வளிமண்டலத்தின் வழியாகச் செய்யும் கண்காணிப்புகளையும் ஒப்பிடுங்கள்.',
       te: 'అంతరిక్షం నుంచి చేసిన పరిశీలనలను భూమి వాతావరణం గుండా చేసిన పరిశీలనలతో పోల్చండి.',
