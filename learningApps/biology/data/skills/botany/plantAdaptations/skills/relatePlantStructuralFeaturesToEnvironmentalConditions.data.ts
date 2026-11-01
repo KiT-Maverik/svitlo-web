@@ -37,7 +37,7 @@ export const relatePlantStructuralFeaturesToEnvironmentalConditions_Skill_Data =
     methodological: "Explain causal links between root, leaf, and shoot structure and environmental resources or limitations; compare how different structural solutions affect water balance, access to light, and survival. The central competency is functional explanation rather than merely identifying an adaptation.",
     frontend: {
       en: "Explain why roots, leaves and shoots have forms suited to different conditions.",
-      zh: '解释根、叶和芽为什么具有适合不同条件的形态。',
+      zh: '解释根、叶和茎的结构如何帮助植物适应不同的环境条件。',
       hi: 'समझाएँ कि जड़ों, पत्तियों और प्ररोहों के आकार अलग-अलग परिस्थितियों के अनुकूल क्यों होते हैं।',
       es: 'Explica por qué las raíces, hojas y brotes presentan formas adecuadas a distintas condiciones.',
       ar: 'اشرح لماذا تتخذ الجذور والأوراق والبراعم أشكالًا تناسب الظروف المختلفة.',

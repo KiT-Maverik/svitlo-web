@@ -5,7 +5,7 @@ export const compareDevelopmentWithAndWithoutMetamorphosis_Skill_Data = buildSki
   id: "8ca2ea87-fb7c-439c-886e-b6972c8db18b",
   name: {
     en: "Compare Development With and Without Metamorphosis",
-    zh: '比较有变态与无变态的发育',
+    zh: '比较变态发育与非变态发育',
     hi: 'कायांतरण के साथ और बिना विकास की तुलना करना',
     es: 'Comparar el desarrollo con y sin metamorfosis',
     ar: 'مقارنة النمو مع التحوّل وبدونه',
