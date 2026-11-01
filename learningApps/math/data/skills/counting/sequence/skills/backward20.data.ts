@@ -28,7 +28,7 @@ export const backward20_Skill_Data = buildSkillConfig({
     vi: 'Đếm lùi trong phạm vi 20',
     ta: '20 இலிருந்து பின்னோக்கி எண்ணுதல்',
     te: '20 నుండి వెనక్కి లెక్కించడం',
-    mr: '२० पासून उलट मोजणे',
+    mr: '० ते २० मधील कोणत्याही संख्येपासून उलट मोजणे',
     ms: 'Membilang menurun dari 20',
     he: 'ספירה לאחור מ־20',
     pl: 'Liczenie wstecz od 20',
