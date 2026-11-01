@@ -64,7 +64,7 @@ export const interstellarDust_Skill_Data = buildSkillConfig({
       lv: 'Izpēti, kā putekļi vājina, sarkanina un atkārtoti izstaro zvaigžņu gaismu.',
       et: 'Uuri, kuidas tolm nõrgendab ja punetab tähevalgust ning kiirgab selle uuesti välja.',
       be: 'Дасьледуй, як пыл аслабляе, чырваніць і паўторна выпраменьвае сьвятло зорак.',
-      ka: 'ნახე, როგორ ასუსტებს და აწითლებს მტვერი ვარსკვლავურ სინათლეს და ხელახლა ასხივებს მას.',
+      ka: 'ნახე, როგორ ასუსტებს და აწითლებს ვარსკვლავთშორისი მტვერი ვარსკვლავურ სინათლეს, ხოლო შთანთქმულ ენერგიას ინფრაწითელი გამოსხივების სახით გამოყოფს.',
       kk: 'Шаң жұлдыз жарығын қалай бәсеңдетіп, қызартып және қайта сәуле шығаратынын түсін.',
     },
   },
