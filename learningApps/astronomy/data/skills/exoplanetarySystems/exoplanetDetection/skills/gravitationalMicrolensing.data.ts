@@ -39,7 +39,7 @@ export const gravitationalMicrolensing_Skill_Data = buildSkillConfig({
       'Explain how temporary lensing signatures can reveal otherwise difficult-to-detect planetary companions.',
     frontend: {
       en: "Understand how gravity can briefly magnify a distant star's light and reveal a planet.",
-      zh: '理解引力如何短暂放大遥远恒星的光，从而揭示行星的存在。',
+      zh: '理解引力如何使遥远恒星的视亮度短暂增强，从而揭示行星的存在。',
       hi: 'समझें कि गुरुत्वाकर्षण दूर के तारे का प्रकाश थोड़ी देर के लिए बढ़ाकर ग्रह का संकेत कैसे दे सकता है।',
       es: 'Comprende cómo la gravedad puede aumentar temporalmente el brillo aparente de una estrella distante y revelar un planeta.',
       ar: 'افهم كيف يمكن للجاذبية أن تكبّر ضوء نجم بعيد مؤقتًا وتكشف عن كوكب.',
