@@ -37,6 +37,7 @@ export const zoology_SkillDomain_Data = buildSkillDomainConfig({
     be: 'Заалёгія',
     ka: 'ზოოლოგია',
     kk: 'Зоология',
+    qm: 'Zoologiya',
   },
   groups: {
     animalDiversity: animalDiversity_SkillGroup_Data,
