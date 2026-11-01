@@ -46,7 +46,7 @@ export const editAMusicalSample_Skill_Data = buildSkillConfig({
       bn: 'আপনার সংগীতের ভাবনার সঙ্গে মানানসই করতে রেকর্ড করা শব্দ কাটুন বা নতুনভাবে গড়ুন।',
       pt: 'Corte ou reformule um som gravado para adequá-lo à sua ideia musical.',
       ur: 'ریکارڈ شدہ آواز کو کاٹیں یا اس کی شکل بدلیں تاکہ وہ آپ کے موسیقی کے خیال کے مطابق ہو۔',
-      id: 'Potong atau bentuk ulang suara rekaman agar sesuai dengan ide musikmu.',
+      id: 'Potong atau bentuk ulang suara rekaman agar sesuai dengan gagasan musik Anda.',
       de: 'Schneide einen aufgenommenen Klang oder forme ihn um, damit er zu deiner musikalischen Idee passt.',
       ja: '録音した音を切り取ったり形を変えたりして、音楽のアイデアに合わせましょう。',
       ko: '녹음된 소리를 자르거나 형태를 바꿔 음악적 아이디어에 맞추세요.',

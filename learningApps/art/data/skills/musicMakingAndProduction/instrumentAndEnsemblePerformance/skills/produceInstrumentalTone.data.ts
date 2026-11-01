@@ -46,7 +46,7 @@ export const produceInstrumentalTone_Skill_Data = buildSkillConfig({
       bn: 'আপনি যে সংগীত বাজাতে চান, তার উপযোগী করে বাদ্যযন্ত্রের ধ্বনি গড়ে তুলুন।',
       pt: 'Modele o som do instrumento para combinar com a música que deseja tocar.',
       ur: 'جس موسیقی کو آپ بجانا چاہتے ہیں اس کے مطابق ساز کی آواز بنائیں۔',
-      id: 'Bentuk suara instrumen agar sesuai dengan musik yang ingin kamu mainkan.',
+      id: 'Bentuk suara instrumen agar sesuai dengan musik yang ingin Anda mainkan.',
       de: 'Gestalte den Klang des Instruments passend zu der Musik, die du spielen möchtest.',
       ja: '演奏したい音楽に合うように、楽器の音色を整えましょう。',
       ko: '연주하려는 음악에 어울리도록 악기의 소리를 조절하세요.',
