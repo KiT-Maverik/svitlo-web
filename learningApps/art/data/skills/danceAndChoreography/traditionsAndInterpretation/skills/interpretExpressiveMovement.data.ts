@@ -27,7 +27,7 @@ export const interpretExpressiveMovement_Skill_Data = buildSkillConfig({
     pl: 'Interpretuj ruch ekspresyjny',
     uk: 'Інтерпретуйте виразні рухи',
     lt: 'Interpretuokite išraiškingą judesį',
-    lv: 'Interpretējiet izteiksmīgu kustību',
+    lv: 'Interpretēt izteiksmīgu kustību',
     et: 'Tõlgenda väljendusrikast liikumist',
     be: 'Інтэрпрэтуйце выразныя рухі',
     ka: 'განმარტეთ გამომსახველობითი მოძრაობა',

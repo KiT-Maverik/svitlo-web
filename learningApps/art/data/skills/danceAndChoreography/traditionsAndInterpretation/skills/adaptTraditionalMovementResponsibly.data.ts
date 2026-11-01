@@ -27,7 +27,7 @@ export const adaptTraditionalMovementResponsibly_Skill_Data = buildSkillConfig({
     pl: 'Odpowiedzialnie adaptuj tradycyjne ruchy',
     uk: 'Відповідально адаптуйте традиційні рухи',
     lt: 'Atsakingai pritaikykite tradicinius judesius',
-    lv: 'Atbildīgi pielāgojiet tradicionālās kustības',
+    lv: 'Atbildīgi pielāgot tradicionālās kustības',
     et: 'Kohanda pärimuslikke liigutusi vastutustundlikult',
     be: 'Адказна адаптуйце традыцыйныя рухі',
     ka: 'პასუხისმგებლობით მოარგეთ ტრადიციული მოძრაობები',

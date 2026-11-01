@@ -34,7 +34,7 @@ export const digitalThreeDimensionalArt_SkillGroup_Data = buildSkillGroupConfig(
     pl: 'Budować ekspresyjne przestrzenie wirtualne za pomocą modelowania, materiałów, światła i kompozycji.',
     uk: 'Створювати виразні віртуальні простори за допомогою моделювання, матеріалів, світла й композиції.',
     lt: 'Kurti išraiškingas virtualias erdves modeliuojant, parenkant medžiagas, šviesą ir kompoziciją.',
-    lv: 'Veidot izteiksmīgas virtuālās telpas ar modelēšanu, materiāliem, gaismu un kompozīciju.',
+    lv: 'Trīsdimensiju digitālā māksla',
     et: 'Väljendusrikaste virtuaalruumide loomine modelleerimise, materjalide, valguse ja kompositsiooni abil.',
     be: 'Ствараць выразныя віртуальныя прасторы з дапамогай мадэлявання, матэрыялаў, святла і кампазіцыі.',
     ka: 'გამომსახველობითი ვირტუალური სივრცეების შექმნა მოდელირების, მასალების, განათებისა და კომპოზიციის საშუალებით.',

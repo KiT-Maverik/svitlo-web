@@ -34,7 +34,7 @@ export const digitalImages_SkillGroup_Data = buildSkillGroupConfig({
     pl: 'Tworzyć obrazy cyfrowe za pomocą pikseli, kształtów, warstw i selektywnej edycji.',
     uk: 'Створювати цифрові зображення за допомогою пікселів, фігур, шарів і вибіркового редагування.',
     lt: 'Kurti skaitmeninius vaizdus naudojant pikselius, formas, sluoksnius ir atrankinį redagavimą.',
-    lv: 'Veidot digitālus attēlus ar pikseļiem, formām, slāņiem un selektīvu rediģēšanu.',
+    lv: 'Digitālie attēli',
     et: 'Digipiltide loomine pikslite, kujundite, kihtide ja valikulise töötlusega.',
     be: 'Ствараць лічбавыя выявы з дапамогай пікселяў, фігур, слаёў і выбарачнага рэдагавання.',
     ka: 'ციფრული სურათების შექმნა პიქსელებით, ფორმებით, ფენებითა და შერჩევითი რედაქტირებით.',

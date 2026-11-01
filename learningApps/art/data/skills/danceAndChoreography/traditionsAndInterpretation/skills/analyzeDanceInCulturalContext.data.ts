@@ -27,7 +27,7 @@ export const analyzeDanceInCulturalContext_Skill_Data = buildSkillConfig({
     pl: 'Analizuj taniec w kontekście kulturowym',
     uk: 'Аналізуйте танець у культурному контексті',
     lt: 'Analizuokite šokį kultūriniame kontekste',
-    lv: 'Analizējiet deju kultūras kontekstā',
+    lv: 'Analizēt deju kultūras kontekstā',
     et: 'Analüüsi tantsu kultuurikontekstis',
     be: 'Аналізуйце танец у культурным кантэксце',
     ka: 'გააანალიზეთ ცეკვა კულტურულ კონტექსტში',

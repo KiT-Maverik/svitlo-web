@@ -27,7 +27,7 @@ export const improviseAMelody_Skill_Data = buildSkillConfig({
     pl: 'Improwizuj melodię',
     uk: 'Імпровізуйте мелодію',
     lt: 'Improvizuokite melodiją',
-    lv: 'Improvizējiet melodiju',
+    lv: 'Improvizēt melodiju',
     et: 'Improvisatsiooni meloodia',
     be: 'Імправізуйце мелодыю',
     ka: 'მოახდინეთ მელოდიის იმპროვიზაცია',

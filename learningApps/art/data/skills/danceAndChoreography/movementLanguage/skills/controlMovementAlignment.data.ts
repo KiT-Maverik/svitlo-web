@@ -27,7 +27,7 @@ export const controlMovementAlignment_Skill_Data = buildSkillConfig({
     pl: 'Kontroluj ustawienie ciała w ruchu',
     uk: 'Контролюйте вирівнювання тіла під час руху',
     lt: 'Valdykite kūno padėtį judant',
-    lv: 'Kontrolējiet ķermeņa novietojumu kustībā',
+    lv: 'Kontrolēt ķermeņa novietojumu kustībā',
     et: 'Kontrolli keha joondust liikumisel',
     be: 'Кантралюйце выраўноўванне цела падчас руху',
     ka: 'აკონტროლეთ სხეულის გასწორება მოძრაობისას',

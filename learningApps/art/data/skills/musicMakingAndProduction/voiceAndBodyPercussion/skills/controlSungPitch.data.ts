@@ -27,7 +27,7 @@ export const controlSungPitch_Skill_Data = buildSkillConfig({
     pl: 'Kontroluj wysokość śpiewanych dźwięków',
     uk: 'Контролюйте висоту співочого тону',
     lt: 'Valdykite dainuojamą garso aukštį',
-    lv: 'Kontrolējiet dziedātā toņa augstumu',
+    lv: 'Kontrolēt dziedātā toņa augstumu',
     et: 'Kontrolli laulmise helikõrgust',
     be: 'Кантралюйце вышыню гуку падчас спеваў',
     ka: 'აკონტროლეთ სიმღერის ბგერის სიმაღლე',

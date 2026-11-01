@@ -27,7 +27,7 @@ export const produceInstrumentalTone_Skill_Data = buildSkillConfig({
     pl: 'Wydobywaj brzmienie instrumentu',
     uk: 'Створюйте інструментальний звук',
     lt: 'Išgaukite instrumento skambesį',
-    lv: 'Veidojiet instrumenta skanējumu',
+    lv: 'Veidot instrumenta skanējumu',
     et: 'Loo instrumendi kõla',
     be: 'Стварайце гучанне інструмента',
     ka: 'შექმენით ინსტრუმენტის ჟღერადობა',

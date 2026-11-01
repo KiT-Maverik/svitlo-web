@@ -27,7 +27,7 @@ export const recordAMusicalSample_Skill_Data = buildSkillConfig({
     pl: 'Nagraj próbkę muzyczną',
     uk: 'Записуйте музичний семпл',
     lt: 'Įrašykite muzikinį semplą',
-    lv: 'Ierakstiet mūzikas paraugu',
+    lv: 'Ierakstīt mūzikas paraugu',
     et: 'Salvesta muusikanäidis',
     be: 'Запісвайце музычны ўзор',
     ka: 'ჩაწერეთ მუსიკალური სემპლი',

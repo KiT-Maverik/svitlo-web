@@ -27,7 +27,7 @@ export const programDrumMachinePatterns_Skill_Data = buildSkillConfig({
     pl: 'Programuj rytmy automatu perkusyjnego',
     uk: 'Програмуйте ритмічні патерни драм-машини',
     lt: 'Programuokite būgnų mašinos ritmus',
-    lv: 'Programmējiet bungu mašīnas ritmus',
+    lv: 'Programmēt bungu mašīnas ritmus',
     et: 'Programmi trummimasina rütmimustreid',
     be: 'Праграмуйце рытмічныя ўзоры драм-машыны',
     ka: 'დააპროგრამეთ დრამ-мანქანის რიტმული პატერნები',

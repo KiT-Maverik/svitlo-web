@@ -27,7 +27,7 @@ export const performBodyPercussion_Skill_Data = buildSkillConfig({
     pl: 'Wykonuj body percussion',
     uk: 'Виконуйте боді-перкусію',
     lt: 'Atlikite kūno perkusiją',
-    lv: 'Izpildiet ķermeņa perkusiju',
+    lv: 'Izpildīt ķermeņa perkusiju',
     et: 'Esita kehapillimuusikat',
     be: 'Выконвайце бодзі-перкусію',
     ka: 'შეასრულეთ სხეულის პერკუსია',

@@ -27,7 +27,7 @@ export const coordinateDanceWithPulse_Skill_Data = buildSkillConfig({
     pl: 'Koordynuj taniec z pulsem',
     uk: 'Узгоджуйте танець із пульсом',
     lt: 'Derinkite šokį su pulsu',
-    lv: 'Saskaņojiet deju ar pulsu',
+    lv: 'Saskaņot deju ar pulsu',
     et: 'Sobita tants pulsilöögiga',
     be: 'Узгадняйце танец з пульсам',
     ka: 'შეუსაბამეთ ცეკვა რიტმულ პულსს',

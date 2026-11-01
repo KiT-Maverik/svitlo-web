@@ -27,7 +27,7 @@ export const shapePerformanceDynamics_Skill_Data = buildSkillConfig({
     pl: 'Kształtuj dynamikę wykonania',
     uk: 'Формуйте динаміку виконання',
     lt: 'Formuokite atlikimo dinamiką',
-    lv: 'Veidojiet izpildījuma dinamiku',
+    lv: 'Veidot izpildījuma dinamiku',
     et: 'Kujunda esituse dünaamikat',
     be: 'Фармуйце дынаміку выканання',
     ka: 'შექმენით შესრულების დინამიკა',

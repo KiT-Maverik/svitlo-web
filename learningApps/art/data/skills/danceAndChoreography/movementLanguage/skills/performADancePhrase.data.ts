@@ -27,7 +27,7 @@ export const performADancePhrase_Skill_Data = buildSkillConfig({
     pl: 'Wykonaj frazę taneczną',
     uk: 'Виконуйте танцювальну фразу',
     lt: 'Atlikite šokio frazę',
-    lv: 'Izpildiet dejas frāzi',
+    lv: 'Izpildīt dejas frāzi',
     et: 'Esita tantsufraas',
     be: 'Выканайце танцавальную фразу',
     ka: 'შეასრულეთ საცეკვაო ფრაზა',
