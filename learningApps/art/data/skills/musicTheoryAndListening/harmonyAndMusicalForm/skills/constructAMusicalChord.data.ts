@@ -18,7 +18,7 @@ export const constructAMusicalChord_Skill_Data = buildSkillConfig({
     ja: '和音を作る',
     ko: '음악 화음 만들기',
     tr: 'Müzikal bir akor oluşturmak',
-    vi: 'Tạo hợp âm nhạc',
+    vi: 'Tạo hợp âm',
     ta: 'இசைக்கோர்வையை உருவாக்குங்கள்',
     te: 'సంగీత కార్డ్‌ను నిర్మించండి',
     mr: 'संगीतातील स्वरमेळ तयार करा',

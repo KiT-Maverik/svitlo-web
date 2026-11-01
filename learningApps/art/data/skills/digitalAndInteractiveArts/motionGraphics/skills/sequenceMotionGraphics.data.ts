@@ -26,7 +26,7 @@ export const sequenceMotionGraphics_Skill_Data = buildSkillConfig({
     he: 'רצף של גרפיקה בתנועה',
     pl: 'Układać sekwencje grafiki ruchomej',
     uk: 'Упорядковувати моушн-графіку',
-    lt: 'Seka išdėstyti judančią grafiką',
+    lt: 'Išdėstyti judančios grafikos seką',
     lv: 'Veidot kustīgās grafikas secību',
     et: 'Liikuva graafika järjestamine',
     be: 'Упарадкоўваць рухомую графіку',

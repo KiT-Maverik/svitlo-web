@@ -34,7 +34,7 @@ export const instrumentAndEnsemblePerformance_SkillGroup_Data = buildSkillGroupC
     he: 'נגינה בכלי ובאנסמבל',
     pl: 'Gra na instrumencie i w zespole',
     uk: 'Гра на інструментах та ансамблеве виконання',
-    lt: 'Groimas instrumentu ir ansamblyje',
+    lt: 'Grojimas instrumentu ir ansamblyje',
     lv: 'Instrumentu spēle un ansambļa izpildījums',
     et: 'Pillimäng ja ansambliesitus',
     be: 'Інструментальнае і ансамблевае выкананне',

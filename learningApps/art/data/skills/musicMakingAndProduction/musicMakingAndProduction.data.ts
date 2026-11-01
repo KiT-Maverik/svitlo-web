@@ -31,7 +31,7 @@ export const musicMakingAndProduction_SkillDomain_Data = buildSkillDomainConfig(
     he: 'יצירה והפקה מוזיקלית',
     pl: 'Tworzenie i produkcja muzyki',
     uk: 'Створення та продюсування музики',
-    lt: 'Muzikos kūrimas ir gamyba',
+    lt: 'Muzikos kūrimas ir prodiusavimas',
     lv: 'Mūzikas radīšana un producēšana',
     et: 'Muusika loomine ja tootmine',
     be: 'Стварэнне і прадзюсаванне музыкі',
