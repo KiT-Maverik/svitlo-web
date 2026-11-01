@@ -8,7 +8,7 @@ export const digits09_Skill_Data = buildSkillConfig({
     lv: 'Cipari 0–9 un cipara nozīme',
     et: 'Numbrid 0–9 ja numbri tähendus',
     be: 'Лічбы 0–9 і розьніца паміж лічбай і лікам',
-    ka: 'ციფრები 0–9 და ციფრის მნიშვნელობა',
+    ka: 'ციფრები 0–9 და განსხვავება ციფრსა და რიცხვს შორის',
     kk: '0–9 цифрлары және цифрдың мағынасы',
     en: 'Digits 0–9 and the meaning of a digit',
     qm: '0–9 raqamları ve raqam manası',
