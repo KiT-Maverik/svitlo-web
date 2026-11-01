@@ -38,7 +38,7 @@ export const solarSystemComponents_Skill_Data = buildSkillConfig({
     methodological:
       "Classify the Sun, planets, natural satellites and smaller bodies by their roles in the system's gravitational architecture.",
     frontend: {
-      en: 'Recognize the Sun,
+      en: 'Recognize the Sun, planets, moons and smaller bodies by their roles in the Solar System.',
       zh: "认识太阳、行星、卫星和较小天体在太阳系中的不同作用。",
       hi: "सूर्य, ग्रहों, चंद्रमाओं और छोटे पिंडों को सौरमंडल में उनकी भूमिकाओं के आधार पर पहचानें।",
       es: "Reconoce el Sol, los planetas, las lunas y los cuerpos menores según su función en el Sistema Solar.",
@@ -66,7 +66,7 @@ export const solarSystemComponents_Skill_Data = buildSkillConfig({
       be: "Распазнавайце Сонца, плянэты, спадарожнікі і малыя целы паводле іх ролі ў Сонечнай сыстэме.",
       ka: "ამოიცანით მზე, პლანეტები, თანამგზავრები და მცირე სხეულები მათი როლის მიხედვით მზის სისტემაში.",
       kk: "Күнді, планеталарды, серіктерді және кіші денелерді Күн жүйесіндегі рөлі бойынша ажыратыңыз.",
-      qm: "Küneşni, planetalarnı, yoldaşlarnı ve kiçik cisimlerni sistemadaki vazifelerine köre tanıñız.", planets, moons and smaller bodies by their roles in the Solar System.',
+      qm: "Küneşni, planetalarnı, yoldaşlarnı ve kiçik cisimlerni sistemadaki vazifelerine köre tanıñız.",
     },
   },
 });
