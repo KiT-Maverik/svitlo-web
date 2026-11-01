@@ -44,7 +44,7 @@ export const interpretEvidenceOfEvolution_Skill_Data = buildSkillConfig({
       fr: 'Découvre comment les fossiles, l’anatomie et l’ADN apportent des preuves de l’évolution.',
       bn: 'জীবাশ্ম, দেহগঠন ও ডিএনএ কীভাবে বিবর্তনের প্রমাণ দেয়, তা জানো।',
       pt: 'Explore como fósseis, anatomia e DNA fornecem evidências da evolução.',
-      ur: 'جانیں کہ رکازیات، جسمانی ساخت اور ڈی این اے ارتقا کے ثبوت کیسے فراہم کرتے ہیں۔',
+      ur: 'جانیں کہ حجری باقیات، جسمانی ساخت اور ڈی این اے ارتقا کے ثبوت کیسے فراہم کرتے ہیں۔',
       id: 'Jelajahi bagaimana fosil, anatomi, dan DNA memberikan bukti evolusi.',
       de: 'Erkunde, wie Fossilien, Anatomie und DNA Belege für Evolution liefern.',
       ja: '化石、体のつくり、DNA が進化の証拠となる理由を調べよう。',
