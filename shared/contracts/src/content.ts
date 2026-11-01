@@ -5,6 +5,7 @@ export type * from './types/content/contentBlock.types';
 export type { ContentBlock_Catalog } from './types/content/blocks';
 export type * from './types/content/locale.types';
 export type * from './types/content/lesson.types';
+export type * from './types/content/lessonV2.types';
 export type * from './types/content/section.types';
 export type * from './types/content/quiz.types';
 export type * from './types/content/question.types';
