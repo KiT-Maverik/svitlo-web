@@ -48,7 +48,7 @@ export const repeatedAddition_Skill_Data = buildSkillConfig({
       bn: 'একই পূর্ণসংখ্যার পরিমাণ বারবার যোগ করাকে গুণের মাধ্যমে প্রকাশ করতে পারো।',
       pt: 'Você pode representar com multiplicação a soma repetida de uma mesma quantidade inteira.',
       ur: 'ایک ہی صحیح عددی مقدار کو بار بار جمع کرنے کو ضرب کے طور پر لکھ سکتے ہیں۔',
-      id: 'Kamu bisa menyatakan penjumlahan berulang dari jumlah bilangan bulat yang sama sebagai perkalian.',
+      id: 'Kamu bisa menyatakan penjumlahan berulang dari bilangan yang sama sebagai perkalian.',
       de: 'Du kannst wiederholtes Addieren derselben ganzzahligen Menge als Multiplikation ausdrücken.',
       ja: '同じ整数の数量を何度も足すことを、かけ算の式で表せます。',
       ko: '같은 정수의 양을 여러 번 더한 것을 곱셈으로 나타낼 수 있어요.',

@@ -19,7 +19,7 @@ export const roundToHundred_Skill_Data = buildSkillConfig({
     fr: 'Arrondir à la centaine la plus proche',
     bn: 'নিকটতম শতকে পূর্ণায়ন',
     pt: 'Arredondamento à centena mais próxima',
-    ur: 'قریب ترین سیکڑے تک گول کرنا',
+    ur: 'قریب ترین سینکڑے تک گول کرنا',
     id: 'Membulatkan ke ratusan terdekat',
     de: 'Auf den nächsten Hunderter runden',
     ja: '最も近い百への四捨五入',

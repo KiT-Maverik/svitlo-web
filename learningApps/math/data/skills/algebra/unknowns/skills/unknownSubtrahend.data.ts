@@ -19,7 +19,7 @@ export const unknownSubtrahend_Skill_Data = buildSkillConfig({
     fr: 'Trouver un nombre soustrait inconnu',
     bn: 'অজানা বিয়োজক নির্ণয়',
     pt: 'Encontrar um subtraendo desconhecido',
-    ur: 'نامعلوم منفی عدد معلوم کرنا',
+    ur: 'نامعلوم مطروح معلوم کرنا',
     id: 'Mencari bilangan pengurang yang tidak diketahui',
     de: 'Einen unbekannten Subtrahenden finden',
     ja: '未知の減数を求める',

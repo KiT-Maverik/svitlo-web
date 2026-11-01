@@ -20,7 +20,7 @@ export const expandedForm_Skill_Data = buildSkillConfig({
     bn: 'সংখ্যার বিস্তৃত রূপ',
     pt: 'Forma expandida dos números',
     ur: 'عدد کی توسیعی صورت',
-    id: 'Bentuk panjang bilangan',
+    id: 'Bentuk uraian bilangan',
     de: 'Zahlen in erweiterter Schreibweise',
     ja: '数の展開形',
     ko: '수의 전개형',

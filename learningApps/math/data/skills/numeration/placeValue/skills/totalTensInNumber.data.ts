@@ -19,7 +19,7 @@ export const totalTensInNumber_Skill_Data = buildSkillConfig({
     fr: 'Nombre total de dizaines et de centaines',
     bn: 'একটি সংখ্যায় মোট দশক ও শতক',
     pt: 'Total de dezenas e centenas de um número',
-    ur: 'عدد میں کل دہائیاں اور سیکڑے',
+    ur: 'عدد میں کل دہائیاں اور سینکڑے',
     id: 'Jumlah puluhan dan ratusan dalam bilangan',
     de: 'Gesamtzahl der Zehner und Hunderter',
     ja: '数に含まれる十と百のまとまりの総数',

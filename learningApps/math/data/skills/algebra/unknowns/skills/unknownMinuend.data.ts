@@ -19,7 +19,7 @@ export const unknownMinuend_Skill_Data = buildSkillConfig({
     fr: 'Trouver un nombre de départ inconnu dans une soustraction',
     bn: 'অজানা বিয়োজ্য নির্ণয়',
     pt: 'Encontrar um minuendo desconhecido',
-    ur: 'نامعلوم منفی منہ معلوم کرنا',
+    ur: 'نامعلوم مطروح منہ معلوم کرنا',
     id: 'Mencari bilangan yang dikurangi',
     de: 'Einen unbekannten Minuenden finden',
     ja: '未知の被減数を求める',
