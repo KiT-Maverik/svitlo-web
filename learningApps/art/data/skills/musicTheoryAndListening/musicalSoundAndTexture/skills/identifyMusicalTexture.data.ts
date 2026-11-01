@@ -12,7 +12,7 @@ export const identifyMusicalTexture_Skill_Data = buildSkillConfig({
     fr: 'Identifier la texture musicale',
     bn: 'সঙ্গীতের বুনন শনাক্ত করা',
     pt: 'Identificar a textura musical',
-    ur: 'موسیقی کی ساخت پہچانیں',
+    ur: 'موسیقی کی صوتی بُنت پہچانیں',
     id: 'Mengenali tekstur musik',
     de: 'Musikalische Textur erkennen',
     ja: '音楽のテクスチャーを識別する',
