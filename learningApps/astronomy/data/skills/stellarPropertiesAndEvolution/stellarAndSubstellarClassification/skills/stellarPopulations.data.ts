@@ -25,7 +25,7 @@ export const stellarPopulations_Skill_Data = buildSkillConfig({
     ms: "Populasi bintang",
     he: "אוכלוסיות כוכבים",
     pl: "Populacje gwiazd",
-    uk: "Зоряні населення",
+    uk: "Зоряні популяції",
     lt: "Žvaigždžių populiacijos",
     lv: "Zvaigžņu populācijas",
     et: "Tähepopulatsioonid",
