@@ -59,7 +59,7 @@ export const sequenceAnExhibition_Skill_Data = buildSkillConfig({
       he: 'סדרו את היצירות כך שהרצף ייצור קשרים וניגודים בעלי משמעות.',
       pl: 'Ułóż dzieła tak, aby ich kolejność tworzyła znaczące powiązania i kontrasty.',
       uk: 'Розташовуйте твори так, щоб їхня послідовність створювала змістовні зв’язки й контрасти.',
-      lt: 'Išdėstyk kūrinius taip, kad jų seka kurtų prasmingus ryšius ir kontrastus.',
+      lt: 'Išdėstykite kūrinius taip, kad jų seka kurtų prasmingus ryšius ir kontrastus.',
       lv: 'Sakārto darbus tā, lai to secība veidotu jēgpilnas saiknes un kontrastus.',
       et: 'Sea teosed järjestusse nii, et see looks tähenduslikke seoseid ja kontraste.',
       be: 'Размяшчай творы так, каб іх паслядоўнасць стварала змястоўныя сувязі й кантрасты.',
