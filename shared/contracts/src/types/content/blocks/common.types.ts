@@ -9,7 +9,8 @@ export interface ContentBlock_ConfigBase {
 
 export type ContentBlock_Localized<Value = string> = Locales_All<Value> | Locales_Partial<Value> | Locales_Single<Value>;
 
-export type ContentBlock_Meta = {
+export type ContentBlock_Meta<T extends ContentBlock_Type> = {
   id: string;
   value: string;
+  type: T;
 } & Locale_ResponseParams
