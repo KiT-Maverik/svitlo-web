@@ -58,7 +58,7 @@ export const explainTheRoleOfPollinatorsInSpeciesInteractions_Skill_Data = build
       he: 'הסבר כיצד מאביקים וצמחים פורחים תלויים אלה באלה.',
       pl: 'Wyjaśnij, jak zapylacze i rośliny kwitnące zależą od siebie.',
       uk: 'Пояснюй, як запилювачі та квіткові рослини залежать одне від одного.',
-      lt: 'Paaiškink, kaip apdulkintojai ir žydintys augalai priklauso vieni nuo kitų.',
+      lt: 'Paaiškink, kaip apdulkintojai padeda žydintiems augalams daugintis ir gauna maisto iš žiedų.',
       lv: 'Izskaidro, kā apputeksnētāji un ziedaugi ir savstarpēji atkarīgi.',
       et: 'Selgita, kuidas tolmeldajad ja õistaimed üksteisest sõltuvad.',
       be: 'Патлумач, як апыляльнікі і кветкавыя расьліны залежаць адно ад аднаго.',
