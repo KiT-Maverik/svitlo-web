@@ -9,6 +9,7 @@ export const geneticsAndEvolution_SkillDomain_Data = buildSkillDomainConfig({
   id: "4ae7ddb9-d4cc-4a6c-a102-9422b5ac6d43",
   name: {
     en: "Genetics and Evolution",
+    qm: 'Genetika ve evolütsiya',
     zh: '遗传学与进化',
     hi: 'आनुवंशिकी और विकासवाद',
     es: 'Genética y evolución',
@@ -46,6 +47,7 @@ export const geneticsAndEvolution_SkillDomain_Data = buildSkillDomainConfig({
     methodological: "Transmission of hereditary information, reasons for similarities and differences among offspring, and changes in inherited traits within populations across generations. An individual's growth is not an evolutionary process.",
     frontend: {
       en: "Explore how inherited information passes between generations and how populations evolve.",
+      qm: 'İrsiy malümatnıñ nesilden nesilge nasıl berilgenini ve populyatsiyalarnıñ nesiller devamında nasıl deñişkenini ögreniñiz.',
       zh: '探索遗传信息如何代代相传，以及种群如何随着世代更替而进化。',
       hi: 'जानें कि वंशानुगत जानकारी पीढ़ी-दर-पीढ़ी कैसे पहुँचती है और समष्टियाँ समय के साथ कैसे विकसित होती हैं।',
       es: 'Explora cómo se transmite la información hereditaria entre generaciones y cómo evolucionan las poblaciones.',
