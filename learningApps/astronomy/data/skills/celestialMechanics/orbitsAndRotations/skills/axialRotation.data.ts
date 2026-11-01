@@ -5,7 +5,7 @@ export const axialRotation_Skill_Data = buildSkillConfig({
   id: '89c4b45f-9214-4c25-bd71-a3254073ae48',
   name: {
     en: 'Axial Rotation',
-      zh: '绕轴自转',
+    zh: '绕轴自转',
     hi: 'अक्षीय घूर्णन',
     es: 'Rotación axial',
     ar: 'الدوران المحوري',
@@ -39,7 +39,7 @@ export const axialRotation_Skill_Data = buildSkillConfig({
       'Describe the spin of a world about its axis, including rotation period and direction, independently of the tilt or precession of that axis.',
     frontend: {
       en: "Describe a celestial body's rotation about its own axis.",
-          zh: '描述天体如何围绕自身的轴旋转。',
+      zh: '描述天体如何围绕自身的轴旋转。',
       hi: 'बताएँ कि कोई खगोलीय पिंड अपनी धुरी के चारों ओर कैसे घूमता है।',
       es: 'Describe cómo gira un cuerpo celeste alrededor de su propio eje.',
       ar: 'صِف دوران جرم سماوي حول محوره الخاص.',
