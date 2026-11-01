@@ -285,8 +285,11 @@ export function inferBlockType(block) {
   if (Object.hasOwn(block, 'items')) return 'checkpoint';
   if (Object.hasOwn(block, 'welcome') && Object.hasOwn(block, 'questions')) return 'quiz';
   if (Object.hasOwn(block, 'text')) return 'markdown';
-  if (Object.hasOwn(block, 'locales') || Object.hasOwn(block, 'locale')) return 'scene';
-  if (Object.hasOwn(block, 'codeParams')) return 'code';
   if (Object.hasOwn(block, 'href')) return 'youtube';
+  if (Object.hasOwn(block, 'codeParams')) return 'code';
+  if (Object.hasOwn(block, 'fileLocation') && Object.hasOwn(block, 'poster')) return 'video';
+  if (Object.hasOwn(block, 'fileLocation') && Object.hasOwn(block, 'title')) return 'audio';
+  if (Object.hasOwn(block, 'alt') && (Object.hasOwn(block, 'locales') || Object.hasOwn(block, 'src'))) return 'image';
+  if (Object.hasOwn(block, 'locales') || Object.hasOwn(block, 'locale')) return 'scene';
   throw new Error(`Cannot infer nested content block type: ${block.id ?? '(no id)'}`);
 }
