@@ -1,3 +1,5 @@
+import type {ContentBlock_Scene} from "@svitlo/engine";
+
 type Locale = {
   title: string;
   items: {

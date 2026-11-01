@@ -2,20 +2,20 @@ import type { ContentBlock_Definition_Meta, ContentBlock_Response_Meta } from '.
 import type { ContentEntity_ConfigType } from '../entity.types';
 import type { Locale_Config, Locale_ResponseParams } from '../locale.types';
 
-export type VideoContentBlock_Definition = ContentBlock_Definition_Meta<'video'>;
+type ContentBlock_Video_Definition = ContentBlock_Definition_Meta<'video'>;
 
-export type VideoContentBlock_Data = ContentBlock_Response_Meta<'video'> & {
+type ContentBlock_Video_Data = ContentBlock_Response_Meta<'video'> & {
   fileLocation: Locale_Config;
   poster: Locale_Config;
 };
 
-export type VideoContentBlock_Response = ContentBlock_Response_Meta<'video'> & Locale_ResponseParams & {
+type ContentBlock_Video_Response = ContentBlock_Response_Meta<'video'> & Locale_ResponseParams & {
   fileLocation: string;
   poster: string;
 };
 
-export type VideoContentBlock<ConfigType extends ContentEntity_ConfigType> = {
-  definition: VideoContentBlock_Definition;
-  data: VideoContentBlock_Data;
-  response: VideoContentBlock_Response;
+export type ContentBlock_Video<ConfigType extends ContentEntity_ConfigType> = {
+  definition: ContentBlock_Video_Definition;
+  data: ContentBlock_Video_Data;
+  response: ContentBlock_Video_Response;
 }[ConfigType];
