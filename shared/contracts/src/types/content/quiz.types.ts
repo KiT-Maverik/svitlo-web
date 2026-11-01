@@ -2,9 +2,8 @@ import type { Question, Question_Config } from './question.types';
 import type {
   ContentBlock,
   ContentBlock_Config,
-  TextContentBlock,
-  TextContentBlock_Config,
 } from './blocks/common.types';
+import type { TextContentBlock, TextContentBlock_Config } from './blocks/text.types';
 import type { NonEmptyArray } from '../misc.types';
 
 type QuizQuestion = Question_Config & { number: number; weight: number };
