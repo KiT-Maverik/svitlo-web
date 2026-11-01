@@ -30,7 +30,7 @@ export const seasonalSkyVisibility_Skill_Data = buildSkillConfig({
     lt: 'Sezoninis dangaus matomumas',
     lv: 'Debess sezonālā redzamība',
     et: 'Taeva hooajaline nähtavus',
-    be: 'Сэзонная бачнасць неба',
+    be: 'Сэзонная бачнасьць неба',
     ka: 'ცის სეზონური ხილვადობა',
     kk: 'Аспанның маусымдық көрінуі',
   },

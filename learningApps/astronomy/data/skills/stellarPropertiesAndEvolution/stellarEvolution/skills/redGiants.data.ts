@@ -58,7 +58,7 @@ export const redGiants_Skill_Data = buildSkillConfig({
       mr: 'तारे लाल राक्षसी तारे होताना कसे फुगतात आणि त्यांच्या पृष्ठभागाचे तापमान कसे घटते ते जाणून घ्या.',
       ms: 'Terokai bagaimana bintang mengembang dan permukaannya menjadi lebih sejuk apabila bertukar menjadi gergasi merah.',
       he: 'גלו כיצד כוכבים מתרחבים וטמפרטורת פני השטח שלהם יורדת כשהם הופכים לענקים אדומים.',
-      pl: 'Poznaj, jak gwiazdy rozszerzają się i ich powierzchnie stygną, gdy stają się czerwonymi olbrzymami.',
+      pl: 'Zbadaj, jak gwiazdy się rozszerzają, a ich powierzchnie ochładzają podczas przemiany w czerwone olbrzymy.',
       uk: 'Дослідіть, як зорі розширюються та охолоджуються на поверхні, перетворюючись на червоних гігантів.',
       lt: 'Sužinokite, kaip žvaigždės išsiplečia ir jų paviršiai atvėsta, kai jos tampa raudonosiomis milžinėmis.',
       lv: 'Izpētiet, kā zvaigznes izplešas un to virsmas atdziest, kad tās kļūst par sarkanajiem milžiem.',
