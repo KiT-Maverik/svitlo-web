@@ -72,7 +72,7 @@ export const interactionsAmongOrganisms_SkillGroup_Data = buildSkillGroupConfig(
       lv: 'Izpēti, kā organismi konkurē, barojas cits ar citu vai sadarbojas.',
       et: 'Uuri, kuidas organismid võistlevad, üksteisest toituvad või teevad koostööd.',
       be: 'Дасьледуй, як арганізмы канкуруюць, харчуюцца іншымі або супрацоўнічаюць.',
-      ka: 'გამოიკვლიე, როგორ ეჯიბრებიან, იკვებებიან ერთმანეთით ან თანამშრომლობენ ორგანიზმები.',
+      ka: 'გამოიკვლიე, როგორ ეჯიბრებიან ორგანიზმები ერთმანეთს, იკვებებიან სხვა ორგანიზმებით ან ურთიერთსასარგებლოდ თანამშრომლობენ.',
       kk: 'Ағзалар қалай бәсекелесетінін, бір-бірімен қоректенетінін немесе ынтымақтасатынын зертте.',
     },
   },
