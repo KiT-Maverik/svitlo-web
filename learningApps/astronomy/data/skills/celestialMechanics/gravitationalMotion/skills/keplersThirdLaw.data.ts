@@ -5,7 +5,7 @@ export const keplersThirdLaw_Skill_Data = buildSkillConfig({
   id: '1faa4a82-40fd-4a58-b7ed-1fd6c47152a3',
   name: {
     en: "Kepler's Third Law",
-      zh: '开普勒第三定律',
+    zh: '开普勒第三定律',
     hi: 'केप्लर का तृतीय नियम',
     es: 'Tercera ley de Kepler',
     ar: 'قانون كبلر الثالث',
@@ -39,7 +39,7 @@ export const keplersThirdLaw_Skill_Data = buildSkillConfig({
       'Relate the square of orbital period to the cube of semi-major axis with the appropriate gravitational mass dependence and limitations of the two-body model.',
     frontend: {
       en: "Relate an object's orbital period to the size of its orbit and the gravitating mass.",
-          zh: '将天体的公转周期与轨道大小及产生引力的质量联系起来。',
+      zh: '将天体的公转周期与轨道大小及产生引力的质量联系起来。',
       hi: 'किसी पिंड की कक्षीय अवधि को उसकी कक्षा के आकार और गुरुत्वाकर्षण उत्पन्न करने वाले द्रव्यमान से जोड़ें।',
       es: 'Relaciona el período orbital de un objeto con el tamaño de su órbita y la masa que ejerce la atracción gravitatoria.',
       ar: 'اربط الفترة المدارية للجسم بحجم مداره والكتلة التي تولّد الجاذبية.',
