@@ -38,7 +38,7 @@ export const recognizeBirdCharacteristics_Skill_Data = buildSkillConfig({
     frontend: {
       en: "Recognize birds by their feathers, even when they cannot fly.",
       zh: '根据羽毛识别鸟类，即使它们不会飞。',
-      hi: 'पक्षियों को उनके पंखों से पहचानें, भले ही वे उड़ नहीं सकते हों।',
+      hi: 'पक्षियों को उनके परों से पहचानें, भले ही वे उड़ न सकें।',
       es: 'Reconoce las aves por sus plumas, incluso cuando no pueden volar.',
       ar: 'تعرّف على الطيور من خلال ريشها، حتى إن كانت لا تستطيع الطيران.',
       fr: 'Reconnais les oiseaux grâce à leurs plumes, même lorsqu\'ils ne peuvent pas voler.',
