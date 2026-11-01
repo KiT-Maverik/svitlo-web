@@ -15,7 +15,7 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
     zh: '除法 — 3-位数÷1-位数',
     hi: 'भाग — 3-अंकीय÷1-अंकीय',
     es: 'División — 3-cifras÷1-cifras',
-    ar: 'القسمة — 3-أرقام÷1-أرقام',
+    ar: 'القسمة — عدد من ثلاث خانات على عدد من خانة واحدة',
     fr: 'Division — 3-chiffres÷1-chiffres',
     bn: 'ভাগ — 3-অঙ্কের÷1-অঙ্কের',
     pt: 'Divisão — 3-algarismos÷1-algarismos',
