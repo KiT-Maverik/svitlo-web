@@ -65,7 +65,7 @@ export const controlMovementAlignment_Skill_Data = buildSkillConfig({
       be: 'Свядома размяшчайце часткі цела, каб ствараць выразныя танцавальныя лініі.',
       ka: 'განზრახ მოათავსეთ სხეულის ნაწილები მკაფიო საცეკვაო ხაზების შესაქმნელად.',
       kk: 'Дененің бөліктерін айқын би сызықтарын жасау үшін саналы түрде орналастырыңыз.',
-      qm: 'Açıq aqay çizgileri yaratmaq içün beden qisımlarını qasd ile yerleştiriñiz',
+      qm: 'Açıq oyun çizgileri yaratmaq içün beden qisımlarını qasd ile yerleştiriñiz',
     },
   },
 });

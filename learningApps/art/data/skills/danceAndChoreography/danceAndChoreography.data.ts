@@ -36,7 +36,7 @@ export const danceAndChoreography_SkillDomain_Data = buildSkillDomainConfig({
     be: 'Танец і харэаграфія',
     ka: 'ცეკვა და ქორეოგრაფია',
     kk: 'Би және хореография',
-    qm: 'Aqay ve koreografiya',
+    qm: 'Oyun ve koreografiya',
   },
   groups: {
     choreography: choreography_SkillGroup_Data,
@@ -75,7 +75,7 @@ export const danceAndChoreography_SkillDomain_Data = buildSkillDomainConfig({
       be: 'Даследуйце, як выразныя рухі, рухавыя ўзоры і культурныя традыцыі ствараюць танец.',
       ka: 'შეისწავლეთ, როგორ ქმნის ცეკვას გამომსახველობითი მოძრაობა, მოძრაობის ნიმუშები და კულტურული ტრადიციები.',
       kk: 'Мәнерлі қимыл, қозғалыс үлгілері мен мәдени дәстүрлер биді қалай қалыптастыратынын зерттеңіз.',
-      qm: 'İfadeleyici areket, areket ülgileri ve medeniy añaneleri aqaynı nasıl yaratqanını keşf etiñiz.',
+      qm: 'İfadeleyici areket, areket ülgileri ve medeniy añaneleri oyunnı nasıl yaratqanını keşf etiñiz.',
     },
   },
 });

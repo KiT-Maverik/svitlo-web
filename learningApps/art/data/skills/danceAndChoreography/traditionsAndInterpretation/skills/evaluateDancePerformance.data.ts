@@ -32,7 +32,7 @@ export const evaluateDancePerformance_Skill_Data = buildSkillConfig({
     be: 'Ацэньвайце танцавальны выступ',
     ka: 'შეაფასეთ საცეკვაო შესრულება',
     kk: 'Би қойылымын бағалаңыз',
-    qm: 'Aqay icrasını qıymetlendiriñiz',
+    qm: 'Oyun icrasını qıymetlendiriñiz',
   },
   description: {
     methodological: 'Assess a work through stated expressive and technical criteria rather than preference alone.',
@@ -65,7 +65,7 @@ export const evaluateDancePerformance_Skill_Data = buildSkillConfig({
       be: 'Абмяркоўвайце танцавальны выступ паводле выразных мастацкіх і тэхнічных крытэрыяў.',
       ka: 'იმსჯელეთ საცეკვაო შესრულებაზე მკაფიო მხატვრული და ტექნიკური კრიტერიუმებით.',
       kk: 'Би қойылымын нақты көркемдік және техникалық өлшемдер арқылы талқылаңыз.',
-      qm: 'Aqay icrasını açıq bediiy ve tehnik ölçülerge köre müzakere etiñiz.',
+      qm: 'Oyun icrasını açıq bediiy ve tehnik ölçülerge köre müzakere etiñiz.',
     },
   },
 });

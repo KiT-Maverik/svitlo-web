@@ -81,7 +81,7 @@ export const traditionsAndInterpretation_SkillGroup_Data = buildSkillGroupConfig
       be: 'Даследуйце значэнне і культурны кантэкст розных танцавальных традыцый.',
       ka: 'გამოიკვლიეთ სხვადასხვა საცეკვაო ტრადიციის მნიშვნელობა და კულტურული კონტექსტი.',
       kk: 'Зерттеңіз: түрлі би дәстүрлерінің мәні мен мәдени контексті.',
-      qm: 'Farklı aqay ananeleriniñ manasını ve medeniy bağlamını tedqiq etiñiz.',
+      qm: 'Farklı oyun ananeleriniñ manasını ve medeniy bağlamını tedqiq etiñiz.',
     },
   },
 });

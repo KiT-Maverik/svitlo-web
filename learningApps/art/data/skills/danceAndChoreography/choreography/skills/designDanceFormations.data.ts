@@ -32,7 +32,7 @@ export const designDanceFormations_Skill_Data = buildSkillConfig({
     be: 'Праектуйце танцавальныя пабудовы',
     ka: 'შექმენით მოცეკვავეთა განლაგებები',
     kk: 'Би құрамдарын жобалаңыз',
-    qm: 'Aqay saflarını tasarlañız',
+    qm: 'Oyun saflarını tasarlañız',
   },
   description: {
     methodological: "Coordinate dancers' positions and changing distances to establish purposeful spatial patterns.",
@@ -65,7 +65,7 @@ export const designDanceFormations_Skill_Data = buildSkillConfig({
       be: 'Плануйце, як танцоры будуць рухацца разам і ствараць фігуры ў прасторы.',
       ka: 'დაგეგმეთ, როგორ იმოძრავებენ მოცეკვავეები ერთად და შექმნიან განლაგებებს სივრცეში.',
       kk: 'Жаңа кеңістіктік өрнектер құру үшін бишілердің бірге қозғалуын жоспарлаңыз.',
-      qm: 'Aqaycılar birlikte nasıl areket etip mekânda saf quracağını planlañız',
+      qm: 'Oyun icracıları birlikte nasıl areket etip mekânda saf quracağını planlañız',
     },
   },
 });
