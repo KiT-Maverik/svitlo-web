@@ -58,7 +58,7 @@ export const hertzsprungRussellDiagram_Skill_Data = buildSkillConfig({
       mr: 'हर्ट्झस्प्रुंग–रसेल आकृती वाचून ताऱ्यांचे तापमान, दीप्तिमानता आणि विकासाचे टप्पे तुलना करा.',
       ms: 'Baca rajah Hertzsprung–Russell untuk membandingkan suhu, luminositi dan peringkat perkembangan bintang.',
       he: 'קראו דיאגרמת הרצשפרונג–ראסל כדי להשוות טמפרטורות, עוצמות הארה ושלבי התפתחות של כוכבים.',
-      pl: 'Odczytaj diagram Hertzsprunga–Russella, aby porównać temperatury, jasności absolutne i etapy ewolucji gwiazd.',
+      pl: 'Odczytaj diagram Hertzsprunga–Russella, aby porównać temperatury, moce promieniowania i etapy ewolucji gwiazd.',
       uk: 'Читайте діаграму Герцшпрунга — Рассела, щоб порівнювати температури, світності та стадії еволюції зір.',
       lt: 'Skaitykite Hercšprungo–Raselo diagramą ir lyginkite žvaigždžių temperatūrą, šviesį bei evoliucijos etapus.',
       lv: 'Lasiet Hercšprunga–Rasela diagrammu, lai salīdzinātu zvaigžņu temperatūru, starjaudu un attīstības stadijas.',
