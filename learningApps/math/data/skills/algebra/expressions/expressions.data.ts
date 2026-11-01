@@ -12,6 +12,7 @@ export const expressions_SkillGroup_Data = buildSkillGroupConfig({
   id: 'ffd2e448-8471-4b32-88ce-6fc921f7d76c',
   name: {
     en: 'Expressions',
+    qm: 'İfadeler',
     lt: 'Reiškiniai',
     lv: 'Izteiksmes',
     et: 'Avaldised',
@@ -51,6 +52,7 @@ export const expressions_SkillGroup_Data = buildSkillGroupConfig({
       'The meanings of mathematical expressions involving operations, parentheses, and variables, including correct order of operations.',
     frontend: {
       en: 'Explore how to read expressions, use parentheses and operation order, and calculate values when a letter represents a number.',
+      qm: 'Matematik ifadeler nasıl oqulğanını, qavslar ve ameller tertibi nasıl qullanılğanını, arif bir sayını bildirgende qıymet nasıl esaplanğanını ögren.',
       zh: '学习如何读懂表达式、使用括号和运算顺序，以及求出含字母表达式的值。',
       hi: 'व्यंजक पढ़ना, कोष्ठक और संक्रियाओं का क्रम इस्तेमाल करना तथा अक्षर वाली गणनाओं का मान निकालना सीखो।',
       es: 'Explora cómo leer expresiones, usar paréntesis y el orden de operaciones, y calcular valores cuando una letra representa un número.',

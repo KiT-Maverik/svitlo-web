@@ -11,6 +11,7 @@ export const by2_Skill_Data = buildSkillConfig({
     ka: 'გამრავლება — × 2',
     kk: 'Көбейту — × 2',
     en: 'Multiplication — × 2',
+    qm: 'Arttıruv — × 2',
     zh: '乘法 — × 2',
     hi: 'गुणा — × 2',
     es: 'Multiplicación — × 2',
@@ -38,6 +39,7 @@ export const by2_Skill_Data = buildSkillConfig({
       'Multiplication by two is doubling: a × 2 = a + a. Equal groups and repeated addition support understanding without making any single representation mandatory.',
     frontend: {
       en: 'You can find twice a quantity by adding it to itself.',
+      qm: 'Bir miqdarnı öz-özüne qoşaraq, onıñ eki qatını tapa bilesiñ.',
       zh: '你能把一个数量与它自身相加，求出它的两倍。',
       hi: 'किसी मात्रा को उसी मात्रा में जोड़कर उसका दोगुना निकाल सकते हो।',
       es: 'Puedes hallar el doble de una cantidad sumándola consigo misma.',

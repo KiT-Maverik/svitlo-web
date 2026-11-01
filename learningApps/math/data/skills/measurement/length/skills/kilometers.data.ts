@@ -5,6 +5,7 @@ export const kilometers_Skill_Data = buildSkillConfig({
   id: 'b0749c5e-742e-40a5-931f-f1dcf93a012f',
   name: {
     en: 'Using kilometers for long distances and converting to meters',
+    qm: 'Uzaq mesafeler içün kilometr qullanmaq ve metrge çevirmek',
     lt: 'Kilometrų naudojimas dideliems atstumams ir keitimas metrais',
     lv: 'Kilometru izmantošana lieliem attālumiem un pārvēršana metros',
     et: 'Kilomeetrite kasutamine pikkade vahemaade mõõtmiseks ja meetriteks teisendamine',
@@ -38,6 +39,7 @@ export const kilometers_Skill_Data = buildSkillConfig({
       'One kilometer equals one thousand meters. It is convenient for large distances, but an appropriate unit depends on context and precision. Conversion does not change the distance.',
     frontend: {
       en: 'You can use kilometers for large distances and convert between kilometers and meters, knowing that 1 km = 1,000 m.',
+      qm: 'Büyük mesafeler içün kilometr qullanıp, kilometrlernen metrler arasında çevirüv yapabilirsin. 1 km = 1000 m.',
       zh: '你能用千米表示较远的距离，并在千米与米之间换算，知道1千米等于1000米。',
       hi: 'आप बड़ी दूरियाँ किलोमीटर में बता सकते हैं और किलोमीटर व मीटर के बीच बदल सकते हैं, जानते हुए कि 1 किमी = 1,000 मीटर।',
       es: 'Puedes usar kilómetros para distancias grandes y convertir entre kilómetros y metros, sabiendo que 1 km = 1000 m.',

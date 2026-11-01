@@ -7,6 +7,7 @@ export const parity_SkillGroup_Data = buildSkillGroupConfig({
   id: '77e6c4eb-a1ee-4cfd-a286-7180e3b51e9f',
   name: {
     en: 'Even and odd numbers',
+    qm: 'Çift ve tek sayılar',
     lt: 'Lyginiai ir nelyginiai skaičiai',
     lv: 'Pāra un nepāra skaitļi',
     et: 'Paaris- ja paaritud arvud',
@@ -43,6 +44,7 @@ export const parity_SkillGroup_Data = buildSkillGroupConfig({
       'Classifying natural numbers by whether a corresponding collection can be divided into pairs with no remainder.',
     frontend: {
       en: 'Tell whether a number is even or odd by making pairs. An even amount pairs up completely; an odd amount leaves one unpaired.',
+      qm: 'Sayı çiftmi ya da tekmi olğanını eşyalarnı çiftlerge ayırıp belgile. Çift sayıda bütün eşyalarnı çiftlemek mümkün, tek sayıda ise bir eşya çiftsiz qala.',
       zh: '把物品两两配对，判断数量是偶数还是奇数。偶数能全部配对，奇数会剩下一个。',
       hi: 'जोड़ियाँ बनाकर पहचानें कि संख्या सम है या विषम। सम संख्या में कोई नहीं बचता, विषम में एक बचता है।',
       es: 'Forma parejas para distinguir números pares e impares. Con una cantidad par no sobra nada; con una impar sobra uno.',

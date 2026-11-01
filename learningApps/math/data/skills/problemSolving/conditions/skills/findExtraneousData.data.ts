@@ -11,6 +11,7 @@ export const findExtraneousData_Skill_Data = buildSkillConfig({
     ka: 'ზედმეტი მონაცემების ამოცნობა',
     kk: 'Артық мәліметтерді анықтау',
     en: 'Recognizing irrelevant information',
+    qm: 'Kerek olmağan malümatnı tanımaq',
     zh: '识别无关信息',
     hi: 'अनावश्यक जानकारी पहचानना',
     es: 'Reconocer información irrelevante',
@@ -38,6 +39,7 @@ export const findExtraneousData_Skill_Data = buildSkillConfig({
       'Extraneous information does not affect computing or justifying the answer to the specific question asked. The same detail can become relevant if the unknown changes, so mathematical relationships must be checked rather than merely deleting text.',
     frontend: {
       en: "You can spot information that is not needed to answer a word problem's particular question, while keeping facts that affect the answer.",
+      qm: 'Sözlü meseleniñ sualine cevap bermek içün kerek olmağan malümatnı tap, amma cevapqa tesir etken malümatnı saqla.',
       zh: '你能判断哪些信息与应用题当前的问题无关，同时保留会影响答案的条件。',
       hi: 'आप समझ सकते हैं कि किसी शब्द-समस्या के खास प्रश्न का उत्तर देने के लिए कौन-सी जानकारी आवश्यक नहीं है और कौन-सी जानकारी उत्तर को प्रभावित करती है।',
       es: 'Puedes reconocer qué información no hace falta para responder la pregunta concreta de un problema, sin descartar los datos que sí influyen en la respuesta.',

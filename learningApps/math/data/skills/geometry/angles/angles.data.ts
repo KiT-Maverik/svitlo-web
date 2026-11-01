@@ -7,6 +7,7 @@ export const angles_SkillGroup_Data = buildSkillGroupConfig({
   id: '06ab1925-9cd5-41fc-ad2d-52d76270a2cd',
   name: {
     en: 'Angles',
+    qm: 'Köşeler',
     lt: 'Kampai',
     lv: 'Leņķi',
     et: 'Nurgad',
@@ -45,6 +46,7 @@ export const angles_SkillGroup_Data = buildSkillGroupConfig({
       'Angles as relationships between rays and as measures of turn, with the right angle serving as a reference for classification.',
     frontend: {
       en: 'Look at angles as turns and compare them with a right angle to recognize different kinds.',
+      qm: 'Köşelerni buruluv olaraq incele ve türlü çeşitlerini tanımaq içün olarnı doğru köşenen qıyasla.',
       zh: '把角看作旋转的程度，与直角比较，认识不同种类的角。',
       hi: 'कोण को घुमाव मानकर समकोण से तुलना करें और प्रकार पहचानें।',
       es: 'Piensa en los ángulos como giros y compáralos con el ángulo recto para distinguir sus tipos.',

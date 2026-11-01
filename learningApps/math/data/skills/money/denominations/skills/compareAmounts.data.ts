@@ -5,6 +5,7 @@ export const compareAmounts_Skill_Data = buildSkillConfig({
   id: '6ac377cf-4d67-4ef4-bdc7-4bb8a0895e81',
   name: {
     en: 'Comparing money amounts',
+    qm: 'Aqça miqdarlarını qıyaslav',
     lt: 'Pinigų sumų palyginimas',
     lv: 'Naudas summu salīdzināšana',
     et: 'Rahasummade võrdlemine',
@@ -38,6 +39,7 @@ export const compareAmounts_Skill_Data = buildSkillConfig({
       'Compare the total face value, not the number or physical size of coins and banknotes. Values within one currency can be combined in consistent units, including fractional currency units where applicable.',
     frontend: {
       en: 'You can compare two amounts of money in the same currency by adding up their values, rather than counting coins or looking at their sizes.',
+      qm: 'Bir para birligindeki eki aqça miqdarını, tangalarnıñ sayısına ya da ölçüsine baqmayıp, olarnıñ qıymetlerini toplap qıyaslay bilesiñ.',
       zh: '你能把同一种货币的金额相加后比较大小，而不是只数硬币数量或看它们的大小。',
       hi: 'आप एक ही मुद्रा की दो राशियों की तुलना सिक्कों की संख्या या आकार देखकर नहीं, बल्कि उनकी कुल कीमत जोड़कर कर सकते हैं।',
       es: 'Puedes comparar dos cantidades de dinero de la misma moneda sumando su valor, en lugar de contar las monedas o fijarte en su tamaño.',

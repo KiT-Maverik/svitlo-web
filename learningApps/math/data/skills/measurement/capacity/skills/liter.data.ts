@@ -5,6 +5,7 @@ export const liter_Skill_Data = buildSkillConfig({
   id: '3853f445-537c-4c06-b5ec-9391ce2a440f',
   name: {
     en: 'Measuring and estimating capacity in liters',
+    qm: 'Sıyımlılıqnı litrlerde ölçmek ve tahmin etmek',
     lt: 'Talpos matavimas ir vertinimas litrais',
     lv: 'Tilpuma mērīšana un novērtēšana litros',
     et: 'Mahutavuse mõõtmine ja hindamine liitrites',
@@ -38,6 +39,7 @@ export const liter_Skill_Data = buildSkillConfig({
       'A liter is a volume unit commonly used for container capacity. Estimation must use an appropriate unit reference; container shape alone does not reliably determine capacity without other dimensions.',
     frontend: {
       en: 'You can estimate or measure how much a container holds in liters, using one liter as a reference.',
+      qm: 'Bir litrni ölçü etalonı olaraq qullanıp, idişke qaç litr sıyğanını tahmin ete ya da ölçe bilesiñ.',
       zh: '你能以一升为参照，用升估计或测量容器的容量。',
       hi: 'आप एक लीटर को आधार बनाकर किसी बर्तन की धारिता लीटर में अनुमानित या माप सकते हैं।',
       es: 'Puedes estimar o medir en litros la capacidad de un recipiente tomando un litro como referencia.',

@@ -11,6 +11,7 @@ export const by0And1_Skill_Data = buildSkillConfig({
     ka: 'გამრავლება — × 0 · × 1',
     kk: 'Көбейту — × 0 · × 1',
     en: 'Multiplication — × 0 · × 1',
+    qm: 'Arttıruv — × 0 · × 1',
     zh: '乘法 — × 0 · × 1',
     hi: 'गुणा — × 0 · × 1',
     es: 'Multiplicación — × 0 · × 1',
@@ -38,6 +39,7 @@ export const by0And1_Skill_Data = buildSkillConfig({
       'Zero is absorbing and one is the identity for multiplication: a × 0 = 0 and a × 1 = a in the relevant number domain. These properties do not depend on a concrete object model.',
     frontend: {
       en: 'Multiplying any number by zero gives zero; multiplying it by one leaves it unchanged.',
+      qm: 'Er angi sayını sıfırğa arttırsañ, netice sıfır ola; birge arttırsañ, sayı deñişmey.',
       zh: '任何数乘零都等于零，乘一则保持原数不变。',
       hi: 'किसी भी संख्या को शून्य से गुणा करने पर शून्य मिलता है; एक से गुणा करने पर संख्या वही रहती है।',
       es: 'Cualquier número multiplicado por cero da cero; multiplicarlo por uno lo deja igual.',

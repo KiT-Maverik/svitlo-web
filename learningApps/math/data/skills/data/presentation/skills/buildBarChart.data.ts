@@ -5,6 +5,7 @@ export const buildBarChart_Skill_Data = buildSkillConfig({
   id: '5dd18314-5344-4219-9ffb-1b9df9fc7ec7',
   name: {
     en: 'Constructing a bar chart',
+    qm: 'Sütunlı diagramma tüzmek',
     lt: 'Stulpelinės diagramos sudarymas',
     lv: 'Stabiņu diagrammas veidošana',
     et: 'Tulpdiagrammi koostamine',
@@ -38,6 +39,7 @@ export const buildBarChart_Skill_Data = buildSkillConfig({
       'Values from a table are represented by bar heights on a consistent numerical scale, with clear category labels and units. All bars must use the same scale to avoid misleading comparisons.',
     frontend: {
       en: 'You can turn table values into a bar chart with labeled categories, correct units, and the same numerical scale for every bar.',
+      qm: 'Cedveldeki qıymetlerden kategoriyalarnıñ adları, doğru ölçü birlemleri ve er sütun içün aynı sayı miqyası olğan sütunlı diagramma tüzebilesiñ.',
       zh: '你能把表格数据绘制成条形图，标明类别和单位，并让所有条形使用同一数值刻度。',
       hi: 'आप तालिका के मानों से स्तंभ आलेख बना सकते हैं, जिसमें श्रेणियों के नाम, सही इकाइयाँ और सभी स्तंभों के लिए एक समान पैमाना हो।',
       es: 'Puedes convertir los valores de una tabla en un gráfico de barras con categorías identificadas, unidades correctas y la misma escala para todas las barras.',

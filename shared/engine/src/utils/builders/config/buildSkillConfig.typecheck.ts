@@ -37,19 +37,22 @@ buildSkillConfig({
   description: { methodological: 'English conceptual boundaries.', frontend: names },
 });
 
-// @ts-expect-error A Skill description without frontend must not compile.
 buildSkillConfig({
   id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
   name: names,
+  // @ts-expect-error A Skill description without frontend must not compile.
   description: { methodological: 'English' },
 });
 
 // @ts-expect-error description.methodological is required when description exists.
 buildSkillConfig({ id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb', name: names, description: { frontend: names } });
 
-// @ts-expect-error A supplied frontend description cannot omit supported language keys.
 buildSkillConfig({
   id: 'ae3a76b3-47eb-47b6-92df-2ffa7da52ceb',
   name: names,
-  description: { methodological: 'English', frontend: { en: 'English' } },
+  description: {
+    methodological: 'English',
+    // @ts-expect-error A supplied frontend description cannot omit supported language keys.
+    frontend: { en: 'English' },
+  },
 });

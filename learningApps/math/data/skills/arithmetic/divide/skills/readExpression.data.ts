@@ -11,6 +11,7 @@ export const readExpression_Skill_Data = buildSkillConfig({
     ka: 'გაყოფა — გამოსახულებების წაკითხვა',
     kk: 'Бөлу — өрнектерді оқу',
     en: 'Division — Reading expressions',
+    qm: 'Bölüv — ifadelerni oqumaq',
     zh: '除法 — 读算式',
     hi: 'भाग — व्यंजक पढ़ना',
     es: 'División — Lectura de expresiones',
@@ -38,6 +39,7 @@ export const readExpression_Skill_Data = buildSkillConfig({
       "The dividend represents the total, the nonzero divisor is the second operand, and the quotient is the result. In equal sharing the divisor can specify the number of groups, whereas in grouping it specifies each group's size.",
     frontend: {
       en: 'You can identify the dividend, divisor, and quotient in a division expression and understand what they mean in equal sharing or grouping.',
+      qm: 'Bölüv ifadesindeki bölüngen sayını, bölücini ve bölüm neticesini tanıy, olarnıñ teñ paylaştırma ya da toparlavda ne bildirgenini añlay bilesiñ.',
       zh: '你能指出除法算式中的被除数、除数和商，并理解它们在平均分配或分组中的含义。',
       hi: 'तुम भाग के व्यंजक में भाज्य, भाजक और भागफल पहचान सकते हो और समझ सकते हो कि बराबर बाँटने या समूह बनाने में उनका क्या अर्थ है।',
       es: 'Puedes identificar el dividendo, el divisor y el cociente en una división y entender su significado al repartir o formar grupos iguales.',

@@ -5,6 +5,7 @@ export const compareSameNumerator_Skill_Data = buildSkillConfig({
   id: '17d8eb21-df92-4074-a1d2-5a3bded8fea8',
   name: {
     en: 'Comparing fractions with the same numerator',
+    qm: 'Payları aynı olğan kesirlerni qıyaslav',
     lt: 'Trupmenų su vienodais skaitikliais palyginimas',
     lv: 'Daļu ar vienādiem skaitītājiem salīdzināšana',
     et: 'Sama lugejaga murdude võrdlemine',
@@ -38,6 +39,7 @@ export const compareSameNumerator_Skill_Data = buildSkillConfig({
       'Given the same positive numerator and unit whole, a larger denominator means smaller equal parts and therefore a smaller fraction. Comparing parts of different wholes by notation alone is invalid without a common unit.',
     frontend: {
       en: 'When the top numbers match, a larger positive bottom number means smaller parts and a smaller fraction of the same whole.',
+      qm: 'Payları aynı olsa, musbet paydanıñ büyümesi aynı bütündeki parçalarnı küçülte ve kesirniñ qıymeti az ola.',
       zh: '分子是相同的正数时，分母越大，每份越小，表示同一整体的分数也越小。',
       hi: 'समान धनात्मक अंश होने पर बड़ा हर छोटे भाग और उसी पूरे का छोटा भिन्न दर्शाता है।',
       es: 'Con numeradores positivos iguales, un denominador mayor significa partes más pequeñas y una fracción menor del mismo entero.',

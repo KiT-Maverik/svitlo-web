@@ -5,6 +5,7 @@ export const numberLine_Skill_Data = buildSkillConfig({
   id: '73fb395f-5148-4af6-b5b1-399c4e06beab',
   name: {
     en: 'Locating fractions between 0 and 1 on a number line',
+    qm: 'Sayı sızığında 0 ile 1 arasında kesirlerni tapmaq',
     lt: 'Trupmenų tarp 0 ir 1 žymėjimas skaičių tiesėje',
     lv: 'Daļu novietošana uz skaitļu taisnes starp 0 un 1',
     et: 'Murdude märkimine arvkiirel 0 ja 1 vahel',
@@ -38,6 +39,7 @@ export const numberLine_Skill_Data = buildSkillConfig({
       'For positive b, subdividing the unit interval into b equal parts locates a/b by moving a such steps from zero. The resulting number-line representation must preserve scale and numerical order.',
     frontend: {
       en: 'Split the distance from 0 to 1 into equal steps, then find the position of a fraction such as 3/5.',
+      qm: '0 ile 1 arasındaki mesafeni teñ adımlarğa böl, soñra 3/5 kibi kesirniñ yerini tap.',
       zh: '把数轴上0到1的距离平均分成等长的小段，再找到3/5这样的分数所在的位置。',
       hi: 'संख्या रेखा पर 0 से 1 की दूरी बराबर भागों में बाँटें और 3/5 जैसे भिन्न की जगह खोजें।',
       es: 'Divide el tramo de 0 a 1 en pasos iguales y sitúa una fracción como 3/5.',

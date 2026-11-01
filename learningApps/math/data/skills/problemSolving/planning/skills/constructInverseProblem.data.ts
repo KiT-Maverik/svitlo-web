@@ -11,6 +11,7 @@ export const constructInverseProblem_Skill_Data = buildSkillConfig({
     ka: 'შებრუნებული ამოცანების შედგენა',
     kk: 'Кері есептерді құрастыру',
     en: 'Constructing inverse problems',
+    qm: 'Ters meseleler tüzmek',
     zh: '编写逆向问题',
     hi: 'विलोम प्रश्न बनाना',
     es: 'Crear problemas inversos',
@@ -38,6 +39,7 @@ export const constructInverseProblem_Skill_Data = buildSkillConfig({
       'Constructing an inverse word problem changes the roles of given and unknown quantities while preserving the mathematical relationship and allowing the original situation to be recovered. The competency is formulating a valid new situation and question; subsequently solving it assesses existing arithmetic and problem-solving skills, not a required part of this skill.',
     frontend: {
       en: 'You can create an inverse word problem by switching what is known and what must be found, while keeping the original mathematical relationship.',
+      qm: 'Belli olğan miqdarlar ile tapılması kerek olğan miqdarnıñ yerlerini deñiştirip, asıl matematik bağlılıqnı saqlap ters sözlü mesele tüze bilesiñ.',
       zh: '你能把已知量和未知量的角色互换，编出一道逆向应用题，同时保持原来的数学关系。',
       hi: 'आप ज्ञात और खोजी जाने वाली मात्राओं की भूमिकाएँ बदलकर उलटी शब्द-समस्या बना सकते हैं, जबकि मूल गणितीय संबंध बना रहे।',
       es: 'Puedes crear un problema inverso intercambiando los datos conocidos con lo que se debe hallar, sin cambiar la relación matemática original.',

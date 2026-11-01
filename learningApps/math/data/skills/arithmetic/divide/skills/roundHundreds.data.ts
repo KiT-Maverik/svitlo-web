@@ -11,6 +11,7 @@ export const roundHundreds_Skill_Data = buildSkillConfig({
     ka: 'გაყოფა — სრული ასეულები',
     kk: 'Бөлу — толық жүздіктер',
     en: 'Division — Whole hundreds',
+    qm: 'Bölüv — tolu yüzlükler',
     zh: '除法 — 整百数',
     hi: 'भाग — पूरे सैकड़े',
     es: 'División — Centenas completas',
@@ -38,6 +39,7 @@ export const roundHundreds_Skill_Data = buildSkillConfig({
       'Divide multiples of a hundred by one-digit numbers by grouping hundreds and, when needed, exchanging them for tens or ones. The result must satisfy the inverse relation between dividend, divisor, and quotient.',
     frontend: {
       en: 'You can divide whole hundreds by a one-digit number, regrouping hundreds into tens or ones when needed.',
+      qm: 'Tolu yüzlüklerni bir raqamlı sayığa böle bilesiñ. Kerek olğanda yüzlüklerni onluq ya da birliklerge çevir.',
       zh: '你能用一位数除整百数，必要时把百换成十或一再计算。',
       hi: 'तुम पूरी सैकड़ों की संख्या को एक अंक से भाग दे सकते हो और ज़रूरत पर सैकड़ों को दहाइयों या इकाइयों में बदल सकते हो।',
       es: 'Puedes dividir centenas completas entre un número de una cifra, cambiando centenas por decenas o unidades cuando sea necesario.',

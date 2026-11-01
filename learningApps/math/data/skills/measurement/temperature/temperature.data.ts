@@ -7,6 +7,7 @@ export const temperature_SkillGroup_Data = buildSkillGroupConfig({
   id: '3bf02823-2dbf-49cd-af93-2df758f4208a',
   name: {
     en: 'Temperature',
+    qm: 'Sıcaqlıq',
     lt: 'Temperatūra',
     lv: 'Temperatūra',
     et: 'Temperatuur',

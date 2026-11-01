@@ -5,6 +5,7 @@ export const parentheses_Skill_Data = buildSkillConfig({
   id: '18f96b1d-39bc-46fa-a0fc-2c7a5fee8d5c',
   name: {
     en: 'Evaluating expressions with parentheses',
+    qm: 'Qavslar olğan ifadelerni esaplav',
     lt: 'Reiškinių su skliaustais apskaičiavimas',
     lv: 'Izteiksmju ar iekavām vērtības aprēķināšana',
     et: 'Sulgudega avaldiste arvutamine',
@@ -38,6 +39,7 @@ export const parentheses_Skill_Data = buildSkillConfig({
       'Parentheses specify how subexpressions are grouped and can change the conventional order of operations. Evaluation must respect nesting and operation precedence without arbitrarily moving or removing parentheses.',
     frontend: {
       en: 'You can work out expressions with parentheses by calculating the grouped parts first, including parentheses inside parentheses.',
+      qm: 'İfade içindeki qavslarnı, iç-içke qavslarnı da esapqa alıp, evelâ olarnıñ içindeki amellerni yerine ketirerek esaplay bilesiñ.',
       zh: '你能先计算括号内的部分，包括嵌套括号，求出表达式的值。',
       hi: 'तुम कोष्ठकों वाले व्यंजक में पहले कोष्ठकों के भीतर की गणना कर सकते हो, चाहे उनके अंदर और कोष्ठक हों।',
       es: 'Puedes calcular expresiones con paréntesis resolviendo primero las partes agrupadas, incluso cuando hay paréntesis dentro de otros.',

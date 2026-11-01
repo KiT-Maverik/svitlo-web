@@ -5,6 +5,7 @@ export const logicalElimination_Skill_Data = buildSkillConfig({
   id: '0322e05e-0418-4031-8473-5b84e7ebb363',
   name: {
     en: 'Eliminating impossible options in a logical problem',
+    qm: 'Mantıq meselesinde imkânsız variantlarnı elemek',
     lt: 'Neįmanomų variantų atmetimas loginėje užduotyje',
     lv: 'Neiespējamu variantu izslēgšana loģikas uzdevumā',
     et: 'Võimatute valikute välistamine loogikaülesandes',
@@ -38,6 +39,7 @@ export const logicalElimination_Skill_Data = buildSkillConfig({
       'In a puzzle with three doors and constraints ruling out two choices, the remaining door is the only possible answer; logical exclusion determines it without guessing.',
     frontend: {
       en: 'You can use the given conditions to rule out impossible choices and find the only valid answer without guessing.',
+      qm: 'Berilgen şartlarğa esaslanıp, imkânsız saylavlarnı ele ve tahmin yürsetmeden birden-bir doğru cevabını tap.',
       zh: '你能根据给定条件排除不可能的选项，不靠猜测找出唯一符合条件的答案。',
       hi: 'आप दी गई शर्तों से असंभव विकल्प हटाकर बिना अनुमान लगाए एकमात्र सही उत्तर ढूँढ़ सकते हैं।',
       es: 'Puedes descartar opciones imposibles a partir de las condiciones y encontrar la única respuesta válida sin adivinar.',

@@ -5,6 +5,7 @@ export const missingInformation_Skill_Data = buildSkillConfig({
   id: '893df2c3-30b3-48b7-a961-11378d742022',
   name: {
     en: 'Identifying missing information',
+    qm: 'Eksik malümatnı belgilemek',
     lt: 'Trūkstamos informacijos nustatymas',
     lv: 'Trūkstošas informācijas noteikšana',
     et: 'Puuduva teabe tuvastamine',
@@ -38,6 +39,7 @@ export const missingInformation_Skill_Data = buildSkillConfig({
       'Data sufficiency is relative to a particular question: a necessary category, value, unit, time range, or sample information may be missing. Gaps must not be filled with arbitrary assumptions or invented numbers.',
     frontend: {
       en: 'You can spot which category, value, unit, time period, or other information is missing before a data question can be answered.',
+      qm: 'Malümat aqqındaki sualğa cevap bermek içün qaysı kategoriya, qıymet, ölçü birlemi, vaqıt devri ya da başqa malümat eksik olğanını tap.',
       zh: '你能发现回答数据问题之前还缺少哪个类别、数值、单位、时间范围或其他必要信息。',
       hi: 'आप पहचान सकते हैं कि डेटा से जुड़े प्रश्न का उत्तर देने से पहले कौन-सी श्रेणी, मान, इकाई, समयावधि या दूसरी जानकारी गायब है।',
       es: 'Puedes detectar qué categoría, valor, unidad, periodo u otra información falta para responder una pregunta sobre los datos.',

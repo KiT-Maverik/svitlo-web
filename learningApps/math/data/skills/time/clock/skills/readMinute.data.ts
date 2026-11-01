@@ -5,6 +5,7 @@ export const readMinute_Skill_Data = buildSkillConfig({
   id: 'ab684748-6981-419e-aa30-525ae9dfc017',
   name: {
     en: 'Reading and recording time to the minute',
+    qm: 'Vaqıtnı daqiqağa qadar oqumaq ve yazmaq',
     lt: 'Laiko skaitymas ir užrašymas minučių tikslumu',
     lv: 'Laika lasīšana un pierakstīšana līdz minūtei',
     et: 'Kellaaja lugemine ja märkimine minuti täpsusega',
@@ -38,6 +39,7 @@ export const readMinute_Skill_Data = buildSkillConfig({
       'A clock divides an hour into 60 equal minutes; digital notation combines the hour number with minutes elapsed since its start. The competency includes two-digit minute notation and distinguishing an instant from an elapsed interval.',
     frontend: {
       en: 'You can read and write the time to the nearest minute, using all 60 minute marks and two digits for minutes on a digital clock.',
+      qm: '60 daqiqa belgilerini qullanıp, vaqıtnı daqiqağa qadar oquy ve yaza bilesiñ. Raqamlı saatta daqiqalarnı eki raqamnen yaz.',
       zh: '你能根据一小时的60个分钟刻度把时间准确读写到分钟，并在数字时钟上用两位数字表示分钟。',
       hi: 'आप एक घंटे के सभी 60 मिनट के निशान समझकर मिनट तक समय पढ़ और लिख सकते हैं तथा डिजिटल घड़ी में मिनट दो अंकों से दिखा सकते हैं।',
       es: 'Puedes leer y escribir la hora con precisión de un minuto, utilizando los 60 minutos de la hora y dos cifras para los minutos en el reloj digital.',

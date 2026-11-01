@@ -7,6 +7,7 @@ export const circles_SkillGroup_Data = buildSkillGroupConfig({
   id: 'fdca56d5-299f-4755-b87f-dd7d46f5d851',
   name: {
     en: 'Circles and disks',
+    qm: 'Çemberler ve daireler',
     lt: 'Apskritimai ir skrituliai',
     lv: 'Riņķa līnijas un riņķi',
     et: 'Ringjooned ja ringid',
@@ -45,6 +46,7 @@ export const circles_SkillGroup_Data = buildSkillGroupConfig({
       'The circumference as the boundary of a disk, its center, radius and diameter, and constructing a circle at a fixed distance from its center.',
     frontend: {
       en: 'Explore round boundaries and filled disks, their centers, radii, and diameters, and how to draw circles.',
+      qm: 'Yuvarlaq sıñırlarnı ve içi tolu dairelerni, olarnıñ merkezini, radius ve diametrini incele; çember çizmekni ögren.',
       zh: '认识圆形边界和实心圆盘、圆心、半径、直径，以及如何画圆。',
       hi: 'वृत्त की सीमा और भरे वृत्ताकार भाग, केंद्र, त्रिज्या, व्यास तथा वृत्त बनाना सीखें।',
       es: 'Explora circunferencias y discos, sus centros, radios y diámetros, y aprende a trazarlos.',

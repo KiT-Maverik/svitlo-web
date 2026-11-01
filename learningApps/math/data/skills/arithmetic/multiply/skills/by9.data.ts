@@ -11,6 +11,7 @@ export const by9_Skill_Data = buildSkillConfig({
     ka: 'გამრავლება — × 9',
     kk: 'Көбейту — × 9',
     en: 'Multiplication — × 9',
+    qm: 'Arttıruv — × 9',
     zh: '乘法 — × 9',
     hi: 'गुणा — × 9',
     es: 'Multiplicación — × 9',
@@ -38,6 +39,7 @@ export const by9_Skill_Data = buildSkillConfig({
       'Multiples of nine can be computed from nine equal groups or the relation 9a = 10a - a. Different valid strategies produce the same product without prescribing a single procedure.',
     frontend: {
       en: 'You can multiply by nine using nine equal groups or by multiplying by ten and subtracting one group.',
+      qm: 'Toquz teñ topar yardımınen ya da onğa arttırıp bir toparnı çıqararaq toquzğa arttıra bilesiñ.',
       zh: '你能用九个相等的组表示乘以九，也能先乘以十再减去一组。',
       hi: 'तुम नौ बराबर समूहों से नौ से गुणा कर सकते हो या दस से गुणा करके एक समूह घटा सकते हो।',
       es: 'Puedes multiplicar por nueve con nueve grupos iguales o multiplicando por diez y quitando un grupo.',

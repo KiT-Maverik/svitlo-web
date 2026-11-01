@@ -7,6 +7,7 @@ export const groups_SkillGroup_Data = buildSkillGroupConfig({
   id: 'fae06e19-607b-485c-88d4-cfe38e26e343',
   name: {
     en: 'Grouping problems',
+    qm: 'Toparlav meseleleri',
     lt: 'Grupavimo uždaviniai',
     lv: 'Grupēšanas uzdevumi',
     et: 'Rühmitamisülesanded',

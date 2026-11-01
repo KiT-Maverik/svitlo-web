@@ -12,6 +12,7 @@ export const models_SkillGroup_Data = buildSkillGroupConfig({
   id: '09128b1e-b715-40c1-a99c-da46e3f0a3d0',
   name: {
     en: 'Problem models',
+    qm: 'Mesele modelleri',
     lt: 'Uždavinių modeliai',
     lv: 'Uzdevumu modeļi',
     et: 'Ülesannete mudelid',

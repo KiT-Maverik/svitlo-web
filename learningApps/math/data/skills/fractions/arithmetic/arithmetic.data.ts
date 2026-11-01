@@ -7,6 +7,7 @@ export const arithmetic_SkillGroup_Data = buildSkillGroupConfig({
   id: 'dc20987a-2239-43c6-9e2c-e14d6baeda8b',
   name: {
     en: 'Operations with fractions',
+    qm: 'Kesirlernen ameller',
     lt: 'Veiksmai su trupmenomis',
     lv: 'Darbības ar daļām',
     et: 'Tehted murdudega',
@@ -44,6 +45,7 @@ export const arithmetic_SkillGroup_Data = buildSkillGroupConfig({
       'Changing the number of equal parts of the same whole through addition or subtraction with a common denominator.',
     frontend: {
       en: 'Add or subtract fractions made of the same-sized parts of one whole, keeping the denominator unchanged.',
+      qm: 'Bir bütüniñ aynı ölçüdeki parçalarından tüzülgen kesirlerni qoş ya da çıqar. Paydanı deñiştirme.',
       zh: '同一整体中每份大小相同的分数可以相加或相减，分母不变。',
       hi: 'एक ही पूरे के बराबर आकार के भागों वाले भिन्नों को जोड़ें या घटाएँ, हर वही रखें।',
       es: 'Suma o resta fracciones con partes del mismo tamaño y del mismo entero, sin cambiar el denominador.',

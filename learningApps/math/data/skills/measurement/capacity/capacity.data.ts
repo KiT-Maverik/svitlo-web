@@ -7,6 +7,7 @@ export const capacity_SkillGroup_Data = buildSkillGroupConfig({
   id: '4ab3d3b7-3c90-4805-ad05-cf27cb9ae725',
   name: {
     en: 'Capacity',
+    qm: 'Sıyımlılıq',
     lt: 'Talpa',
     lv: 'Tilpums',
     et: 'Mahutavus',

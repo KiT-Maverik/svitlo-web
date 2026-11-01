@@ -12,6 +12,7 @@ export const notation_SkillGroup_Data = buildSkillGroupConfig({
   id: '26fde8d8-fc31-499b-892b-0dbe5dfcf09c',
   name: {
     en: 'Numeral notation',
+    qm: 'Sayı yazılışı',
     lt: 'Skaičių užrašymas',
     lv: 'Skaitļu pieraksts',
     et: 'Arvude tähistus',
@@ -51,6 +52,7 @@ export const notation_SkillGroup_Data = buildSkillGroupConfig({
       'Digits as signs in the decimal system and the correspondence between spoken number names, written notation, and quantities for one-, two-, and three-digit numbers.',
     frontend: {
       en: 'Connect spoken numbers, written digits, and the quantities they represent, including zero and numbers with several digits.',
+      qm: 'Aytılğan sayılarnı, yazılğan raqamlarnı ve olarnıñ bildirgen miqdarlarını bir-birinen bağla. Sıfır ve bir qaç raqamlı sayılar da buña kire.',
       zh: '把数的读法、数字写法和它表示的数量联系起来，包括零和多位数。',
       hi: 'संख्याओं के बोले गए नाम, लिखे अंक और उनसे व्यक्त मात्राएँ जोड़ें, शून्य व कई अंकों वाली संख्याएँ भी।',
       es: 'Relaciona los nombres hablados de los números, sus cifras escritas y las cantidades que representan, incluido el cero.',

@@ -11,6 +11,7 @@ export const by8_Skill_Data = buildSkillConfig({
     ka: 'გამრავლება — × 8',
     kk: 'Көбейту — × 8',
     en: 'Multiplication — × 8',
+    qm: 'Arttıruv — × 8',
     zh: '乘法 — × 8',
     hi: 'गुणा — × 8',
     es: 'Multiplicación — × 8',
@@ -38,6 +39,7 @@ export const by8_Skill_Data = buildSkillConfig({
       'Multiplication by eight connects equal groups of eight with their total; doubling, decomposition, and known products provide equivalent computation strategies. The family of facts is distinct from a method of learning it.',
     frontend: {
       en: 'You can multiply by eight using eight equal groups, doubling, or breaking the calculation into easier parts.',
+      qm: 'Sekiz teñ toparnı, ekileştirüvni ya da esaplavnı daa qolay parçalarğa bölüvni qullanıp sekizge arttıra bilesiñ.',
       zh: '你能用八个相等的组、翻倍或拆分计算来求出乘以八的结果。',
       hi: 'तुम आठ बराबर समूहों, दोगुना करने या गणना को आसान भागों में बाँटने से आठ से गुणा कर सकते हो।',
       es: 'Puedes multiplicar por ocho usando ocho grupos iguales, duplicando o dividiendo el cálculo en partes más sencillas.',

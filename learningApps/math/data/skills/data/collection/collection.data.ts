@@ -12,6 +12,7 @@ export const collection_SkillGroup_Data = buildSkillGroupConfig({
   id: 'fbff6de3-3855-4c1f-9ec6-025693e12adf',
   name: {
     en: 'Data collection',
+    qm: 'Malümat toplav',
     lt: 'Duomenų rinkimas',
     lv: 'Datu vākšana',
     et: 'Andmete kogumine',

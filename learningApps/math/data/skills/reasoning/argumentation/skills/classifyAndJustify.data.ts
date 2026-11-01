@@ -5,6 +5,7 @@ export const classifyAndJustify_Skill_Data = buildSkillConfig({
   id: '1e440f3e-c2b3-4a1c-ba51-01ece6aea896',
   name: {
     en: 'Classifying objects or numbers by a rule and justifying the choice',
+    qm: 'Eşyalarnı ya da sayılarnı qaidege köre sınıflaştırıp sebebini añlatmaq',
     lt: 'Objektų ar skaičių skirstymas pagal taisyklę ir pasirinkimo pagrindimas',
     lv: 'Objektu vai skaitļu klasificēšana pēc noteikuma un izvēles pamatošana',
     et: 'Esemete või arvude liigitamine reegli järgi ja valiku põhjendamine',
@@ -38,6 +39,7 @@ export const classifyAndJustify_Skill_Data = buildSkillConfig({
       'Only numbers divisible by three may belong to a specified group; membership must be justified by the mathematical classification rule, not by superficial similarities of notation.',
     frontend: {
       en: 'You can group objects or numbers by a clear rule and explain why each item belongs or does not belong.',
+      qm: 'Eşyalarnı ya da sayılarnı açıq bir qaidege köre toparlarğa ayıra ve er biriniñ ne içün o toparğa kirgenini ya da kirmegenini añlata bilesiñ.',
       zh: '你能按照明确的规则给物体或数字分组，并说明每一项为什么符合或不符合规则。',
       hi: 'आप किसी स्पष्ट नियम के अनुसार वस्तुओं या संख्याओं को समूहों में रख सकते हैं और बता सकते हैं कि कौन-सी चीज़ उस समूह में क्यों आती है या नहीं आती।',
       es: 'Puedes agrupar objetos o números según una regla clara y explicar por qué cada elemento pertenece o no al grupo.',

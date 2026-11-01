@@ -7,6 +7,7 @@ export const events_SkillGroup_Data = buildSkillGroupConfig({
   id: 'd41710f5-a1ce-4a10-ae8f-65b9ad51026c',
   name: {
     en: 'Random events',
+    qm: 'Tesadüfiy vaqialar',
     lt: 'Atsitiktiniai įvykiai',
     lv: 'Nejauši notikumi',
     et: 'Juhuslikud sündmused',

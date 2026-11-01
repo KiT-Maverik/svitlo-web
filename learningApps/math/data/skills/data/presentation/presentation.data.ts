@@ -15,6 +15,7 @@ export const presentation_SkillGroup_Data = buildSkillGroupConfig({
   id: '37dd18b1-b119-438c-96e5-44226023a7a3',
   name: {
     en: 'Data representation',
+    qm: 'Malümatlarnı kösterüv',
     lt: 'Duomenų pateikimas',
     lv: 'Datu attēlošana',
     et: 'Andmete esitamine',

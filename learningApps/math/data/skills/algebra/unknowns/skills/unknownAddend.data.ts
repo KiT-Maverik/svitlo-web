@@ -5,6 +5,7 @@ export const unknownAddend_Skill_Data = buildSkillConfig({
   id: 'a01ad4cb-5aeb-44ee-ba4b-913b384b3178',
   name: {
     en: 'Finding an unknown addend',
+    qm: 'Belli olmağan qoşulıcını tapmaq',
     lt: 'Nežinomo dėmens radimas',
     lv: 'Nezināmā saskaitāmā atrašana',
     et: 'Tundmatu liidetava leidmine',
@@ -38,6 +39,7 @@ export const unknownAddend_Skill_Data = buildSkillConfig({
       'Find an unknown addend by subtracting the known addend from the sum in the relevant number domain. Substitution into the original equation verifies the part-whole relationship.',
     frontend: {
       en: 'You can find a missing addend by subtracting the known addend from the sum, then check by adding.',
+      qm: 'Toplamdan belli olğan qoşulıcını çıqarıp, eksik qoşulıcını tapa bilesiñ. Soñra qoşuvnen teşkere et.',
       zh: '你能用和减去已知加数来求出未知加数，再用加法验算。',
       hi: 'तुम योग में से ज्ञात जोड़ने वाली संख्या घटाकर अज्ञात संख्या निकाल सकते हो और जोड़कर जाँच सकते हो।',
       es: 'Puedes encontrar un sumando desconocido restando el sumando conocido de la suma y comprobarlo al sumar.',

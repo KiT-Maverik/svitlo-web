@@ -11,6 +11,7 @@ export const by4_Skill_Data = buildSkillConfig({
     ka: 'გამრავლება — × 4',
     kk: 'Көбейту — × 4',
     en: 'Multiplication — × 4',
+    qm: 'Arttıruv — × 4',
     zh: '乘法 — × 4',
     hi: 'गुणा — × 4',
     es: 'Multiplicación — × 4',
@@ -38,6 +39,7 @@ export const by4_Skill_Data = buildSkillConfig({
       'Multiplication facts with factor four correspond to four equal groups and can use doubling a doubled amount or other known multiples. A model must distinguish group count from group size.',
     frontend: {
       en: 'You can multiply by four using four equal groups or by doubling a quantity twice.',
+      qm: 'Dört teñ topar yardımınen ya da miqdarnı eki kere ekileştirerek dörtke arttıra bilesiñ.',
       zh: '你能用四个相等的组表示乘以四，也能通过连续翻倍两次来计算。',
       hi: 'तुम चार बराबर समूह बनाकर या किसी मात्रा को दो बार दोगुना करके चार से गुणा कर सकते हो।',
       es: 'Puedes multiplicar por cuatro con cuatro grupos iguales o duplicando dos veces una cantidad.',

@@ -5,6 +5,7 @@ export const estimateLength_Skill_Data = buildSkillConfig({
   id: 'acf47ae5-cf9b-42b3-9f7f-4c2a92e73f1f',
   name: {
     en: 'Estimating length and checking by measurement',
+    qm: 'Uzunlıqnı tahmin etmek ve ölçüvnen teşkere etüv',
     lt: 'Ilgio vertinimas ir tikrinimas matuojant',
     lv: 'Garuma novērtēšana un pārbaude ar mērīšanu',
     et: 'Pikkuse hindamine ja mõõtmisega kontrollimine',
@@ -38,6 +39,7 @@ export const estimateLength_Skill_Data = buildSkillConfig({
       'Estimate a length against a reference or a known measure, then verify with an instrument. Interpret discrepancies between estimated and measured values using consistent units.',
     frontend: {
       en: 'You can estimate how long something is using a familiar reference, then measure it with a tool and compare the two results in the same units.',
+      qm: 'Tanış bir uzunlıqnı etalon alıp eşyanıñ uzunlığını tahmin et. Soñra aletnen ölç ve eki neticeni aynı birliklerde qıyasla.',
       zh: '你能用熟悉的长度作参照估计物体有多长，再用工具测量，并用相同单位比较估计值和实测值。',
       hi: 'आप किसी परिचित माप को आधार बनाकर लंबाई का अनुमान लगा सकते हैं, फिर औज़ार से मापकर दोनों नतीजों की एक ही इकाई में तुलना कर सकते हैं।',
       es: 'Puedes estimar la longitud de algo usando una referencia conocida, medirlo después con un instrumento y comparar ambos resultados en las mismas unidades.',

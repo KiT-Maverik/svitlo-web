@@ -11,6 +11,7 @@ export const numeration_SkillDomain_Data = buildSkillDomainConfig({
   id: '445d4a85-bebe-4569-bf45-2af8c15a051b',
   name: {
     en: 'Natural numbers',
+    qm: 'Tabiiy sayılar',
     lt: 'Natūralieji skaičiai',
     lv: 'Naturālie skaitļi',
     et: 'Naturaalarvud',
@@ -51,6 +52,7 @@ export const numeration_SkillDomain_Data = buildSkillDomainConfig({
       'How natural numbers express quantity, how decimal positional notation works, and how numbers are compared, decomposed, and estimated.',
     frontend: {
       en: "See how natural numbers represent quantities, how each digit's position changes its value, and how to compare, place, and estimate numbers.",
+      qm: 'Tabiiy sayılar miqdarlarnı nasıl bildirgenini, raqamnıñ yeri qıymetini nasıl deñiştirgenini, sayılarnı nasıl qıyaslap yerleştirmek ve tahmin etmekni ögren.',
       zh: '了解自然数怎样表示数量、数字的数位怎样决定它的值，以及如何比较、定位和估计数字。',
       hi: 'समझें कि प्राकृतिक संख्याएँ मात्रा कैसे दिखाती हैं, स्थान के अनुसार अंक का मान कैसे बदलता है और संख्याएँ कैसे तुलना व अनुमान की जाती हैं।',
       es: 'Descubre cómo los números naturales representan cantidades, cómo la posición cambia el valor de una cifra y cómo comparar, situar y estimar números.',

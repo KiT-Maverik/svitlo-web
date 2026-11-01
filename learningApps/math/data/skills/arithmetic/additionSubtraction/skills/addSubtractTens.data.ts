@@ -11,6 +11,7 @@ export const addSubtractTens_Skill_Data = buildSkillConfig({
     ka: 'შეკრება და გამოკლება — სრული ათეულები',
     kk: 'Қосу және азайту — толық ондықтар',
     en: 'Addition and subtraction — Whole tens',
+    qm: 'Qoşuv ve çıqaruv — tolu onluqlar',
     zh: '加减法 — 整十数',
     hi: 'जोड़ और घटाव — पूरे दहाई',
     es: 'Suma y resta — Decenas completas',
@@ -38,6 +39,7 @@ export const addSubtractTens_Skill_Data = buildSkillConfig({
       'Multiples of ten can be added or subtracted as quantities of the corresponding place-value unit. Ordinary operation properties still apply, but the decimal place weight must be preserved.',
     frontend: {
       en: 'You can add or subtract whole tens by working with the number of tens and keeping their place value.',
+      qm: 'Onluqlarnıñ sayısını qullanıp ve olarnıñ razryad qıymetini saqlap, tolu onluqlarnı qoşa ya da çıqara bilesiñ.',
       zh: '你能把整十数看成若干个十来相加或相减，同时保持正确的数位值。',
       hi: 'तुम पूरी दहाइयों को दहाइयों की संख्या के रूप में जोड़ या घटा सकते हो और उनका स्थान-मूल्य सही रख सकते हो।',
       es: 'Puedes sumar o restar decenas completas trabajando con la cantidad de decenas y respetando su valor posicional.',

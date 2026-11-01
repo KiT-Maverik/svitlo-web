@@ -5,6 +5,7 @@ export const linePlotMeasurements_Skill_Data = buildSkillConfig({
   id: '3dbc0531-ff4b-4921-99cd-22c6a7d6b827',
   name: {
     en: 'Plotting measurements on a number line',
+    qm: 'Ölçüvlerni sayı sızığında köstermek',
     lt: 'Matavimų žymėjimas skaičių tiesėje',
     lv: 'Mērījumu attēlošana uz skaitļu taisnes',
     et: 'Mõõtmiste märkimine arvkiirel',
@@ -38,6 +39,7 @@ export const linePlotMeasurements_Skill_Data = buildSkillConfig({
       'A measurement line plot places observations on a common numerical axis; multiple marks at the same value represent repeated observations. The axis scale and correspondence between marks and frequencies must be explicit.',
     frontend: {
       en: 'You can place measurements on a numbered line, stacking marks when a value occurs more than once and keeping the scale consistent.',
+      qm: 'Ölçüv neticelerini sayılar yazılğan sızıqta doğru yerleştire bilesiñ. Bir qıymet bir qaç kere rastkelse, işaretlerni üst-üstüne qoy ve miqyasnı aynı tut.',
       zh: '你能把测量值标在同一条数轴上，数值重复出现时叠加标记，并保持刻度一致。',
       hi: 'आप मापन को अंकित संख्या रेखा पर दिखा सकते हैं, दोहराए गए मान के ऊपर कई चिह्न लगाकर और एक समान पैमाना रखकर।',
       es: 'Puedes colocar medidas en una recta numérica, apilando marcas cuando un valor se repite y manteniendo la misma escala.',

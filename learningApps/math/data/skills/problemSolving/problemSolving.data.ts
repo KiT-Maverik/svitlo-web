@@ -13,6 +13,7 @@ export const problemSolving_SkillDomain_Data = buildSkillDomainConfig({
   id: '695fd427-aaea-4cbb-bd07-2d1702f36a17',
   name: {
     en: 'Problem solving',
+    qm: 'Mesele çezüv',
     lt: 'Uždavinių sprendimas',
     lv: 'Uzdevumu risināšana',
     et: 'Ülesannete lahendamine',

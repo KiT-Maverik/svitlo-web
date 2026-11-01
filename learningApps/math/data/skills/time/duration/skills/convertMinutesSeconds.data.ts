@@ -5,6 +5,7 @@ export const convertMinutesSeconds_Skill_Data = buildSkillConfig({
   id: 'b6540c9a-5a76-405d-ba58-9dc213908443',
   name: {
     en: 'Converting minutes and seconds',
+    qm: 'Daqiqa ve saniyelerni çevirmek',
     lt: 'Minučių ir sekundžių keitimas',
     lv: 'Minūšu un sekunžu pārveidošana',
     et: 'Minutite ja sekundite teisendamine',
@@ -38,6 +39,7 @@ export const convertMinutesSeconds_Skill_Data = buildSkillConfig({
       "Minutes and seconds are duration units related exactly by 1 minute = 60 seconds. Conversion preserves the physical interval; a second hand's current reading is not the total elapsed seconds of a long event.",
     frontend: {
       en: 'You can change minutes into seconds and seconds into minutes, knowing that one minute is exactly 60 seconds and the duration stays the same.',
+      qm: 'Bir daqiqa tam 60 saniye olğanını bilerek daqiqalarnı saniyelerge, saniyelerni ise daqiqalarğa çevire bilesiñ. Vaqıtnıñ devamlılığı deñişmey.',
       zh: '你能把分钟换算成秒，也能把秒换算成分钟，知道1分钟恰好等于60秒，时间长度不变。',
       hi: 'आप मिनट को सेकंड और सेकंड को मिनट में बदल सकते हैं, जानते हुए कि एक मिनट में ठीक 60 सेकंड होते हैं और अवधि वही रहती है।',
       es: 'Puedes convertir minutos en segundos y segundos en minutos, sabiendo que un minuto tiene exactamente 60 segundos y que la duración no cambia.',

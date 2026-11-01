@@ -16,6 +16,7 @@ export const addition_SkillGroup_Data = buildSkillGroupConfig({
   id: 'd7008a9f-2674-4f99-b11d-c6edae4ee778',
   name: {
     en: 'Addition',
+    qm: 'Qoşuv',
     lt: 'Sudėtis',
     lv: 'Saskaitīšana',
     et: 'Liitmine',
@@ -59,6 +60,7 @@ export const addition_SkillGroup_Data = buildSkillGroupConfig({
       'Combining quantities, properties of sums, place-value regrouping, and methods for calculating and checking results.',
     frontend: {
       en: 'Explore how addition combines or increases quantities, and how its rules and place values help you calculate and check sums.',
+      qm: 'Qoşuvnıñ miqdarlarnı nasıl birleştirgenini ya da arttırğanını araştır. Onıñ qaide ve razryad qıymetleri toplamlar esaplavğa ve neticelerni teşkere etmege nasıl yardım etkenini ögren.',
       zh: '了解加法怎样合并或增加数量，以及加法的规律和数位怎样帮助你计算并检查结果。',
       hi: 'समझो कि जोड़ मात्राओं को कैसे मिलाता या बढ़ाता है, और उसके नियम तथा स्थान-मूल्य जोड़ निकालने और जाँचने में कैसे मदद करते हैं।',
       es: 'Descubre cómo la suma reúne o aumenta cantidades y cómo sus propiedades y el valor posicional te ayudan a calcular y comprobar resultados.',

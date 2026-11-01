@@ -5,6 +5,7 @@ export const triangleRectangleSquare_Skill_Data = buildSkillConfig({
   id: 'c4186c89-f443-4eb0-8226-e1774c2e76d7',
   name: {
     en: 'Properties of triangles, rectangles and squares',
+    qm: 'Üçköşe, dik dörtkenar ve kvadratnıñ hasiyetleri',
     lt: 'Trikampių, stačiakampių ir kvadratų savybės',
     lv: 'Trijstūru, taisnstūru un kvadrātu īpašības',
     et: 'Kolmnurkade, ristkülikute ja ruutude omadused',
@@ -38,6 +39,7 @@ export const triangleRectangleSquare_Skill_Data = buildSkillConfig({
       'Triangles, rectangles, and squares are characterized by relations among sides and angles. A square is a rectangle with all sides equal; geometric categories can be nested rather than mutually exclusive.',
     frontend: {
       en: 'Recognize triangles, rectangles, and squares by their sides and angles. Every square is a rectangle.',
+      qm: 'Üçköşelerni, dik dörtkenarlarnı ve kvadratlarnı tarafları ve köşelerine köre tanı. Er kvadrat dik dörtkenar da ola.',
       zh: '根据边和角认识三角形、长方形及正方形。所有正方形都是长方形。',
       hi: 'भुजाओं और कोणों से त्रिभुज, आयत और वर्ग पहचानें। हर वर्ग एक आयत है।',
       es: 'Distingue triángulos, rectángulos y cuadrados por lados y ángulos. Todo cuadrado es un rectángulo.',

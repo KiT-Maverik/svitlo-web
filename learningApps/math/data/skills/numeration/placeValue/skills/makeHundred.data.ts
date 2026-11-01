@@ -11,6 +11,7 @@ export const makeHundred_Skill_Data = buildSkillConfig({
     ka: 'ათი ათეული ქმნის ასეულს',
     kk: 'Он ондық бір жүздікті құрайды',
     en: 'Ten tens make one hundred',
+    qm: 'On onluq bir yüzlük tüze',
     zh: '十个十组成一百',
     hi: 'दस दहाइयों से एक सैकड़ा',
     es: 'Diez decenas forman una centena',
@@ -38,6 +39,7 @@ export const makeHundred_Skill_Data = buildSkillConfig({
       'Ten tens are equivalent to one hundred, or one hundred ones. This relation enables crossing the hundred boundary and understanding positional decimal notation.',
     frontend: {
       en: 'Ten tens make one hundred, just as one hundred ones do. They are different groupings of the same amount.',
+      qm: 'On onluq bir yüzlükni tüzgeni kibi, yüz birlik de bir yüzlükni tüze. Bu aynı miqdarnıñ türlü toparlavlarıdır.',
       zh: '十个十等于一百，一百个一也等于一百；只是分组方式不同。',
       hi: 'दस दहाइयाँ या सौ इकाइयाँ, दोनों मिलकर एक सैकड़ा बनाती हैं। समूह बदलता है, मात्रा नहीं।',
       es: 'Diez decenas forman una centena, igual que cien unidades. Son distintas agrupaciones de la misma cantidad.',

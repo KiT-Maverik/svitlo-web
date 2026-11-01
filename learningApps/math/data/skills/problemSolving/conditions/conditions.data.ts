@@ -7,6 +7,7 @@ export const conditions_SkillGroup_Data = buildSkillGroupConfig({
   id: 'bd512014-8ad2-4db5-8b53-cd24ee73492b',
   name: {
     en: 'Analyzing problem statements',
+    qm: 'Meseleniñ şartını tahlil etüv',
     lt: 'Uždavinių sąlygų analizė',
     lv: 'Uzdevumu nosacījumu analīze',
     et: 'Ülesandetekstide analüüs',

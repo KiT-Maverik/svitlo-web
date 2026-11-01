@@ -5,6 +5,7 @@ export const likelihoodLanguage_Skill_Data = buildSkillConfig({
   id: 'a2a4702d-d512-4459-a699-a4fd874670ac',
   name: {
     en: 'Comparing the likelihood of everyday events',
+    qm: 'Kündelik vaqialarnıñ oluv ihtimalını qıyaslav',
     lt: 'Kasdienių įvykių tikimybės palyginimas',
     lv: 'Ikdienas notikumu varbūtības salīdzināšana',
     et: 'Igapäevaste sündmuste tõenäosuse võrdlemine',
@@ -38,6 +39,7 @@ export const likelihoodLanguage_Skill_Data = buildSkillConfig({
       'Probability describes the chance of an event under specified conditions, not merely whether it is possible. Comparisons require considering outcomes, their likelihoods, and the experimental conditions without assuming outcomes are equally likely.',
     frontend: {
       en: 'You can compare which everyday events are more or less likely under given conditions, without assuming that all outcomes have the same chance.',
+      qm: 'Berilgen şartlarda kündelik vaqialardan qaysısınıñ oluv ihtimalı daa yüksek ya da daa alçaq olğanını qıyaslay bilesiñ. Bütün neticelerniñ ihtimalı bir olğanını faraz etme.',
       zh: '你能根据给定条件比较日常事件发生的可能性大小，而不假定所有结果的概率都相同。',
       hi: 'आप दी गई परिस्थितियों में रोज़मर्रा की घटनाओं की संभावना की तुलना कर सकते हैं, बिना यह माने कि सभी परिणाम समान रूप से संभावित हैं।',
       es: 'Puedes comparar qué sucesos cotidianos son más o menos probables en unas condiciones dadas, sin suponer que todos los resultados tienen la misma probabilidad.',

@@ -13,6 +13,7 @@ export const clock_SkillGroup_Data = buildSkillGroupConfig({
   id: '03f5c155-b4e6-4e8f-8ee4-81141018984d',
   name: {
     en: 'Reading clocks',
+    qm: 'Saatnı oqumaq',
     lt: 'Laikrodžio skaitymas',
     lv: 'Pulksteņa lasīšana',
     et: 'Kella lugemine',

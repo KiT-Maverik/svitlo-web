@@ -5,6 +5,7 @@ export const eventDuration_Skill_Data = buildSkillConfig({
   id: 'c11ad392-6a44-49f4-a2b7-ea246a9a8ae4',
   name: {
     en: 'Calculating elapsed time',
+    qm: 'Keçken vaqıtnı esaplav',
     lt: 'Praėjusio laiko apskaičiavimas',
     lv: 'Pagājušā laika aprēķināšana',
     et: 'Möödunud aja arvutamine',
@@ -38,6 +39,7 @@ export const eventDuration_Skill_Data = buildSkillConfig({
       "Duration is the interval between an event's start and finish, not either individual clock reading. It is found by consistently subtracting time instants and, where needed, accounting for hour, day, or calendar boundaries.",
     frontend: {
       en: 'You can calculate how long an event lasted from its start and finish times, including when it crosses an hour or midnight.',
+      qm: 'Vaqianıñ başlanğıç ve bitiş saatlarına köre ne qadar devam etkenini, saat ya da gece yarısı sıñırından keçse bile, esaplay bilesiñ.',
       zh: '你能根据开始和结束时刻算出一件事持续了多久，包括跨整点或跨午夜的情况。',
       hi: 'आप शुरू और समाप्त होने के समय से किसी घटना की अवधि निकाल सकते हैं, चाहे वह अगले घंटे या आधी रात तक जाए।',
       es: 'Puedes calcular cuánto duró un suceso a partir de su hora de inicio y fin, incluso si cruza una hora en punto o la medianoche.',

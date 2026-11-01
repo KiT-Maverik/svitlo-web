@@ -5,6 +5,7 @@ export const fillSimpleTable_Skill_Data = buildSkillConfig({
   id: '03c02752-3921-4349-b7b0-ad955248e511',
   name: {
     en: 'Recording observations in a table',
+    qm: 'Müşaedelerni cedvelge yazmaq',
     lt: 'Stebėjimų užrašymas lentelėje',
     lv: 'Novērojumu pierakstīšana tabulā',
     et: 'Vaatluste tabelisse märkimine',
@@ -38,6 +39,7 @@ export const fillSimpleTable_Skill_Data = buildSkillConfig({
       'A table associates each recorded value with its labeled row, column, variable, category, and required unit. Its structure must preserve which observation each value describes and make later comparisons possible.',
     frontend: {
       en: 'You can record observations or measurements in a table with the correct rows, columns, labels, and units.',
+      qm: 'Müşaedelerni ya da ölçüv neticelerini doğru satırlarğa, sütunlarğa, adlarğa ve ölçü birlemlerine sahip cedvelge yazıp bilesiñ.',
       zh: '你能把观察或测量结果填入表格，使用正确的行、列、标签和单位。',
       hi: 'आप अवलोकन या मापन को सही पंक्तियों, स्तंभों, शीर्षकों और इकाइयों वाली तालिका में दर्ज कर सकते हैं।',
       es: 'Puedes registrar observaciones o medidas en una tabla con las filas, columnas, etiquetas y unidades correctas.',
