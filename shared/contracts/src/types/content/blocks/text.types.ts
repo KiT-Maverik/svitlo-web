@@ -1,4 +1,4 @@
-import {ContentBlock_Definition_Meta, ContentBlock_Response_Meta} from './common.types';
+import type {ContentBlock_Definition_Meta, ContentBlock_Response_Meta} from './common.types';
 import type {Locale_Config, Locale_ResponseParams} from "../locale.types";
 
 export type ContentBlock_Text_Definition = ContentBlock_Definition_Meta<'text'>
