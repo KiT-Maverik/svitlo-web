@@ -32,7 +32,7 @@ export const structureADanceComposition_Skill_Data = buildSkillConfig({
     be: 'Структуруйце танцавальную кампазіцыю',
     ka: 'ააგეთ საცეკვაო კომპოზიციის სტრუქტურა',
     kk: 'Би композициясын құрылымдаңыз',
-    qm: 'Aqay kompozitsiyasınıñ qurılışını qurıñız',
+    qm: 'Oyun kompozitsiyasınıñ qurılışını qurıñız',
   },
   description: {
     methodological: 'Combine phrases through development, repetition and contrast across a complete work.',
@@ -65,7 +65,7 @@ export const structureADanceComposition_Skill_Data = buildSkillConfig({
       be: 'Размяшчайце танцавальныя фразы з дапамогай паўтарэння, кантрасту і развіцця.',
       ka: 'დაალაგეთ საცეკვაო ფრაზები გამეორების, კონტრასტისა და განვითარების გამოყენებით.',
       kk: 'Қайталау, қарама-қарсылық және дамытуды пайдаланып би тіркестерін құрастырыңыз.',
-      qm: 'Aqay ibarelerini tekrar, qarşıtlıq ve inkişaf ile tertip etiñiz',
+      qm: 'Oyun ibarelerini tekrar, qarşıtlıq ve inkişaf ile tertip etiñiz',
     },
   },
 });

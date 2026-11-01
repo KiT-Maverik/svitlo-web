@@ -65,7 +65,7 @@ export const createAMovementMotif_Skill_Data = buildSkillConfig({
       be: 'Прыдумайце кароткую, пазнавальную паслядоўнасць танцавальных рухаў.',
       ka: 'მოიფიქრეთ მოკლე, ადვილად ამოსაცნობი საცეკვაო მოძრაობების მიმდევრობა.',
       kk: 'Ойдан қысқа әрі танылатын би қимылдарының тізбегін жасаңыз.',
-      qm: 'Qısqa ve tanınabilir aqay areketleri silsilesini icat etiñiz',
+      qm: 'Qısqa ve tanınabilir oyun areketleri silsilesini icat etiñiz',
     },
   },
 });
