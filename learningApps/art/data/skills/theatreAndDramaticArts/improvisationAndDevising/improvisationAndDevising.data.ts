@@ -79,7 +79,7 @@ export const improvisationAndDevising_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Стварайце тэатр разам, прыдумваючы сітуацыі, дзеянні і канфлікты.',
       ka: 'შექმენით თეატრი ერთად, სიტუაციების, მოქმედებებისა და კონფლიქტების მოფიქრებით.',
       kk: 'Жағдаяттар, әрекеттер мен қақтығыстарды ойлап тауып, театрды бірге жасаңыз.',
-      qm: 'Vaziyetler, areketler ve çatışmalar uydurıp birlikte tiyatro yaratığız.',
+      qm: 'Vaziyetlerni, areketlerni ve çatışmalarnı oylap tapıp, birlikte teatr eseri yaratıñız.',
     },
   },
 });
