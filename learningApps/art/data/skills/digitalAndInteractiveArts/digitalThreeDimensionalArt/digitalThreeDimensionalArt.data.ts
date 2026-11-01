@@ -17,7 +17,7 @@ export const digitalThreeDimensionalArt_SkillGroup_Data = buildSkillGroupConfig(
     es: 'Construir espacios virtuales expresivos mediante modelado, materiales, luz y composición.',
     ar: 'الفن الرقمي ثلاثي الأبعاد',
     fr: 'Art numérique tridimensionnel',
-    bn: 'মডেলিং, উপকরণ, আলো ও বিন্যাসের মাধ্যমে অভিব্যক্তিপূর্ণ ভার্চুয়াল স্থান তৈরি করুন।',
+    bn: 'ত্রিমাত্রিক ডিজিটাল শিল্প',
     pt: 'Construir espaços virtuais expressivos por meio de modelagem, materiais, luz e composição.',
     ur: 'سہ جہتی ڈیجیٹل فن',
     id: 'Membangun ruang virtual yang ekspresif melalui pemodelan, material, cahaya, dan komposisi.',

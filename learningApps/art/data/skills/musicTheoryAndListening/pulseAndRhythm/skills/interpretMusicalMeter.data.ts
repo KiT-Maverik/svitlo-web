@@ -43,7 +43,7 @@ export const interpretMusicalMeter_Skill_Data = buildSkillConfig({
       es: 'Escucha cómo los pulsos fuertes y débiles que se repiten organizan un patrón musical.',
       ar: 'استمع إلى كيفية تنظيم النمط الموسيقي من خلال تكرار النبضات القوية والضعيفة.',
       fr: 'Écoutez comment l’alternance répétée des temps forts et faibles structure un motif musical.',
-      bn: 'শুনে বোঝো, বারবার ফিরে আসা জোরালো ও দুর্বল মাত্রা কীভাবে সংগীতের ছক গড়ে তোলে।',
+      bn: 'শুনে বুঝুন, বারবার ফিরে আসা জোরালো ও দুর্বল মাত্রা কীভাবে সংগীতের ছক গড়ে তোলে।',
       pt: 'Ouve como a repetição de tempos fortes e fracos organiza um padrão musical.',
       ur: 'سنیں کہ بار بار آنے والی مضبوط اور کمزور دھڑکنیں موسیقی کے نمونے کو کیسے ترتیب دیتی ہیں۔',
       id: 'Dengarkan bagaimana ketukan kuat dan lemah yang berulang membentuk pola musik.',

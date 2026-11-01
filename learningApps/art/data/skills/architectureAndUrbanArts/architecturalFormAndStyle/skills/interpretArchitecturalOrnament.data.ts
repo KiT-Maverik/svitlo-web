@@ -43,7 +43,7 @@ export const interpretArchitecturalOrnament_Skill_Data = buildSkillConfig({
       es: 'Combina volúmenes edificados y espacios abiertos en una forma visual equilibrada.',
       ar: 'استكشف كيف ترتبط الزخارف المعمارية بمعانيها والفترات التاريخية والسياقات الثقافية.',
       fr: 'Interprétez les ornements architecturaux en tenant compte de leur sens, de leur époque et de leur contexte culturel.',
-      bn: 'ভবনের আয়তন ও খোলা জায়গা মিলিয়ে ভারসাম্যপূর্ণ দৃশ্যরূপ তৈরি করুন।',
+      bn: 'স্থাপত্যের অলংকরণের সঙ্গে তার অর্থ, ঐতিহাসিক সময়কাল ও সাংস্কৃতিক প্রেক্ষাপটের সম্পর্ক অনুসন্ধান করুন।',
       pt: 'Combine volumes construídos e espaços abertos em uma forma visual equilibrada.',
       ur: 'دیکھیں کہ تعمیراتی آرائش کے معنی، تاریخی دور اور ثقافتی پس منظر کا آپس میں کیا تعلق ہے۔',
       id: 'Padukan massa bangunan dan ruang terbuka menjadi bentuk visual yang seimbang.',
