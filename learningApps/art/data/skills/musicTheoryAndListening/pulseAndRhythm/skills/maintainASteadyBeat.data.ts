@@ -42,7 +42,7 @@ export const maintainASteadyBeat_Skill_Data = buildSkillConfig({
       hi: 'संगीत की लय बदलने पर भी स्थिर ताल बनाए रखें।',
       es: 'Mantén un pulso constante aunque cambie el ritmo de la música.',
       ar: 'حافظ على نبض ثابت حتى عندما يتغير إيقاع الموسيقى.',
-      fr: 'Garde une pulsation régulière même lorsque le rythme de la musique change.',
+      fr: 'Gardez une pulsation régulière même lorsque le rythme de la musique change.',
       bn: 'সংগীতের ছন্দ বদলালেও স্থির তাল বজায় রাখুন।',
       pt: 'Mantém uma pulsação constante mesmo quando o ritmo da música muda.',
       ur: 'موسیقی کی لے بدلنے پر بھی اپنی دھڑکن مستقل رکھیں۔',
