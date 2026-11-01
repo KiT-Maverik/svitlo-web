@@ -5,7 +5,7 @@ export const surfaceAgeEstimation_Skill_Data = buildSkillConfig({
   id: '832be903-d031-4b3b-89a0-f2473316891c',
   name: {
     en: 'Surface Age Estimation',
-      zh: '表面年龄估计',
+    zh: '表面年龄估计',
     hi: 'सतह की आयु का अनुमान',
     es: 'Estimación de la edad de una superficie',
     ar: 'تقدير عمر الأسطح',
@@ -39,7 +39,7 @@ export const surfaceAgeEstimation_Skill_Data = buildSkillConfig({
       'Use relative geologic relationships and calibrated crater statistics to infer the chronology of planetary surfaces.',
     frontend: {
       en: 'Estimate when surfaces formed using geological relationships and impact craters.',
-          zh: '借助地质层位关系和撞击坑，估计天体表面形成的时间。',
+      zh: '借助地质层位关系和撞击坑，估计天体表面形成的时间。',
       hi: 'भूवैज्ञानिक संबंधों और टक्कर के गर्तों से अनुमान लगाएँ कि सतह कब बनी थी।',
       es: 'Estima cuándo se formaron las superficies mediante relaciones geológicas y cráteres de impacto.',
       ar: 'قدّر متى تشكّلت الأسطح باستخدام العلاقات الجيولوجية وفوهات الاصطدام.',
