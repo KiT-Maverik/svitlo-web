@@ -70,10 +70,29 @@ function collection(value: unknown, name: string): LessonCollection {
   return { data: document.data, localeSources: sources as Record<string, LocaleSource> };
 }
 
+/** Add Response discriminators for nested content where current authored contracts omit them. */
+function decorateResponse(value: unknown, language: LanguageCode): unknown {
+  if (Array.isArray(value)) return value.map(entry => decorateResponse(entry, language));
+  if (!value || typeof value !== 'object') return value;
+  const source = value as Record<string, unknown>;
+  const children = Object.fromEntries(
+    Object.entries(source).map(([key, child]) => [key, decorateResponse(child, language)]),
+  );
+  if (typeof source.id !== 'string' || typeof source.slug !== 'string') return children;
+  const locale = { code: language };
+  if (typeof source.value === 'string') return { ...children, type: 'text', locale };
+  if (typeof source.locales === 'string') {
+    const { locales: text, ...rest } = children;
+    return { ...rest, type: 'markdown', text, locale };
+  }
+  return { ...children, locale };
+}
+
 function assembleBlocks(
   content: unknown,
   order: unknown,
   location: string,
+  language: LanguageCode,
 ): Pick<LessonSectionResponse, 'content' | 'contentOrder'> {
   const catalog = record(content, location);
   const normalized: LessonSectionResponse['content'] = {};
@@ -81,19 +100,19 @@ function assembleBlocks(
   for (const [kind, entries] of Object.entries(catalog)) {
     normalized[kind] = {};
     for (const [key, raw] of Object.entries(record(entries, location + '/' + kind))) {
-      const block = record(raw, location + '/' + kind + '/' + key);
+      const block = record(decorateResponse(raw, language), location + '/' + kind + '/' + key);
       const slug = string(block.slug, location + '/' + kind + '/' + key + '.slug');
       if (slug !== key) throw new Error('Block slug mismatch at ' + location + '/' + kind + '/' + key);
       const id = string(block.id, location + '/' + kind + '/' + key + '.id');
       const reference = kind + '/' + key;
       keys.push(reference);
-      const resolved: LessonContentBlock = { ...block, id, slug, blockType: kind };
+      const resolved: LessonContentBlock = { ...block, id, slug, blockType: kind, locale: { code: language } };
       if (kind === 'markdown') {
-        resolved.text = string(block.locales, location + '/' + reference + '.locales');
-        delete resolved.locales;
+        resolved.text = string(block.text, location + '/' + reference + '.text');
       }
       if (kind === 'scene') {
         resolved.locales = record(block.locales, location + '/' + reference + '.locales');
+        resolved.locale = { ...resolved.locales, code: language };
         resolved.sceneId = location + '/' + reference;
       }
       normalized[kind][key] = resolved;
@@ -139,7 +158,7 @@ export function assembleLessonResponse(
     for (const [key, value] of Object.entries(record(entries, 'questions.data.' + kind))) {
       const question = record(value, 'questions.data.' + kind + '.' + key);
       if (question.slug !== key) throw new Error('Question slug mismatch at ' + kind + '/' + key);
-      indexedQuestions[kind][key] = question;
+      indexedQuestions[kind][key] = record(decorateResponse(question, language), 'questions.data.' + kind + '.' + key);
     }
   }
   const sections: LessonResponse['sections'] = {};
@@ -147,7 +166,7 @@ export function assembleLessonResponse(
     const section = record(rawSection, 'config.data.sections.' + key);
     const sectionSlug = string(section.slug, 'sections.' + key + '.slug');
     if (sectionSlug !== key) throw new Error('Section slug mismatch at ' + key);
-    const content = assembleBlocks(section.content, section.contentOrder, group + '/' + slug + '/' + key);
+    const content = assembleBlocks(section.content, section.contentOrder, group + '/' + slug + '/' + key, language);
     for (const block of Object.values(content.content.quiz ?? {})) {
       const slugs = block.questionSlugs;
       if (!Array.isArray(slugs) || slugs.some(value => typeof value !== 'string') ||
