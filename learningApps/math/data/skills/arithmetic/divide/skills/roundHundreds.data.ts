@@ -41,7 +41,7 @@ export const roundHundreds_Skill_Data = buildSkillConfig({
       en: 'You can divide whole hundreds by a one-digit number, regrouping hundreds into tens or ones when needed.',
       qm: 'Tolu yüzlüklerni bir raqamlı sayığa böle bilesiñ. Kerek olğanda yüzlüklerni onluq ya da birliklerge çevir.',
       zh: '你能用一位数除整百数，必要时把百换成十或一再计算。',
-      hi: 'तुम पूरी सैकड़ों की संख्या को एक अंक से भाग दे सकते हो और ज़रूरत पर सैकड़ों को दहाइयों या इकाइयों में बदल सकते हो।',
+      hi: 'तुम पूरे सैकड़ों को एक-अंकीय संख्या से भाग दे सकते हो और ज़रूरत पड़ने पर सैकड़ों को दहाइयों या इकाइयों में बदल सकते हो।',
       es: 'Puedes dividir centenas completas entre un número de una cifra, cambiando centenas por decenas o unidades cuando sea necesario.',
       ar: 'يمكنك قسمة المئات الكاملة على عدد من خانة واحدة، وتحويل المئات إلى عشرات أو آحاد عند الحاجة.',
       fr: 'Tu peux diviser des centaines entières par un nombre à un chiffre, en échangeant des centaines contre des dizaines ou unités si nécessaire.',
