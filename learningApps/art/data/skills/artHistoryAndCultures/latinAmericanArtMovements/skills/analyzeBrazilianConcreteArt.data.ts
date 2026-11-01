@@ -31,7 +31,7 @@ export const analyzeBrazilianConcreteArt_Skill_Data = buildSkillConfig({
     et: 'Analüüsida Brasiilia konkreetset kunsti',
     be: 'Аналізаваць бразільскае канкрэтнае мастацтва',
     ka: 'ბრაზილიური კონკრეტული ხელოვნების გაანალიზება',
-    kk: 'Бразилияның нақты өнерін талдау',
+    kk: 'Бразилиялық конкретті өнерді талдау',
     qm: 'Brezilya somut sanatını incelemek',
   },
   description: {
@@ -65,7 +65,7 @@ export const analyzeBrazilianConcreteArt_Skill_Data = buildSkillConfig({
       et: 'Uuri, kuidas Brasiilia konkreetse kunsti loojad kasutasid täpseid geomeetrilisi suhteid.',
       be: 'Даведайцеся, як бразільскія мастакі канкрэтнага мастацтва выкарыстоўвалі дакладныя геаметрычныя суадносіны.',
       ka: 'გაეცანით, როგორ იყენებდნენ ბრაზილიელი კონკრეტული ხელოვნების მხატვრები ზუსტ გეომეტრიულ მიმართებებს.',
-      kk: 'Зерттеңіз: Бразилияның нақты өнер суретшілері дәл геометриялық қатынастарды қалай қолданды.',
+      kk: 'Бразилиялық конкретті өнер өкілдерінің дәл геометриялық қатынастарды қалай қолданғанын зерттеңіз.',
       qm: 'Brezilyalı somut sanatçıların kesin geometrik ilişkileri nasıl kullandığını keşfedin.',
     },
   },
