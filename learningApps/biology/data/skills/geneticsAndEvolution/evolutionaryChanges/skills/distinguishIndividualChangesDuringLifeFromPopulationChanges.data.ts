@@ -28,7 +28,7 @@ export const distinguishIndividualChangesDuringLifeFromPopulationChanges_Skill_D
     uk: 'Відрізняти зміни протягом життя особини від змін у популяції',
     lt: 'Atskirti individo gyvenimo pokyčius nuo populiacijos pokyčių',
     lv: 'Atšķirt indivīda dzīves laikā notiekošas pārmaiņas no populācijas pārmaiņām',
-    et: 'At skirti indiviidi elu jooksul toimunud muutusi populatsiooni muutustest',
+    et: 'Eristada indiviidi elu jooksul toimuvaid muutusi populatsiooni muutustest',
     be: 'Адрозьніваць зьмены на працягу жыцьця асобіны ад зьменаў у папуляцыі',
     ka: 'ინდივიდის სიცოცხლის განმავლობაში ცვლილებებისა და პოპულაციის ცვლილებების გარჩევა',
     kk: 'Жеке ағзаның өміріндегі өзгерістерді популяция өзгерістерінен ажырату',
