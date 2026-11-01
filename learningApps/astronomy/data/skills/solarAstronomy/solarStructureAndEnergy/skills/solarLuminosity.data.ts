@@ -50,7 +50,7 @@ export const solarLuminosity_Skill_Data = buildSkillConfig({
       lv: 'Izproti Saules kopējo izstaroto enerģiju un to, kā saņemtās gaismas daudzums mainās līdz ar attālumu.',
       et: 'Mõista, kui palju energiat Päike kokku kiirgab ja kuidas saabuv valgus kaugusega muutub.',
       be: 'Зразумей, колькі энэргіі Сонца выпраменьвае ўсяго і як атрыманая колькасьць сьвятла залежыць ад адлегласьці.',
-      ka: 'გაიგე, რამდენ ენერგიას ასხივებს მზე მთლიანობაში და როგორ იცვლება მიღებული სინათლე მანძილის მიხედვით.',
+      ka: 'გაიგე, რომ მზის ნათობა მისი გამოსხივების სიმძლავრეა და როგორ იცვლება მიღებული სინათლის ინტენსივობა მანძილის მიხედვით.',
       kk: 'Күннің жалпы қанша энергия шығаратынын және қашықтық артқанда қабылданатын жарықтың қалай өзгеретінін түсін.',
       uk: 'Зрозумій, що світність Сонця — це потужність його випромінювання, а кількість отриманого світла залежить від відстані.',
       pl: 'Zrozum, ile energii w sumie wypromieniowuje Słońce i jak ilość docierającego światła zmienia się z odległością.',
