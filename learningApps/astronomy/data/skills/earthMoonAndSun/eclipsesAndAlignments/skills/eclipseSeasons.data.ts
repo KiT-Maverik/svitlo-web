@@ -50,7 +50,7 @@ export const eclipseSeasons_Skill_Data = buildSkillConfig({
       id: "Cari tahu mengapa gerhana tidak terjadi setiap bulan saat Bulan baru atau purnama.",
       de: "Entdecke, warum es nicht bei jedem Neu- oder Vollmond zu einer Finsternis kommt.",
       ja: "新月や満月のたびに日食や月食が起こるわけではない理由を探りましょう。",
-      ko: "초승달이 되거나 보름달이 뜬다고 해서 매달 일식이나 월식이 생기지는 않는 이유를 알아보세요.",
+      ko: "삭이나 보름 때마다 일식이나 월식이 일어나지 않는 이유를 알아보세요.",
       tr: "Her yeni ayda veya dolunayda neden tutulma olmadığını keşfedin.",
       vi: "Tìm hiểu vì sao không phải mỗi lần trăng mới hoặc trăng tròn đều xảy ra nhật thực hay nguyệt thực.",
       ta: "ஒவ்வொரு அமாவாசையிலும் பௌர்ணமியிலும் ஏன் கிரகணம் நிகழ்வதில்லை என்பதை அறியுங்கள்.",
