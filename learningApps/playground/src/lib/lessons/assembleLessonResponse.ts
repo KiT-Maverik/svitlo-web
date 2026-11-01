@@ -1,0 +1,210 @@
+import type { LanguageCode } from '@svitlo/engine/localization';
+
+export type LocaleSource = { code: LanguageCode; isFallback?: true };
+export type LessonCollection = { data: unknown; localeSources: Record<string, LocaleSource> };
+export type LessonContentBlock = {
+  id: string;
+  slug: string;
+  blockType: string;
+  sceneId?: string;
+  text?: string;
+  value?: string;
+  locales?: Record<string, unknown>;
+  questions?: Record<string, Record<string, unknown>>;
+  [key: string]: unknown;
+};
+export type LessonSectionResponse = {
+  id: string;
+  slug: string;
+  title: string;
+  navigationLabel: string;
+  skippable?: true;
+  content: Record<string, Record<string, LessonContentBlock>>;
+  contentOrder: string[];
+};
+export type LessonResponse = {
+  id: string;
+  group: string;
+  slug: string;
+  title: string;
+  locale: { code: LanguageCode };
+  parameters: {
+    requireQuiz: boolean;
+    languages: LanguageCode[];
+    sections: { allowNavigation: boolean; allowSkipping: boolean; showIndexes: boolean };
+  };
+  flashcards: unknown[];
+  questions: Record<string, Record<string, Record<string, unknown>>>;
+  sections: Record<string, LessonSectionResponse>;
+  localeSources: {
+    config: Record<string, LocaleSource>;
+    flashcards: Record<string, LocaleSource>;
+    questions: Record<string, LocaleSource>;
+  };
+};
+
+function record(value: unknown, where: string): Record<string, unknown> {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) {
+    throw new Error('Invalid lesson resource at ' + where + ': expected object');
+  }
+  return value as Record<string, unknown>;
+}
+
+function string(value: unknown, where: string): string {
+  if (typeof value !== 'string' || !value.trim()) {
+    throw new Error('Invalid lesson resource at ' + where + ': expected non-empty string');
+  }
+  return value;
+}
+
+function collection(value: unknown, name: string): LessonCollection {
+  const document = record(value, name);
+  const sources = record(document.localeSources, name + '.localeSources');
+  for (const [pointer, source] of Object.entries(sources)) {
+    const meta = record(source, name + '.localeSources.' + pointer);
+    string(meta.code, name + '.localeSources.' + pointer + '.code');
+    if (meta.isFallback !== undefined && meta.isFallback !== true) {
+      throw new Error('Invalid fallback metadata in ' + name + ' at ' + pointer);
+    }
+  }
+  return { data: document.data, localeSources: sources as Record<string, LocaleSource> };
+}
+
+function assembleBlocks(
+  content: unknown,
+  order: unknown,
+  location: string,
+): Pick<LessonSectionResponse, 'content' | 'contentOrder'> {
+  const catalog = record(content, location);
+  const normalized: LessonSectionResponse['content'] = {};
+  const keys: string[] = [];
+  for (const [kind, entries] of Object.entries(catalog)) {
+    normalized[kind] = {};
+    for (const [key, raw] of Object.entries(record(entries, location + '/' + kind))) {
+      const block = record(raw, location + '/' + kind + '/' + key);
+      const slug = string(block.slug, location + '/' + kind + '/' + key + '.slug');
+      if (slug !== key) throw new Error('Block slug mismatch at ' + location + '/' + kind + '/' + key);
+      const id = string(block.id, location + '/' + kind + '/' + key + '.id');
+      const reference = kind + '/' + key;
+      keys.push(reference);
+      const resolved: LessonContentBlock = { ...block, id, slug, blockType: kind };
+      if (kind === 'markdown') {
+        resolved.text = string(block.locales, location + '/' + reference + '.locales');
+        delete resolved.locales;
+      }
+      if (kind === 'scene') {
+        resolved.locales = record(block.locales, location + '/' + reference + '.locales');
+        resolved.sceneId = location + '/' + reference;
+      }
+      normalized[kind][key] = resolved;
+    }
+  }
+  const contentOrder = order === undefined ? keys : order;
+  if (!Array.isArray(contentOrder) || contentOrder.some(value => typeof value !== 'string')) {
+    throw new Error('Invalid contentOrder at ' + location);
+  }
+  if (new Set(contentOrder).size !== contentOrder.length ||
+      contentOrder.length !== keys.length ||
+      contentOrder.some(key => !keys.includes(key))) {
+    throw new Error('contentOrder must reference each block exactly once at ' + location);
+  }
+  return { content: normalized, contentOrder: contentOrder as string[] };
+}
+
+/** Pure response assembly: runtime consumes only the three published JSON collections. */
+export function assembleLessonResponse(
+  group: string,
+  slug: string,
+  language: LanguageCode,
+  raw: { config: unknown; flashcards: unknown; questions: unknown },
+): LessonResponse {
+  const config = collection(raw.config, 'config');
+  const flashcards = collection(raw.flashcards, 'flashcards');
+  const questions = collection(raw.questions, 'questions');
+  const data = record(config.data, 'config.data');
+  if (data.group !== group || data.slug !== slug) {
+    throw new Error('Lesson JSON identity mismatch: expected ' + group + '/' + slug);
+  }
+  const parameters = record(data.parameters, 'config.data.parameters');
+  const languages = parameters.languages;
+  if (!Array.isArray(languages) || !languages.includes(language)) {
+    throw new Error('Lesson ' + group + '/' + slug + ' does not support language ' + language);
+  }
+  const settings = record(parameters.sections, 'config.data.parameters.sections');
+  if (!Array.isArray(flashcards.data)) throw new Error('Invalid flashcards for ' + group + '/' + slug);
+  const questionCatalog = record(questions.data, 'questions.data');
+  const indexedQuestions: LessonResponse['questions'] = {};
+  for (const [kind, entries] of Object.entries(questionCatalog)) {
+    indexedQuestions[kind] = {};
+    for (const [key, value] of Object.entries(record(entries, 'questions.data.' + kind))) {
+      const question = record(value, 'questions.data.' + kind + '.' + key);
+      if (question.slug !== key) throw new Error('Question slug mismatch at ' + kind + '/' + key);
+      indexedQuestions[kind][key] = question;
+    }
+  }
+  const sections: LessonResponse['sections'] = {};
+  for (const [key, rawSection] of Object.entries(record(data.sections, 'config.data.sections'))) {
+    const section = record(rawSection, 'config.data.sections.' + key);
+    const sectionSlug = string(section.slug, 'sections.' + key + '.slug');
+    if (sectionSlug !== key) throw new Error('Section slug mismatch at ' + key);
+    const content = assembleBlocks(section.content, section.contentOrder, group + '/' + slug + '/' + key);
+    for (const block of Object.values(content.content.quiz ?? {})) {
+      const slugs = block.questionSlugs;
+      if (!Array.isArray(slugs) || slugs.some(value => typeof value !== 'string') ||
+          new Set(slugs).size !== slugs.length || slugs.length === 0) {
+        throw new Error('Invalid quiz questionSlugs in ' + group + '/' + slug + '/' + key);
+      }
+      const resolved: Record<string, Record<string, unknown>> = {};
+      for (const questionSlug of slugs as string[]) {
+        const matches = Object.values(indexedQuestions).flatMap(bank =>
+          bank[questionSlug] ? [bank[questionSlug]] : []);
+        if (matches.length !== 1) {
+          throw new Error('Quiz references missing or ambiguous question ' + questionSlug +
+            ' in ' + group + '/' + slug + '/' + key);
+        }
+        resolved[questionSlug] = matches[0];
+      }
+      block.questions = resolved;
+    }
+    sections[key] = {
+      id: string(section.id, 'sections.' + key + '.id'),
+      slug: sectionSlug,
+      title: string(section.title, 'sections.' + key + '.title'),
+      navigationLabel: string(section.navigationLabel, 'sections.' + key + '.navigationLabel'),
+      ...(section.skippable === true ? { skippable: true as const } : {}),
+      ...content,
+    };
+  }
+  const options = ['allowNavigation', 'allowSkipping', 'showIndexes'] as const;
+  for (const option of options) {
+    if (typeof settings[option] !== 'boolean') {
+      throw new Error('Invalid ' + option + ' for ' + group + '/' + slug);
+    }
+  }
+  if (typeof parameters.requireQuiz !== 'boolean') throw new Error('Invalid requireQuiz for ' + slug);
+  const quizCount = Object.values(sections).reduce((count, section) =>
+    count + Object.keys(section.content.quiz ?? {}).length, 0);
+  if (quizCount > 1 || (parameters.requireQuiz && quizCount !== 1)) {
+    throw new Error('Lesson ' + group + '/' + slug + ' requires exactly one quiz when requireQuiz is true');
+  }
+  return {
+    id: string(data.id, 'config.data.id'),
+    group,
+    slug,
+    title: string(data.title, 'config.data.title'),
+    locale: { code: language },
+    parameters: {
+      requireQuiz: parameters.requireQuiz,
+      languages: languages as LanguageCode[],
+      sections: settings as LessonResponse['parameters']['sections'],
+    },
+    flashcards: flashcards.data,
+    questions: indexedQuestions,
+    sections,
+    localeSources: {
+      config: config.localeSources,
+      flashcards: flashcards.localeSources,
+      questions: questions.localeSources,
+    },
+  };
+}
