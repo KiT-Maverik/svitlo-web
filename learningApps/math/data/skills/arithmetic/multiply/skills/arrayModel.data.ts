@@ -46,7 +46,7 @@ export const arrayModel_Skill_Data = buildSkillConfig({
       ar: 'يمكنك ترتيب الأشياء في صفوف وأعمدة متساوية لتمثيل الضرب وإيجاد المجموع.',
       fr: 'Tu peux disposer des objets en lignes et colonnes régulières pour représenter une multiplication et trouver le total.',
       bn: 'সমান সারি ও কলামে বস্তু সাজিয়ে গুণ দেখাতে এবং মোট সংখ্যা বের করতে পারো।',
-      pt: 'Você pode organizar objetos em linhas e colunas iguais para representar uma multiplicação e encontrar o total.',
+      pt: 'Você pode organizar objetos em uma disposição retangular, com a mesma quantidade em cada linha, e multiplicar o número de linhas pelo de objetos por linha para encontrar o total.',
       ur: 'آپ اشیا کو برابر قطاروں اور ستونوں میں رکھ کر ضرب دکھا سکتے ہیں اور کل تعداد معلوم کر سکتے ہیں۔',
       id: 'Kamu bisa menyusun benda dalam baris dan kolom yang sama banyak untuk menunjukkan perkalian dan mencari jumlah keseluruhan.',
       de: 'Du kannst Gegenstände in gleichmäßigen Reihen und Spalten anordnen, um eine Multiplikation darzustellen und die Gesamtzahl zu finden.',
