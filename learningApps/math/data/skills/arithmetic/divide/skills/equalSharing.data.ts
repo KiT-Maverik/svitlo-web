@@ -13,7 +13,7 @@ export const equalSharing_Skill_Data = buildSkillConfig({
     en: 'Division — Equal sharing',
     qm: 'Bölüv — teñ paylaştırma',
     zh: '除法 — 平均分配',
-    hi: 'भाग — समान बाँट',
+    hi: 'भाग — बराबर बाँटना',
     es: 'División — Reparto equitativo',
     ar: 'القسمة — التوزيع بالتساوي',
     fr: 'Division — Partage équitable',

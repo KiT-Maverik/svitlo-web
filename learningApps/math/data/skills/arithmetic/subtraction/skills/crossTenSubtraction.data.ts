@@ -14,7 +14,7 @@ export const crossTenSubtraction_Skill_Data = buildSkillConfig({
     qm: 'Çıqaruv — onluqtan keçüv',
     zh: '减法 — 跨十计算',
     hi: 'घटाव — दस पार करना',
-    es: 'Resta — Cruzar la decena',
+    es: 'Resta — Paso por la decena',
     ar: 'الطرح — تجاوز العشرة',
     fr: 'Soustraction — Passage de la dizaine',
     bn: 'বিয়োগ — দশক অতিক্রম',
