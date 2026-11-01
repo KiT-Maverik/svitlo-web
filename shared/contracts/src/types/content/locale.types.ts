@@ -25,4 +25,4 @@ export type Locale_ResponseParams = {
   };
 };
 
-export type Locale_Config = Locales_All | Locales_Subset | Locales_Single | Locales_Partial;
+export type Locale_Config = Locales_All | Locales_Subset<LanguageCode> | Locales_Single | Locales_Partial;
