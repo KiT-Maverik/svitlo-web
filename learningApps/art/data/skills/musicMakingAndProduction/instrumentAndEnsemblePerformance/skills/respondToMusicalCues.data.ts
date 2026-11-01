@@ -27,7 +27,7 @@ export const respondToMusicalCues_Skill_Data = buildSkillConfig({
     pl: 'Reaguj na sygnały muzyczne',
     uk: 'Реагуйте на музичні сигнали',
     lt: 'Reaguokite į muzikinius signalus',
-    lv: 'Reaģējiet uz muzikālajiem signāliem',
+    lv: 'Reaģēt uz muzikālajiem signāliem',
     et: 'Reageeri muusikalistele märguannetele',
     be: 'Рэагуйце на музычныя сігналы',
     ka: 'გამოეხმაურეთ მუსიკალურ მინიშნებებს',

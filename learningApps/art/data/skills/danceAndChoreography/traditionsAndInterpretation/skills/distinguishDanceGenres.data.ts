@@ -27,7 +27,7 @@ export const distinguishDanceGenres_Skill_Data = buildSkillConfig({
     pl: 'Rozróżniaj gatunki tańca',
     uk: 'Розрізняйте жанри танцю',
     lt: 'Atskirkite šokio žanrus',
-    lv: 'Atšķiriet dejas žanrus',
+    lv: 'Atšķirt dejas žanrus',
     et: 'Erista tantsužanre',
     be: 'Адрознівайце жанры танца',
     ka: 'განასხვავეთ ცეკვის ჟანრები',

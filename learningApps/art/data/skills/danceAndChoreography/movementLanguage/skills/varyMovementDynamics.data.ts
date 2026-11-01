@@ -27,7 +27,7 @@ export const varyMovementDynamics_Skill_Data = buildSkillConfig({
     pl: 'Zmieniaj dynamikę ruchu',
     uk: 'Змінюйте динаміку руху',
     lt: 'Keiskite judesio dinamiką',
-    lv: 'Mainiet kustību dinamiku',
+    lv: 'Mainīt kustību dinamiku',
     et: 'Muuda liikumise dünaamikat',
     be: 'Змяняйце дынаміку руху',
     ka: 'შეცვალეთ მოძრაობის დინამიკა',

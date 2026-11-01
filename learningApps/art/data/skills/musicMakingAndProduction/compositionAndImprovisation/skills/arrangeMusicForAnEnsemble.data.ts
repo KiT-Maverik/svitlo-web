@@ -27,7 +27,7 @@ export const arrangeMusicForAnEnsemble_Skill_Data = buildSkillConfig({
     pl: 'Aranżuj muzykę na zespół',
     uk: 'Аранжуйте музику для ансамблю',
     lt: 'Aranžuokite muziką ansambliui',
-    lv: 'Veidojiet aranžējumu ansamblim',
+    lv: 'Veidot aranžējumu ansamblim',
     et: 'Sea muusik ansamblile',
     be: 'Аранжыруйце музыку для ансамбля',
     ka: 'მოაწყვეთ მუსიკა ანსამბლისთვის',

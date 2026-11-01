@@ -27,7 +27,7 @@ export const improviseARhythm_Skill_Data = buildSkillConfig({
     pl: 'Improwizuj rytm',
     uk: 'Імпровізуйте ритм',
     lt: 'Improvizuokite ritmą',
-    lv: 'Improvizējiet ritmu',
+    lv: 'Improvizēt ritmu',
     et: 'Improvisatsiooni rütm',
     be: 'Імправізуйце рытм',
     ka: 'მოახდინეთ რიტმის იმპროვიზაცია',

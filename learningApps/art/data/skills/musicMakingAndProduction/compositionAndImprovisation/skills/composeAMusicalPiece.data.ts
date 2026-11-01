@@ -27,7 +27,7 @@ export const composeAMusicalPiece_Skill_Data = buildSkillConfig({
     pl: 'Skomponuj utwór muzyczny',
     uk: 'Створіть музичний твір',
     lt: 'Sukurkite muzikinį kūrinį',
-    lv: 'Komponējiet skaņdarbu',
+    lv: 'Komponēt skaņdarbu',
     et: 'Loo muusikapala',
     be: 'Стварыце музычны твор',
     ka: 'შექმენით მუსიკალური ნაწარმოები',

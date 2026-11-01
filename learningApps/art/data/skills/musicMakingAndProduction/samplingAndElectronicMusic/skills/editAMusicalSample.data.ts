@@ -27,7 +27,7 @@ export const editAMusicalSample_Skill_Data = buildSkillConfig({
     pl: 'Edytuj próbkę muzyczną',
     uk: 'Редагуйте музичний семпл',
     lt: 'Redaguokite muzikinį semplą',
-    lv: 'Rediģējiet mūzikas paraugu',
+    lv: 'Rediģēt mūzikas paraugu',
     et: 'Redigeeri muusikanäidist',
     be: 'Рэдагуйце музычны ўзор',
     ka: 'დაარედაქტირეთ მუსიკალური სემპლი',

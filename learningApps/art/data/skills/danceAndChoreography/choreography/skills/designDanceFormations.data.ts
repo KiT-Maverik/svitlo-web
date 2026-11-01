@@ -27,7 +27,7 @@ export const designDanceFormations_Skill_Data = buildSkillConfig({
     pl: 'Projektuj ustawienia tancerzy',
     uk: 'Проєктуйте танцювальні побудови',
     lt: 'Kurkite šokio išsidėstymus',
-    lv: 'Veidojiet dejotāju izvietojumu',
+    lv: 'Veidot dejotāju izvietojumu',
     et: 'Kujunda tantsijate paigutusi',
     be: 'Праектуйце танцавальныя пабудовы',
     ka: 'შექმენით მოცეკვავეთა განლაგებები',

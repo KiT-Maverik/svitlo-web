@@ -27,7 +27,7 @@ export const maintainAnEnsemblePart_Skill_Data = buildSkillConfig({
     pl: 'Utrzymuj swoją partię w zespole',
     uk: 'Зберігайте свою партію в ансамблі',
     lt: 'Išlaikykite savo partiją ansamblyje',
-    lv: 'Saglabājiet savu partiju ansamblī',
+    lv: 'Saglabāt savu partiju ansamblī',
     et: 'Hoia ansamblis oma partiid',
     be: 'Захоўвайце сваю партыю ў ансамблі',
     ka: 'შეინარჩუნეთ თქვენი პარტია ანსამბლში',

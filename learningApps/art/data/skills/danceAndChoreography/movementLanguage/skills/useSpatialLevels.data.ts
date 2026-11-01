@@ -27,7 +27,7 @@ export const useSpatialLevels_Skill_Data = buildSkillConfig({
     pl: 'Wykorzystuj poziomy przestrzeni',
     uk: 'Використовуйте просторові рівні',
     lt: 'Naudokite erdvės lygius',
-    lv: 'Izmantojiet telpas līmeņus',
+    lv: 'Izmantot telpas līmeņus',
     et: 'Kasuta ruumitasandeid',
     be: 'Выкарыстоўвайце прасторавыя ўзроўні',
     ka: 'გამოიყენეთ სივრცის დონეები',

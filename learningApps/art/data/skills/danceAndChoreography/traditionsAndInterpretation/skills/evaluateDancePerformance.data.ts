@@ -27,7 +27,7 @@ export const evaluateDancePerformance_Skill_Data = buildSkillConfig({
     pl: 'Oceniaj wykonanie tańca',
     uk: 'Оцінюйте танцювальний виступ',
     lt: 'Įvertinkite šokio pasirodymą',
-    lv: 'Novērtējiet dejas priekšnesumu',
+    lv: 'Novērtēt dejas priekšnesumu',
     et: 'Hinda tantsuetendust',
     be: 'Ацэньвайце танцавальны выступ',
     ka: 'შეაფასეთ საცეკვაო შესრულება',

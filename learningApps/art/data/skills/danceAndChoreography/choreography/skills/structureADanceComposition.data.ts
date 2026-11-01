@@ -27,7 +27,7 @@ export const structureADanceComposition_Skill_Data = buildSkillConfig({
     pl: 'Zbuduj strukturę kompozycji tanecznej',
     uk: 'Структуруйте танцювальну композицію',
     lt: 'Struktūruokite šokio kompoziciją',
-    lv: 'Veidojiet dejas kompozīcijas struktūru',
+    lv: 'Veidot dejas kompozīcijas struktūru',
     et: 'Struktureeri tantsukompositsioon',
     be: 'Структуруйце танцавальную кампазіцыю',
     ka: 'ააგეთ საცეკვაო კომპოზიციის სტრუქტურა',

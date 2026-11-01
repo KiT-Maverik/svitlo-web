@@ -27,7 +27,7 @@ export const composeARhythmicGroove_Skill_Data = buildSkillConfig({
     pl: 'Stwórz rytmiczny groove',
     uk: 'Створіть ритмічний грув',
     lt: 'Sukurkite ritminį groovą',
-    lv: 'Veidojiet ritmisku grūvu',
+    lv: 'Veidot ritmisku grūvu',
     et: 'Loo rütmiline groove',
     be: 'Стварыце рытмічны груў',
     ka: 'შექმენით რიტმული გროუვი',

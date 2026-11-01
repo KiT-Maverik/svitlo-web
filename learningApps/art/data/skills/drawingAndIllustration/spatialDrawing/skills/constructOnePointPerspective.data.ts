@@ -27,7 +27,7 @@ export const constructOnePointPerspective_Skill_Data = buildSkillConfig({
     pl: 'Konstruowanie perspektywy jednozbiegowej',
     uk: 'Будувати одноточкову перспективу',
     lt: 'Kurti vieno taško perspektyvą',
-    lv: 'Veidot viena satekpunktā perspektīvu',
+    lv: 'Veidot viena satekpunkta perspektīvu',
     et: 'Ühe koondumispunktiga perspektiivi konstrueerimine',
     be: 'Будаваць аднакрапкавую пэрспэктыву',
     ka: 'ერთწერტილიანი პერსპექტივის აგება',
