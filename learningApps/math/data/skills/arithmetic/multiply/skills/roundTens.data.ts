@@ -19,7 +19,7 @@ export const roundTens_Skill_Data = buildSkillConfig({
     fr: 'Multiplication — Dizaines entières',
     bn: 'গুণ — পূর্ণ দশক',
     pt: 'Multiplicação — Dezenas exatas',
-    ur: 'ضرب — پورے دہائی',
+    ur: 'ضرب — مکمل دہائیاں',
     id: 'Perkalian — Puluhan penuh',
     de: 'Multiplikation — Ganze Zehner',
     ja: '乗法 — 10のまとまり',
