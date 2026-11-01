@@ -22,7 +22,7 @@ export const explainTheirRoleInDecomposition_Skill_Data = buildSkillConfig({
     ta: 'சிதைவில் நுண்ணுயிர்களின் பங்கை விளக்குதல்',
     te: 'విఘటనలో సూక్ష్మజీవుల పాత్రను వివరించడం',
     mr: 'विघटनातील सूक्ष्मजीवांची भूमिका स्पष्ट करणे',
-    ms: 'Menjelaskan peranannya dalam penguraian',
+    ms: 'Menjelaskan peranan mikroorganisma dalam penguraian',
     he: 'הסבר תפקידם בפירוק חומר אורגני',
     pl: 'Wyjaśnianie ich roli w rozkładzie',
     uk: 'Пояснювати роль мікроорганізмів у розкладанні',

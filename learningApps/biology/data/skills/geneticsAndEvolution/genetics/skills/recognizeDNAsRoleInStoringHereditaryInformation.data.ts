@@ -22,7 +22,7 @@ export const recognizeDNAsRoleInStoringHereditaryInformation_Skill_Data = buildS
     ta: 'மரபுத் தகவலைச் சேமிப்பதில் டிஎன்ஏவின் பங்கை அறிதல்',
     te: 'వారసత్వ సమాచార నిల్వలో డీఎన్‌ఏ పాత్రను గుర్తించడం',
     mr: 'आनुवंशिक माहिती साठवण्यात डीएनएची भूमिका ओळखणे',
-    ms: 'Maklum peranan DNA dalam menyimpan maklumat keturunan',
+    ms: 'Mengenal pasti peranan DNA dalam menyimpan maklumat keturunan',
     he: 'זיהוי תפקיד הדנ״א באחסון מידע תורשתי',
     pl: 'Rozpoznawanie roli DNA w przechowywaniu informacji dziedzicznej',
     uk: 'Розпізнавати роль ДНК у зберіганні спадкової інформації',
