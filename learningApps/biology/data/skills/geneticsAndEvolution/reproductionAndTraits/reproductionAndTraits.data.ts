@@ -65,7 +65,7 @@ export const reproductionAndTraits_SkillGroup_Data = buildSkillGroupConfig({
       te: 'సంతానం తమ బంధువులను పోలి ఉన్నా ఎప్పుడూ ఒకేలా ఎందుకు ఉండదో తెలుసుకోండి.',
       mr: 'संतती नातेवाईकांसारखी का दिसते, पण नेहमी तंतोतंत एकसारखी का नसते ते शोधा.',
       ms: 'Ketahui sebab anak menyerupai saudara-mara tetapi tidak semestinya sama sepenuhnya.',
-      he: 'גלה מדוע צאצאים דומים לקרוביהם אך אינם תמיד זהים.',
+      he: 'גלו מדוע צאצאים דומים לקרוביהם אך אינם תמיד זהים.',
       pl: 'Dowiedz się, dlaczego potomstwo przypomina krewnych, ale nie zawsze jest identyczne.',
       uk: 'Дізнайся, чому нащадки схожі на своїх родичів, але не завжди однакові.',
       lt: 'Sužinok, kodėl palikuonys panašūs į giminaičius, bet ne visada vienodi.',

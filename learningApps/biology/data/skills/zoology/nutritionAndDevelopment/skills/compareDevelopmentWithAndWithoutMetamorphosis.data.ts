@@ -55,7 +55,7 @@ export const compareDevelopmentWithAndWithoutMetamorphosis_Skill_Data = buildSki
       te: 'అభివృద్ధిలో ఆకారం మారే జంతువులను, మారని జంతువులతో పోల్చండి.',
       mr: 'वाढताना रूप बदलणारे प्राणी आणि रूप न बदलणारे प्राणी यांची तुलना करा.',
       ms: 'Bandingkan haiwan yang berubah bentuk semasa berkembang dengan haiwan yang tidak berubah bentuk.',
-      he: 'השוו בין בעלי חיים שצורתם משתנה במהלך ההתפתחות לבין אלה שצורתם אינה משתנה.',
+      he: 'השוו בין בעלי חיים שעוברים שינוי גדול במבנה גופם במהלך ההתפתחות לבין אלה שאינם עוברים שינוי קיצוני כזה.',
       pl: 'Porównaj zwierzęta, które zmieniają postać w czasie rozwoju, z tymi, które jej nie zmieniają.',
       uk: 'Порівнюй тварин, які змінюють форму тіла під час розвитку, із тими, які цього не роблять.',
       lt: 'Palygink gyvūnus, kurie vystydamiesi keičia kūno formą, su tais, kurie jos nekeičia.',
