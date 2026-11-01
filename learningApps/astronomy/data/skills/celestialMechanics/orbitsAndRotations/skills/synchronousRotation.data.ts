@@ -5,7 +5,7 @@ export const synchronousRotation_Skill_Data = buildSkillConfig({
   id: '6aa3dfe5-06cf-4812-bbec-c20c86f93600',
   name: {
     en: 'Synchronous Rotation',
-      zh: '同步自转',
+    zh: '同步自转',
     hi: 'समकालिक घूर्णन',
     es: 'Rotación síncrona',
     ar: 'الدوران المتزامن',
@@ -38,7 +38,7 @@ export const synchronousRotation_Skill_Data = buildSkillConfig({
     methodological: 'Explain how spin–orbit coupling can produce a repeating orientation toward an orbital partner.',
     frontend: {
       en: 'Explain why some worlds keep nearly the same face toward their orbital partners.',
-          zh: '解释为什么有些天体几乎总是用同一面朝向它们绕转的伙伴。',
+      zh: '解释为什么有些天体几乎总是用同一面朝向它们绕转的伙伴。',
       hi: 'समझाएँ कि कुछ खगोलीय पिंड अपनी परिक्रमा के साथी की ओर लगभग हमेशा एक ही भाग क्यों रखते हैं।',
       es: 'Explica por qué algunos cuerpos mantienen casi siempre la misma cara orientada hacia el cuerpo que orbitan.',
       ar: 'اشرح لماذا تُبقي بعض الأجرام الوجه نفسه تقريبًا متجهًا نحو الجسم الذي تدور حوله.',
