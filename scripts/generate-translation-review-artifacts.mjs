@@ -147,6 +147,12 @@ const manifest = {
   failures: [],
 };
 
+function saveManifest() {
+  fs.writeFileSync(path.join(outDir, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
+}
+// Preserve a usable inventory even if a large all-textbooks/all-locales run is interrupted.
+saveManifest();
+
 for (const textbook of packages) {
   for (const locale of selectedLocales) {
     const proc = spawnSync(process.execPath, [generator, '--package', textbook, '--locale', locale, '--stdout'], {
@@ -158,6 +164,7 @@ for (const textbook of packages) {
     if (proc.error || proc.status !== 0 || !proc.stdout?.startsWith('<!-- GENERATED FROM CODE; DO NOT EDIT. -->')) {
       const error = (proc.error?.message ?? proc.stderr ?? 'Missing/invalid Markdown output').trim();
       manifest.failures.push({ textbook, locale, error: error.slice(0, 2000) });
+      saveManifest();
       process.stderr.write('FAILED ' + textbook + ' / ' + locale + ': ' + error.slice(0, 500) + '\n');
       continue;
     }
@@ -176,10 +183,11 @@ for (const textbook of packages) {
         skills: Number(match('Skills')?.[1]),
       },
     });
+    saveManifest();
     process.stdout.write('Generated ' + file + '\n');
   }
 }
-fs.writeFileSync(path.join(outDir, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
+saveManifest();
 process.stdout.write(
   'Review bundle: ' + outDir + ' (' + manifest.generated.length + ' generated, ' +
   manifest.failures.length + ' failed, source ' + (manifest.sourceCommit ?? 'unknown') + ')\n',
