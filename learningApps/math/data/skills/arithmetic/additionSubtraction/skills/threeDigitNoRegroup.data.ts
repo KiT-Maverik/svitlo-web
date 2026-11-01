@@ -29,7 +29,7 @@ export const threeDigitNoRegroup_Skill_Data = buildSkillConfig({
     ta: 'கூட்டலும் கழித்தலும் — 3-இலக்க · மறுதொகுப்பு இல்லாமல்',
     te: 'కూడిక మరియు తీసివేత — 3-అంకెల · పునఃసమూహీకరణ లేకుండా',
     mr: 'बेरीज आणि वजाबाकी — 3-अंकी · पुनर्गटणाशिवाय',
-    ms: 'Penambahan dan penolakan — 3-digit · Tanpa pengumpulan semula',
+    ms: 'Penambahan dan penolakan — 3 digit · Tanpa pengumpulan semula',
     he: 'חיבור וחיסור — 3-ספרות · ללא המרה',
     pl: 'Dodawanie i odejmowanie — 3-cyfrowe · Bez zamiany jednostek',
     uk: 'Додавання та віднімання — 3-цифрові · Без розрядного обміну',
