@@ -6,7 +6,7 @@ export const relateContrastToAttention_Skill_Data = buildSkillConfig({
   name: {
     en: 'Relate Contrast to Attention',
     zh: '关联对比与注意力',
-    hi: 'विरोधाभास को ध्यान से जोड़ें',
+    hi: 'विपरीतता और ध्यान के संबंध को समझें',
     es: 'Relacionar el contraste con la atención',
     ar: 'ربط التباين بالانتباه',
     fr: 'Relier le contraste à l’attention',

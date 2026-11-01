@@ -39,7 +39,7 @@ export const singVocalHarmony_Skill_Data = buildSkillConfig({
     frontend: {
       en: 'Sing your own harmony part while other voices sound at the same time.',
       zh: '当其他人同时演唱时，唱出自己的和声声部。',
-      hi: 'जब अन्य आवाज़ें साथ गाएँ, तब अपना अलग सामंजस्य वाला स्वर गाएँ。',
+      hi: 'जब अन्य आवाज़ें साथ गाएँ, तब अपना अलग सामंजस्य वाला स्वर गाएँ।',
       es: 'Canta tu propia parte armónica mientras otras voces suenan al mismo tiempo.',
       ar: 'غنِّ الجزء التناغمي الخاص بك بينما تؤدي أصوات أخرى في الوقت نفسه.',
       fr: "Chantez votre propre partie harmonique pendant que d'autres voix chantent simultanément.",
