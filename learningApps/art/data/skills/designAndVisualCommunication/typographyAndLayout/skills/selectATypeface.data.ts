@@ -12,7 +12,7 @@ export const selectATypeface_Skill_Data = buildSkillConfig({
     ar: 'اختيار نوع الخط',
     fr: 'Choisir une police de caractères',
     bn: 'টাইপফেস নির্বাচন করুন',
-    pt: 'Selecionar um tipo de letra',
+    pt: 'Selecionar uma fonte tipográfica',
     ur: 'ٹائپ فیس منتخب کریں',
     id: 'Memilih jenis huruf',
     de: 'Eine Schriftart auswählen',

@@ -77,7 +77,7 @@ export const harmonyAndMusicalForm_SkillGroup_Data = buildSkillGroupConfig({
       uk: 'Дізнайтеся, як групи нот і повторювані частини формують музичний твір.',
       lt: 'Sužinokite, kaip natų grupės ir pasikartojančios dalys formuoja muzikos kūrinį.',
       lv: 'Atklājiet, kā nošu grupas un atkārtotas sadaļas veido skaņdarbu.',
-      et: 'Avastage, kuidas noodirühmad ja korduvad osad kujundavad muusikapala.',
+      et: 'Avasta, kuidas noodirühmad ja korduvad osad kujundavad muusikapala.',
       be: 'Даведайцеся, як групы нот і паўтаральныя часткі фарміруюць музычны твор.',
       ka: 'აღმოაჩინეთ, როგორ აყალიბებს ნოტების ჯგუფები და განმეორებადი მონაკვეთები მუსიკალურ ნაწარმოებს.',
       kk: 'Ноталар топтары мен қайталанатын бөлімдер музыкалық шығарманы қалай қалыптастыратынын біліңіз.',

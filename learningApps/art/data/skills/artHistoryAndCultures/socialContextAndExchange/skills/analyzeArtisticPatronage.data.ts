@@ -6,7 +6,7 @@ export const analyzeArtisticPatronage_Skill_Data = buildSkillConfig({
   name: {
     en: 'Analyze Artistic Patronage',
     zh: '分析艺术赞助',
-    hi: 'कलात्मक संरक्षण का विश्लेषण करें',
+    hi: 'कला में आश्रयदाताओं की भूमिका का विश्लेषण करें',
     es: 'Analizar el mecenazgo artístico',
     ar: 'تحليل رعاية الفنون',
     fr: 'Analyser le mécénat artistique',
@@ -39,7 +39,7 @@ export const analyzeArtisticPatronage_Skill_Data = buildSkillConfig({
     frontend: {
       en: 'Explore how patrons and commissions influence what artworks are made.',
       zh: '了解赞助人和委托创作如何影响艺术作品的创作。',
-      hi: 'जानें कि संरक्षक और कलाकृति के आदेश कलाकारों की रचनाओं को कैसे प्रभावित करते हैं।',
+      hi: 'जानें कि आश्रयदाता और उनके दिए गए कलात्मक कार्य कलाकारों की रचनाओं को कैसे प्रभावित करते हैं।',
       es: 'Explora cómo los mecenas y los encargos influyen en las obras que se crean.',
       ar: 'اكتشف كيف يؤثر الرعاة والتكليفات في الأعمال الفنية التي تُنجز.',
       fr: 'Découvrez comment les mécènes et les commandes influencent les œuvres réalisées.',

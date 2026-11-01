@@ -27,7 +27,7 @@ export const balanceAMusicMix_Skill_Data = buildSkillConfig({
     pl: 'Zrównoważ miks muzyczny',
     uk: 'Збалансовуйте музичний мікс',
     lt: 'Subalansuokite muzikos miksą',
-    lv: 'Līdzsvarojiet mūzikas miksu',
+    lv: 'Līdzsvarot mūzikas miksu',
     et: 'Tasakaalusta muusikamiksi',
     be: 'Збалансуйце музычны мікс',
     ka: 'დააბალანსეთ მუსიკალური მიქსი',

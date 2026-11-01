@@ -19,7 +19,7 @@ export const analyzeCuscoSchoolPainting_Skill_Data = buildSkillConfig({
     ko: '쿠스코 회화 학파 작품 분석하기',
     tr: 'Cusco Okulu resmini incelemek',
     vi: 'Phân tích hội họa Trường phái Cusco',
-    ta: 'குஸ்கோ பள்ளி ஓவியத்தைப் பகுப்பாய்வு செய்',
+    ta: 'குஸ்கோ பள்ளி ஓவியத்தைப் பகுப்பாய்வு செய்யுங்கள்',
     te: 'కుస్కో పాఠశాల చిత్రకళను విశ్లేషించండి',
     mr: 'कुस्को स्कूल चित्रकलेचे विश्लेषण करा',
     ms: 'Menganalisis Lukisan Sekolah Cusco',
@@ -32,7 +32,7 @@ export const analyzeCuscoSchoolPainting_Skill_Data = buildSkillConfig({
     be: 'Аналізаваць жывапіс Кускаўскай школы',
     ka: 'კუსკოს სკოლის მხატვრობის გაანალიზება',
     kk: 'Куско мектебінің кескіндемесін талдау',
-    qm: 'Cusco Okulu resmini incelemek',
+    qm: 'Cusco mektebiniñ resimlerini tahlil etüv',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const analyzeCuscoSchoolPainting_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як жывапіс Кускаўскай школы спалучае мастацкія ўплывы Анд і Еўропы.',
       ka: 'გაიგეთ, როგორ აერთიანებს კუსკოს სკოლის მხატვრობა ანდებისა და ევროპის ხელოვნების გავლენებს.',
       kk: 'Біліңіз: Куско мектебінің кескіндемесі Анд және Еуропа өнерінің ықпалдарын қалай біріктіреді.',
-      qm: 'Cusco Okulu resimlerinin And ve Avrupa sanat etkilerini nasıl birleştirdiğini keşfedin.',
+      qm: 'Cusco mektebiniñ resimlerinde And ve Avropa sanatınıñ tesirleri nasıl birleştirilgenini tahlil etiñiz.',
     },
   },
 });

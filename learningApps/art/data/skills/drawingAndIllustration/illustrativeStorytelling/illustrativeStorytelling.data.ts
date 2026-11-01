@@ -81,7 +81,7 @@ export const illustrativeStorytelling_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Выкарыстоўвайце выявы, каб перадаваць персанажаў, дзеянні і гісторыі.',
       ka: 'გამოიყენეთ სურათები პერსონაჟების, მოქმედებებისა და ამბების გადმოსაცემად.',
       kk: 'Кейіпкерлерді, әрекеттерді және оқиғаларды жеткізу үшін суреттерді пайдаланыңыз.',
-      qm: 'Şahısları, hareketleri ve hikâyeleri anlatmak için resimler kullanıñız.',
+      qm: 'Şahısları, hareketleri ve hikâyeleri anlatmak içün resimler kullanıñız.',
     },
   },
 });

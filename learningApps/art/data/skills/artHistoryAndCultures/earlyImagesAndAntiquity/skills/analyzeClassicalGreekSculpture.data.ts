@@ -66,7 +66,7 @@ export const analyzeClassicalGreekSculpture_Skill_Data = buildSkillConfig({
       be: 'Даследуйце, як грэчаскія скульптары ў розныя эпохі адлюстроўвалі цела, раўнавагу і рух.',
       ka: 'შეისწავლეთ, როგორ გამოსახავდნენ ბერძენი მოქანდაკეები სხეულს, წონასწორობასა და მოძრაობას სხვადასხვა ეპოქაში.',
       kk: 'Зерттеңіз: грек мүсіншілері әр дәуірде денені, тепе-теңдікті және қозғалысты қалай бейнелеген.',
-      qm: 'Yunan heykeltıraşları beden, denge ve areketni devirler boyunca nasıl tasvir etkenini inceleyin.',
+      qm: 'Yunan heykeltıraşları beden, denge ve areketni devirler boyunca nasıl tasvir etkenini inceleñiz.',
     },
   },
 });

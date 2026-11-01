@@ -27,12 +27,12 @@ export const performADancePhrase_Skill_Data = buildSkillConfig({
     pl: 'Wykonaj frazę taneczną',
     uk: 'Виконуйте танцювальну фразу',
     lt: 'Atlikite šokio frazę',
-    lv: 'Izpildiet dejas frāzi',
+    lv: 'Izpildīt dejas frāzi',
     et: 'Esita tantsufraas',
     be: 'Выканайце танцавальную фразу',
     ka: 'შეასრულეთ საცეკვაო ფრაზა',
     kk: 'Би тіркесін орындаңыз',
-    qm: 'Aqay ibaresini icra etiñiz',
+    qm: 'Oyun ibaresini icra etiñiz',
   },
   description: {
     methodological: 'Connect movements into a coherent phrase with expressive continuity.',
@@ -65,7 +65,7 @@ export const performADancePhrase_Skill_Data = buildSkillConfig({
       be: 'Злучайце рухі ў цэласную і мэтанакіраваную танцавальную фразу.',
       ka: 'შეაერთეთ მოძრაობები თანმიმდევრულ და მიზანმიმართულ საცეკვაო ფრაზად.',
       kk: 'Қимылдарды өзара байланысты әрі мақсатты би тіркесіне біріктіріңіз.',
-      qm: 'Areketlerni bağlı ve maqsatlı bir aqay ibaresine birleştiriñiz',
+      qm: 'Areketlerni bağlı ve maqsatlı bir oyun ibaresine birleştiriñiz',
     },
   },
 });

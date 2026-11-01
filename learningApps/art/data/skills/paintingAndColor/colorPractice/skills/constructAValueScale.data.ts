@@ -6,7 +6,7 @@ export const constructAValueScale_Skill_Data = buildSkillConfig({
   name: {
     en: 'Construct a Value Scale',
     zh: '构建明度阶梯',
-    hi: 'मान-मापनी तैयार करें',
+    hi: 'टोनल मानों का क्रम तैयार करें',
     es: 'Crear una escala de valores tonales',
     ar: 'إنشاء مقياس للقيم اللونية',
     fr: 'Créer une échelle de valeurs',
@@ -25,7 +25,7 @@ export const constructAValueScale_Skill_Data = buildSkillConfig({
     ms: 'Membina Skala Ton',
     he: 'יצירת סולם ערכי בהירות',
     pl: 'Tworzenie skali walorowej',
-    uk: 'Побудувати шкалу світлот',
+    uk: 'Побудувати шкалу світлоти',
     lt: 'Sukurti tonų skalę',
     lv: 'Izveidot toņu skalu',
     et: 'Heletumeduse astmiku loomine',
@@ -39,7 +39,7 @@ export const constructAValueScale_Skill_Data = buildSkillConfig({
     frontend: {
       en: 'Make an even progression of tones from light to dark.',
       zh: '制作从浅到深、过渡均匀的色调阶梯。',
-      hi: 'हल्के से गहरे रंगों तक स्वरों का एक समान क्रम बनाएँ।',
+      hi: 'हल्के से गहरे टोन तक एक समान क्रम बनाएँ।',
       es: 'Crea una progresión uniforme de tonos, de claro a oscuro.',
       ar: 'أنشئ تدرجًا منتظمًا من الدرجات الفاتحة إلى الداكنة.',
       fr: 'Réalisez une progression régulière de tons, du clair au foncé.',
@@ -65,7 +65,7 @@ export const constructAValueScale_Skill_Data = buildSkillConfig({
       be: 'Стварыце раўнамерны пераход тонаў ад светлага да цёмнага.',
       ka: 'შექმენით ტონების თანაბარი გადასვლა ღიადან მუქისკენ.',
       kk: 'Ашық түстен қою түске дейін біркелкі реңк ауысуын жасаңыз.',
-      qm: 'Açıqtan qaranlıqqa doğru tonlarnıñ bir-birine teñ keçişini yapın.',
+      qm: 'Açıqtan qaranlıqqa doğru tonlarnıñ bir-birine teñ keçişini yapıñız.',
     },
   },
 });

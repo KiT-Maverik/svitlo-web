@@ -81,7 +81,7 @@ export const spatialDrawing_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Стварайце пераканаўчую прастору і форму на плоскай старонцы або свядома змяняйце перспектыву.',
       ka: 'შექმენით დამაჯერებელი სივრცე და ფორმა ბრტყელ გვერდზე ან განზრახ შეცვალეთ პერსპექტივა.',
       kk: 'Жазық бетте нанымды кеңістік пен пішін жасаңыз немесе перспективаны әдейі өзгертіңіз.',
-      qm: 'Düz sayfada inandırıcı mekân ve biçim oluşturun ya da perspektifi bilerek değiştirin.',
+      qm: 'Düz sayfada inandırıcı mekân ve biçim yaratıñız ya da perspektifi bilerek değiştirin.',
     },
   },
 });

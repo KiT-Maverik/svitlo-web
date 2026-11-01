@@ -77,7 +77,7 @@ export const voiceAndBodyPercussion_SkillGroup_Data = buildSkillGroupConfig({
       uk: 'Створюйте мелодії та ритми за допомогою співу й звуків, які видає тіло.',
       lt: 'Kurkite melodijas ir ritmus dainuodami ir skleisdami kūno garsus.',
       lv: 'Veidojiet melodijas un ritmus, dziedot un izmantojot ķermeņa radītās skaņas.',
-      et: 'Looge meloodiaid ja rütme laulmise ning kehaga tekitatud helide abil.',
+      et: 'Loo meloodiaid ja rütme laulmise ning kehaga tekitatud helide abil.',
       be: 'Стварайце мелодыі і рытмы з дапамогай спеваў і гукаў, якія стварае цела.',
       ka: 'შექმენით მელოდიები და რიტმები სიმღერითა და სხეულით წარმოქმნილი ხმებით.',
       kk: 'Ән айту және денеден шығатын дыбыстар арқылы әуен мен ырғақ жасаңыз.',

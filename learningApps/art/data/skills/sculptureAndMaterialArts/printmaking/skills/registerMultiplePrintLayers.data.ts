@@ -11,7 +11,7 @@ export const registerMultiplePrintLayers_Skill_Data = buildSkillConfig({
     ar: 'محاذاة طبقات الطباعة المتعددة',
     fr: 'Repérer plusieurs couches d’impression',
     bn: 'একাধিক মুদ্রণ স্তর সঠিকভাবে মেলান',
-    pt: 'Registar várias camadas de impressão',
+    pt: 'Alinhar várias camadas de impressão',
     ur: 'پرنٹنگ کی متعدد تہوں کو درست جگہ پر ملائیں',
     id: 'Menyelaraskan beberapa lapisan cetak',
     de: 'Mehrere Druckschichten passgenau ausrichten',

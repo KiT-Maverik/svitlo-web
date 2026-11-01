@@ -58,7 +58,7 @@ export const ceramicsAndAssemblage_SkillGroup_Data = buildSkillGroupConfig({
       ar: 'استكشف كيف يمكن للطين والأشياء اليومية أن تتحول إلى أعمال فنية معبّرة.',
       fr: 'Découvrez comment l’argile et les objets du quotidien peuvent devenir des œuvres d’art expressives.',
       bn: 'মাটি ও দৈনন্দিন বস্তু কীভাবে অভিব্যক্তিপূর্ণ শিল্পকর্মে পরিণত হতে পারে, তা অন্বেষণ করুন।',
-      pt: 'Explore como a argila e os objetos do quotidiano podem tornar-se obras de arte expressivas.',
+      pt: 'Explore como a argila e os objetos do cotidiano podem se transformar em obras de arte expressivas.',
       ur: 'جانیں کہ مٹی اور روزمرہ کی اشیا اظہار سے بھرپور فن پارے کیسے بن سکتی ہیں۔',
       id: 'Jelajahi bagaimana tanah liat dan benda sehari-hari dapat menjadi karya seni yang ekspresif.',
       de: 'Entdecke, wie Ton und Alltagsgegenstände zu ausdrucksstarken Kunstwerken werden können.',

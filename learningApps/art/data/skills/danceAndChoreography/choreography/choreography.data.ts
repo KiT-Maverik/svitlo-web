@@ -81,7 +81,7 @@ export const choreography_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Стварайце і змяняйце рухавыя фразы, каб скласці цэласны танец.',
       ka: 'შექმენით და გარდაქმენით მოძრაობის ფრაზები სრული ცეკვის შესაქმნელად.',
       kk: 'Толық би құрастыру үшін қозғалыс фразаларын жасап, түрлендіріңіз.',
-      qm: 'Aqaynıñ tam bir eserini yaratmaq içün areket ibarelerini yaratıp deñiştiriñiz.',
+      qm: 'Oyunnıñ tam bir eserini yaratmaq içün areket ibarelerini yaratıp deñiştiriñiz.',
     },
   },
 });

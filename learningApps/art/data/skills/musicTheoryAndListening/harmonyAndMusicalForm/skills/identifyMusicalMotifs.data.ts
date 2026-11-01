@@ -61,7 +61,7 @@ export const identifyMusicalMotifs_Skill_Data = buildSkillConfig({
       uk: 'Розпізнайте коротку музичну ідею, коли вона повертається в різних формах.',
       lt: 'Atpažinkite trumpą muzikinę idėją, kai ji sugrįžta įvairiomis formomis.',
       lv: 'Atpazīstiet īsu muzikālu ideju, kad tā atgriežas dažādās formās.',
-      et: 'Tundke lühike muusikaline idee ära, kui see kordub eri kujul.',
+      et: 'Tunne lühike muusikaline idee ära, kui see kordub eri kujul.',
       be: 'Распазнайце кароткую музычную ідэю, калі яна вяртаецца ў розных формах.',
       ka: 'ამოიცანით მოკლე მუსიკალური იდეა, როდესაც ის სხვადასხვა ფორმით ბრუნდება.',
       kk: 'Қысқа музыкалық идея әртүрлі түрде қайталанғанда, оны таныңыз.',

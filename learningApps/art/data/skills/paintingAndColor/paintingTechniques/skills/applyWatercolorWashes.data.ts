@@ -65,7 +65,7 @@ export const applyWatercolorWashes_Skill_Data = buildSkillConfig({
       be: 'Стварайце лёгкія празрыстыя ўчасткі, кантралюючы колькасць вады і фарбы.',
       ka: 'წყლისა და საღებავის რაოდენობის კონტროლით შექმენით მსუბუქი, გამჭვირვალე ფერადი არეები.',
       kk: 'Су мен бояу мөлшерін реттеп, ашық әрі мөлдір түсті аймақтар жасаңыз.',
-      qm: 'Su ve boya miqdarını idare etip, yengil ve şeffaf boya alanlarını yaratın.',
+      qm: 'Su ve boya miqdarını idare etip, yengil ve şeffaf boya alanlarını yaratıñız.',
     },
   },
 });

@@ -12,7 +12,7 @@ export const designADataGraphic_Skill_Data = buildSkillConfig({
     ar: 'تصميم رسم بياني للبيانات',
     fr: 'Concevoir un graphique de données',
     bn: 'ডেটা গ্রাফিক নকশা করুন',
-    pt: 'Conceber um gráfico de dados',
+    pt: 'Criar um gráfico de dados',
     ur: 'ڈیٹا گرافک ڈیزائن کریں',
     id: 'Merancang grafik data',
     de: 'Eine Datengrafik gestalten',

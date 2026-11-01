@@ -66,7 +66,7 @@ export const interpretUpperPaleolithicCavePainting_Skill_Data = buildSkillConfig
       be: 'Даследуйце, што расказваюць пячорныя выявы і месцы іх размяшчэння, а што застаецца невядомым.',
       ka: 'შეისწავლეთ, რას გვიჩვენებს მღვიმის გამოსახულებები და მათი მდებარეობა და რა რჩება უცნობი.',
       kk: 'Зерттеңіз: үңгір суреттері мен олардың орналасуы нені аңғартады және не әлі белгісіз.',
-      qm: 'Mağara resimleri ve yerleşimleri neler bildire, neler hâlâ meçhul qalğanını keşfedin.',
+      qm: 'Mağara resimleri ve yerleşimleri neler bildire, neler hâlâ meçhul qalğanını keşf etiñiz.',
     },
   },
 });

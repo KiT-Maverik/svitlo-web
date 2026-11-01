@@ -19,7 +19,7 @@ export const createStopMotionAnimation_Skill_Data = buildSkillConfig({
     ja: 'ストップモーションアニメーションを作る',
     ko: '스톱 모션 애니메이션 만들기',
     tr: 'Stop-motion animasyonu oluşturmak',
-    vi: 'Tạo hoạt hình tĩnh vật',
+    vi: 'Tạo hoạt hình stop-motion',
     ta: 'நிறுத்த இயக்க அசைவூட்டம் உருவாக்கவும்',
     te: 'స్టాప్‌ మోషన్ యానిమేషన్ సృష్టించండి',
     mr: 'स्टॉप-मोशन अॅनिमेशन तयार करा',

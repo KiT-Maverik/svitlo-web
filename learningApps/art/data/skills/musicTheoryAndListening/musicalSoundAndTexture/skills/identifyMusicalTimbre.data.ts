@@ -61,7 +61,7 @@ export const identifyMusicalTimbre_Skill_Data = buildSkillConfig({
       uk: 'Розпізнавай унікальні звукові властивості різних голосів та інструментів.',
       lt: 'Atpažinkite išskirtines skirtingų balsų ir instrumentų skambesio savybes.',
       lv: 'Atpazīstiet dažādu balsu un instrumentu unikālās skanējuma īpašības.',
-      et: 'Tundke ära eri häälte ja pillide ainulaadsed kõlaomadused.',
+      et: 'Tunne ära eri häälte ja pillide ainulaadsed kõlaomadused.',
       be: 'Распазнавайце ўнікальныя гукавыя ўласцівасці розных галасоў і інструментаў.',
       ka: 'ამოიცანით სხვადასხვა ხმისა და ინსტრუმენტის უნიკალური ჟღერადობის თვისებები.',
       kk: 'Әртүрлі дауыстар мен аспаптардың өзіндік дыбыстық ерекшеліктерін таныңыз.',

@@ -61,7 +61,7 @@ export const interpretConsonanceAndDissonance_Skill_Data = buildSkillConfig({
       uk: 'Почуйте, як музична напруга й спокій залежать від стилю та контексту.',
       lt: 'Išgirskite, kaip muzikinė įtampa ir ramybė priklauso nuo stiliaus ir konteksto.',
       lv: 'Ieklausieties, kā muzikālā spriedze un miers ir atkarīgi no stila un konteksta.',
-      et: 'Kuulake, kuidas muusikaline pinge ja rahu sõltuvad stiilist ja kontekstist.',
+      et: 'Kuula, kuidas muusikaline pinge ja rahu sõltuvad stiilist ja kontekstist.',
       be: 'Паслухайце, як музычная напружанасць і спакой залежаць ад стылю і кантэксту.',
       ka: 'მოუსმინეთ, როგორ არის მუსიკალური დაძაბულობა და სიმშვიდე დამოკიდებული სტილსა და კონტექსტზე.',
       kk: 'Тыңдаңыз: музыкалық ширығу мен тыныштық стиль мен мәнмәтінге қалай тәуелді.',
