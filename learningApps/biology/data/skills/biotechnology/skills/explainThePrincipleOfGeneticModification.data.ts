@@ -38,7 +38,7 @@ export const explainThePrincipleOfGeneticModification_Skill_Data = buildSkillCon
     frontend: {
       en: "Explain how genetic modification changes DNA, unlike choosing parents for breeding.",
       zh: '解释基因改造如何改变 DNA，以及它与为育种选择亲本有何不同。',
-      hi: 'समझाएँ कि आनुवंशिक संशोधन डीएनए को कैसे बदलता है और यह प्रजनन के लिए माता-पिता चुनने से कैसे अलग है।',
+      hi: 'समझाएँ कि आनुवंशिक संशोधन डीएनए में कैसे बदलाव करता है, जबकि चयनात्मक प्रजनन में वांछित गुणों वाले जनक जीव चुने जाते हैं।',
       es: 'Explica cómo la modificación genética cambia el ADN, a diferencia de elegir progenitores para la cría.',
       ar: 'اشرح كيف يغيّر التعديل الوراثي الحمض النووي، بخلاف اختيار الآباء للتكاثر الانتقائي.',
       fr: 'Explique comment la modification génétique change l\'ADN, contrairement au choix de parents pour la reproduction sélective.',
