@@ -17,7 +17,7 @@ export const formalLanguage_SkillGroup_Data = buildSkillGroupConfig({
     hi: 'औपचारिक भाषा',
     es: 'Lenguaje formal',
     ar: 'اللغة التشكيلية',
-    fr: 'Langage formel',
+    fr: 'Langage plastique',
     bn: 'আঙ্গিক ভাষা',
     pt: 'Linguagem formal',
     ur: 'فن کی بصری زبان',

@@ -9,7 +9,7 @@ export const sequenceMotionGraphics_Skill_Data = buildSkillConfig({
     hi: 'मोशन ग्राफ़िक्स का क्रम बनाएँ',
     es: 'Secuenciar gráficos en movimiento',
     ar: 'ترتيب الرسوم المتحركة',
-    fr: 'Séquençer des graphismes animés',
+    fr: 'Séquencer des graphismes animés',
     bn: 'মোশন গ্রাফিক্সের ক্রম সাজান',
     pt: 'Sequenciar motion graphics',
     ur: 'موشن گرافکس کی ترتیب بنائیں',
