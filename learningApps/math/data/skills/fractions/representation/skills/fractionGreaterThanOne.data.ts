@@ -7,7 +7,7 @@ export const fractionGreaterThanOne_Skill_Data = buildSkillConfig({
     en: 'Representing fractions greater than one',
     qm: 'Bir bütünden büyük kesirlerni tasvir etüv',
     lt: 'Trupmenų, didesnių už vienetą, vaizdavimas',
-    lv: 'Par vienu lielāku daļu attēlošana',
+    lv: 'Daļskaitļu, kas lielāki par vienu, attēlošana',
     et: 'Ühest suuremate murdude kujutamine',
     be: 'Прадстаўленьне дробаў, большых за адзінку',
     ka: 'ერთზე მეტი წილადების წარმოდგენა',
