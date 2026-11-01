@@ -5,7 +5,7 @@ export const waterAndIceBeyondEarth_Skill_Data = buildSkillConfig({
   id: '70d5af79-79ad-4b4f-90e0-64878e738199',
   name: {
     en: 'Water and Ice Beyond Earth',
-      zh: '地球以外的水和冰',
+    zh: '地球以外的水和冰',
     hi: 'पृथ्वी के बाहर पानी और बर्फ',
     es: 'Agua y hielo fuera de la Tierra',
     ar: 'الماء والجليد خارج الأرض',
@@ -38,7 +38,7 @@ export const waterAndIceBeyondEarth_Skill_Data = buildSkillConfig({
     methodological: 'Evaluate the physical states and likely reservoirs of water on different Solar System bodies.',
     frontend: {
       en: 'Explore where water and ice may exist on other worlds.',
-          zh: '探索其他天体上可能存在水和冰的地方。',
+      zh: '探索其他天体上可能存在水和冰的地方。',
       hi: 'जानें कि अन्य खगोलीय पिंडों पर पानी और बर्फ कहाँ मौजूद हो सकते हैं।',
       es: 'Explora dónde pueden existir agua y hielo en otros mundos.',
       ar: 'استكشف الأماكن التي قد يوجد فيها الماء والجليد على عوالم أخرى.',
