@@ -11,7 +11,7 @@ import process from 'node:process';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import ts from 'typescript';
-import { generateLessonReviewArtifacts } from './generate-lesson-review-artifacts.mjs';
+import { discoverLessons, generateLessonReviewArtifacts } from './generate-lesson-review-artifacts.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const output = path.join(root, '.agent-ci-artifacts');
@@ -76,12 +76,13 @@ function canonicalLinks(markdown, appName, destination) {
 
 const languages = localesFromCode();
 const textbooks = packagesFromCode();
+const lessonPackages = [...new Set(discoverLessons(root).map(lesson => lesson.package))];
 if (!textbooks.length) throw new Error('No canonical Code Skills taxonomies available');
 const manifest = {
   schemaVersion: 2,
   kind: 'pr-scoped-agent-ci-artifacts',
   sourceCommit: commitSha(),
-  packages: textbooks.map(t => t.package),
+  packages: [...new Set([...textbooks.map(t => t.package), ...lessonPackages])].sort(),
   locales: languages,
   generated: [],
   failures: [],
@@ -102,7 +103,7 @@ for (const textbook of textbooks) {
     const raw = result.stdout || '';
     if (result.error || result.status !== 0 || !raw.startsWith('<!-- GENERATED FROM CODE; DO NOT EDIT. -->')) {
       const error = String(result.error?.message || result.stderr || 'No valid Markdown generated').trim().slice(0, 1500);
-      manifest.failures.push({ textbook: textbook.package, locale, error });
+      manifest.failures.push({ kind: 'taxonomy', textbook: textbook.package, locale, error });
       process.stderr.write('::warning::Could not generate ' + textbook.name + '/' + locale + ': ' + error.replace(/\n/g, ' ') + '\n');
       saveManifest();
       continue;
