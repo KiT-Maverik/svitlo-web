@@ -18,7 +18,7 @@ export const subtractLikeDenominators_Skill_Data = buildSkillConfig({
     ar: 'طرح الكسور ذات المقام نفسه ضمن الواحد الصحيح',
     fr: 'Soustraire des fractions de même dénominateur dans un tout',
     bn: 'এক পূর্ণের মধ্যে সমান হরের ভগ্নাংশ বিয়োগ',
-    pt: 'Subtrair frações de mesmo denominador dentro de um inteiro',
+    pt: 'Subtrair frações de mesmo denominador referentes ao mesmo todo',
     ur: 'ایک مکمل کے اندر یکساں مخرج والے کسر منفی کرنا',
     id: 'Mengurangkan pecahan berpenyebut sama dalam satu keseluruhan',
     de: 'Brüche mit gleichem Nenner innerhalb eines Ganzen subtrahieren',
