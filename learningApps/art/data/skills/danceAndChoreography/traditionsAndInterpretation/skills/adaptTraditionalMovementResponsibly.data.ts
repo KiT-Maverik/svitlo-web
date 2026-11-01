@@ -9,7 +9,7 @@ export const adaptTraditionalMovementResponsibly_Skill_Data = buildSkillConfig({
     hi: 'पारंपरिक गतियों को जिम्मेदारी से अनुकूलित करें',
     es: 'Adaptar movimientos tradicionales con responsabilidad',
     ar: 'كيّف الحركات التقليدية بمسؤولية',
-    fr: 'Adaptez les mouvements traditionnels de manière responsable',
+    fr: 'Adapter les mouvements traditionnels de manière responsable',
     bn: 'দায়িত্বশীলভাবে ঐতিহ্যবাহী চলন রূপান্তর করুন',
     pt: 'Adapte movimentos tradicionais com responsabilidade',
     ur: 'روایتی حرکات کو ذمہ داری سے ڈھالیں',

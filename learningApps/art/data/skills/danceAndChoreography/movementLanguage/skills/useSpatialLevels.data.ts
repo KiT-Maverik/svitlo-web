@@ -9,7 +9,7 @@ export const useSpatialLevels_Skill_Data = buildSkillConfig({
     hi: 'स्थानिक स्तरों का उपयोग करें',
     es: 'Usar niveles espaciales',
     ar: 'استخدم المستويات المكانية',
-    fr: 'Utilisez les niveaux spatiaux',
+    fr: 'Utiliser les niveaux spatiaux',
     bn: 'স্থানিক স্তর ব্যবহার করুন',
     pt: 'Use níveis espaciais',
     ur: 'مقامی سطحوں کا استعمال کریں',
