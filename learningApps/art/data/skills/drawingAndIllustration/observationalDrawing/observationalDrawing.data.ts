@@ -81,7 +81,7 @@ export const observationalDrawing_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Стварайце малюнкі, уважна назіраючы за формамі, краямі, святлом і паверхнямі.',
       ka: 'შექმენით ნახატები ფორმების, კიდეების, სინათლისა და ზედაპირების დაკვირვებით.',
       kk: 'Пішіндерді, жиектерді, жарық пен беттерді мұқият бақылап сурет салыңыз.',
-      qm: 'Şekilleri, kenarları, ışığı ve yüzeyleri dikkatle gözleyerek çizimler yapın.',
+      qm: 'Şekilleri, kenarları, ışığı ve yüzeyleri dikkatle gözleyerek çizimler yapıñız.',
     },
   },
 });

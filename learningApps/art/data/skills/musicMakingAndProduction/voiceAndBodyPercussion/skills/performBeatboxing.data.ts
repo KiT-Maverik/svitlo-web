@@ -65,7 +65,7 @@ export const performBeatboxing_Skill_Data = buildSkillConfig({
       be: 'Стварайце рытмічны груў з дапамогай кантраляваных вакальных ударных гукаў.',
       ka: 'შექმენით რიტმული გროუვი კონტროლირებული ვოკალური პერკუსიის ხმებით.',
       kk: 'Бақылдаған дыбыстарды бақылап, ырғақты грув жасаңыз.',
-      qm: 'Kontrollu vokal perküsyon seslerinen ritmli groove yaratın',
+      qm: 'Kontrollu vokal perküsyon seslerinen ritmli groove yaratıñız',
     },
   },
 });
