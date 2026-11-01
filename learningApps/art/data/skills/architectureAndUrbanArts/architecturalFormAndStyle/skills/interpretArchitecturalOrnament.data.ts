@@ -53,7 +53,7 @@ export const interpretArchitecturalOrnament_Skill_Data = buildSkillConfig({
       tr: 'Yapı kütlelerini ve açık alanları dengeli bir görsel biçimde birleştirin.',
       vi: 'Kết hợp khối tích công trình và không gian mở thành hình thức thị giác cân bằng.',
       ta: 'கட்டிடத் தொகுதிகளையும் திறந்த இடங்களையும் இணைத்து சமநிலையான காட்சிவடிவத்தை உருவாக்குங்கள்.',
-      te: 'భవన ఘన పరిమాణాలు, ఖాళీ ప్రదేశాలను సమతుల్య దృశ్య రూపంగా కలపండి.',
+      te: 'చారిత్రక సందర్భంలో నిర్మాణ అలంకరణ ఏమి తెలియజేస్తుందో తెలుసుకోండి.',
       mr: 'इमारतीचे घनाकार भाग आणि मोकळ्या जागा एकत्र करून संतुलित दृश्यरूप तयार करा.',
       ms: 'Gabungkan jisim bangunan dan ruang terbuka menjadi bentuk visual yang seimbang.',
       he: 'גלו מה העיטור האדריכלי מבטא בהקשרו ההיסטורי.',

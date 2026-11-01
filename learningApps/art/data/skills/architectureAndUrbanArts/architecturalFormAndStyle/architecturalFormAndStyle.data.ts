@@ -67,7 +67,7 @@ export const architecturalFormAndStyle_SkillGroup_Data = buildSkillGroupConfig({
       tr: 'Mimari süslemenin tarihsel bağlamında ne anlattığını keşfedin.',
       vi: 'Khám phá ý nghĩa mà trang trí kiến trúc truyền tải trong bối cảnh lịch sử.',
       ta: 'வரலாற்றுச் சூழலில் கட்டிடக்கலை அலங்காரம் எதைத் தெரிவிக்கிறது என்பதை ஆராயுங்கள்.',
-      te: 'చారిత్రక సందర్భంలో నిర్మాణ అలంకరణ ఏమి తెలియజేస్తుందో తెలుసుకోండి.',
+      te: 'భవన ఆకారాలు, అలంకరణ వివరాలు వాస్తుశిల్ప ఆలోచనలను ఎలా వ్యక్తపరుస్తాయో తెలుసుకోండి.',
       mr: 'ऐतिहासिक संदर्भात वास्तुशिल्पीय सजावट काय व्यक्त करते ते जाणून घ्या.',
       ms: 'Terokai makna yang disampaikan oleh hiasan seni bina dalam latar sejarahnya.',
       he: 'גלו כיצד צורות המבנים ופרטי העיטור מבטאים רעיונות אדריכליים.',
