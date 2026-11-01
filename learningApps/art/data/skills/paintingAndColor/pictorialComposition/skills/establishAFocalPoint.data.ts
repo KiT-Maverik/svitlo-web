@@ -14,7 +14,7 @@ export const establishAFocalPoint_Skill_Data = buildSkillConfig({
     pt: 'Estabelecer um ponto focal',
     ur: 'مرکزی نقطہ قائم کریں',
     id: 'Menentukan titik fokus',
-    de: 'Einen Blickpunkt festlegen',
+    de: 'Einen visuellen Schwerpunkt setzen',
     ja: '焦点を定める',
     ko: '시각적 초점 설정하기',
     tr: 'Odak noktası oluşturmak',

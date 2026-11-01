@@ -14,7 +14,7 @@ export const blockAStageScene_Skill_Data = buildSkillConfig({
     pt: 'Marcar a movimentação de uma cena',
     ur: 'اسٹیج منظر کی نقل و حرکت طے کریں',
     id: 'Mengatur pergerakan adegan panggung',
-    de: 'Eine Szene blocken',
+    de: 'Positionen und Bewegungen auf der Bühne planen',
     ja: '舞台シーンのブロッキングを決める',
     ko: '무대 장면 동선 구성하기',
     tr: 'Sahne bloklaması yapmak',
