@@ -55,7 +55,7 @@ export const explainMechanismsOfTraitInheritance_Skill_Data = buildSkillConfig({
       te: 'జన్యువులు, వాటి వివిధ రూపాలు తరతరాలకు ఎలా సంక్రమిస్తాయో తెలుసుకోండి.',
       mr: 'जनुके आणि त्यांचे वेगवेगळे प्रकार पिढ्यान्‌पिढ्या कसे वारशाने मिळतात ते शोधा.',
       ms: 'Terokai bagaimana gen dan variasinya diwarisi merentas generasi.',
-      he: 'חקור כיצד גנים והגרסאות השונות שלהם עוברים בתורשה בין דורות.',
+      he: 'חקרו כיצד גנים והגרסאות השונות שלהם עוברים בתורשה בין דורות.',
       pl: 'Poznaj, jak geny i ich warianty są dziedziczone z pokolenia na pokolenie.',
       uk: 'Досліджуй, як гени та їхні варіанти успадковуються між поколіннями.',
       lt: 'Sužinok, kaip genai ir jų variantai paveldimi iš kartos į kartą.',

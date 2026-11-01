@@ -55,7 +55,7 @@ export const distinguishHereditaryAndAcquiredTraits_Skill_Data = buildSkillConfi
       te: 'జన్యువులు, పర్యావరణం కలిసి లక్షణాలను ఎలా ప్రభావితం చేస్తాయో తెలుసుకోండి; కచ్చితంగా రెండు వర్గాలుగా విడదీయవద్దు.',
       mr: 'जनुके आणि पर्यावरण दोन्ही गुणधर्मांवर कसे प्रभाव टाकतात ते शोधा; कठोर दोन गट करू नका.',
       ms: 'Terokai pengaruh bersama gen dan persekitaran terhadap ciri tanpa pembahagian dua kategori yang tegar.',
-      he: 'חקור כיצד גנים וסביבה משפיעים יחד על תכונות, בלי לחלק אותן לשתי קבוצות קשיחות.',
+      he: 'חקרו כיצד גנים וסביבה משפיעים יחד על תכונות, בלי לחלק אותן לשתי קבוצות קשיחות.',
       pl: 'Zbadaj, jak geny i środowisko wspólnie wpływają na cechy, bez sztywnego podziału na dwie grupy.',
       uk: 'Досліджуй, як гени й середовище спільно впливають на ознаки, не зводячи їх до суворого поділу на два типи.',
       lt: 'Tyrinėk, kaip genai ir aplinka kartu veikia požymius, neskirstydamas jų į dvi griežtas kategorijas.',
