@@ -74,7 +74,7 @@ export const architecturalFormAndStyle_SkillGroup_Data = buildSkillGroupConfig({
       pl: 'Odkrywaj, co ornament architektoniczny komunikuje w swoim kontekście historycznym.',
       uk: 'Досліджуйте, що архітектурний декор передає у своєму історичному контексті.',
       lt: 'Sužinok, ką architektūrinės puošmenos perteikia istoriniame kontekste.',
-      lv: 'Atklāj, ko arhitektūras rotājumi pauž savā vēsturiskajā kontekstā.',
+      lv: 'Atklājiet, ko arhitektūras rotājumi pauž savā vēsturiskajā kontekstā.',
       et: 'Uuri, mida arhitektuursed kaunistused oma ajaloolises kontekstis väljendavad.',
       be: 'Даследуй, што архітэктурны дэкор перадае ў сваім гістарычным кантэксце.',
       ka: 'შეისწავლეთ, რას გადმოსცემს არქიტექტურული მორთულობა ისტორიულ კონტექსტში.',

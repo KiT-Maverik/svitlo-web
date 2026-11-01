@@ -60,7 +60,7 @@ export const interpretArchitecturalOrnament_Skill_Data = buildSkillConfig({
       pl: 'Łącz bryły budynków i otwarte przestrzenie w zrównoważoną formę wizualną.',
       uk: 'Поєднуйте об’єми будівлі та відкриті простори в урівноважену візуальну форму.',
       lt: 'Derink pastato tūrius ir atviras erdves į darnią vizualią formą.',
-      lv: 'Apvieno ēkas apjomus un atklātās telpas līdzsvarotā vizuālā formā.',
+      lv: 'Izpētiet, kā arhitektūras ornamentu nozīme saistās ar vēsturisko laikmetu un kultūras kontekstu.',
       et: 'Ühenda hoonemahud ja avatud ruumid tasakaalustatud visuaalseks vormiks.',
       be: 'Спалучай аб’ёмы будынка і адкрытыя прасторы ў збалансаваную візуальную форму.',
       ka: 'შეუთავსეთ შენობის მოცულობები და ღია სივრცეები დაბალანსებულ ვიზუალურ ფორმად.',

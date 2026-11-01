@@ -60,7 +60,7 @@ export const analyzeBuildingCirculation_Skill_Data = buildSkillConfig({
       pl: 'Zobacz, jak wejścia i ciągi komunikacyjne prowadzą ludzi przez przestrzeń.',
       uk: 'Подивіться, як входи й проходи спрямовують рух людей у просторі.',
       lt: 'Pamatyk, kaip įėjimai ir takai nukreipia žmonių judėjimą erdvėje.',
-      lv: 'Izzini, kā ieejas un ceļi virza cilvēku kustību telpā.',
+      lv: 'Izziniet, kā ieejas un ceļi virza cilvēku kustību telpā.',
       et: 'Vaata, kuidas sissepääsud ja liikumisteed inimesi ruumis suunavad.',
       be: 'Паглядзі, як уваходы й праходы накіроўваюць рух людзей у прасторы.',
       ka: 'ნახეთ, როგორ წარმართავს შესასვლელები და გასასვლელები ადამიანების გადაადგილებას სივრცეში.',
