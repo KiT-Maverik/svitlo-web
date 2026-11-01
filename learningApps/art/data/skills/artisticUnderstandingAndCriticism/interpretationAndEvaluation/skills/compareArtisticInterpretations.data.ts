@@ -59,7 +59,7 @@ export const compareArtisticInterpretations_Skill_Data = buildSkillConfig({
       he: 'השוו בין פרשנויות שונות ליצירת אמנות ובין הראיות התומכות בכל אחת מהן.',
       pl: 'Porównaj różne interpretacje dzieła i dowody, na których opiera się każda z nich.',
       uk: 'Порівнюйте різні прочитання мистецького твору та докази на підтримку кожного з них.',
-      lt: 'Palygink skirtingas kūrinio interpretacijas ir įrodymus, kuriais grindžiama kiekviena iš jų.',
+      lt: 'Palyginkite skirtingas kūrinio interpretacijas ir įrodymus, kuriais grindžiama kiekviena iš jų.',
       lv: 'Salīdzini dažādus mākslas darba skaidrojumus un pierādījumus, kas pamato katru no tiem.',
       et: 'Võrdle kunstiteose erinevaid tõlgendusi ja tõendeid, mis igaüht neist toetavad.',
       be: 'Параўноўвай розныя інтэрпрэтацыі мастацкага твора і доказы на карысць кожнай з іх.',
