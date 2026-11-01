@@ -47,7 +47,7 @@ export const solarLuminosity_Skill_Data = buildSkillConfig({
       mr: 'सूर्य एकूण किती ऊर्जा उत्सर्जित करतो आणि अंतरानुसार मिळणारा प्रकाश कसा बदलतो ते समजून घ्या.',
       ms: 'Fahami jumlah tenaga yang dipancarkan Matahari dan bagaimana cahaya yang diterima berubah mengikut jarak.',
       lt: 'Suprask, kiek energijos išspinduliuoja Saulė ir kaip gaunamos šviesos kiekis kinta didėjant atstumui.',
-      lv: 'Izproti Saules kopējo izstaroto enerģiju un to, kā saņemtās gaismas daudzums mainās līdz ar attālumu.',
+      lv: 'Izproti Saules kopējo izstaroto enerģiju sekundē un to, kā saņemtās gaismas daudzums mainās līdz ar attālumu.',
       et: 'Mõista, kui palju energiat Päike kokku kiirgab ja kuidas saabuv valgus kaugusega muutub.',
       be: 'Зразумей, колькі энэргіі Сонца выпраменьвае ўсяго і як атрыманая колькасьць сьвятла залежыць ад адлегласьці.',
       ka: 'გაიგე, რამდენ ენერგიას ასხივებს მზე მთლიანობაში და როგორ იცვლება მიღებული სინათლე მანძილის მიხედვით.',
