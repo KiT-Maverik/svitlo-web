@@ -32,7 +32,7 @@ export const interpretStageDirections_Skill_Data = buildSkillConfig({
     be: 'Тлумачыць сцэнічныя рэмаркі',
     ka: 'სასცენო მითითებების განმარტება',
     kk: 'Сахналық нұсқауларды түсіндіру',
-    qm: 'Sahne yönergelerini añlamaq',
+    qm: 'Sahne talimatlarını añlamaq',
   },
   description: {
     methodological: 'Turn indications of movement or delivery into plausible dramatic action.',
@@ -65,7 +65,7 @@ export const interpretStageDirections_Skill_Data = buildSkillConfig({
       be: 'Ператварайце пісьмовыя рэмаркі ў мэтанакіраваныя дзеянні.',
       ka: 'გადააქციეთ წერილობითი სასცენო მითითებები მიზანმიმართულ მოქმედებებად.',
       kk: 'Жазбаша сахналық нұсқауларды мақсатты әрекеттерге айналдырыңыз.',
-      qm: 'Yazılı sahne yönergelerini maqsatlı areketlerge çevirñiz.',
+      qm: 'Yazılı sahne talimatlarını maqsatlı areketlerge çeviriñiz.',
     },
   },
 });

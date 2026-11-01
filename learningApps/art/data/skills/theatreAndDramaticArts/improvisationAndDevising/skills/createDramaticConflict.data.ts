@@ -65,7 +65,7 @@ export const createDramaticConflict_Skill_Data = buildSkillConfig({
       be: 'Стварайце напружанне паміж персанажамі з рознымі жаданнямі.',
       ka: 'შექმენით დაძაბულობა პერსონაჟებს შორის, რომლებსაც განსხვავებული სურვილები აქვთ.',
       kk: 'Әртүрлі нәрсені қалайтын кейіпкерлер арасында шиеленіс тудырыңыз.',
-      qm: 'Farklı şeyler istegen personajlar arasında gerilim yaratığız.',
+      qm: 'Farklı maqsatları olğan personajlar arasında çatışma yaratıñız.',
     },
   },
 });

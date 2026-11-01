@@ -61,7 +61,7 @@ export const improvisationAndDevising_SkillGroup_Data = buildSkillGroupConfig({
       pt: 'Criem teatro juntos inventando situações, ações e conflitos.',
       ur: 'حالات، اعمال اور تنازعات تخلیق کرکے مل کر تھیٹر بنائیں۔',
       id: 'Ciptakan teater bersama dengan merancang situasi, tindakan, dan konflik.',
-      de: 'Entwickelt gemeinsam Theater, indem ihr Situationen, Handlungen und Konflikte erfindet.',
+      de: 'Entwickle gemeinsam Theater, indem ihr Situationen, Handlungen und Konflikte erfindet.',
       ja: '状況、行動、対立を考案しながら、みんなで演劇を創作しましょう。',
       ko: '상황과 행동, 갈등을 만들어 함께 연극을 창작해 보세요.',
       tr: 'Durumlar, eylemler ve çatışmalar kurgulayarak birlikte tiyatro üretin.',
@@ -79,7 +79,7 @@ export const improvisationAndDevising_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Стварайце тэатр разам, прыдумваючы сітуацыі, дзеянні і канфлікты.',
       ka: 'შექმენით თეატრი ერთად, სიტუაციების, მოქმედებებისა და კონფლიქტების მოფიქრებით.',
       kk: 'Жағдаяттар, әрекеттер мен қақтығыстарды ойлап тауып, театрды бірге жасаңыз.',
-      qm: 'Vaziyetler, areketler ve çatışmalar uydurıp birlikte tiyatro yaratığız.',
+      qm: 'Vaziyetlerni, areketlerni ve çatışmalarnı oylap tapıp, birlikte teatr eseri yaratıñız.',
     },
   },
 });

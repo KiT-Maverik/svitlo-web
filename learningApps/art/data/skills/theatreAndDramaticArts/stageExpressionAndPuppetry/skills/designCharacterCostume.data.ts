@@ -61,7 +61,7 @@ export const designCharacterCostume_Skill_Data = buildSkillConfig({
       uk: 'Створюй одяг, що розкриває роль або трансформацію персонажа.',
       lt: 'Kurkite drabužius, atskleidžiančius veikėjo vaidmenį ar pokytį.',
       lv: 'Veidojiet tērpu, kas atklāj tēla lomu vai pārvērtības.',
-      et: 'Kujunda riietus, mis toovad esile tegelase rolli või muutumise.',
+      et: 'Kujunda kostüüm, mis toob esile tegelase rolli või muutumise.',
       be: 'Стварайце адзенне, якое раскрывае ролю або пераўтварэнне персанажа.',
       ka: 'შექმენით ტანსაცმელი, რომელიც პერსონაჟის როლს ან გარდასახვას წარმოაჩენს.',
       kk: 'Кейіпкердің рөлін не өзгерісін ашатын киім үлгісін жасаңыз.',
