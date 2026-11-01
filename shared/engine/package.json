@@ -8,7 +8,7 @@
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "prepack": "npm run build",
-    "test": "tsc -p tsconfig.test.json && node --test .test-build/utils/builders/*/*.spec.js .test-build/utils/createDynamicQuestion/*.spec.js .test-build/utils/createTextResource/*.spec.js .test-build/utils/createLocalizedFileLocations/*.spec.js .test-build/data/assessmentMethodTaxonomy/*.spec.js"
+    "test": "tsc -p tsconfig.test.json && node --test .test-build/utils/builders/*/*.spec.js .test-build/utils/createDynamicQuestion/*.spec.js .test-build/utils/createTextContentBlock/*.spec.js .test-build/utils/createLocalizedFileLocations/*.spec.js .test-build/utils/generators/getMarkdownLocale/*.spec.js .test-build/data/assessmentMethodTaxonomy/*.spec.js"
   },
   "exports": {
     ".": {
@@ -34,6 +34,14 @@
     "./generation": {
       "types": "./dist/generation.d.ts",
       "default": "./dist/generation.js"
+    },
+    "./utils": {
+      "types": "./dist/utils.d.ts",
+      "default": "./dist/utils.js"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts",
+      "default": "./dist/types.js"
     },
     "./assessment-methods": {
       "types": "./dist/assessment-methods.d.ts",
@@ -64,11 +72,17 @@
       "generation": [
         "dist/generation.d.ts"
       ],
-      "*": [
-        "dist/index.d.ts"
+      "utils": [
+        "dist/utils.d.ts"
+      ],
+      "types": [
+        "dist/types.d.ts"
       ],
       "assessment-methods": [
         "dist/assessment-methods.d.ts"
+      ],
+      "*": [
+        "dist/index.d.ts"
       ]
     }
   },

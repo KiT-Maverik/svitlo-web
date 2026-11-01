@@ -22,6 +22,7 @@ const lesson = (): Lesson_Config => ({
   collection: 'lesson',
   id: 'lesson',
   slug: 'light',
+  languages: ['en', 'uk'],
   requireQuiz: true,
   title: 'title',
   sections: {

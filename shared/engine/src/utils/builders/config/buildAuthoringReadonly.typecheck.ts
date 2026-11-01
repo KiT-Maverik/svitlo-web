@@ -11,6 +11,7 @@ import { buildAssessmentMethodConfig } from './buildAssessmentMethodConfig.utils
 const lesson = buildLessonConfig({
   id: 'lesson',
   slug: 'example',
+  languages: ['en', 'uk'],
   title: 'title',
   requireQuiz: false,
   sections: { allowNavigation: true, allowSkipping: false, showIndexes: true, content: ['section'] },

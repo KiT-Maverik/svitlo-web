@@ -8,6 +8,7 @@ it('adds the lesson discriminator without mutating authored data', () => {
   const source = {
     id: 'lesson',
     slug: 'math',
+    languages: ['en', 'uk'] as ['en', 'uk'],
     requireQuiz: false,
     title: 'title',
     sections: { allowNavigation: true, allowSkipping: false, showIndexes: true, content: ['section'] as [string] },

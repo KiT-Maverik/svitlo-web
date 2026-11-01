@@ -1,7 +1,7 @@
 import { checkpoint } from './checkpoints/checkpoint';
 import lightPropagationSimulation from './scenes/lightPropagationSimulation';
 import { lightRayDiagram } from './scenes/lightRayDiagram';
-import { getMarkdownLocale } from '../../generators/getMarkdownLocale/getMarkdownLocale.util';
+import { getMarkdownLocale } from '@svitlo/engine/utils';
 
 export const theory = {
   name: {
@@ -36,9 +36,9 @@ export const theory = {
     zh: '理论',
   },
   markdown: {
-    p1: getMarkdownLocale('./markdown/p1'),
-    p2: getMarkdownLocale('./markdown/p2'),
-    p3: getMarkdownLocale('./markdown/p3'),
+    p1: getMarkdownLocale(new URL('./markdown/p1/', import.meta.url)),
+    p2: getMarkdownLocale(new URL('./markdown/p2/', import.meta.url)),
+    p3: getMarkdownLocale(new URL('./markdown/p3/', import.meta.url)),
   },
   scene: {
     checkpoint,
