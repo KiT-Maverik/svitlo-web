@@ -5,9 +5,10 @@ import { theoryDefinition } from './sections/theory/theory.definition';
 
 export const howLightMovesDefinition = {
   type: 'lesson',
+  sectionOrder: ['theory', 'practice', 'quiz'],
   sections: {
     theory: theoryDefinition,
     practice: practiceDefinition,
     quiz: quizDefinition,
   },
-} satisfies LessonV2<'definition'>;
+} satisfies LessonV2<'definition'> & { sectionOrder: string[] };

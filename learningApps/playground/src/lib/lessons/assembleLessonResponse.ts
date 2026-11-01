@@ -20,7 +20,7 @@ export type LessonSectionResponse = {
   navigationLabel: string;
   skippable?: true;
   content: Record<string, Record<string, LessonContentBlock>>;
-  contentOrder: string[];
+  order: { type: string; key: string }[];
 };
 export type LessonResponse = {
   id: string;
@@ -36,6 +36,7 @@ export type LessonResponse = {
   flashcards: unknown[];
   questions: Record<string, Record<string, Record<string, unknown>>>;
   sections: Record<string, LessonSectionResponse>;
+  sectionOrder: string[];
   localeSources: {
     config: Record<string, LocaleSource>;
     flashcards: Record<string, LocaleSource>;
@@ -93,7 +94,7 @@ function assembleBlocks(
   order: unknown,
   location: string,
   language: LanguageCode,
-): Pick<LessonSectionResponse, 'content' | 'contentOrder'> {
+): Pick<LessonSectionResponse, 'content' | 'order'> {
   const catalog = record(content, location);
   const normalized: LessonSectionResponse['content'] = {};
   const keys: string[] = [];
@@ -118,16 +119,21 @@ function assembleBlocks(
       normalized[kind][key] = resolved;
     }
   }
-  const contentOrder = order === undefined ? keys : order;
-  if (!Array.isArray(contentOrder) || contentOrder.some(value => typeof value !== 'string')) {
-    throw new Error('Invalid contentOrder at ' + location);
+  if (!Array.isArray(order) || order.length !== keys.length) {
+    throw new Error('Invalid content order at ' + location);
   }
-  if (new Set(contentOrder).size !== contentOrder.length ||
-      contentOrder.length !== keys.length ||
-      contentOrder.some(key => !keys.includes(key))) {
-    throw new Error('contentOrder must reference each block exactly once at ' + location);
+  const references = order.map((raw, index) => {
+    const ref = record(raw, location + '.order[' + index + ']');
+    return {
+      type: string(ref.type, location + '.order[' + index + '].type'),
+      key: string(ref.key, location + '.order[' + index + '].key'),
+    };
+  });
+  const names = references.map(ref => ref.type + '/' + ref.key);
+  if (new Set(names).size !== names.length || names.some(name => !keys.includes(name))) {
+    throw new Error('Content order must reference every block once at ' + location);
   }
-  return { content: normalized, contentOrder: contentOrder as string[] };
+  return { content: normalized, order: references };
 }
 
 /** Pure response assembly: runtime consumes only the three published JSON collections. */
@@ -166,7 +172,7 @@ export function assembleLessonResponse(
     const section = record(rawSection, 'config.data.sections.' + key);
     const sectionSlug = string(section.slug, 'sections.' + key + '.slug');
     if (sectionSlug !== key) throw new Error('Section slug mismatch at ' + key);
-    const content = assembleBlocks(section.content, section.contentOrder, group + '/' + slug + '/' + key, language);
+    const content = assembleBlocks(section.content, section.order, group + '/' + slug + '/' + key, language);
     for (const block of Object.values(content.content.quiz ?? {})) {
       const slugs = block.questionSlugs;
       if (!Array.isArray(slugs) || slugs.some(value => typeof value !== 'string') ||
@@ -194,6 +200,12 @@ export function assembleLessonResponse(
       ...content,
     };
   }
+  const sectionOrder = data.sectionOrder;
+  if (!Array.isArray(sectionOrder) || sectionOrder.length !== Object.keys(sections).length ||
+      sectionOrder.some(value => typeof value !== 'string' || !(value in sections)) ||
+      new Set(sectionOrder).size !== sectionOrder.length) {
+    throw new Error('Invalid sectionOrder for ' + group + '/' + slug);
+  }
   const options = ['allowNavigation', 'allowSkipping', 'showIndexes'] as const;
   for (const option of options) {
     if (typeof settings[option] !== 'boolean') {
@@ -220,6 +232,7 @@ export function assembleLessonResponse(
     flashcards: flashcards.data,
     questions: indexedQuestions,
     sections,
+    sectionOrder: sectionOrder as string[],
     localeSources: {
       config: config.localeSources,
       flashcards: flashcards.localeSources,

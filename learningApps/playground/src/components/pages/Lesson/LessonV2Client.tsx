@@ -14,13 +14,10 @@ import styles from './Lesson.module.css';
 
 export default function LessonV2Client({ response }: { response: LessonResponse }) {
   const { progress, dispatch } = useLessonProgress();
-  const sections = Object.values(response.sections);
+  const sections = response.sectionOrder.map(slug => response.sections[slug]);
   const current = sections[progress.step];
   if (!progress.ready || !current) return <div className={styles.lesson} />;
-  const order = current.contentOrder.map(reference => {
-    const slash = reference.indexOf('/');
-    return { type: reference.slice(0, slash), key: reference.slice(slash + 1) };
-  }) as ContentBlockReference[];
+  const order = current.order as ContentBlockReference[];
   const isQuiz = Object.keys(current.content.quiz ?? {}).length > 0;
   return (
     <div className={styles.lesson}>

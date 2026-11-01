@@ -16,10 +16,11 @@ function fixture() {
           languages: ['uk', 'en'],
           sections: { allowNavigation: true, allowSkipping: true, showIndexes: true },
         },
+        sectionOrder: ['theory', 'quiz'],
         sections: {
           theory: {
             id: 'section-id', slug: 'theory', title: 'Теорія', navigationLabel: 'Теорія',
-            contentOrder: ['markdown/p1', 'scene/ray', 'checkpoint/checkpoint'],
+            order: [{ type: 'markdown', key: 'p1' }, { type: 'scene', key: 'ray' }, { type: 'checkpoint', key: 'checkpoint' }],
             content: {
               markdown: { p1: { id: 'markdown-id', slug: 'p1', locales: '# Світло' } },
               scene: { ray: { id: 'scene-id', slug: 'ray', locales: { scene: { title: 'Промінь' } } } },
@@ -28,6 +29,7 @@ function fixture() {
           },
           quiz: {
             id: 'quiz-section', slug: 'quiz', title: 'Тест', navigationLabel: 'Тест',
+            order: [{ type: 'quiz', key: 'quiz' }],
             content: { quiz: { quiz: { id: 'quiz-id', slug: 'quiz', questionSlugs: ['q1'] } } },
           },
         },
@@ -44,7 +46,8 @@ describe('assembleLessonResponse', () => {
   it('preserves ordering, locale sources, markdown, scene identity and resolved questions', () => {
     const lesson = assembleLessonResponse('1', 'howLightMoves', 'uk', fixture());
     expect(Object.keys(lesson.sections)).toEqual(['theory', 'quiz']);
-    expect(lesson.sections.theory.contentOrder).toEqual(['markdown/p1', 'scene/ray', 'checkpoint/checkpoint']);
+    expect(lesson.sections.theory.order).toEqual([{ type: 'markdown', key: 'p1' }, { type: 'scene', key: 'ray' }, { type: 'checkpoint', key: 'checkpoint' }]);
+    expect(lesson.sectionOrder).toEqual(['theory', 'quiz']);
     expect(lesson.sections.theory.content.markdown.p1.text).toEqual('# Світло');
     expect(lesson.sections.theory.content.scene.ray.sceneId).toEqual('1/howLightMoves/theory/scene/ray');
     expect(lesson.sections.quiz.content.quiz.quiz.questions?.q1.id).toEqual('question-id');
@@ -58,8 +61,8 @@ describe('assembleLessonResponse', () => {
   });
   it('rejects an invalid order rather than silently dropping blocks', () => {
     const raw = fixture();
-    raw.config.data.sections.theory.contentOrder = ['markdown/p1'];
-    expect(() => assembleLessonResponse('1', 'howLightMoves', 'uk', raw)).toThrow(/contentOrder/);
+    raw.config.data.sections.theory.order = [{ type: 'markdown', key: 'p1' }];
+    expect(() => assembleLessonResponse('1', 'howLightMoves', 'uk', raw)).toThrow(/content order/);
   });
   it('rejects the wrong identity or an unsupported locale', () => {
     expect(() => assembleLessonResponse('2', 'howLightMoves', 'uk', fixture())).toThrow(/identity mismatch/);

@@ -27,9 +27,10 @@ export const howLightMovesData = defineLessonV2Data({
     },
   },
   questions: howLightMovesQuestionsData,
+  sectionOrder: ['theory', 'practice', 'quiz'],
   sections: {
     theory: theoryData,
     practice: practiceData,
     quiz: quizData,
   } satisfies Record<keyof typeof howLightMovesDefinition.sections, LessonV2<'data'>['sections'][string]>,
-} satisfies LessonV2<'data'>);
+} satisfies LessonV2<'data'> & { sectionOrder: string[] });

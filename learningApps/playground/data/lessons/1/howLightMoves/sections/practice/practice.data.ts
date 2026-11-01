@@ -9,11 +9,11 @@ export const practiceData = {
   title: practice.name,
   navigationLabel: practice.name,
   skippable: true,
-  contentOrder: ['text/task', 'scene/showcase'],
+  order: [{ type: 'text', key: 'task' }, { type: 'scene', key: 'showcase' }],
   content: defineContentBlockCatalog({
     scene: { showcase: showcaseData },
     text: {
       task: { id: 'practice-task', slug: 'task' as const, value: practice.task },
     },
   } satisfies ContentBlock_Catalog_DataFor<typeof practiceDefinition.content>),
-} satisfies Section<'data'> & { contentOrder: string[] };
+} satisfies Section<'data'> & { order: { type: string; key: string }[] };

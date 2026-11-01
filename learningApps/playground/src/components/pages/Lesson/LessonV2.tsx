@@ -10,7 +10,7 @@ export default function LessonV2({ response, locale, href }: {
   locale: Locale;
   href: string;
 }) {
-  const sections = Object.values(response.sections);
+  const sections = response.sectionOrder.map(slug => response.sections[slug]);
   const quizIndex = sections.findIndex(section => Object.keys(section.content.quiz ?? {}).length > 0);
   return (
     <LocaleProvider locale={locale}>

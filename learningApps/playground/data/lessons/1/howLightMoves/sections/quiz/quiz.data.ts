@@ -36,8 +36,8 @@ export const quizData = {
   title: quiz.name,
   navigationLabel: quiz.name,
   skippable: true,
-  contentOrder: ['quiz/quiz'],
+  order: [{ type: 'quiz', key: 'quiz' }],
   content: defineContentBlockCatalog({
     quiz: { quiz: quizBlock },
   } satisfies ContentBlock_Catalog_DataFor<typeof quizDefinition.content>),
-} satisfies Section<'data'> & { contentOrder: string[] };
+} satisfies Section<'data'> & { order: { type: string; key: string }[] };

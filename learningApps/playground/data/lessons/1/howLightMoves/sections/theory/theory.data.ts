@@ -10,7 +10,7 @@ export const theoryData = {
   slug: 'theory' as const,
   title: theory.name,
   navigationLabel: theory.name,
-  contentOrder: ['markdown/p1', 'scene/lightRayDiagram', 'markdown/p2', 'scene/lightPropagationSimulation', 'markdown/p3', 'checkpoint/checkpoint'],
+  order: [{ type: 'markdown', key: 'p1' }, { type: 'scene', key: 'lightRayDiagram' }, { type: 'markdown', key: 'p2' }, { type: 'scene', key: 'lightPropagationSimulation' }, { type: 'markdown', key: 'p3' }, { type: 'checkpoint', key: 'checkpoint' }],
   content: defineContentBlockCatalog({
     checkpoint: { checkpoint: checkpointData },
     markdown: {
@@ -23,4 +23,4 @@ export const theoryData = {
       lightRayDiagram: lightRayDiagramData,
     },
   } satisfies ContentBlock_Catalog_DataFor<typeof theoryDefinition.content>),
-} satisfies Section<'data'> & { contentOrder: string[] };
+} satisfies Section<'data'> & { order: { type: string; key: string }[] };
