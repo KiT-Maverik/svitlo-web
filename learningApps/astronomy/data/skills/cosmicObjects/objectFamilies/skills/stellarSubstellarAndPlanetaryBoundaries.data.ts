@@ -9,7 +9,7 @@ export const stellarSubstellarAndPlanetaryBoundaries_Skill_Data = buildSkillConf
     hi: "तारों, उपतारकीय पिंडों और ग्रहों की सीमाएँ",
     es: "Límites entre estrellas, objetos subestelares y planetas",
     ar: "الحدود بين النجوم والأجرام دون النجمية والكواكب",
-    fr: "Frontières entre étoiles, objets substellaire et planètes",
+    fr: "Frontières entre étoiles, objets substellaires et planètes",
     bn: "নক্ষত্র, উপনাক্ষত্রিক বস্তু ও গ্রহের সীমারেখা",
     pt: "Limites entre estrelas, objetos subestelares e planetas",
     ur: "ستاروں، ذیلی ستاروی اجرام اور سیاروں کی حدیں",

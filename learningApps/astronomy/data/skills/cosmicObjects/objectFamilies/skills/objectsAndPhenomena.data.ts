@@ -32,7 +32,7 @@ export const objectsAndPhenomena_Skill_Data = buildSkillConfig({
     be: "Аб’екты і зьявы",
     ka: "ობიექტები და მოვლენები",
     kk: "Нысандар мен құбылыстар",
-    qm: "Cisimler ve adisel­er",
+    qm: "Cisimler ve adiseler",
   },
   description: {
     methodological:
