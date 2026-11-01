@@ -234,7 +234,7 @@ Skills: 6
 
 **Methodological description (English):** Interpret a logarithmic brightness scale describing how bright a source appears to an observer.
 
-**User-friendly description (qm):** Astronomlar kök cisminiñ ne qadar parlak körüngenini bildirgen ölçü birligini añlañız.
+**User-friendly description (qm):** Astronomlar kök cisminiñ ne qadar parlaq körüngenini bildirgen ölçü birligini añlañız.
 
 ##### Astronomik mesafe birlikleri
 
@@ -308,7 +308,7 @@ Skills: 4
 
 **Methodological description (English):** Identify how detection thresholds and survey methods bias the populations of celestial objects that appear in catalogs.
 
-**User-friendly description (qm):** Teleskoplar ve közetüv programları bazı cisimlerni başqalarından ne içün daha qolay tapqanını ögreniñiz.
+**User-friendly description (qm):** Teleskoplar ve közetüv programları bazı cisimlerni başqalarından ne içün daa qolay tapqanını ögreniñiz.
 
 #### Cazibe ve zerreler yardımınen araştırmalar
 
@@ -434,7 +434,7 @@ Skills: 7
 
 **Methodological description (English):** Explain how telescope aperture affects collected light and the visibility of faint astronomical sources.
 
-**User-friendly description (qm):** Teleskopnıñ açıqlığı büyügende ne içün daha zayıf kök cisimleri körünebilgenini ögreniñiz.
+**User-friendly description (qm):** Teleskopnıñ açıqlığı büyügende ne içün daa zayıf kök cisimleri körünebilgenini ögreniñiz.
 
 ##### Optik teleskop sistemaları
 
@@ -494,7 +494,7 @@ Skills: 4
 
 **Methodological description (English):** Recognize recurring period relationships that can organize or destabilize orbital systems.
 
-**User-friendly description (qm):** Orbita devirleri arasında tekrarlanğan vaqıt münasebetleriniñ sistemağa qachon tesir etkenini tanıñız.
+**User-friendly description (qm):** Orbita devirleri arasında tekrarlanğan vaqıt münasebetleriniñ sistemağa qaçan tesir etkenini tanıñız.
 
 ##### Orbita sabitligi
 
@@ -1090,7 +1090,7 @@ Skills: 5
 
 **Methodological description (English):** Interpret transit or emission spectra as evidence about atmospheric constituents and conditions.
 
-**User-friendly description (qm):** Seyyareniñ spektri onıñ atmosferası aqqında nasıl ipuclar bergenini ögreniñiz.
+**User-friendly description (qm):** Seyyareniñ spektri onıñ atmosferası aqqında nasıl işaretler bergenini ögreniñiz.
 
 ##### Ekzoseyyarelerniñ umumiy terkibi
 
@@ -1098,7 +1098,7 @@ Skills: 5
 
 **Methodological description (English):** Relate a planet's mass-radius behavior to plausible internal materials while recognizing model degeneracy.
 
-**User-friendly description (qm):** Seyyareniñ kütlesi ve radiusı yardımınen onıñ olası maddelerini tetqiq etiñiz, tek bir cevap olğanını farz etmeñiz.
+**User-friendly description (qm):** Seyyareniñ kütlesi ve radiusı yardımınen onıñ mümkün içki terkibini tetqiq etiñiz, tek bir cevap olğanını farz etmeñiz.
 
 ##### Ekzoseyyareniñ kütlesi
 
@@ -1182,7 +1182,7 @@ Skills: 4
 
 **Methodological description (English):** Interpret the range of stellar irradiation permitting surface liquid water under stated atmospheric assumptions.
 
-**User-friendly description (qm):** Yıldıznıñ yaşavğa elverişli zonası sıvı suv aqqında neni bildirgenini ve neni isbat etmegenini añlañız.
+**User-friendly description (qm):** Yıldıznıñ yaşavğa elverişli zonası sıyıq suv aqqında neni bildirgenini ve neni isbat etmegenini añlañız.
 
 ##### Ekzoseyyare sistemalarınıñ quruluşları
 
@@ -1198,7 +1198,7 @@ Skills: 4
 
 **Methodological description (English):** Evaluate why receiving suitable starlight or being Earth-sized does not establish a habitable world.
 
-**User-friendly description (qm):** Yer büyükligindeki seyyare uygun orbitada olsa da, ne içün mıtlaq yaşavğa elverişli olmağanını añlañız.
+**User-friendly description (qm):** Yer büyükligindeki seyyare uyğun orbitada olsa da, ne içün mıtlaq yaşavğa elverişli olmağanını añlañız.
 
 ##### Seyyarelerniñ köçüvi
 
@@ -1242,7 +1242,7 @@ Skills: 4
 
 **Methodological description (English):** Identify quasars as luminous manifestations of active galactic nuclei, including the implications of their cosmological distances.
 
-**User-friendly description (qm):** Kvazarlarnı pek parlak faal galaktik çekirdekler olaraq tanıñız.
+**User-friendly description (qm):** Kvazarlarnı pek parlaq faal galaktik çekirdekler olaraq tanıñız.
 
 ##### Relyativistik püskürmeler
 
@@ -1284,7 +1284,7 @@ Skills: 4
 
 **Methodological description (English):** Explain how gravitational encounters alter galaxy structures, gas and star formation.
 
-**User-friendly description (qm):** Galaktikalarnıñ yaqinlaşuvı ve birleşüvi olarnıñ şeklini nasıl deñiştirgenini ve yañı yıldızlarnıñ doğuvına nasıl sebep olğanını ögreniñiz.
+**User-friendly description (qm):** Galaktikalarnıñ yaqınlaşuvı ve birleşüvi olarnıñ şeklini nasıl deñiştirgenini ve yañı yıldızlarnıñ doğuvına nasıl sebep olğanını ögreniñiz.
 
 ##### Galaktikalarnıñ şekilleri
 
@@ -1326,7 +1326,7 @@ Skills: 4
 
 **Methodological description (English):** Explain extinction, reddening and infrared emission caused by dust along astronomical sightlines.
 
-**User-friendly description (qm):** Yıldızlararası toznıñ yıldız yarığını nasıl zayıflattığını, qırmızılaştırğanını ve başqa dalğa uzunlıqlarında qayta saçqanını ögreniñiz.
+**User-friendly description (qm):** Yıldızlararası toznıñ yıldız yarığını nasıl zayıflattığını, qırmızılaştırğanını ve energiyanı infraqırmızı şavle şeklinde qayta çıqarğanını ögreniñiz.
 
 ##### Yıldızlararası gaz
 
@@ -1368,7 +1368,7 @@ Skills: 4
 
 **Methodological description (English):** Interpret the disk, spiral structure, bulge and halo and explain how they are inferred from our position within the galaxy.
 
-**User-friendly description (qm):** Galaktikamıznıñ diskini, merkezdeki qabarıq bölgesini ve tashqı halosını tanıñız.
+**User-friendly description (qm):** Galaktikamıznıñ diskini, merkezdeki qabarıq bölgesini ve tışqı halosını tanıñız.
 
 ##### Küneş sistemasınıñ galaktikadaki yeri
 
@@ -1546,7 +1546,7 @@ Skills: 6
 
 **Methodological description (English):** Compare how bright celestial objects look from Earth without equating observed brightness with intrinsic luminosity.
 
-**User-friendly description (qm):** Cisimlerniñ Yerden ne qadar parlak körüngenini teñeştiriñiz, bunı olarnıñ aqiqiy yarıq çıqaruvı ile qarıştırmañız.
+**User-friendly description (qm):** Cisimlerniñ Yerden ne qadar parlaq körüngenini teñeştiriñiz, bunı olarnıñ aqiqiy yarıq çıqaruvı ile qarıştırmañız.
 
 ##### Yıldız şekilleri
 
@@ -1586,7 +1586,7 @@ Skills: 6
 
 **Methodological description (English):** Identify the slow positional motion of a star relative to distant background sources and distinguish this physical change from the daily apparent rotation of the sky.
 
-**User-friendly description (qm):** Yıldıznıñ daha uzaqtaki yıldızlarğa nisbeten pek yavaş areketini tanıñız.
+**User-friendly description (qm):** Yıldıznıñ daa uzaqtaki yıldızlarğa nisbeten pek yavaş areketini tanıñız.
 
 ### Seyyareler ilimi
 
@@ -1680,7 +1680,7 @@ Skills: 5
 
 **Methodological description (English):** Interpret geophysical and compositional evidence for liquids beneath icy surfaces without assuming biology.
 
-**User-friendly description (qm):** Bazı buzlı aylarnıñ yüzüniñ astında sıvı okeanlar ola bilecegini köstergen delillerni tetqiq etiñiz.
+**User-friendly description (qm):** Bazı buzlı aylarnıñ yüzüniñ astında sıyıq suvdan ibaret okeanlar ola bilecegini köstergen delillerni tetqiq etiñiz.
 
 ##### Yer yüzünden tış suv ve buz
 
@@ -1874,7 +1874,7 @@ Skills: 4
 
 **Methodological description (English):** Explain the relation between dark solar surface regions, strong magnetic fields and relative temperature.
 
-**User-friendly description (qm):** Küneş lekeleri ne içün daha qaranlıq körüngenini ve olarnıñ magnit meydanları ile nasıl bağlı olğanını ögreniñiz.
+**User-friendly description (qm):** Küneş lekeleri ne içün daa qaranlıq körüngenini ve olarnıñ magnit meydanları ile nasıl bağlı olğanını ögreniñiz.
 
 #### Küneşniñ quruluşu ve energiyası
 
@@ -1962,7 +1962,7 @@ Skills: 5
 
 **User-friendly description (qm):** Büyük çarpışuv faraziyesi de dahil, Aynıñ peyda oluvı aqqındaki türlü nazariyelerniñ delillerini muqayese etiñiz.
 
-##### Planetarnıñ toplanıp büyüvi
+##### Seyyare cisimleriniñ toplanıp büyüvi
 
 [planetaryAccretion.data.ts](../../../learningApps/astronomy/data/skills/solarSystemStructureAndOrigins/formationAndChronology/skills/planetaryAccretion.data.ts)
 
@@ -2090,7 +2090,7 @@ Skills: 4
 
 **User-friendly description (qm):** Qoyu gaz bölgeleri cazibe quveti tesirinen sıqılıp yıldızlarnıñ peyda oluvını nasıl başlatqanını añlatıñız.
 
-##### İlk yıldızlar
+##### Protoyıldızlar
 
 [protostars.data.ts](../../../learningApps/astronomy/data/skills/stellarPropertiesAndEvolution/starFormation/skills/protostars.data.ts)
 
@@ -2098,7 +2098,7 @@ Skills: 4
 
 **User-friendly description (qm):** Vodorodnıñ devamlı yadroviy qoşulması başlanmağance yaş yıldıznıñ ilk devrini tanıñız.
 
-##### İlk yıldız diskleri
+##### Protoyıldız diskleri
 
 [protostellarDisks.data.ts](../../../learningApps/astronomy/data/skills/stellarPropertiesAndEvolution/starFormation/skills/protostellarDisks.data.ts)
 
@@ -2106,7 +2106,7 @@ Skills: 4
 
 **User-friendly description (qm):** Madde diski peyda olğan yıldızğa nasıl madde yetkizgenini ögreniñiz.
 
-##### İlk yıldızlarnıñ dar aqımları
+##### Protoyıldızlarnıñ dar aqımları
 
 [protostellarJets.data.ts](../../../learningApps/astronomy/data/skills/stellarPropertiesAndEvolution/starFormation/skills/protostellarJets.data.ts)
 
@@ -2148,7 +2148,7 @@ Skills: 6
 
 **User-friendly description (qm):** Hertzsprung–Russell diagrammasını oqup yıldızlarnıñ sıcaqlığını, yarıq quvetini ve evolyutsiya basamaqalarını muqayese etiñiz.
 
-##### Yıldız toplulıqları
+##### Yıldız nesilleri
 
 [stellarPopulations.data.ts](../../../learningApps/astronomy/data/skills/stellarPropertiesAndEvolution/stellarAndSubstellarClassification/skills/stellarPopulations.data.ts)
 
@@ -2246,7 +2246,7 @@ Skills: 5
 
 **Methodological description (English):** Distinguish total emitted power from the light received by an observer and infer luminosity from suitable measurements.
 
-**User-friendly description (qm):** Yıldıznıñ saçırtqan enerjisi ile Yerden körüngen parlaqlığını ayırıñız.
+**User-friendly description (qm):** Yıldıznıñ çıqarğan umumiy yarıq quvetini Yerden körüngen parlaqlığından ayırıñız.
 
 ##### Yıldızlarnıñ kütlesi
 
