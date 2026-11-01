@@ -13,6 +13,7 @@ export const astronomicalTime_SkillGroup_Data = buildSkillGroupConfig({
   id: '40fbde37-c257-44a2-b82b-d38724a086ab',
   name: {
     en: 'Astronomical Time',
+    qm: 'Astronomik vaqıt',
     zh: '天文时间',
     hi: 'खगोलीय समय',
     es: 'Tiempo astronómico',
@@ -53,6 +54,7 @@ export const astronomicalTime_SkillGroup_Data = buildSkillGroupConfig({
       'Timekeeping conventions derived from repeated celestial cycles support observation and comparison across dates, without constituting a curriculum in civil time zones.',
     frontend: {
       en: 'Explore how recurring movements of the Sun, Moon and stars are used to measure time.',
+      qm: 'Küneş, Ay ve yıldızlarnıñ tekrarlanğan areketleri vaqt ölçmek içün nasıl qullanılğanını araştırıñız.',
       zh: '探索如何利用太阳、月球和恒星周期性的视运动来测量时间。',
       hi: 'जानें कि सूर्य, चंद्रमा और तारों की बार-बार होने वाली गतियों से समय कैसे मापा जाता है।',
       es: 'Explora cómo se utilizan los movimientos periódicos del Sol, la Luna y las estrellas para medir el tiempo.',

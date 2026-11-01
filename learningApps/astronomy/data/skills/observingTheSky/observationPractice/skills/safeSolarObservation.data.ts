@@ -5,6 +5,7 @@ export const safeSolarObservation_Skill_Data = buildSkillConfig({
   id: 'b4b9b469-391d-40f8-b11d-6884c76ed106',
   name: {
     en: 'Safe Solar Observation',
+    qm: 'Küneşni emniyetli közetüv',
     zh: '安全观测太阳',
     hi: 'सूर्य का सुरक्षित अवलोकन',
     es: 'Observación segura del Sol',
@@ -38,6 +39,7 @@ export const safeSolarObservation_Skill_Data = buildSkillConfig({
       'Distinguish approved solar-viewing methods from unsafe direct viewing or unfiltered optical magnification.',
     frontend: {
       en: 'Identify safe ways to view the Sun and avoid methods that can damage eyesight.',
+      qm: 'Küneşke emniyetli baquv usullarını tanıñız ve közge zarar ketirebilecek usullardan qaçıñız.',
       zh: '了解安全观测太阳的方法，并避开可能损伤视力的做法。',
       hi: 'सूर्य को सुरक्षित ढंग से देखने के तरीके पहचानें और आँखों को नुकसान पहुँचाने वाले तरीकों से बचें।',
       es: 'Identifica formas seguras de observar el Sol y evita métodos que puedan dañar la vista.',

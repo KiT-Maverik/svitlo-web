@@ -5,6 +5,7 @@ export const astronomicalDatesAndEpochs_Skill_Data = buildSkillConfig({
   id: 'c4d24d99-1372-4fe4-aad4-c6dfb5e8af4c',
   name: {
     en: 'Astronomical Dates and Epochs',
+    qm: 'Astronomik tarihler ve epohalar',
     zh: '天文日期与历元',
     hi: 'खगोलीय तिथियाँ और संदर्भ युग',
     es: 'Fechas y épocas astronómicas',
@@ -38,6 +39,7 @@ export const astronomicalDatesAndEpochs_Skill_Data = buildSkillConfig({
       'Interpret a standard astronomical date or reference epoch when comparing observations made at different times.',
     frontend: {
       en: 'Interpret astronomical dates and reference epochs when comparing observations.',
+      qm: 'Çeşit közetüvlerni teñeştirgende astronomik tarihlerni ve esas alınğan epohalarnı doğru añlañız.',
       zh: '比较不同时间的观测结果时，学会解读天文日期和参考历元。',
       hi: 'अलग-अलग समय पर किए गए अवलोकनों की तुलना करते समय खगोलीय तिथियों और संदर्भ युगों का अर्थ समझें।',
       es: 'Aprende a interpretar fechas astronómicas y épocas de referencia al comparar observaciones.',

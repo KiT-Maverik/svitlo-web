@@ -5,6 +5,7 @@ export const solarCalendarCycles_Skill_Data = buildSkillConfig({
   id: '807f01f1-3b1b-42f1-a128-7575472c2f23',
   name: {
     en: 'Solar Calendar Cycles',
+    qm: 'Küneş taqvimi devirleri',
     zh: '阳历周期',
     hi: 'सौर कैलेंडर के चक्र',
     es: 'Ciclos del calendario solar',
@@ -38,6 +39,7 @@ export const solarCalendarCycles_Skill_Data = buildSkillConfig({
       "Relate solar-year calendar intervals to Earth's annual revolution and seasons without assuming universal calendar rules.",
     frontend: {
       en: 'Connect the annual motion of Earth with solar calendar cycles.',
+      qm: 'Yerniñ bir yıllıq areketini Küneş taqviminiñ devirleri ile bağlañız.',
       zh: '了解地球每年绕太阳运动与阳历周期之间的联系。',
       hi: 'पृथ्वी की वार्षिक गति और सौर कैलेंडर के चक्रों के बीच संबंध समझें।',
       es: 'Relaciona el movimiento anual de la Tierra con los ciclos del calendario solar.',
