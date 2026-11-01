@@ -46,7 +46,7 @@ export const distinguishDocumentaryAndStagedPhotography_Skill_Data = buildSkillC
       ar: 'ميّز بين الصورة التي توثّق حدثًا والمشهد الذي جرى ترتيبه مسبقًا.',
       fr: 'Reconnaissez si une photographie documente un événement ou si la scène a été mise en scène.',
       bn: 'ছবি কোনো ঘটনা নথিবদ্ধ করছে, নাকি দৃশ্যটি সাজানো হয়েছে তা চিনুন।',
-      pt: 'Reconheça quando uma fotografia regista um acontecimento e quando a cena foi encenada.',
+      pt: 'Reconheça quando uma fotografia registra um acontecimento e quando a cena foi encenada.',
       ur: 'پہچانیں کہ تصویر کسی واقعے کو ریکارڈ کرتی ہے یا منظر پہلے سے ترتیب دیا گیا تھا۔',
       id: 'Kenali apakah foto merekam peristiwa atau adegannya telah diatur.',
       de: 'Erkenne, ob ein Foto ein Ereignis dokumentiert oder eine Szene inszeniert wurde.',

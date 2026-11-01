@@ -11,7 +11,7 @@ export const designCharacterCostume_Skill_Data = buildSkillConfig({
     ar: 'تصميم زي الشخصية',
     fr: 'Concevoir le costume d’un personnage',
     bn: 'চরিত্রের পোশাক নকশা করুন',
-    pt: 'Criar o figurino de uma personagem',
+    pt: 'Criar o figurino de um personagem',
     ur: 'کردار کا لباس ڈیزائن کریں',
     id: 'Merancang kostum karakter',
     de: 'Ein Figurenkostüm entwerfen',

@@ -60,7 +60,7 @@ export const photographicCommunication_SkillGroup_Data = buildSkillGroupConfig({
       ar: 'اكتشف كيف يمكن للصور الفوتوغرافية توثيق القصص أو تصويرها أو سردها بطرق مختلفة.',
       fr: 'Découvrez comment les photographies peuvent documenter, représenter ou raconter des histoires de différentes façons.',
       bn: 'আলোকচিত্র কীভাবে বিভিন্নভাবে নথিবদ্ধ, চিত্রিত বা গল্প বলতে পারে তা জানুন।',
-      pt: 'Descubra como as fotografias podem documentar, retratar ou contar histórias de diferentes formas.',
+      pt: 'Descubra como fotografias podem documentar, encenar ou narrar acontecimentos de maneiras diferentes.',
       ur: 'جانیں کہ تصاویر مختلف طریقوں سے دستاویز، منظرکشی یا کہانی بیان کیسے کر سکتی ہیں۔',
       id: 'Pelajari bagaimana foto dapat mendokumentasikan, menggambarkan, atau menceritakan kisah dengan berbagai cara.',
       de: 'Entdecke, wie Fotografien auf unterschiedliche Weise dokumentieren, darstellen oder Geschichten erzählen können.',

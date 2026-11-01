@@ -11,7 +11,7 @@ export const designAPrintMatrix_Skill_Data = buildSkillConfig({
     ar: 'تصميم قالب للطباعة',
     fr: 'Concevoir une matrice d’impression',
     bn: 'মুদ্রণের জন্য ছাপার ব্লক নকশা করুন',
-    pt: 'Conceber uma matriz de impressão',
+    pt: 'Projetar uma matriz de impressão',
     ur: 'طباعتی قالب کا خاکہ بنائیں',
     id: 'Merancang matriks cetak',
     de: 'Eine Druckform entwerfen',

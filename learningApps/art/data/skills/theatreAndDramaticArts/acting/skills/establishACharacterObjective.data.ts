@@ -11,7 +11,7 @@ export const establishACharacterObjective_Skill_Data = buildSkillConfig({
     ar: 'تحديد هدف الشخصية',
     fr: 'Définir l’objectif d’un personnage',
     bn: 'চরিত্রের লক্ষ্য নির্ধারণ করুন',
-    pt: 'Definir o objetivo de uma personagem',
+    pt: 'Definir o objetivo de um personagem',
     ur: 'کردار کا مقصد طے کریں',
     id: 'Menentukan tujuan karakter',
     de: 'Ein Figuren-Ziel festlegen',
