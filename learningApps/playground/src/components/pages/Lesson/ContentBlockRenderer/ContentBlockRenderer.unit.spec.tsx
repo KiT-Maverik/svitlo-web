@@ -101,6 +101,39 @@ describe('ContentBlockRenderer: response dispatch', () => {
     }} />)).toThrow('requires a supported response.type');
   });
 
+  it('renders rich nested quiz content and tracks selected answers, score and retries', () => {
+    const quiz: ContentBlockResponse<'quiz'> = {
+      id: 'quiz-1', locale, welcome: 'Choose one answer',
+      feedbackMode: 'after-completion',
+      interaction: {
+        retries: 1, showErrors: true, showCorrectAnswers: true, allowExplanations: true,
+        allowDeferring: false, allowQuestionNavigation: false, skippable: false,
+      },
+      results: { visibility: 'immediate', showScore: true },
+      screen: {},
+      questions: {
+        first: {
+          id: 'q-1', type: 'selectOneAnswer', locale, assessmentMethod: 'retrieval', restrictions: [],
+          question: [{ ...nestedText, id: 'prompt', value: 'The question' }],
+          answers: {
+            correct: { yes: { ...nestedText, id: 'correct', value: 'Correct' } },
+            incorrect: { no: { ...nestedText, id: 'incorrect', value: 'Incorrect' } },
+            distractors: {},
+          },
+        },
+      },
+    };
+    const { container } = render(<ContentBlockRenderer type="quiz" response={quiz} />);
+    expect(screen.getByText('The question')).toBeVisible();
+    fireEvent.click(screen.getByRole('radio', { name: 'Correct' }));
+    const submit = container.querySelector('input[type="submit"]');
+    expect(submit).not.toBeNull();
+    fireEvent.click(submit!);
+    expect(screen.getByText('1 / 1')).toBeInTheDocument();
+    fireEvent.click(container.querySelector('input[type="reset"]')!);
+    expect(screen.queryByText('1 / 1')).not.toBeInTheDocument();
+  });
+
   it('renders quiz welcome; supports the empty catalog without legacy block shapes', () => {
     const quiz: ContentBlockResponse<'quiz'> = {
       id: 'q', locale, welcome: 'Your quiz',
