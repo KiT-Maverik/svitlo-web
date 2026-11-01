@@ -65,7 +65,7 @@ export const stellarLuminosity_Skill_Data = buildSkillConfig({
       et: 'Erista tähe kiiratavat energiat ja selle Maalt nähtavat heledust.',
       be: 'Адрозьнівайце выпраменьваную зоркай энэргію ад яе бачнай яркасьці зь Зямлі.',
       ka: 'განასხვავეთ ვარსკვლავის გამოსხივებული ენერგია და მისი ხილული სიკაშკაშე დედამიწიდან.',
-      kk: 'Жұлдыз шығаратын энергия мен оның Жерден көрінетін жарықтығын ажыратыңыз.',
+      kk: 'Жұлдыздың бір секундта шығаратын энергиясы мен оның Жерден көрінетін жарықтығын ажыратыңыз.',
       qm: 'Yıldıznıñ çıqarğan umumiy yarıq quvetini Yerden körüngen parlaqlığından ayırıñız.',
     },
   },
