@@ -32,7 +32,7 @@ export const coordinateDanceWithPulse_Skill_Data = buildSkillConfig({
     be: 'Узгадняйце танец з пульсам',
     ka: 'შეუსაბამეთ ცეკვა რიტმულ პულსს',
     kk: 'Биді ырғақтық соққымен үйлестіріңіз',
-    qm: 'Aqaynı ritmik urğu ile uyğunlaştıñız',
+    qm: 'Oyunnı ritmik urğu ile uyğunlaştıñız',
   },
   description: {
     methodological: 'Relate bodily movement to a chosen rhythmic reference while preserving movement intent.',

@@ -32,7 +32,7 @@ export const analyzeDanceInCulturalContext_Skill_Data = buildSkillConfig({
     be: 'Аналізуйце танец у культурным кантэксце',
     ka: 'გააანალიზეთ ცეკვა კულტურულ კონტექსტში',
     kk: 'Биді мәдени контекстте талдаңыз',
-    qm: 'Aqaynı medeniy bağlamında tahlil etiñiz',
+    qm: 'Oyunnı medeniy bağlamında tahlil etiñiz',
   },
   description: {
     methodological: "Connect a particular dance's forms to its community, occasion and transmission.",
@@ -65,7 +65,7 @@ export const analyzeDanceInCulturalContext_Skill_Data = buildSkillConfig({
       be: 'Даследуйце сувязь танца з яго супольнасцю і нагодай выканання.',
       ka: 'გამოიკვლიეთ, როგორ უკავშირდება ცეკვა თავის საზოგადოებასა და შესრულების შემთხვევას.',
       kk: 'Зерттеңіз: би өз қауымдастығымен және орындалатын жағдаймен қалай байланысты.',
-      qm: 'Bir aqaynıñ cemaatı ve oynalğan vesilesi ile bağını tedqiq etiñiz.',
+      qm: 'Bir oyunnıñ cemaatı ve oynalğan vesilesi ile bağını tedqiq etiñiz.',
     },
   },
 });

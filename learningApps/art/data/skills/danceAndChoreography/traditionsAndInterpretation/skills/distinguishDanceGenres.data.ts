@@ -32,7 +32,7 @@ export const distinguishDanceGenres_Skill_Data = buildSkillConfig({
     be: 'Адрознівайце жанры танца',
     ka: 'განასხვავეთ ცეკვის ჟანრები',
     kk: 'Би жанрларын ажыратыңыз',
-    qm: 'Aqay janrlarını farq etiñiz',
+    qm: 'Oyun janrlarını farq etiñiz',
   },
   description: {
     methodological: 'Identify conventions of specific social, folk, concert or contemporary dance forms.',
@@ -65,7 +65,7 @@ export const distinguishDanceGenres_Skill_Data = buildSkillConfig({
       be: 'Распазнавайце, як розныя танцавальныя стылі выкарыстоўваюць рухі і грамадскія звычаі.',
       ka: 'ამოიცანით, როგორ იყენებს ცეკვის სხვადასხვა სტილი მოძრაობასა და სოციალურ წესებს.',
       kk: 'Алуан би стильдерінің қимылдар мен әлеуметтік дәстүрлерді қалай қолданатынын таныңыз.',
-      qm: 'Farklı aqay tarzlarınıñ areket ve cemaat adetlerini nasıl qullanğanını tanıñız.',
+      qm: 'Farklı oyun tarzlarınıñ areket ve cemaat adetlerini nasıl qullanğanını tanıñız.',
     },
   },
 });
