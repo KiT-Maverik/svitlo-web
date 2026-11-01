@@ -51,7 +51,7 @@ export const arrayModel_Skill_Data = buildSkillConfig({
       id: 'Kamu bisa menyusun benda dalam baris dan kolom yang sama banyak untuk menunjukkan perkalian dan mencari jumlah keseluruhan.',
       de: 'Du kannst Gegenstände in gleichmäßigen Reihen und Spalten anordnen, um eine Multiplikation darzustellen und die Gesamtzahl zu finden.',
       ja: 'ものを同じ数ずつ行と列に並べて、かけ算を表し、全部の数を求められます。',
-      ko: '물건을 같은 수씩 행과 열로 배열하여 곱셈을 나타내고 전체 수를 구할 수 있어요.',
+      ko: '물건을 각 행에 같은 개수가 놓이도록 직사각형으로 배열하고, 행의 수와 한 행의 개수를 곱해 전체 개수를 구할 수 있어요.',
       tr: 'Nesneleri eşit sayıda satır ve sütunlara dizerek çarpmayı gösterebilir ve toplamı bulabilirsin.',
       vi: 'Bạn có thể xếp đồ vật thành các hàng và cột đều nhau để biểu diễn phép nhân và tìm tổng số.',
       ta: 'பொருட்களைச் சமமான வரிசைகளிலும் நெடுவரிசைகளிலும் அமைத்து பெருக்கலைக் காட்டி மொத்த எண்ணிக்கையைக் காணலாம்.',
