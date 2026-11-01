@@ -38,7 +38,7 @@ export const apparentMagnitude_Skill_Data = buildSkillConfig({
     methodological: 'Interpret a logarithmic brightness scale describing how bright a source appears to an observer.',
     frontend: {
       en: 'Understand the scale astronomers use to describe how bright a celestial object appears.',
-      qm: 'Astronomlar kök cisminiñ ne qadar parlak körüngenini bildirgen ölçü birligini añlañız.',
+      qm: 'Astronomlar kök cisminiñ ne qadar parlaq körüngenini bildirgen ölçü birligini añlañız.',
       bn: 'জ্যোতিষ্ক আমাদের কাছে কত উজ্জ্বল দেখায়, তা বোঝাতে ব্যবহৃত মাত্রা সম্পর্কে জানো।',
       ur: 'اس پیمانے کو سمجھیں جس سے بیان کیا جاتا ہے کہ کوئی آسمانی جسم کتنا روشن دکھائی دیتا ہے۔',
       ta: 'ஒரு விண்பொருள் எவ்வளவு பிரகாசமாகத் தெரிகிறது என்பதை விவரிக்கும் அளவுகோலைப் புரிந்துகொள்ளுங்கள்.',

@@ -38,7 +38,7 @@ export const galaxyInteractionsAndMergers_Skill_Data = buildSkillConfig({
     methodological: 'Explain how gravitational encounters alter galaxy structures, gas and star formation.',
     frontend: {
       en: 'See how encounters and mergers can reshape galaxies and trigger new stars.',
-      qm: 'Galaktikalarnıñ yaqinlaşuvı ve birleşüvi olarnıñ şeklini nasıl deñiştirgenini ve yañı yıldızlarnıñ doğuvına nasıl sebep olğanını ögreniñiz.',
+      qm: 'Galaktikalarnıñ yaqınlaşuvı ve birleşüvi olarnıñ şeklini nasıl deñiştirgenini ve yañı yıldızlarnıñ doğuvına nasıl sebep olğanını ögreniñiz.',
       zh: '了解星系相遇和合并如何改变形状并触发恒星形成。',
       hi: 'जानें कि टकराव और विलय आकाशगंगाओं का आकार बदलकर नए तारों का निर्माण कैसे बढ़ाते हैं।',
       es: 'Observa cómo los encuentros y las fusiones transforman galaxias y favorecen la formación de estrellas.',
