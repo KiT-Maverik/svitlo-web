@@ -66,7 +66,7 @@ export const animalDiversity_SkillGroup_Data = buildSkillGroupConfig({
       bn: 'শুধু বাহ্যিক মিল নয়, দেহের নির্ভরযোগ্য গঠনগত বৈশিষ্ট্য দেখে প্রাণীদের প্রধান দলগুলো চেনো।',
       pt: 'Explore as diferentes características dos principais grupos de animais.',
       ur: 'جانوروں کے بڑے گروہوں کو محض ظاہری مشابہت کے بجائے ان کی قابلِ اعتماد جسمانی خصوصیات سے پہچانیں۔',
-      id: 'Jelajahi berbagai ciri kelompok utama hewan.',
+      id: 'Kenali kelompok utama hewan melalui ciri anatomi yang andal, bukan sekadar kemiripan penampilan.',
       de: 'Entdecke die unterschiedlichen Merkmale der wichtigsten Tiergruppen.',
       ja: '動物の主なグループに見られるさまざまな特徴を調べよう。',
       ko: '주요 동물 무리의 다양한 특징을 알아보세요.',

@@ -45,7 +45,7 @@ export const explainThePrincipleOfSelectiveBreeding_Skill_Data = buildSkillConfi
       bn: 'বাছাই করে প্রজননের মাধ্যমে কীভাবে প্রজন্মের পর প্রজন্ম ধরে কাঙ্ক্ষিত বংশগত বৈশিষ্ট্য বেশি দেখা যায়, তা বোঝো।',
       pt: 'Entenda como a reprodução seletiva desenvolve características hereditárias ao longo das gerações.',
       ur: 'سمجھیں کہ انتخابی افزائش نسل در نسل موروثی خصوصیات کو کیسے فروغ دیتی ہے۔',
-      id: 'Pahami bagaimana pemuliaan selektif mengembangkan sifat yang diwariskan dari generasi ke generasi.',
+      id: 'Pahami bagaimana pemuliaan selektif membuat sifat keturunan yang diinginkan makin umum dari generasi ke generasi.',
       de: 'Verstehe, wie durch gezielte Zucht erbliche Merkmale über Generationen gefördert werden.',
       ja: '選択育種によって遺伝する形質が何世代にもわたり発達する仕組みを理解しよう。',
       ko: '선택 육종을 통해 여러 세대에 걸쳐 유전 형질이 발달하는 방법을 이해해 보세요.',

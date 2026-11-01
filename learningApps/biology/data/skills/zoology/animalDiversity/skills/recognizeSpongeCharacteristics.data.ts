@@ -13,7 +13,7 @@ export const recognizeSpongeCharacteristics_Skill_Data = buildSkillConfig({
     bn: 'স্পঞ্জের বৈশিষ্ট্য শনাক্ত করা',
     pt: 'Reconhecer características das esponjas',
     ur: 'اسفنجی جانوروں کی خصوصیات پہچاننا',
-    id: 'Mengenali ciri-ciri spons laut',
+    id: 'Mengenali ciri-ciri spons',
     de: 'Merkmale der Schwämme erkennen',
     ja: '海綿動物の特徴を見分ける',
     ko: '해면동물의 특징 알아보기',
