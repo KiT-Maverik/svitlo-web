@@ -1,8 +1,8 @@
-import type { AllLocales } from '../locale.types';
+import type { Locales_All } from '../locale.types';
 import type { Locale } from '../../languages';
 import type { ContentBlock_ConfigBase, ContentBlock_Localized } from './common.types';
 
-export type VideoContentBlock_Config<LocalizedValue extends ContentBlock_Localized = AllLocales<string>> =
+export type VideoContentBlock_Config<LocalizedValue extends ContentBlock_Localized = Locales_All<string>> =
   ContentBlock_ConfigBase<'video'> & {
     fileLocation: LocalizedValue;
     poster: LocalizedValue;

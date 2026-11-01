@@ -1,8 +1,8 @@
 import type { Locale } from '../../languages';
-import type { AllLocales } from '../locale.types';
+import type { Locales_All } from '../locale.types';
 import type { ContentBlock_ConfigBase, ContentBlock_Localized } from './common.types';
 
-export type ContentBlock_Text_Config<LocalizedValue extends ContentBlock_Localized = AllLocales<string>> =
+export type ContentBlock_Text_Config<LocalizedValue extends ContentBlock_Localized = Locales_All<string>> =
   ContentBlock_ConfigBase<'text'> & {
     value: LocalizedValue;
   };

@@ -1,15 +1,19 @@
 import type { LanguageCode } from '../languages';
 
-export type AllLocales<Value = string> = Record<LanguageCode, Value>;
+export type Locales_All<Value = string> = Record<LanguageCode, Value>;
 
-export type PartialLocales<Value = string> = {
+export type Locales_Subset<Languages extends LanguageCode, Value = string> = Record<Languages, Value> & {
+  fallback: Languages;
+};
+
+export type Locales_Partial<Value = string> = {
   [FallbackLanguage in LanguageCode]: {
     fallback: FallbackLanguage;
   } & Record<FallbackLanguage, Value> &
     Partial<Record<Exclude<LanguageCode, FallbackLanguage>, Value>>;
 }[LanguageCode];
 
-export type NotLocalized<Value = string> = {
+export type Locales_Single<Value = string> = {
   value: Value;
   language: LanguageCode;
 };
