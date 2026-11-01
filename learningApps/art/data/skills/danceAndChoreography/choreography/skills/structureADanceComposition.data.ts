@@ -18,7 +18,7 @@ export const structureADanceComposition_Skill_Data = buildSkillConfig({
     ja: 'ダンス作品を構成する',
     ko: '춤 작품 구성하기',
     tr: 'Bir dans kompozisyonunu yapılandırın',
-    vi: 'Structurer une composition de danse',
+    vi: 'Xây dựng bố cục một tác phẩm múa',
     ta: 'நடனப் படைப்பை கட்டமைக்குங்கள்',
     te: 'నృత్య కూర్పుకు నిర్మాణం ఇవ్వండి',
     mr: 'नृत्यरचनेची मांडणी करा',

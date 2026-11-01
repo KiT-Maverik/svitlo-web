@@ -52,7 +52,7 @@ export const analyzeNorthernRenaissancePrintmaking_Skill_Data = buildSkillConfig
       ja: '北ヨーロッパの版画家が精緻な画像を制作し、広めた方法を知る。',
       ko: '북방 르네상스 시대의 판화가들이 정교한 이미지를 제작하고 유통한 방식을 살펴봅니다.',
       tr: 'Kuzey Avrupalı baskı sanatçılarının ayrıntılı imgeleri nasıl ürettiğini ve yaydığını keşfedin.',
-      vi: 'Khám phá cách các nghệ nhân in khắc Bắc Âu tạo ra và phổ biến hình ảnh chi tiết.',
+      vi: 'Khám phá cách các nghệ nhân khắc in thời Phục hưng phương Bắc tạo ra và phổ biến những hình ảnh tinh xảo.',
       ta: 'வடக்கு ஐரோப்பிய அச்சுக் கலைஞர்கள் நுணுக்கமான படங்களை உருவாக்கிப் பரப்பிய விதத்தை அறியுங்கள்.',
       te: 'ఉత్తర యూరప్ ముద్రణ కళాకారులు వివరమైన చిత్రాలను ఎలా సృష్టించి వ్యాప్తి చేశారో తెలుసుకోండి.',
       mr: 'उत्तर युरोपातील मुद्रणकलाकारांनी तपशीलवार प्रतिमा कशा तयार केल्या आणि प्रसारित केल्या ते जाणून घ्या.',

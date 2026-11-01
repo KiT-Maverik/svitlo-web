@@ -65,7 +65,7 @@ export const architecturalFormAndStyle_SkillGroup_Data = buildSkillGroupConfig({
       ja: '建物の形態、ファサードのリズム、装飾がどのように建築表現を形づくるかを探りましょう。',
       ko: '건물의 매스와 입면의 리듬, 장식이 건축의 표현에 어떻게 기여하는지 살펴보세요.',
       tr: 'Mimari süslemenin tarihsel bağlamında ne anlattığını keşfedin.',
-      vi: 'Khám phá ý nghĩa mà trang trí kiến trúc truyền tải trong bối cảnh lịch sử.',
+      vi: 'Khám phá cách khối tích công trình, nhịp điệu mặt đứng và trang trí thể hiện ý tưởng kiến trúc.',
       ta: 'வரலாற்றுச் சூழலில் கட்டிடக்கலை அலங்காரம் எதைத் தெரிவிக்கிறது என்பதை ஆராயுங்கள்.',
       te: 'చారిత్రక సందర్భంలో నిర్మాణ అలంకరణ ఏమి తెలియజేస్తుందో తెలుసుకోండి.',
       mr: 'ऐतिहासिक संदर्भात वास्तुशिल्पीय सजावट काय व्यक्त करते ते जाणून घ्या.',

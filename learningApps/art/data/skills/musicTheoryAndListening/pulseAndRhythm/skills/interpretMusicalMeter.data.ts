@@ -18,7 +18,7 @@ export const interpretMusicalMeter_Skill_Data = buildSkillConfig({
     ja: '拍子の構造を理解する',
     ko: '음악의 박자 구조 이해하기',
     tr: 'Müzik ölçüsünü yorumlamak',
-    vi: 'Hiểu nhịp ô nhịp trong âm nhạc',
+    vi: 'Hiểu cấu trúc nhịp trong âm nhạc',
     ta: 'இசை அளவைப் புரிந்துகொள்ளுங்கள்',
     te: 'సంగీత మీటర్‌ను అర్థం చేసుకోండి',
     mr: 'संगीताचे तालमान समजून घ्या',
