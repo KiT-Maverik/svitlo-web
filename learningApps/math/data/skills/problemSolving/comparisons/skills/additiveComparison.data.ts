@@ -6,7 +6,7 @@ export const additiveComparison_Skill_Data = buildSkillConfig({
   name: {
     lt: 'Skirtuminio palyginimo uždavinių sprendimas',
     lv: 'Lielumu salīdzināšanas pēc starpības uzdevumu risināšana',
-    et: 'Liitvahe võrdlusülesannete lahendamine',
+    et: 'Vahe järgi võrdlemise ülesannete lahendamine',
     be: 'Разьвязваньне задач на розьнічнае параўнаньне',
     ka: 'შეკრებით შედარების ამოცანების ამოხსნა',
     kk: 'Айырмалық салыстыру есептерін шығару',
