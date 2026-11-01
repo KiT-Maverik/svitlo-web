@@ -15,7 +15,7 @@ export const distinguishTreesShrubsAndHerbaceousPlants_Skill_Data = buildSkillCo
     ur: 'درختوں، جھاڑیوں اور جڑی بوٹیوں میں فرق کرنا',
     id: 'Membedakan Pohon, Semak, dan Tumbuhan Herba',
     de: 'Bäume, Sträucher und krautige Pflanzen unterscheiden',
-    ja: '樹木・低木・草本植物を区別する',
+    ja: '高木・低木・草本植物を区別する',
     ko: '교목·관목·초본식물 구별하기',
     tr: 'Ağaç, Çalı ve Otsu Bitkileri Ayırt Etmek',
     vi: 'Phân biệt cây gỗ, cây bụi và cây thân thảo',
