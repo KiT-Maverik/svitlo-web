@@ -59,7 +59,7 @@ export const explainTheRoleOfLight_Skill_Data = buildSkillConfig({
       pl: 'Wyjaśnij, dlaczego światło jest niezbędne do produkcji pokarmu w fotosyntezie.',
       uk: 'Пояснюй, чому світло необхідне для утворення органічних речовин під час фотосинтезу.',
       lt: 'Paaiškink, kodėl šviesa būtina organinėms medžiagoms susidaryti fotosintezės metu.',
-      lv: 'Izskaidro, kāpēc fotosintēzes laikā pārtikas ražošanai vajadzīga gaisma.',
+      lv: 'Izskaidro, kāpēc fotosintēzes laikā organisko vielu veidošanai ir vajadzīga gaisma.',
       et: 'Selgita, miks valgus on fotosünteesi teel toidu tootmiseks vajalik.',
       be: 'Тлумач, чаму сьвятло неабходнае для ўтварэньня арганічных рэчываў праз фотасынтэз.',
       ka: 'ახსენი, რატომ არის სინათლე აუცილებელი ფოტოსინთეზით ორგანული ნივთიერებების შესაქმნელად.',
