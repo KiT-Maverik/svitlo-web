@@ -23,7 +23,7 @@ export const readHalfQuarter_Skill_Data = buildSkillConfig({
     id: 'Membaca waktu setengah jam dan seperempat jam',
     de: 'Halbe und Viertelstunden ablesen',
     ja: '30分と15分単位の時刻を読む',
-    ko: '30분과 15분 단위로 시간 읽기',
+    ko: '30분과 15분 단위로 시각 읽기',
     tr: 'Yarım ve çeyrek saatleri okuma',
     vi: 'Đọc giờ rưỡi và giờ hơn kém một phần tư',
     ta: 'அரை மணி மற்றும் கால் மணி நேரத்தை வாசித்தல்',
