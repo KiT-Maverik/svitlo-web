@@ -7,7 +7,7 @@ export const analyzeHaidaFormlineArt_Skill_Data = buildSkillConfig({
     en: 'Analyze Haida Formline Art',
     zh: '分析海达族形线（Formline）艺术',
     hi: 'हैडा फॉर्मलाइन कला का विश्लेषण करें',
-    es: 'Analizar el arte de líneas formales haida',
+    es: 'Analizar el arte formline del pueblo haida',
     ar: 'حلّل فن الخطوط الشكلية لدى الهايدا',
     fr: 'Analyser l’art des lignes formelles haïdas',
     bn: 'হাইডা ফর্মলাইন শিল্প বিশ্লেষণ করুন',
@@ -66,7 +66,7 @@ export const analyzeHaidaFormlineArt_Skill_Data = buildSkillConfig({
       be: 'Разгледзьце формы і адмоўную прастору ў мастацтве формлайн народа гайда ў культурным кантэксце.',
       ka: 'შეისწავლეთ ფორმები და ნეგატიური სივრცე ჰაიდას ფორმლაინ ხელოვნებაში მის კულტურულ კონტექსტში.',
       kk: 'Хайда formline өнеріндегі пішіндер мен бос кеңістікті мәдени контекст аясында қарастырыңыз.',
-      qm: 'Haida formline sanatındaki biçimleri ve negatif alanları kültürel bağlamında inceleyin.',
+      qm: 'Haida formline sanatındaki şekillerni ve boşluq naqışlarını olarnıñ medeniy bağlamında tahlil etiñiz.',
     },
   },
 });
