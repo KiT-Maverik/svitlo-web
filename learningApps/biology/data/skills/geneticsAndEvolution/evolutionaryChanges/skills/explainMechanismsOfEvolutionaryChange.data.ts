@@ -44,7 +44,7 @@ export const explainMechanismsOfEvolutionaryChange_Skill_Data = buildSkillConfig
       fr: 'Compare la mutation, la sélection naturelle, la dérive génétique et le flux de gènes comme causes de l’évolution.',
       bn: 'বিবর্তনের কারণ হিসেবে মিউটেশন, প্রাকৃতিক নির্বাচন, জিনগত বিচ্যুতি ও জিন প্রবাহের তুলনা করো।',
       pt: 'Compare mutação, seleção natural, deriva genética e fluxo gênico como causas da evolução.',
-      ur: 'ارتقا کے اسباب کے طور پر تغیر، قدرتی انتخاب، جینیاتی بہاؤ اور جینی منتقلی کا موازنہ کریں۔',
+      ur: 'ارتقا کے اسباب کے طور پر میوٹیشن، قدرتی انتخاب، جینیاتی انجراف اور جینوں کی منتقلی کا موازنہ کریں۔',
       id: 'Bandingkan mutasi, seleksi alam, hanyutan genetik, dan aliran gen sebagai penyebab evolusi.',
       de: 'Vergleiche Mutation, natürliche Selektion, genetische Drift und Genfluss als Ursachen der Evolution.',
       ja: '突然変異、自然選択、遺伝的浮動、遺伝子流動を、進化を引き起こす仕組みとして比較しよう。',
