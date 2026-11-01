@@ -32,6 +32,7 @@ export const compareDevelopmentWithAndWithoutMetamorphosis_Skill_Data = buildSki
     be: 'Параўноўваць разьвіцьцё з мэтамарфозам і бязь яго',
     ka: 'მეტამორფოზით და მის გარეშე განვითარების შედარება',
     kk: 'Метаморфозбен және онсыз дамуды салыстыру',
+    qm: 'Metamorfoznen ve metamorfozsız inkişafnı teñeştirmek',
   },
   description: {
     methodological: "Compare life cycles involving radical structural change with cycles in which young individuals resemble adults.",
@@ -64,6 +65,7 @@ export const compareDevelopmentWithAndWithoutMetamorphosis_Skill_Data = buildSki
       be: 'Параўноўвай жывёлаў, якія зьмяняюць форму цела падчас разьвіцьця, з тымі, якія гэтага ня робяць.',
       ka: 'შეადარე ცხოველები, რომელთა სხეულის ფორმა განვითარებისას იცვლება, იმათ, რომელთა ფორმა არ იცვლება.',
       kk: 'Даму барысында дене пішіні өзгеретін жануарларды өзгермейтіндерімен салыстыр.',
+      qm: 'İnkişaf devamında beden şekli deñişken ayvanlarnı böyle deñişüv olmağan ayvanlar ile teñeştiriñiz.',
     },
   },
 });
