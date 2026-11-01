@@ -5,7 +5,7 @@ export const orbitalElements_Skill_Data = buildSkillConfig({
   id: 'd4677281-c68b-4a68-be2f-01d00ae8e185',
   name: {
     en: 'Orbital Elements',
-      zh: '轨道根数',
+    zh: '轨道根数',
     hi: 'कक्षीय अवयव',
     es: 'Elementos orbitales',
     ar: 'العناصر المدارية',
@@ -39,7 +39,7 @@ export const orbitalElements_Skill_Data = buildSkillConfig({
       'Interpret inclination, eccentricity and other orbital descriptors when comparing celestial trajectories.',
     frontend: {
       en: "Read the parameters that describe an orbit's shape and orientation.",
-          zh: '解读描述轨道形状和空间方向的参数。',
+      zh: '解读描述轨道形状和空间方向的参数。',
       hi: 'कक्षा के आकार और अंतरिक्ष में उसकी दिशा को बताने वाले मापदंडों को समझें।',
       es: 'Interpreta los parámetros que describen la forma y orientación de una órbita.',
       ar: 'اقرأ المعلمات التي تصف شكل المدار واتجاهه في الفضاء.',
