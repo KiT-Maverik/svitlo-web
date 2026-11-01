@@ -54,7 +54,7 @@ export const addLikeDenominators_Skill_Data = buildSkillConfig({
       ko: '분모가 같은 분수는 분자를 더합니다. 합이 1보다 커져도 각 부분의 크기는 같습니다.',
       tr: 'Paydaları eşit kesirleri toplamak için payları topla. Toplam biri aşsa da parçaların boyutu değişmez.',
       vi: 'Cộng các phân số cùng mẫu bằng cách cộng tử số. Kích thước mỗi phần không đổi, kể cả khi tổng lớn hơn một.',
-      ta: 'பகுதி எண் சமமான பின்னங்களைக் கூட்ட லவங்களைச் சேர். கூட்டுத்தொகை ஒன்றைவிடப் பெரியதாயினும் ஒவ்வொரு பகுதியின் அளவு மாறாது.',
+      ta: 'கீழெண் சமமான பின்னங்களைக் கூட்ட மேலெண்களைச் சேர். கூட்டுத்தொகை ஒன்றைவிடப் பெரியதாயினும் ஒவ்வொரு பகுதியின் அளவு மாறாது.',
       te: 'సమాన హారాలున్న భిన్నాలను కూడడానికి లవాలను కలపండి. మొత్తం ఒకటి దాటినా ఒక్కో భాగం పరిమాణం మారదు.',
       mr: 'समान छेद असलेल्या अपूर्णांकांची बेरीज करताना अंश मिळवा. बेरीज एकापेक्षा अधिक झाली तरी भागांचा आकार बदलत नाही.',
       ms: 'Tambah pecahan berpenyebut sama dengan menjumlahkan pengangkanya. Saiz bahagian kekal walaupun jumlah melebihi satu.',
