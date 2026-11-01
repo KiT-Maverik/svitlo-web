@@ -45,7 +45,7 @@ export const galaxyInteractionsAndMergers_Skill_Data = buildSkillConfig({
       ar: 'اكتشف كيف يمكن للتقارب والاندماج إعادة تشكيل المجرات وتحفيز تكوّن نجوم جديدة.',
       fr: 'Observe comment les rencontres et les fusions transforment les galaxies et déclenchent la formation d\'étoiles.',
       bn: 'ছায়াপথের কাছাকাছি আসা ও মিলন কীভাবে তাদের আকৃতি বদলে নতুন তারা গঠন ঘটাতে পারে তা দেখো।',
-      pt: 'Veja como encontros e fusões podem remodelar galáxias e desencadear novas estrelas.',
+      pt: 'Veja como encontros e fusões alteram a estrutura, o gás e a formação de estrelas nas galáxias.',
       ur: 'جانیں کہ ملاقاتیں اور انضمام کہکشاؤں کی شکل کیسے بدلتے اور نئے ستاروں کی تشکیل کیسے بڑھاتے ہیں۔',
       id: 'Lihat bagaimana pertemuan dan penggabungan mengubah bentuk galaksi dan memicu pembentukan bintang baru.',
       de: 'Erfahre, wie Begegnungen und Verschmelzungen Galaxien umformen und neue Sterne entstehen lassen.',

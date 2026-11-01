@@ -45,7 +45,7 @@ export const interstellarDust_Skill_Data = buildSkillConfig({
       ar: 'اعرف كيف يخفت الغبار بين النجوم ضوءها ويجعله أكثر احمرارًا ثم يعيد إشعاعه.',
       fr: 'Découvre comment la poussière interstellaire atténue et rougit la lumière des étoiles, puis réémet de l\'énergie.',
       bn: 'তারার মধ্যবর্তী ধূলিকণা কীভাবে তারার আলো কমায়, লাল করে ও আবার বিকিরণ করে তা জানো।',
-      pt: 'Veja como a poeira interestelar enfraquece, avermelha e reemite a luz das estrelas.',
+      pt: 'Veja como a poeira interestelar atenua e avermelha a luz das estrelas e emite radiação infravermelha.',
       ur: 'جانیں کہ گرد ستاروں کی روشنی کو کیسے مدھم اور سرخ کرتی اور پھر دوبارہ خارج کرتی ہے۔',
       id: 'Lihat bagaimana debu antarbintang meredupkan, memerahkan, dan memancarkan kembali cahaya bintang.',
       de: 'Erfahre, wie interstellarer Staub Sternlicht abschwächt, rötet und wieder abstrahlt.',
