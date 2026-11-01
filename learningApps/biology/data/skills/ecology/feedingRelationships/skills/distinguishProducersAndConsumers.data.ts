@@ -55,7 +55,7 @@ export const distinguishProducersAndConsumers_Skill_Data = buildSkillConfig({
       te: 'జీవులు సేంద్రీయ పదార్థాలను ఎలా పొందుతాయనే ఆధారంగా ఉత్పత్తిదారులను, వినియోగదారులను గుర్తించండి.',
       mr: 'सजीव सेंद्रिय पदार्थ कसे मिळवतात यावरून उत्पादक आणि उपभोक्ता ओळखा.',
       ms: 'Kenal pasti pengeluar dan pengguna mengikut cara mereka memperoleh bahan organik.',
-      he: 'זהה יצרנים וצרכנים לפי האופן שבו הם משיגים חומרים אורגניים.',
+      he: 'זהו יצרנים וצרכנים לפי האופן שבו הם משיגים חומרים אורגניים.',
       pl: 'Rozpoznaj producentów i konsumentów według sposobu zdobywania substancji organicznych.',
       uk: 'Розпізнавай продуцентів і консументів за способом отримання органічних речовин.',
       lt: 'Atpažink gamintojus ir vartotojus pagal tai, kaip jie gauna organinių medžiagų.',

@@ -23,7 +23,7 @@ export const explainThePrincipleOfGeneticModification_Skill_Data = buildSkillCon
     te: 'జన్యు మార్పిడి సూత్రాన్ని వివరించడం',
     mr: 'जनुकीय बदलाचे तत्त्व स्पष्ट करणे',
     ms: 'Menjelaskan prinsip pengubahsuaian genetik',
-    he: 'הסבר העיקרון של שינוי גנטי',
+    he: 'הסבר עקרון השינוי הגנטי',
     pl: 'Wyjaśnianie zasady modyfikacji genetycznej',
     uk: 'Пояснювати принцип генетичної модифікації',
     lt: 'Paaiškinti genetinės modifikacijos principą',

@@ -55,7 +55,7 @@ export const explainTransmissionOfHereditaryInformation_Skill_Data = buildSkillC
       te: 'వారసత్వ సమాచారం ఎలా ప్రతిరూపించబడి తదుపరి తరాలకు అందుతుందో అర్థం చేసుకోండి.',
       mr: 'आनुवंशिक माहितीची प्रत कशी तयार होते आणि पुढे कशी दिली जाते ते समजून घ्या.',
       ms: 'Fahami bagaimana maklumat keturunan disalin dan diturunkan.',
-      he: 'הבן כיצד מידע תורשתי מועתק ומועבר הלאה.',
+      he: 'הבינו כיצד מידע תורשתי מועתק ומועבר הלאה.',
       pl: 'Zrozum, jak informacja dziedziczna jest kopiowana i przekazywana dalej.',
       uk: 'Зрозумій, як спадкова інформація копіюється та передається далі.',
       lt: 'Suprask, kaip paveldima informacija kopijuojama ir perduodama.',

@@ -53,7 +53,7 @@ export const explainBacterialCellDivision_Skill_Data = buildSkillConfig({
       tr: 'Bakteri hücrelerinin ikiye bölünerek nasıl çoğaldığını açıklayın.',
       vi: 'Giải thích cách tế bào vi khuẩn sinh sản bằng cách phân đôi.',
       ta: 'பாக்டீரிய உயிரணுக்கள் இரண்டாகப் பிரிந்து எவ்வாறு பெருகுகின்றன என்பதை விளக்குங்கள்.',
-      te: 'బాక్టీరియా కణాలు రెండుగా విడిపోయి ఎలా పెరుగుతాయో వివరించండి.',
+      te: 'బాక్టీరియా కణాలు రెండుగా విభజించుకొని ఎలా ప్రత్యుత్పత్తి చేస్తాయో వివరించండి.',
       mr: 'जीवाणू पेशी दोन भागांत विभागून त्यांची संख्या कशी वाढवतात ते स्पष्ट करा.',
       ms: 'Terangkan bagaimana sel bakteria membiak dengan membahagi kepada dua.',
       he: 'הסבירו כיצד תאי חיידקים מתרבים באמצעות חלוקה לשניים.',

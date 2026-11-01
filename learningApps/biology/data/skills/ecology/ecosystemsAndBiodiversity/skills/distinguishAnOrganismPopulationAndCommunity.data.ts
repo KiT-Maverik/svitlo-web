@@ -55,7 +55,7 @@ export const distinguishAnOrganismPopulationAndCommunity_Skill_Data = buildSkill
       te: 'ఒక జీవి, ఒకే జాతి జనాభా, అనేక జాతుల జీవ సముదాయాన్ని వేరు చేయండి.',
       mr: 'एक सजीव, एकाच प्रजातीचा जीवसमूह आणि विविध प्रजातींचा समुदाय यांत फरक ओळखा.',
       ms: 'Bezakan satu organisma, populasi sejenis dan komuniti pelbagai spesies.',
-      he: 'הבחן בין יצור יחיד, אוכלוסייה ממין אחד וקהילה ממינים שונים.',
+      he: 'הבחינו בין יצור יחיד, אוכלוסייה ממין אחד וקהילה ממינים שונים.',
       pl: 'Odróżnij pojedynczy organizm, populację jednego gatunku i zespół wielu gatunków.',
       uk: 'Відрізняй окремий організм, популяцію одного виду й угруповання різних видів.',
       lt: 'Atskirk pavienį organizmą, vienos rūšies populiaciją ir skirtingų rūšių bendriją.',
