@@ -32,7 +32,7 @@ export const lunarAppearance_SkillGroup_Data = buildSkillGroupConfig({
     ms: "Rupa Bulan yang kelihatan",
     he: "מראה הירח",
     pl: "Wygląd Księżyca",
-    uk: "Видимий вигляд Місяця",
+    uk: "Вигляд Місяця",
     lt: "Mėnulio išvaizda",
     lv: "Mēness izskats",
     et: "Kuu nähtav kuju",
