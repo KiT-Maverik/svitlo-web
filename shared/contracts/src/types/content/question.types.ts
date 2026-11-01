@@ -1,5 +1,10 @@
 import type { AssessmentMethodId } from './assessmentMethod.types';
-import type { ContentBlock, ContentBlock_Config, TextContentBlock, TextContentBlock_Config } from './contentBlock.types';
+import type {
+  ContentBlock,
+  ContentBlock_Config,
+  TextContentBlock,
+  TextContentBlock_Config,
+} from './blocks/contentBlock.types';
 import type { NonEmptyArray } from '../misc.types';
 import type { Disability } from '../disabilities.types';
 
@@ -22,7 +27,10 @@ export interface FlashcardConfig {
 type Question_ContentBlock = ContentBlock | ContentBlock_Config;
 type Question_TextContentBlock = TextContentBlock | TextContentBlock_Config;
 
-export interface Question_Base<R extends Question_ContentBlock = ContentBlock, T extends Question_TextContentBlock = TextContentBlock> {
+export interface Question_Base<
+  R extends Question_ContentBlock = ContentBlock,
+  T extends Question_TextContentBlock = TextContentBlock,
+> {
   id: string;
   assessmentMethodId: AssessmentMethodId;
   type: QuestionType;
@@ -91,7 +99,10 @@ export interface FillBlanksWithBlocks_Question<
   slots: FillBlanksSlot<T>[];
 }
 
-export type FillBlanksWithBlocks_Question_Config = FillBlanksWithBlocks_Question<ContentBlock_Config, TextContentBlock_Config>;
+export type FillBlanksWithBlocks_Question_Config = FillBlanksWithBlocks_Question<
+  ContentBlock_Config,
+  TextContentBlock_Config
+>;
 
 export interface FillBlanksWithText_Question<
   R extends Question_ContentBlock = ContentBlock,
@@ -103,7 +114,10 @@ export interface FillBlanksWithText_Question<
   slots: FillBlanksSlot<T>[];
 }
 
-export type FillBlanksWithText_Question_Config = FillBlanksWithText_Question<ContentBlock_Config, TextContentBlock_Config>;
+export type FillBlanksWithText_Question_Config = FillBlanksWithText_Question<
+  ContentBlock_Config,
+  TextContentBlock_Config
+>;
 
 export interface MatchBlocks_Question<
   R extends Question_ContentBlock = ContentBlock,
@@ -147,7 +161,9 @@ export type SelectOneAnswer_Answers = BasicAnswersBlock<ContentBlock, ContentBlo
 export type SelectOneAnswer_Answers_Config = BasicAnswersBlock_Config<ContentBlock_Config>['answers'];
 
 export type SelectMultipleAnswers_Answers = BasicAnswersBlock<ContentBlock, NonEmptyArray<ContentBlock>>['answers'];
-export type SelectMultipleAnswers_Answers_Config = BasicAnswersBlock_Config<NonEmptyArray<ContentBlock_Config>>['answers'];
+export type SelectMultipleAnswers_Answers_Config = BasicAnswersBlock_Config<
+  NonEmptyArray<ContentBlock_Config>
+>['answers'];
 
 export interface SelectOneAnswer_Question<
   R extends Question_ContentBlock = ContentBlock,

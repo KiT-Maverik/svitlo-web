@@ -1,4 +1,9 @@
-import type { ContentBlock, ContentBlock_Config, TextContentBlock, TextContentBlock_Config } from './contentBlock.types';
+import type {
+  ContentBlock,
+  ContentBlock_Config,
+  TextContentBlock,
+  TextContentBlock_Config,
+} from './blocks/contentBlock.types';
 import type { Quiz, Quiz_Config, QuizState } from './quiz.types';
 import type { Collection, NonEmptyArray } from '../misc.types';
 import type { LanguageCode } from '../languages';

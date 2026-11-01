@@ -1,4 +1,4 @@
-import type { LanguageCode, Locale } from '../languages';
+import type { LanguageCode, Locale } from '../../languages';
 
 /** Supported content block kinds. */
 export type ContentBlock_Type = 'text' | 'markdown' | 'code' | 'audio' | 'video' | 'youtube' | 'image' | 'scene';
@@ -24,7 +24,9 @@ export type ContentBlock_AnyChosenLocales_Config = {
 /** Text translations are keyed by language, independently of regional locale tags. */
 export type TextContentBlock_AllLanguages_Config = Record<LanguageCode, string>;
 
-export type TextContentBlock_ChosenLanguages_Config<Languages extends LanguageCode = never> = [Languages] extends [never]
+export type TextContentBlock_ChosenLanguages_Config<Languages extends LanguageCode = never> = [Languages] extends [
+  never,
+]
   ? TextContentBlock_AnyChosenLanguages_Config
   : Record<Languages, string>;
 
@@ -95,7 +97,9 @@ export interface CodeContentBlock_AllLocales_Config extends ContentBlock_ConfigB
   codeParams: CodeContentBlockParam_AllLocales[];
 }
 
-export interface CodeContentBlock_ChosenLocales_Config<Locales extends Locale = never> extends ContentBlock_ConfigBase<'code'> {
+export interface CodeContentBlock_ChosenLocales_Config<
+  Locales extends Locale = never,
+> extends ContentBlock_ConfigBase<'code'> {
   allLocales: false;
   fileLocation: ContentBlock_ChosenLocales_Config<Locales>;
   codeParams: CodeContentBlockParam_ChosenLocales<Locales>[];
@@ -202,7 +206,13 @@ export interface ContentBlock_ConfigMap<Locales extends Locale = never> {
 }
 
 export type ContentBlock =
-  TextContentBlock | SceneContentBlock | MarkdownContentBlock | CodeContentBlock | AudioContentBlock | VideoContentBlock | ImageContentBlock;
+  | TextContentBlock
+  | SceneContentBlock
+  | MarkdownContentBlock
+  | CodeContentBlock
+  | AudioContentBlock
+  | VideoContentBlock
+  | ImageContentBlock;
 
 export interface ContentBlockMap {
   text: TextContentBlock;

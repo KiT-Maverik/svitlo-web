@@ -1,7 +1,8 @@
 export type * from './types/misc.types';
 export type * from './types/disabilities.types';
 export type * from './types/readonly.types';
-export type * from './types/content/contentBlock.types';
+export type * from './types/content/blocks/contentBlock.types';
+export type * from './types/content/locale.types';
 export type * from './types/content/lesson.types';
 export type * from './types/content/quiz.types';
 export type * from './types/content/question.types';
