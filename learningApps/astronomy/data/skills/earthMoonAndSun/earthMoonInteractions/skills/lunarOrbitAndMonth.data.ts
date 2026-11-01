@@ -13,7 +13,7 @@ export const lunarOrbitAndMonth_Skill_Data = buildSkillConfig({
     bn: "চাঁদের কক্ষপথ ও মাস",
     pt: "Órbita lunar e mês",
     ur: "چاند کا مدار اور مہینہ",
-    id: "Orbit Bulan dan Bulan Kalender",
+    id: "Orbit Bulan dan Siklus Bulanan",
     de: "Mondbahn und Monat",
     ja: "月の軌道と月の周期",
     ko: "달의 궤도와 월의 주기",
