@@ -12,7 +12,7 @@ export const atmospheresAndWeather_SkillGroup_Data = buildSkillGroupConfig({
   id: 'b0cfe307-925b-4547-8962-1ab550f937e4',
   name: {
     en: 'Atmospheres and Weather',
-      zh: '大气与天气',
+    zh: '大气与天气',
     hi: 'वायुमंडल और मौसम',
     es: 'Atmósferas y tiempo meteorológico',
     ar: 'الأغلفة الجوية والطقس',
@@ -52,7 +52,7 @@ export const atmospheresAndWeather_SkillGroup_Data = buildSkillGroupConfig({
       'Atmospheric behavior depends on composition, gravity, radiation, pressure and circulation in ways that vary widely from Earth.',
     frontend: {
       en: 'Discover why different planets have very different weather and atmospheres.',
-          zh: '了解为什么不同的行星具有差异很大的大气层和天气现象。',
+      zh: '了解为什么不同的行星具有差异很大的大气层和天气现象。',
       hi: 'जानें कि अलग-अलग ग्रहों के वायुमंडल और मौसम इतने भिन्न क्यों होते हैं।',
       es: 'Descubre por qué distintos planetas tienen atmósferas y condiciones meteorológicas tan diferentes.',
       ar: 'اكتشف لماذا تختلف الأغلفة الجوية والظروف الجوية كثيرًا من كوكب إلى آخر.',
