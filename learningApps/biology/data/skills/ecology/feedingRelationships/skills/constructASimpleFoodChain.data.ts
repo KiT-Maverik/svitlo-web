@@ -55,7 +55,7 @@ export const constructASimpleFoodChain_Skill_Data = buildSkillConfig({
       te: 'ఏ జీవి ఏ జీవి నుంచి పదార్థం, శక్తి పొందుతుందో చూపే ఆహార గొలుసును నిర్మించండి.',
       mr: 'कोणता सजीव कोणाकडून पदार्थ आणि ऊर्जा मिळवतो हे दाखवणारी अन्नसाखळी तयार करा.',
       ms: 'Bina rantai makanan yang menunjukkan organisma mana memperoleh jirim dan tenaga daripada organisma lain.',
-      he: 'בנה שרשרת מזון שמראה מי מקבל חומר ואנרגיה ממי.',
+      he: 'בנו שרשרת מזון שמראה מי מקבל חומר ואנרגיה ממי.',
       pl: 'Zbuduj łańcuch pokarmowy pokazujący, kto od kogo otrzymuje materię i energię.',
       uk: 'Побудуй харчовий ланцюг, що показує, хто від кого отримує речовини й енергію.',
       lt: 'Sudaryk mitybos grandinę, rodančią, kas iš ko gauna medžiagų ir energijos.',
