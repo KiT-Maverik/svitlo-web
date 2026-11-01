@@ -40,7 +40,7 @@ export const interpretArchitecturalOrnament_Skill_Data = buildSkillConfig({
       en: 'Explore what architectural decoration communicates in its historical setting.',
       zh: '将建筑体量与开放空间组合成均衡的视觉形态。',
       hi: 'इमारत के आयतन और खुले स्थानों को मिलाकर संतुलित दृश्य रूप बनाएँ।',
-      es: 'Combina volúmenes edificados y espacios abiertos en una forma visual equilibrada.',
+      es: 'Explora qué significado transmiten los ornamentos arquitectónicos según su época y su contexto cultural.',
       ar: 'اجمع بين كتل المبنى والفراغات المفتوحة في تكوين بصري متوازن.',
       fr: 'Associez volumes bâtis et espaces ouverts pour créer une forme visuelle équilibrée.',
       bn: 'ভবনের আয়তন ও খোলা জায়গা মিলিয়ে ভারসাম্যপূর্ণ দৃশ্যরূপ তৈরি করুন।',

@@ -40,7 +40,7 @@ export const designSiteSpecificArt_Skill_Data = buildSkillConfig({
       en: 'Create art that responds to the location where people encounter it.',
       zh: '创作能够回应人们所处场所的艺术作品。',
       hi: 'ऐसी कला बनाएँ जो उस स्थान के अनुरूप हो जहाँ लोग उसे देखते हैं।',
-      es: 'Crea arte que responda al lugar donde las personas la encuentran.',
+      es: 'Crea arte que responda al lugar donde las personas se encuentran con él.',
       ar: 'ابتكر فناً يستجيب للمكان الذي يلتقي فيه الناس بالعمل.',
       fr: 'Créez une œuvre qui dialogue avec le lieu où le public la découvre.',
       bn: 'এমন শিল্প তৈরি করুন, যা মানুষ যে স্থানে তা দেখে সেই স্থানের সঙ্গে সাড়া মেলায়।',

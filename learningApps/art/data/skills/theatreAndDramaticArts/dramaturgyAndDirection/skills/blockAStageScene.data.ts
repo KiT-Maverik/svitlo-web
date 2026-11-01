@@ -7,7 +7,7 @@ export const blockAStageScene_Skill_Data = buildSkillConfig({
     en: 'Block a Stage Scene',
     zh: '调度舞台场景',
     hi: 'मंच दृश्य की ब्लॉकिंग तय करें',
-    es: 'Bloquear una escena',
+    es: 'Planificar posiciones y movimientos en escena',
     ar: 'تحديد حركة الممثلين في المشهد',
     fr: 'Définir les déplacements d’une scène',
     bn: 'মঞ্চদৃশ্যের ব্লকিং নির্ধারণ করুন',

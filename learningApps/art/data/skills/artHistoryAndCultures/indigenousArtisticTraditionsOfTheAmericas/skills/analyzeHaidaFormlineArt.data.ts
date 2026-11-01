@@ -7,7 +7,7 @@ export const analyzeHaidaFormlineArt_Skill_Data = buildSkillConfig({
     en: 'Analyze Haida Formline Art',
     zh: '分析海达人形线条艺术',
     hi: 'हैडा फॉर्मलाइन कला का विश्लेषण करें',
-    es: 'Analizar el arte de líneas formales haida',
+    es: 'Analizar el arte formline del pueblo haida',
     ar: 'حلّل فن الخطوط الشكلية لدى الهايدا',
     fr: 'Analyser l’art des lignes formelles haïdas',
     bn: 'হাইডা ফর্মলাইন শিল্প বিশ্লেষণ করুন',

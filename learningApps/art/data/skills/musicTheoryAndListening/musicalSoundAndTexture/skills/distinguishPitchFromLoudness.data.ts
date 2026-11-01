@@ -7,7 +7,7 @@ export const distinguishPitchFromLoudness_Skill_Data = buildSkillConfig({
     en: 'Distinguish Pitch from Loudness',
     zh: '区分音高与响度',
     hi: 'स्वर की ऊँचाई और ध्वनि की तीव्रता में अंतर करें',
-    es: 'Distinguir la altura del volumen',
+    es: 'Distinguir la altura y la intensidad del sonido',
     ar: 'التمييز بين حدة النغمة وعلو الصوت',
     fr: 'Distinguer la hauteur du volume sonore',
     bn: 'সুরের উচ্চতা ও শব্দের জোরের পার্থক্য বোঝা',

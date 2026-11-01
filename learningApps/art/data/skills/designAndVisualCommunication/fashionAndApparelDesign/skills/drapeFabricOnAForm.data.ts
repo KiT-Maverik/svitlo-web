@@ -8,7 +8,7 @@ export const drapeFabricOnAForm_Skill_Data = buildSkillConfig({
 
     zh: '在人体模型上进行面料垂坠造型',
     hi: 'किसी रूप पर कपड़े को ड्रेप करें',
-    es: 'Drapejar tela sobre una forma',
+    es: 'Drapear tela sobre una forma',
     ar: 'إسدال القماش على شكل',
     fr: 'Draper du tissu sur une forme',
     bn: 'একটি আকৃতির ওপর কাপড় ড্রেপ করুন',
