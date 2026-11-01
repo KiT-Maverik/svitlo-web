@@ -43,7 +43,7 @@ export const analyzeByzantineIconPainting_Skill_Data = buildSkillConfig({
       hi: 'जानें कि बीज़ेंटाइन आइकन उपासना में प्रतीकात्मक रूपों और सामग्रियों का उपयोग कैसे करते हैं।',
       es: 'Descubre cómo los iconos bizantinos usan formas y materiales simbólicos en el culto.',
       ar: 'اكتشف كيف تستخدم الأيقونات البيزنطية الأشكال والمواد الرمزية في العبادة.',
-      fr: 'Découvrir comment les icônes byzantines utilisent des formes et des matériaux symboliques dans le culte.',
+      fr: 'Découvrez comment les icônes byzantines utilisent des formes et des matériaux symboliques dans la pratique dévotionnelle.',
       bn: 'জানুন, বাইজেন্টাইন আইকন উপাসনায় কীভাবে প্রতীকী রূপ ও উপকরণ ব্যবহার করে।',
       pt: 'Descubra como os ícones bizantinos usam formas e materiais simbólicos no culto.',
       ur: 'دیکھیں کہ بازنطینی آئیکن عبادت میں علامتی شکلیں اور مواد کیسے استعمال کرتے ہیں۔',

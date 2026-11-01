@@ -43,7 +43,7 @@ export const analyzeGothicCathedralSculpture_Skill_Data = buildSkillConfig({
       hi: 'जानें कि तराशी गई गिरजाघर की आकृतियाँ गोथिक वास्तुकला में कहानियाँ कैसे सुनाती हैं।',
       es: 'Explora cómo las figuras talladas de las catedrales cuentan historias dentro de la arquitectura gótica.',
       ar: 'اكتشف كيف تنقل الشخصيات المنحوتة في الكاتدرائيات القصص ضمن العمارة القوطية.',
-      fr: "Découvrir comment les figures sculptées des cathédrales racontent des histoires dans l'architecture gothique.",
+      fr: 'Découvrez comment les figures sculptées des cathédrales racontent des histoires dans l’architecture gothique.',
       bn: 'জানুন, ক্যাথেড্রালের খোদাই করা মূর্তিগুলো কীভাবে গথিক স্থাপত্যের মধ্যে গল্প তুলে ধরে।',
       pt: 'Explore como as figuras esculpidas nas catedrais comunicam histórias na arquitetura gótica.',
       ur: 'دیکھیں کہ گرجا گھروں کے تراشے ہوئے مجسمے گوتھک طرزِ تعمیر میں کہانیاں کیسے بیان کرتے ہیں۔',

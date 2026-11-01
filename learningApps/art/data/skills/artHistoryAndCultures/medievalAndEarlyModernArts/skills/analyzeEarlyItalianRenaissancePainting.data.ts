@@ -43,7 +43,7 @@ export const analyzeEarlyItalianRenaissancePainting_Skill_Data = buildSkillConfi
       hi: 'जानें कि प्रारंभिक इतालवी पुनर्जागरण के चित्रकारों ने स्थान, मानव आकृतियों और कथा का अन्वेषण कैसे किया।',
       es: 'Descubre cómo los pintores del primer Renacimiento italiano exploraron el espacio, las figuras y la narración.',
       ar: 'اكتشف كيف استكشف رسامو عصر النهضة الإيطالي المبكر المكان والشخصيات والسرد.',
-      fr: "Découvrir comment les peintres de la première Renaissance italienne ont exploré l'espace, les figures et le récit.",
+      fr: 'Découvrez comment les peintres de la première Renaissance italienne ont exploré l’espace, les figures et le récit.',
       bn: 'জানুন, প্রারম্ভিক ইতালীয় রেনেসাঁর চিত্রশিল্পীরা কীভাবে স্থান, মানবমূর্তি ও কাহিনি অন্বেষণ করেছেন।',
       pt: 'Veja como os pintores do início do Renascimento italiano exploraram espaço, figuras e narrativa.',
       ur: 'دیکھیں کہ ابتدائی اطالوی نشاۃ ثانیہ کے مصوروں نے جگہ، انسانی شکلوں اور کہانی کو کیسے دریافت کیا۔',

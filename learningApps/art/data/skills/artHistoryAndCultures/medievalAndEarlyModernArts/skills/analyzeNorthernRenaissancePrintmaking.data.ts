@@ -43,7 +43,7 @@ export const analyzeNorthernRenaissancePrintmaking_Skill_Data = buildSkillConfig
       hi: 'जानें कि उत्तरी यूरोप के प्रिंट निर्माताओं ने विस्तृत चित्र कैसे बनाए और प्रसारित किए।',
       es: 'Descubre cómo los grabadores del norte de Europa crearon y difundieron imágenes detalladas.',
       ar: 'اكتشف كيف أنشأ فنانو الطباعة في شمال أوروبا صورًا دقيقة ونشروها.',
-      fr: "Découvrir comment les graveurs d'Europe du Nord ont créé et diffusé des images détaillées.",
+      fr: 'Découvrez comment les graveurs d’Europe du Nord ont créé et diffusé des images détaillées.',
       bn: 'জানুন, উত্তর ইউরোপের মুদ্রণশিল্পীরা কীভাবে সূক্ষ্ম ছবির সৃষ্টি ও প্রচার করেছেন।',
       pt: 'Descubra como os gravadores do norte da Europa criaram e divulgaram imagens detalhadas.',
       ur: 'دیکھیں کہ شمالی یورپ کے چھاپہ سازوں نے تفصیلی تصاویر کیسے بنائیں اور پھیلائیں۔',
