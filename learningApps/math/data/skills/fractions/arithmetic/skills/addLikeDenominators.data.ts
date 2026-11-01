@@ -25,7 +25,7 @@ export const addLikeDenominators_Skill_Data = buildSkillConfig({
     ja: '同じ全体を基準に分母が同じ分数を足す',
     ko: '같은 전체를 기준으로 분모가 같은 분수 더하기',
     tr: 'Bir bütün içinde paydaları eşit kesirleri toplama',
-    vi: 'Cộng các phân số cùng mẫu số trong phạm vi một đơn vị',
+    vi: 'Cộng các phân số cùng mẫu số của cùng một toàn thể',
     ta: 'ஒரு முழுமைக்குள் ஒரே கீழெண் கொண்ட பின்னங்களைக் கூட்டுதல்',
     te: 'ఒక మొత్తం పరిధిలో ఒకే హారం గల భిన్నాలను కూడడం',
     mr: 'एका पूर्णाच्या मर्यादेत समान छेदाचे अपूर्णांक जोडणे',
