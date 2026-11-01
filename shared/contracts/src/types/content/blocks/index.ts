@@ -5,11 +5,11 @@ import type { ContentBlock_Localized } from './common.types';
 import type { ImageContentBlock, ImageContentBlock_Config } from './image.types';
 import type { MarkdownContentBlock, MarkdownContentBlock_Config } from './markdown.types';
 import type { SceneContentBlock, SceneContentBlock_Config } from './scene.types';
-import type { TextContentBlock, TextContentBlock_Config } from './text.types';
+import type { ContentBlock_Text, ContentBlock_Text_Config } from './text.types';
 import type { VideoContentBlock, VideoContentBlock_Config } from './video.types';
 
 export type ContentBlock_Config<LocalizedValue extends ContentBlock_Localized = AllLocales<string>> =
-  | TextContentBlock_Config<LocalizedValue>
+  | ContentBlock_Text_Config<LocalizedValue>
   | SceneContentBlock_Config
   | MarkdownContentBlock_Config<LocalizedValue>
   | CodeContentBlock_Config<LocalizedValue>
@@ -18,7 +18,7 @@ export type ContentBlock_Config<LocalizedValue extends ContentBlock_Localized = 
   | ImageContentBlock_Config<LocalizedValue>;
 
 export interface ContentBlock_ConfigMap<LocalizedValue extends ContentBlock_Localized = AllLocales<string>> {
-  text: TextContentBlock_Config<LocalizedValue>;
+  text: ContentBlock_Text_Config<LocalizedValue>;
   scene: SceneContentBlock_Config;
   markdown: MarkdownContentBlock_Config<LocalizedValue>;
   code: CodeContentBlock_Config<LocalizedValue>;
@@ -28,7 +28,7 @@ export interface ContentBlock_ConfigMap<LocalizedValue extends ContentBlock_Loca
 }
 
 export type ContentBlock =
-  | TextContentBlock
+  | ContentBlock_Text
   | SceneContentBlock
   | MarkdownContentBlock
   | CodeContentBlock
@@ -37,7 +37,7 @@ export type ContentBlock =
   | ImageContentBlock;
 
 export interface ContentBlockMap {
-  text: TextContentBlock;
+  text: ContentBlock_Text;
   scene: SceneContentBlock;
   markdown: MarkdownContentBlock;
   code: CodeContentBlock;
@@ -57,8 +57,8 @@ export type {
   MarkdownContentBlock_Config,
   SceneContentBlock,
   SceneContentBlock_Config,
-  TextContentBlock,
-  TextContentBlock_Config,
+  ContentBlock_Text,
+  ContentBlock_Text_Config,
   VideoContentBlock,
   VideoContentBlock_Config,
 };
