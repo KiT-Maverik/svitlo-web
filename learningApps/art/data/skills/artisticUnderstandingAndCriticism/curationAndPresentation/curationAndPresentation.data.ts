@@ -75,7 +75,7 @@ export const curationAndPresentation_SkillGroup_Data = buildSkillGroupConfig({
       uk: 'Дослідіть, як добір і показ мистецьких творів змінюють досвід глядачів.',
       lt: 'Sužinokite, kaip meno kūrinių atranka ir eksponavimas keičia žiūrovų patirtį.',
       lv: 'Izpētiet, kā mākslas darbu atlase un izstādīšana maina skatītāju pieredzi.',
-      et: 'Uurige, kuidas kunstiteoste valimine ja eksponeerimine muudab publiku kogemust.',
+      et: 'Uuri, kuidas kunstiteoste valimine ja eksponeerimine muudab publiku kogemust.',
       be: 'Даведайцеся, як адбор і экспанаванне твораў мастацтва змяняюць досвед гледачоў.',
       ka: 'გაეცანით, როგორ ცვლის ხელოვნების ნიმუშების შერჩევა და გამოფენა მაყურებლის გამოცდილებას.',
       kk: 'Өнер туындыларын таңдау мен көрмеге қою көрермендердің тәжірибесін қалай өзгертетінін зерттеңіз.',

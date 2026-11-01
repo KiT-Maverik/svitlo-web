@@ -68,7 +68,7 @@ export const oceaniaArtisticTraditions_SkillGroup_Data = buildSkillGroupConfig({
       uk: 'Вивчайте самобутні мистецькі традиції спільнот маорі та народу йолŋу.',
       lt: 'Pažinkite savitas Māori bendruomenių ir Yolŋu tautos meno tradicijas.',
       lv: 'Iepazīstiet atšķirīgās Māori kopienu un Yolŋu tautas mākslas tradīcijas.',
-      et: 'Tutvuge Māori kogukondade ja Yolŋu rahva omanäoliste kunstipäranditega.',
+      et: 'Tutvu Māori kogukondade ja Yolŋu rahva omanäoliste kunstipäranditega.',
       be: 'Вывучайце самабытныя мастацкія традыцыі супольнасцей Māori і народа Yolŋu.',
       ka: 'შეისწავლეთ მაორის თემებისა და იოლნგუს ხალხის გამორჩეული მხატვრული ტრადიციები.',
       kk: 'Маори қауымдары мен Йолнгу халқының өзіндік өнер дәстүрлерін зерттеңіз.',

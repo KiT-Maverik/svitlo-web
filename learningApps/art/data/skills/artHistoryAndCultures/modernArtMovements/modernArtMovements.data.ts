@@ -83,7 +83,7 @@ export const modernArtMovements_SkillGroup_Data = buildSkillGroupConfig({
       uk: 'Досліджуйте, як мистецькі напрями модернізму кидали виклик усталеним художнім нормам.',
       lt: 'Sužinokite, kaip moderniojo meno judėjimai metė iššūkį įprastoms meno konvencijoms.',
       lv: 'Uzziniet, kā modernās mākslas kustības apstrīdēja ierastās mākslas konvencijas.',
-      et: 'Uurige, kuidas moodsa kunsti liikumised seadsid kahtluse alla väljakujunenud kunstinormid.',
+      et: 'Uuri, kuidas moodsa kunsti liikumised seadsid kahtluse alla väljakujunenud kunstinormid.',
       be: 'Даследуйце, як мастацкія плыні мадэрнізму аспрэчвалі звыклыя мастацкія нормы.',
       ka: 'გაიგეთ, როგორ უპირისპირდებოდა თანამედროვე ხელოვნების მოძრაობები დამკვიდრებულ მხატვრულ წესებს.',
       kk: 'Заманауи өнер қозғалыстары қалыптасқан көркемдік қағидаларға қалай сын-қатер төндіргенін зерттеңіз.',
