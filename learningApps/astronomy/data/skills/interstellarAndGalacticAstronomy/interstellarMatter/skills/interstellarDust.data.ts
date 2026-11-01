@@ -58,7 +58,7 @@ export const interstellarDust_Skill_Data = buildSkillConfig({
       mr: 'धूळ तारकाप्रकाश कसा मंद व लालसर करते आणि पुन्हा उत्सर्जित करते ते पाहा.',
       ms: 'Lihat bagaimana habuk antara bintang meredupkan, memerahkan dan memancarkan semula cahaya bintang.',
       he: 'ראו כיצד אבק בין־כוכבי מחליש, מאדים ופולט מחדש אור כוכבים.',
-      pl: 'Sprawdź, jak pył międzygwiazdowy przyciemnia, czerwieni i ponownie emituje światło gwiazd.',
+      pl: 'Sprawdź, jak pył międzygwiazdowy osłabia i zaczerwienia światło gwiazd, a pochłoniętą energię wypromieniowuje w podczerwieni.',
       uk: 'Досліди, як міжзоряний пил послаблює й почервонює світло зір, а поглинуту енергію перевипромінює в інфрачервоному діапазоні.',
       lt: 'Sužinok, kaip dulkės silpnina, raudonina ir vėl spinduliuoja žvaigždžių šviesą.',
       lv: 'Izpēti, kā putekļi vājina, sarkanina un atkārtoti izstaro zvaigžņu gaismu.',
