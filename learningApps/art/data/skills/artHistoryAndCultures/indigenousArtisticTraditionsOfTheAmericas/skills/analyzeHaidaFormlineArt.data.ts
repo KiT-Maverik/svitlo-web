@@ -66,7 +66,7 @@ export const analyzeHaidaFormlineArt_Skill_Data = buildSkillConfig({
       be: 'Разгледзьце формы і адмоўную прастору ў мастацтве формлайн народа гайда ў культурным кантэксце.',
       ka: 'შეისწავლეთ ფორმები და ნეგატიური სივრცე ჰაიდას ფორმლაინ ხელოვნებაში მის კულტურულ კონტექსტში.',
       kk: 'Хайда formline өнеріндегі пішіндер мен бос кеңістікті мәдени контекст аясында қарастырыңыз.',
-      qm: 'Haida formline sanatındaki biçimleri ve negatif alanları kültürel bağlamında inceleñiz.',
+      qm: 'Haida formline sanatındaki şekillerni ve boşluq naqışlarını olarnıñ medeniy bağlamında tahlil etiñiz.',
     },
   },
 });
