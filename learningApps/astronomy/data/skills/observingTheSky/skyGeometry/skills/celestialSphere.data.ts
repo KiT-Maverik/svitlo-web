@@ -23,7 +23,7 @@ export const celestialSphere_Skill_Data = buildSkillConfig({
     te: 'ఖగోళ గోళం',
     mr: 'खगोलीय गोल',
     ms: 'Sfera Samawi',
-    he: 'כיפת השמיים המדומה',
+    he: 'הספרה השמימית',
     pl: 'Sfera niebieska',
     uk: 'Небесна сфера',
     lt: 'Dangaus sfera',
