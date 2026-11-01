@@ -29,7 +29,7 @@ export const heliosphere_Skill_Data = buildSkillConfig({
     ja: '太陽圏',
     ko: '태양권',
     ar: 'الغلاف الشمسي',
-    hi: 'सौरमंडलीय प्रभाव क्षेत्र (हीलियोस्फीयर)',
+    hi: 'हेलियोस्फीयर',
     he: 'הליוספירה',
     vi: 'Nhật quyển',
   },
