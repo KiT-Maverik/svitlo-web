@@ -66,7 +66,7 @@ export const barycentricMotion_Skill_Data = buildSkillConfig({
       be: 'Зразумейце, чаму два целы, што абарачаюцца адно вакол аднаго, рухаюцца вакол супольнага цэнтру мас.',
       ka: 'გაიგეთ, რატომ მოძრაობს ორი ურთიერთორბიტული სხეული საერთო მასათა ცენტრის გარშემო.',
       kk: 'Бір-бірін айналатын екі дененің неге ортақ масса центрін айнала қозғалатынын түсініңіз.',
-      qm: 'Bir-birini dolanğan eki cisımniñ ne içün umumiy kütle merkezi etrafında areket etkenini añlañız.',
+      qm: 'Bir-birini dolanğan eki cisimniñ ne içün umumiy kütle merkezi etrafında areket etkenini añlañız.',
     },
   },
 });
