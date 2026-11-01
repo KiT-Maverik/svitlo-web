@@ -54,7 +54,7 @@ export const subtractLikeDenominators_Skill_Data = buildSkillConfig({
       ko: '분모가 같은 분수는 분자를 뺍니다. 부분의 개수만 줄이고 크기는 바꾸지 않습니다.',
       tr: 'Paydaları eşit kesirleri çıkarmak için payları çıkar. Parça sayısı azalır ama büyüklükleri değişmez.',
       vi: 'Trừ các phân số cùng mẫu bằng cách trừ tử số. Ta bớt phần chứ không thay đổi kích thước mỗi phần.',
-      ta: 'பகுதி எண் சமமான பின்னங்களைக் கழிக்க லவங்களைக் கழி. பகுதிகளின் எண்ணிக்கை குறையும், அளவு மாறாது.',
+      ta: 'கீழெண் சமமான பின்னங்களைக் கழிக்க மேலெண்களைக் கழி. பகுதிகளின் எண்ணிக்கை குறையும்; ஒவ்வொரு பகுதியின் அளவு மாறாது.',
       te: 'సమాన హారాలున్న భిన్నాలను తీసివేయడానికి లవాలను తీసివేయండి. భాగాల సంఖ్య తగ్గుతుంది, పరిమాణం మారదు.',
       mr: 'समान छेद असलेल्या अपूर्णांकांची वजाबाकी करताना अंश वजा करा. भाग कमी होतात, आकार नाही.',
       ms: 'Tolak pecahan berpenyebut sama dengan menolak pengangkanya. Bilangan bahagian berkurang, saiznya tidak berubah.',
