@@ -26,7 +26,7 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
     ko: '나눗셈 — 3-자리 수÷1-자리 수',
     tr: 'Bölme — 3-basamaklı÷1-basamaklı',
     vi: 'Phép chia — Số có ba chữ số chia cho số có một chữ số',
-    ta: 'வகுத்தல் — 3-இலக்க÷1-இலக்க',
+    ta: 'வகுத்தல் — மூன்று இலக்க எண்ணை ஒரு இலக்க எண்ணால் வகுத்தல்',
     te: 'భాగహారం — 3-అంకెల÷1-అంకెల',
     mr: 'भागाकार — 3-अंकी÷1-अंकी',
     ms: 'Pembahagian — 3-digit÷1-digit',
