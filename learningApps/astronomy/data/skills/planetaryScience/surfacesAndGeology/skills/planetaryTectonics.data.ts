@@ -5,7 +5,7 @@ export const planetaryTectonics_Skill_Data = buildSkillConfig({
   id: 'c00cb75e-f141-46c9-907c-f324a61832f4',
   name: {
     en: 'Planetary Tectonics',
-      zh: '行星构造活动',
+    zh: '行星构造活动',
     hi: 'ग्रहों का विवर्तनिकी अध्ययन',
     es: 'Tectónica planetaria',
     ar: 'تكتونيات الكواكب',
@@ -39,7 +39,7 @@ export const planetaryTectonics_Skill_Data = buildSkillConfig({
       'Compare crustal deformation and tectonic regimes across worlds without assuming Earth-style plate tectonics everywhere.',
     frontend: {
       en: 'Compare how the crusts of different worlds bend, break or move.',
-          zh: '比较不同天体的地壳如何弯曲、断裂或移动。',
+      zh: '比较不同天体的地壳如何弯曲、断裂或移动。',
       hi: 'तुलना करें कि अलग-अलग ग्रहों की पर्पटियाँ कैसे मुड़ती, टूटती या खिसकती हैं।',
       es: 'Compara cómo las cortezas de distintos mundos se doblan, fracturan o desplazan.',
       ar: 'قارن كيف تنحني القشور في عوالم مختلفة أو تتشقق أو تتحرك.',
