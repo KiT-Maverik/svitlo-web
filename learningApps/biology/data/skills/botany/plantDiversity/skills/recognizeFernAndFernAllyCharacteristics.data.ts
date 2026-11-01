@@ -42,7 +42,7 @@ export const recognizeFernAndFernAllyCharacteristics_Skill_Data = buildSkillConf
       es: 'Reconoce los helechos y otras plantas vasculares relacionadas que se reproducen mediante esporas.',
       ar: 'تعرّف على السرخسيات والنباتات الوعائية القريبة منها التي تتكاثر بالأبواغ.',
       fr: 'Reconnais les fougères et les plantes vasculaires apparentées qui se reproduisent par spores.',
-      bn: 'রেণুর মাধ্যমে বংশবিস্তারকারী ফার্ন ও সংশ্লিষ্ট সংবহনতন্ত্রযুক্ত উদ্ভিদ চিনতে শেখো।',
+      bn: 'রেণুর মাধ্যমে বংশবিস্তারকারী ফার্ন ও সংশ্লিষ্ট সংবহন কলাযুক্ত উদ্ভিদ চিনতে শেখো।',
       pt: 'Reconheça samambaias e plantas vasculares relacionadas que se reproduzem por esporos.',
       ur: 'تخمکوں کے ذریعے تولید کرنے والے فرن اور متعلقہ عروقی پودے پہچانیں۔',
       id: 'Kenali tumbuhan paku dan tumbuhan berpembuluh terkait yang bereproduksi dengan spora.',
