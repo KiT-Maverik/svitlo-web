@@ -5,6 +5,7 @@ export const sunspots_Skill_Data = buildSkillConfig({
   id: '63ef035f-cea9-4396-a7c2-4fe4f5f34cd7',
   name: {
     en: 'Sunspots',
+    qm: 'Küneş lekeleri',
     bn: 'সৌরকলঙ্ক',
     ur: 'شمسی دھبے',
     ta: 'சூரியப்புள்ளிகள்',
@@ -38,6 +39,7 @@ export const sunspots_Skill_Data = buildSkillConfig({
       'Explain the relation between dark solar surface regions, strong magnetic fields and relative temperature.',
     frontend: {
       en: 'Discover why sunspots look darker and how they relate to magnetic fields.',
+      qm: 'Küneş lekeleri ne içün daha qaranlıq körüngenini ve olarnıñ magnit meydanları ile nasıl bağlı olğanını ögreniñiz.',
       bn: 'সৌরকলঙ্ক কেন তুলনামূলক গাঢ় দেখায় এবং চৌম্বক ক্ষেত্রের সঙ্গে তাদের সম্পর্ক কী, তা জানো।',
       ur: 'جانیں کہ شمسی دھبے نسبتاً گہرے کیوں نظر آتے ہیں اور مقناطیسی میدانوں سے ان کا کیا تعلق ہے۔',
       ta: 'சூரியப்புள்ளிகள் ஏன் கருமையாகத் தெரிகின்றன, அவை காந்தப்புலங்களுடன் எவ்வாறு தொடர்புடையவை என்பதை அறியுங்கள்.',

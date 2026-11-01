@@ -5,6 +5,7 @@ export const solarLuminosity_Skill_Data = buildSkillConfig({
   id: 'a8af3148-e49f-4628-869e-95fd4dde8bbf',
   name: {
     en: 'Solar Luminosity',
+    qm: 'Küneşniñ yarıq quveti',
     bn: 'সূর্যের দীপ্তি',
     ur: 'سورج کی ضیاباری',
     ta: 'சூரியனின் ஒளிர்திறன்',
@@ -38,6 +39,7 @@ export const solarLuminosity_Skill_Data = buildSkillConfig({
       "Interpret the Sun's total radiant output and its relationship to illumination received at different distances.",
     frontend: {
       en: "Understand the Sun's total energy output and how received light changes with distance.",
+      qm: 'Küneşniñ topyekûn energiya çıqaruvını ve mesafe artqanda alınğan yarıqnıñ nasıl deñişkenini añlañız.',
       bn: 'সূর্য মোট কত শক্তি বিকিরণ করে এবং দূরত্ব বাড়লে প্রাপ্ত আলোর পরিমাণ কীভাবে বদলায়, তা বোঝো।',
       ur: 'سمجھیں کہ سورج مجموعی طور پر کتنی توانائی خارج کرتا ہے اور فاصلے کے ساتھ موصول ہونے والی روشنی کیسے بدلتی ہے۔',
       ta: 'சூரியன் மொத்தமாக வெளியிடும் ஆற்றலையும் தூரத்திற்கு ஏற்ப கிடைக்கும் ஒளி எவ்வாறு மாறுகிறது என்பதையும் புரிந்துகொள்ளுங்கள்.',

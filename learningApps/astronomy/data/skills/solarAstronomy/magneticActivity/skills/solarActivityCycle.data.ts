@@ -5,6 +5,7 @@ export const solarActivityCycle_Skill_Data = buildSkillConfig({
   id: '6a79e86a-9c8c-4588-881e-b661f7a6a0c1',
   name: {
     en: 'Solar Activity Cycle',
+    qm: 'Küneş faoliyeti devri',
     bn: 'সৌর কার্যকলাপের চক্র',
     ur: 'شمسی سرگرمی کا چکر',
     ta: 'சூரியச் செயல்பாட்டுச் சுழற்சி',
@@ -37,6 +38,7 @@ export const solarActivityCycle_Skill_Data = buildSkillConfig({
     methodological: 'Interpret periodic trends in solar magnetic activity without assuming identical cycles.',
     frontend: {
       en: 'Follow the changing patterns of solar activity without assuming every cycle is identical.',
+      qm: 'Küneş faaliyetiniñ deñişken örneklerini izlep, er bir devir mutlâqa bir türlü olğanını faraz etmeñiz.',
       bn: 'সৌর কার্যকলাপের পরিবর্তন অনুসরণ করো, তবে সব চক্র একই রকম বলে ধরে নিয়ো না।',
       ur: 'شمسی سرگرمی کے بدلتے انداز دیکھیں، لیکن یہ نہ سمجھیں کہ ہر چکر ایک جیسا ہوتا ہے۔',
       ta: 'ஒவ்வொரு சுழற்சியும் ஒரே மாதிரி இருக்கும் என்று கருதாமல் சூரியச் செயல்பாட்டின் மாறும் போக்குகளைக் கவனியுங்கள்.',

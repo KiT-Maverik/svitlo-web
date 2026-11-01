@@ -5,6 +5,7 @@ export const solarFlares_Skill_Data = buildSkillConfig({
   id: 'dccfa219-be59-472e-8e61-bbde949d0092',
   name: {
     en: 'Solar Flares',
+    qm: 'Küneş parlavları',
     bn: 'সৌর শিখা',
     ur: 'شمسی شعلے',
     ta: 'சூரிய வெடிப்புகள்',
@@ -37,6 +38,7 @@ export const solarFlares_Skill_Data = buildSkillConfig({
     methodological: 'Describe rapid magnetic-energy release and its observable radiation signatures.',
     frontend: {
       en: 'Understand how rapid magnetic changes produce solar flares.',
+      qm: 'Magnit meydanınıñ tez deñişüvleri Küneş parlavlarını nasıl peyda etkenini añlañız.',
       bn: 'চৌম্বক ক্ষেত্রের দ্রুত পরিবর্তন কীভাবে সৌর শিখা তৈরি করে, তা বোঝো।',
       ur: 'سمجھیں کہ مقناطیسی میدان میں تیز تبدیلیاں شمسی شعلے کیسے پیدا کرتی ہیں۔',
       ta: 'காந்தப்புலத்தில் ஏற்படும் விரைவான மாற்றங்கள் சூரிய வெடிப்புகளை எவ்வாறு உருவாக்குகின்றன என்பதைப் புரிந்துகொள்ளுங்கள்.',

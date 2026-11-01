@@ -5,6 +5,7 @@ export const solarAtmosphere_Skill_Data = buildSkillConfig({
   id: 'ebfac177-7022-4b36-8b12-ba490dcba053',
   name: {
     en: 'Solar Atmosphere',
+    qm: 'Küneş atmosferası',
     bn: 'সূর্যের বায়ুমণ্ডল',
     ur: 'سورج کی فضا',
     ta: 'சூரிய வளிமண்டலம்',
@@ -38,6 +39,7 @@ export const solarAtmosphere_Skill_Data = buildSkillConfig({
       'Distinguish the photosphere, chromosphere and corona by their observational features and physical conditions.',
     frontend: {
       en: "Recognize the distinct visible and outer layers of the Sun's atmosphere.",
+      qm: 'Küneş atmosferasınıñ körüngen ve tışqı qatlarını birbirinden ayırıñız.',
       bn: 'সূর্যের বায়ুমণ্ডলের দৃশ্যমান ও বাইরের আলাদা স্তরগুলো চিনে নাও।',
       ur: 'سورج کی فضا کی مختلف نظر آنے والی اور بیرونی تہوں کو پہچانیں۔',
       ta: 'சூரிய வளிமண்டலத்தின் புலப்படும் மற்றும் வெளிப்புற அடுக்குகளை வேறுபடுத்தி அறியுங்கள்.',
