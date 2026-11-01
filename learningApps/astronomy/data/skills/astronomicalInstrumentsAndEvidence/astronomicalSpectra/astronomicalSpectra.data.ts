@@ -13,6 +13,8 @@ export const astronomicalSpectra_SkillGroup_Data = buildSkillGroupConfig({
   id: 'bc69d108-85c7-4661-98a3-123a87e011eb',
   name: {
     en: 'Astronomical Spectra',
+    uk: 'Астрономічні спектри',
+    pl: 'Widma astronomiczne',
   },
   skills: {
     absorptionSpectralLines: absorptionSpectralLines_Skill_Data,
@@ -26,6 +28,8 @@ export const astronomicalSpectra_SkillGroup_Data = buildSkillGroupConfig({
       'Light encodes information about temperature, composition and motion through its distribution across wavelength and the signatures imprinted by matter.',
     frontend: {
       en: 'Learn how splitting light into wavelengths reveals properties of distant objects.',
+      uk: 'Дізнайся, як розкладання світла за довжинами хвиль допомагає визначати властивості далеких об’єктів.',
+      pl: 'Dowiedz się, jak rozdzielanie światła według długości fal pozwala poznać właściwości odległych obiektów.',
     },
   },
 });
