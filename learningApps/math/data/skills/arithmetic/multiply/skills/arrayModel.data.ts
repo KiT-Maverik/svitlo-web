@@ -54,7 +54,7 @@ export const arrayModel_Skill_Data = buildSkillConfig({
       ko: '물건을 각 행에 같은 개수가 놓이도록 직사각형으로 배열하고, 행의 수와 한 행의 개수를 곱해 전체 개수를 구할 수 있어요.',
       tr: 'Nesneleri eşit sayıda satır ve sütunlara dizerek çarpmayı gösterebilir ve toplamı bulabilirsin.',
       vi: 'Bạn có thể xếp đồ vật thành các hàng và cột đều nhau để biểu diễn phép nhân và tìm tổng số.',
-      ta: 'பொருட்களைச் சமமான வரிசைகளிலும் நெடுவரிசைகளிலும் அமைத்து பெருக்கலைக் காட்டி மொத்த எண்ணிக்கையைக் காணலாம்.',
+      ta: 'ஒவ்வொரு வரிசையிலும் ஒரே எண்ணிக்கையிலான பொருட்களைச் செவ்வக வடிவில் அமைத்து, வரிசைகளின் எண்ணிக்கையையும் ஒரு வரிசையில் உள்ள பொருட்களின் எண்ணிக்கையையும் பெருக்கி மொத்தத்தைக் காணலாம்.',
       te: 'వస్తువులను సమాన వరుసలు, నిలువు వరుసలలో అమర్చి గుణకారాన్ని చూపించి మొత్తం కనుగొనగలవు.',
       mr: 'वस्तू समान ओळी व स्तंभांत मांडून गुणाकार दाखवता येतो आणि एकूण संख्या काढता येते.',
       ms: 'Kamu boleh menyusun objek dalam baris dan lajur yang sama banyak untuk menunjukkan pendaraban dan mencari jumlah keseluruhan.',
