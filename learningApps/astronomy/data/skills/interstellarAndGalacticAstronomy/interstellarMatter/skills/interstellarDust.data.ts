@@ -49,7 +49,7 @@ export const interstellarDust_Skill_Data = buildSkillConfig({
       ur: 'جانیں کہ گرد ستاروں کی روشنی کو کیسے مدھم اور سرخ کرتی اور پھر دوبارہ خارج کرتی ہے۔',
       id: 'Lihat bagaimana debu antarbintang meredupkan, memerahkan, dan memancarkan kembali cahaya bintang.',
       de: 'Erfahre, wie interstellarer Staub Sternlicht abschwächt, rötet und wieder abstrahlt.',
-      ja: '星間塵が星の光を弱め、赤く見せ、再び放射するしくみを知ろう。',
+      ja: '星間塵が星の光を弱めて赤く見せ、吸収したエネルギーを赤外線として放射するしくみを知ろう。',
       ko: '성간 먼지가 별빛을 어둡고 붉게 만들고 다시 복사하는 방법을 알아보세요.',
       tr: 'Yıldızlararası tozun yıldız ışığını nasıl sönükleştirip kızarttığını ve yeniden yaydığını gör.',
       vi: 'Tìm hiểu cách bụi liên sao làm mờ, làm đỏ và tái phát xạ ánh sáng sao.',
