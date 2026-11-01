@@ -54,7 +54,7 @@ export const meters_Skill_Data = buildSkillConfig({
       ko: '미터, 데시미터, 센티미터로 길이를 재거나 나타내고 1m = 10dm = 100cm를 이용해 단위를 바꿀 수 있어요.',
       tr: 'Uzunlukları metre, desimetre veya santimetreyle ölçüp ifade edebilir, 1 m = 10 dm = 100 cm ilişkisini kullanabilirsin.',
       vi: 'Bạn có thể đo và biểu thị độ dài bằng mét, đềximét hoặc xăngtimét, dùng 1 m = 10 dm = 100 cm để đổi đơn vị.',
-      ta: 'மீட்டர், டெசிமீட்டர் அல்லது சென்டிமீட்டரில் நீளத்தை அளந்து தெரிவித்து, 1 மீ = 10 டெமீ = 100 செமீ என்பதைப் பயன்படுத்த முடியும்.',
+      ta: 'மீட்டர், டெசிமீட்டர் அல்லது சென்டிமீட்டரில் நீளத்தை அளந்து தெரிவித்து, 1 m = 10 dm = 100 cm என்பதைப் பயன்படுத்த முடியும்.',
       te: 'పొడవును మీటర్లు, డెసీమీటర్లు లేదా సెంటీమీటర్లలో కొలిచి, 1 మీ = 10 డెమీ = 100 సెంమీని ఉపయోగించి మార్చగలవు.',
       mr: 'लांबी मीटर, डेसिमीटर किंवा सेंटीमीटरमध्ये मोजू व सांगू शकता आणि १ मी = १० डेसीमी = १०० सेमी वापरून रूपांतर करू शकता.',
       ms: 'Kamu boleh mengukur dan menyatakan panjang dalam meter, desimeter atau sentimeter serta menukarnya dengan 1 m = 10 dm = 100 cm.',
