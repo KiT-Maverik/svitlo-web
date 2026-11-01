@@ -16,7 +16,7 @@ export const backward20_Skill_Data = buildSkillConfig({
     hi: '20 तक पीछे की ओर गिनना',
     es: 'Contar hacia atrás desde 20',
     ar: 'العد تنازليًا ضمن 20',
-    fr: 'Compter à rebours à partir de 20',
+    fr: 'Compter à rebours entre 0 et 20',
     bn: '২০ থেকে পেছনের দিকে গণনা',
     pt: 'Contar em ordem decrescente a partir de 20',
     ur: '20 سے پیچھے کی طرف گنتی کرنا',
