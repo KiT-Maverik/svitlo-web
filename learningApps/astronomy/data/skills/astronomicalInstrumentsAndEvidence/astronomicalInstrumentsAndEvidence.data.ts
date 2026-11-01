@@ -37,7 +37,7 @@ export const astronomicalInstrumentsAndEvidence_SkillDomain_Data = buildSkillDom
     hi: 'खगोलीय उपकरण और प्रमाण',
     he: 'כלים וראיות אסטרונומיים',
     vi: 'Thiết bị và bằng chứng thiên văn',
-    uk: 'Астрономічні інструменти та докази',
+    uk: 'Астрономічні інструменти та наукові свідчення',
     pl: 'Instrumenty astronomiczne i dowody obserwacyjne',
   },
   groups: {
