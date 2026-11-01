@@ -64,7 +64,7 @@ export const radialVelocityDetection_Skill_Data = buildSkillConfig({
       lv: 'Izmantojiet zvaigznes spektra izmaiņas, lai secinātu par planētas gravitācijas ietekmi.',
       et: 'Järelda tähe spektrimuutustest tema ümber tiirleva planeedi gravitatsioonilist mõju.',
       be: 'Паводле зьменаў у спэктры зоркі вызначайце гравітацыйны ўплыў плянэты, што абарачаецца вакол яе.',
-      ka: 'ვარსკვლავის სპექტრში მოძრაობის ცვლილებებით დაადგინეთ მის გარშემო მოძრავი პლანეტის მიზიდულობის გავლენა.',
+      ka: 'ვარსკვლავის სპექტრული ხაზების პერიოდული წანაცვლებით გამოიკვლიეთ მის გარშემო მოძრავი პლანეტის გრავიტაციული გავლენა.',
       kk: 'Жұлдыз спектріндегі қозғалыс өзгерістерінен оны айналатын ғаламшардың тартылыс әсерін анықтаңыз.',
       qm: 'Yıldıznıñ spektrindeki areket deñişmelerinden onı dolanğan seyyareniñ çekişini añlañız.',
     },
