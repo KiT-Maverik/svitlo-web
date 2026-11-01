@@ -1,6 +1,6 @@
-import type {ContentBlock_Scene} from "@svitlo/engine";
+import type { ContentBlock_Checkpoint } from '@svitlo/engine/content';
 
-type Locale = {
+export type Checkpoint_Locale = {
   title: string;
   items: {
     question: string;
@@ -8,4 +8,11 @@ type Locale = {
   }[];
 };
 
-// todo create content block instead of scene
+export type TheoryKnowledgeCheckpoint_Locale = Checkpoint_Locale;
+
+export type Checkpoint_ContentBlock<ConfigType extends 'definition' | 'data' | 'response'> =
+  ContentBlock_Checkpoint<ConfigType>;
+
+export const checkpointDefinition = {
+  type: 'checkpoint',
+} satisfies Checkpoint_ContentBlock<'definition'>;

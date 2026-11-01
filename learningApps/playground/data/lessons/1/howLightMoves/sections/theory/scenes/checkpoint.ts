@@ -1,4 +1,5 @@
 import type { HowLightMoves_Lesson_Locale } from '@/data/lessons/1/howLightMoves/howLightMoves.types';
+import type { Checkpoint_ContentBlock } from '@/data/lessons/1/howLightMoves/sections/theory/scenes/Checkpoint/Checkpoint.types';
 import type { StringObjectToLocale } from '../../../transformer.types';
 type Locale = StringObjectToLocale<HowLightMoves_Lesson_Locale['section']['theory']['scene']['checkpoint']>;
 export const checkpoint = {
@@ -228,3 +229,19 @@ export const checkpoint = {
     },
   ],
 } satisfies Locale;
+
+type CheckpointAnswer = Checkpoint_ContentBlock<'data'>['items'][number]['answer'];
+
+export const checkpointData = {
+  id: 'cd65e160-da27-57e1-a58f-38b1276c4346',
+  slug: 'checkpoint',
+  title: checkpoint.title,
+  items: checkpoint.items.map(({ question, answer }, index) => ({
+    question,
+    answer: [{
+      id: `light-explanation-answer-${index + 1}`,
+      slug: `lightExplanationAnswer${index + 1}`,
+      value: answer,
+    }] satisfies CheckpointAnswer,
+  })),
+} satisfies Checkpoint_ContentBlock<'data'>;
