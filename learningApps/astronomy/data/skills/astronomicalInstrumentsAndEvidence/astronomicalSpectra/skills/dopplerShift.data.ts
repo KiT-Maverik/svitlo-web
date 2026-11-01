@@ -6,7 +6,7 @@ export const dopplerShift_Skill_Data = buildSkillConfig({
   name: {
     en: 'Doppler Shift',
     bn: 'ডপলার সরণ',
-    ur: 'ڈاپلر انزیا ح',
+    ur: 'ڈاپلر انزياح',
     ta: 'டாப்ளர் இடப்பெயர்ச்சி',
     te: 'డాప్లర్ స్థానభ్రంశం',
     mr: 'डॉप्लर विस्थापन',
