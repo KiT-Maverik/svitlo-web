@@ -40,7 +40,7 @@ export const relatePlantStructuralFeaturesToEnvironmentalConditions_Skill_Data =
       zh: '解释根、叶和芽为什么具有适合不同条件的形态。',
       hi: 'समझाएँ कि जड़ों, पत्तियों और प्ररोहों के आकार अलग-अलग परिस्थितियों के अनुकूल क्यों होते हैं।',
       es: 'Explica por qué las raíces, hojas y brotes presentan formas adecuadas a distintas condiciones.',
-      ar: 'اشرح لماذا تتخذ الجذور والأوراق والبراعم أشكالًا تناسب الظروف المختلفة.',
+      ar: 'اشرح لماذا تتخذ الجذور والأوراق والسيقان أشكالًا تناسب الظروف المختلفة.',
       fr: 'Explique pourquoi les racines, les feuilles et les pousses ont des formes adaptées à différentes conditions.',
       bn: 'মূল, পাতা ও অঙ্কুরের আকৃতি কেন বিভিন্ন পরিবেশের জন্য উপযোগী তা ব্যাখ্যা করো।',
       pt: 'Explique por que raízes, folhas e brotos apresentam formas adaptadas a diferentes condições.',

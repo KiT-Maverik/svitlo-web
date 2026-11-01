@@ -61,7 +61,7 @@ export const animalDiversity_SkillGroup_Data = buildSkillGroupConfig({
       zh: '探索主要动物类群的不同特征。',
       hi: 'प्राणियों के प्रमुख समूहों की अलग-अलग विशेषताओं को जानें।',
       es: 'Explora las diferentes características de los principales grupos de animales.',
-      ar: 'اكتشف الخصائص المختلفة للمجموعات الرئيسية من الحيوانات.',
+      ar: 'تعرّف إلى المجموعات الرئيسية من الحيوانات من خلال سمات جسمية موثوقة، لا أوجه الشبه السطحية.',
       fr: 'Découvre les caractéristiques des grands groupes d\'animaux.',
       bn: 'প্রাণীদের প্রধান দলগুলোর নানা বৈশিষ্ট্য আবিষ্কার করো।',
       pt: 'Explore as diferentes características dos principais grupos de animais.',
