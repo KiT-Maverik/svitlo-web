@@ -24,7 +24,7 @@ export const explainTheirRoleInDecomposition_Skill_Data = buildSkillConfig({
     mr: 'विघटनातील सूक्ष्मजीवांची भूमिका स्पष्ट करणे',
     ms: 'Menjelaskan peranannya dalam penguraian',
     he: 'הסבר תפקידם בפירוק חומר אורגני',
-    pl: 'Wyjaśnianie ich roli w rozkładzie',
+    pl: 'Wyjaśnianie roli mikroorganizmów w rozkładzie materii organicznej',
     uk: 'Пояснювати роль мікроорганізмів у розкладанні',
     lt: 'Mikroorganizmų vaidmens skaidyme paaiškinimas',
     lv: 'Mikroorganismu lomas sadalīšanās procesā skaidrošana',
