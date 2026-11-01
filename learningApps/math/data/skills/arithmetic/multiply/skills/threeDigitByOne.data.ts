@@ -29,7 +29,7 @@ export const threeDigitByOne_Skill_Data = buildSkillConfig({
     ta: 'பெருக்கல் — 3-இலக்க×1-இலக்க',
     te: 'గుణకారం — 3-అంకెల×1-అంకెల',
     mr: 'गुणाकार — 3-अंकी×1-अंकी',
-    ms: 'Pendaraban — 3-digit×1-digit',
+    ms: 'Pendaraban — 3 digit × 1 digit',
     he: 'כפל — 3-ספרות×1-ספרות',
     pl: 'Mnożenie — 3-cyfrowe×1-cyfrowe',
     uk: 'Множення — 3-цифрові×1-цифрові',
