@@ -14,7 +14,7 @@ export const crossTenAddition_Skill_Data = buildSkillConfig({
     qm: 'Qoşuv — onluqtan keçüv',
     zh: '加法 — 跨十计算',
     hi: 'जोड़ — दस पार करना',
-    es: 'Suma — Cruzar la decena',
+    es: 'Suma — Paso por la decena',
     ar: 'الجمع — تجاوز العشرة',
     fr: 'Addition — Passage de la dizaine',
     bn: 'যোগ — দশক অতিক্রম',
