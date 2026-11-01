@@ -18,7 +18,7 @@ export const createFoundObjectAssemblage_Skill_Data = buildSkillConfig({
     ja: '拾得物を組み合わせて作品を作る',
     ko: '발견한 사물로 조합 작품 만들기',
     tr: 'Buluntu nesnelerle birleştirme eseri oluşturmak',
-    vi: 'Tạo tác phẩm sắp đặt từ đồ vật tìm được',
+    vi: 'Tạo tác phẩm sắp ghép từ vật thể có sẵn',
     ta: 'கிடைத்த பொருட்களைக் கொண்டு கூட்டமைப்புக் கலைப்படைப்பை உருவாக்கவும்',
     te: 'దొరికిన వస్తువులతో సమ్మేళన కళాఖండాన్ని సృష్టించండి',
     mr: 'सापडलेल्या वस्तू एकत्र करून कलाकृती तयार करा',

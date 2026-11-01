@@ -19,7 +19,7 @@ export const decorateACeramicSurface_Skill_Data = buildSkillConfig({
     ko: '도자기 표면 장식하기',
     tr: 'Seramik yüzeyi süslemek',
     vi: 'Trang trí bề mặt gốm',
-    ta: 'பீங்கான் மேற்பரப்பை அலங்கரிக்கவும்',
+    ta: 'மட்பாண்ட மேற்பரப்பை அலங்கரிக்கவும்',
     te: 'సిరామిక్ ఉపరితలాన్ని అలంకరించండి',
     mr: 'सिरेमिक पृष्ठभाग सजवा',
     ms: 'Menghias permukaan seramik',
