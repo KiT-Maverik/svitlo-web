@@ -5,6 +5,7 @@ export const spaceBasedObservation_Skill_Data = buildSkillConfig({
   id: '349f7060-de38-4c5c-9119-5de44e41935c',
   name: {
     en: 'Space-Based Observation',
+    qm: 'Fezadan közetüv',
     bn: 'মহাকাশ থেকে পর্যবেক্ষণ',
     ur: 'خلا سے مشاہدہ',
     ta: 'விண்வெளியிலிருந்து கண்காணித்தல்',
@@ -38,7 +39,8 @@ export const spaceBasedObservation_Skill_Data = buildSkillConfig({
       "Compare observations above and below Earth's atmosphere in terms of accessible wavelengths and atmospheric interference.",
     frontend: {
       en: "Compare observations from space with those made through Earth's atmosphere.",
-      bn: 'মহাকাশ থেকে করা পর্যবেক্ষণের সঙ্গে পৃথিবীর বায়ুমণ্ডল ভেদ করে করা পর্যবেক্ষণের তুলনা করো।',
+      
+      qm: 'Fezadan yapılğan közetüvlerni Yer atmosferası arqalı yapılğan közetüvlernen teñeştiriñiz.',bn: 'মহাকাশ থেকে করা পর্যবেক্ষণের সঙ্গে পৃথিবীর বায়ুমণ্ডল ভেদ করে করা পর্যবেক্ষণের তুলনা করো।',
       ur: 'خلا سے کیے گئے مشاہدات کا موازنہ زمین کے کرۂ ہوائی کے پار سے کیے گئے مشاہدات سے کریں۔',
       ta: 'விண்வெளியிலிருந்து செய்யும் கண்காணிப்புகளையும் பூமியின் வளிமண்டலத்தின் வழியாகச் செய்யும் கண்காணிப்புகளையும் ஒப்பிடுங்கள்.',
       te: 'అంతరిక్షం నుంచి చేసిన పరిశీలనలను భూమి వాతావరణం గుండా చేసిన పరిశీలనలతో పోల్చండి.',
