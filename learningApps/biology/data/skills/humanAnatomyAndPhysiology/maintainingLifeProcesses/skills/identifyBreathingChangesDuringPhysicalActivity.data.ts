@@ -58,7 +58,7 @@ export const identifyBreathingChangesDuringPhysicalActivity_Skill_Data = buildSk
       ms: 'Terangkan mengapa pernafasan berubah semasa aktiviti fizikal.',
       he: 'הסבירו מדוע הנשימה משתנה במהלך פעילות גופנית.',
       pl: 'Wyjaśnij, dlaczego oddychanie zmienia się podczas aktywności fizycznej.',
-      uk: 'Поясніть, чому дихання змінюється під час фізичної активності.',
+      uk: 'Визначай, як змінюються частота й глибина дихання під час фізичної активності.',
       lt: 'Paaiškinkite, kodėl kvėpavimas keičiasi fizinės veiklos metu.',
       lv: 'Izskaidrojiet, kāpēc elpošana mainās fiziskās slodzes laikā.',
       et: 'Selgita, miks hingamine kehalise tegevuse ajal muutub.',
