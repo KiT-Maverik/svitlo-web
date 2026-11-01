@@ -47,7 +47,7 @@ export const roundHundreds_Skill_Data = buildSkillConfig({
       fr: 'Tu peux multiplier des centaines entières par un nombre à un chiffre en calculant avec le nombre de centaines.',
       bn: 'পূর্ণ শতককে এক অঙ্কের সংখ্যা দিয়ে গুণ করতে শতকের সংখ্যা নিয়ে হিসাব করতে পারো।',
       pt: 'Você pode multiplicar centenas inteiras por um número de um algarismo calculando com a quantidade de centenas.',
-      ur: 'آپ پوری سینکڑوں کی تعداد سے حساب کر کے انہیں ایک ہندسے کے عدد سے ضرب دے سکتے ہیں۔',
+      ur: 'آپ مکمل سینکڑوں کی تعداد سے حساب کر کے انہیں ایک ہندسے کے عدد سے ضرب دے سکتے ہیں۔',
       id: 'Kamu bisa mengalikan ratusan penuh dengan bilangan satu angka dengan menghitung banyaknya ratusan.',
       de: 'Du kannst volle Hunderter mit einer einstelligen Zahl multiplizieren, indem du mit der Anzahl der Hunderter rechnest.',
       ja: '百のまとまりがいくつあるかを考え、整百数に1桁の数をかけられます。',
