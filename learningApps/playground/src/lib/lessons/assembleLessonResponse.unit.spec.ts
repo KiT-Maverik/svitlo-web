@@ -50,9 +50,23 @@ describe('assembleLessonResponse', () => {
     expect(lesson.sectionOrder).toEqual(['theory', 'quiz']);
     expect(lesson.sections.theory.content.markdown.p1.text).toEqual('# Світло');
     expect(lesson.sections.theory.content.scene.ray.sceneId).toEqual('1/howLightMoves/theory/scene/ray');
+    expect(lesson.sections.theory.content.scene.ray.locale).toEqual({
+      scene: { title: 'Промінь' }, code: 'uk',
+    });
+    expect(lesson.sections.theory.content.checkpoint.checkpoint.items[0]).toBeUndefined();
     expect(lesson.sections.quiz.content.quiz.quiz.questions?.q1.id).toEqual('question-id');
     expect(lesson.localeSources.config['/title']).toEqual({ code: 'uk' });
     expect(lesson.flashcards).toHaveLength(1);
+  });
+  it('rejects contradictory locale fallback provenance', () => {
+    const raw = fixture();
+    raw.config.localeSources['/title'].code = 'en';
+    expect(() => assembleLessonResponse('1', 'howLightMoves', 'uk', raw)).toThrow(/Contradictory fallback metadata/);
+  });
+  it('rejects inconsistent section ordering', () => {
+    const raw = fixture();
+    raw.config.data.sectionOrder = ['quiz', 'missing'];
+    expect(() => assembleLessonResponse('1', 'howLightMoves', 'uk', raw)).toThrow(/sectionOrder/);
   });
   it('rejects a dangling quiz reference', () => {
     const raw = fixture();

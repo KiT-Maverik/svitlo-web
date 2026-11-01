@@ -146,6 +146,14 @@ export function assembleLessonResponse(
   const config = collection(raw.config, 'config');
   const flashcards = collection(raw.flashcards, 'flashcards');
   const questions = collection(raw.questions, 'questions');
+  for (const [kind, item] of Object.entries({ config, flashcards, questions })) {
+    for (const [pointer, source] of Object.entries(item.localeSources)) {
+      if (source.isFallback === true ? source.code === language : source.code !== language) {
+        throw new Error('Contradictory fallback metadata in ' + kind + ' at ' + pointer +
+          ': requested ' + language + ', source ' + source.code);
+      }
+    }
+  }
   const data = record(config.data, 'config.data');
   if (data.group !== group || data.slug !== slug) {
     throw new Error('Lesson JSON identity mismatch: expected ' + group + '/' + slug);
