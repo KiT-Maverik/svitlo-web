@@ -57,7 +57,7 @@ export const interpretArchitecturalOrnament_Skill_Data = buildSkillConfig({
       mr: 'इमारतीचे घनाकार भाग आणि मोकळ्या जागा एकत्र करून संतुलित दृश्यरूप तयार करा.',
       ms: 'Gabungkan jisim bangunan dan ruang terbuka menjadi bentuk visual yang seimbang.',
       he: 'שלבו נפחי בנייה ומרחבים פתוחים לצורה חזותית מאוזנת.',
-      pl: 'Łącz bryły budynków i otwarte przestrzenie w zrównoważoną formę wizualną.',
+      pl: 'Odkryj, jak ornament architektoniczny wyraża znaczenia związane z epoką i kontekstem kulturowym.',
       uk: 'Дослідіть, як архітектурні орнаменти передають зміст, пов’язаний з історичною добою та культурою.',
       lt: 'Derink pastato tūrius ir atviras erdves į darnią vizualią formą.',
       lv: 'Apvieno ēkas apjomus un atklātās telpas līdzsvarotā vizuālā formā.',

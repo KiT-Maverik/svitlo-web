@@ -57,7 +57,7 @@ export const respondToMusicalCues_Skill_Data = buildSkillConfig({
       mr: 'संगीत संकेत ओळखा आणि योग्य वेळी एकत्र प्रतिसाद द्या.',
       ms: 'Perhatikan isyarat muzik dan berikan respons bersama pada saat yang tepat.',
       he: 'שימו לב לרמזים מוזיקליים והגיבו יחד ברגע הנכון.',
-      pl: 'Dostrzegaj sygnały muzyczne i reagujcie razem we właściwym momencie.',
+      pl: 'Dostrzegaj sygnały muzyczne i reaguj w odpowiednim momencie wraz z innymi muzykami.',
       uk: 'Помічайте музичні сигнали й реагуйте разом у потрібний момент.',
       lt: 'Pastebėkite muzikinius signalus ir tinkamu metu reaguokite kartu.',
       lv: 'Pamaniet muzikālos signālus un īstajā brīdī reaģējiet kopā.',

@@ -31,7 +31,7 @@ export const curationAndPresentation_SkillGroup_Data = buildSkillGroupConfig({
     mr: 'क्युरेशन आणि सादरीकरण',
     ms: 'Kurasi dan Persembahan',
     he: 'אוצרות והצגה',
-    pl: 'Kuratatorstwo i prezentacja',
+    pl: 'Kuratorstwo i prezentacja',
     uk: 'Кураторство й презентація',
     lt: 'Kuravimas ir pristatymas',
     lv: 'Kuratoriālā atlase un prezentēšana',

@@ -24,7 +24,7 @@ export const blockAStageScene_Skill_Data = buildSkillConfig({
     mr: 'रंगमंचावरील दृश्याची हालचाल आखा',
     ms: 'Menyusun pergerakan adegan pentas',
     he: 'תכנון תנועת השחקנים בסצנה',
-    pl: 'Blokować scenę',
+    pl: 'Planować ruch i ustawienie aktorów na scenie',
     uk: 'Визначати мізансцену',
     lt: 'Surežisuoti scenos mizanscenas',
     lv: 'Veidot skatuves mizanscēnu',
