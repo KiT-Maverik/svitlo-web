@@ -33,7 +33,7 @@ export const additionSubtraction_SkillGroup_Data = buildSkillGroupConfig({
     es: 'Combinación de suma y resta',
     ar: 'الجمع والطرح',
     fr: 'Relations entre addition et soustraction',
-    bn: 'যোগ ও বিয়োগের সমন্বিত প্রয়োগ',
+    bn: 'যোগ ও বিয়োগের পারস্পরিক সম্পর্ক',
     pt: 'Combinação de adição e subtração',
     ur: 'جمع اور تفریق کا باہمی تعلق',
     id: 'Menggabungkan penjumlahan dan pengurangan',
