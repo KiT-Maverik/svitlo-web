@@ -47,7 +47,7 @@ export const evaluateArtUsingCriteria_Skill_Data = buildSkillConfig({
       bn: 'শুধু নিজের পছন্দের ভিত্তিতে নয়, শিল্পকর্মের লক্ষ্য অনুযায়ী স্পষ্ট মানদণ্ডে মূল্যায়ন করুন।',
       pt: 'Avalie uma obra com critérios claros e adequados aos seus objetivos, não apenas com base no seu gosto.',
       ur: 'فن پارے کو صرف اپنی پسند سے نہیں بلکہ اس کے مقاصد کے مطابق واضح معیار سے پرکھیں۔',
-      id: 'Nilai karya seni dengan kriteria jelas yang sesuai dengan tujuannya, bukan hanya berdasarkan seleramu.',
+      id: 'Nilai karya seni dengan kriteria jelas yang sesuai dengan tujuannya, bukan hanya berdasarkan selera Anda.',
       de: 'Beurteile ein Kunstwerk anhand klarer, zu seinen Zielen passender Kriterien und nicht nur nach deinem Geschmack.',
       ja: '自分の好みだけでなく、作品の目的に合った明確な基準で評価しましょう。',
       ko: '개인 취향만이 아니라 작품의 목표에 맞는 명확한 기준으로 평가하세요.',

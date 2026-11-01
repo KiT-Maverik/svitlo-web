@@ -47,7 +47,7 @@ export const describeArtworksPrecisely_Skill_Data = buildSkillConfig({
       bn: 'অর্থ ব্যাখ্যা করার আগে আপনি বাস্তবে যা দেখতে বা শুনতে পান, সেই বিবরণ বর্ণনা করুন।',
       pt: 'Descreva os detalhes que você realmente consegue ver ou ouvir antes de explicar seu significado.',
       ur: 'معنی بیان کرنے سے پہلے ان تفصیلات کو بیان کریں جنہیں آپ حقیقت میں دیکھ یا سن سکتے ہیں۔',
-      id: 'Jelaskan detail yang benar-benar dapat kamu lihat atau dengar sebelum menerangkan maknanya.',
+      id: 'Jelaskan detail yang benar-benar dapat Anda lihat atau dengar sebelum menerangkan maknanya.',
       de: 'Beschreibe zuerst genau, was du tatsächlich sehen oder hören kannst, bevor du die Bedeutung erklärst.',
       ja: '意味を説明する前に、実際に見たり聞いたりできる細部を描写しましょう。',
       ko: '의미를 설명하기 전에 실제로 보거나 들을 수 있는 세부 사항을 묘사하세요.',

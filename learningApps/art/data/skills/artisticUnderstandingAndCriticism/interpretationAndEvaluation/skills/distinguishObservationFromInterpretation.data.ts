@@ -46,7 +46,7 @@ export const distinguishObservationFromInterpretation_Skill_Data = buildSkillCon
       bn: 'আপনি যা লক্ষ্য করেন এবং তার অর্থ সম্পর্কে যা মনে করেন, তার পার্থক্য বুঝুন।',
       pt: 'Diferencie o que você observa daquilo que pensa que isso significa.',
       ur: 'آپ جو مشاہدہ کرتے ہیں اور اس کے بارے میں جو معنی اخذ کرتے ہیں، ان میں فرق کریں۔',
-      id: 'Bedakan hal yang kamu amati dari makna yang menurutmu terkandung di dalamnya.',
+      id: 'Bedakan hal yang Anda amati dari makna yang menurut Anda terkandung di dalamnya.',
       de: 'Unterscheide zwischen dem, was du wahrnimmst, und dem, was du darin zu erkennen glaubst.',
       ja: '観察したことと、それが何を意味すると考えるかを区別しましょう。',
       ko: '관찰한 사실과 그것이 무엇을 의미한다고 생각하는지 구분하세요.',
