@@ -77,7 +77,7 @@ export const animation_SkillGroup_Data = buildSkillGroupConfig({
       uk: 'Оживлюйте малюнки або предмети, плануючи їхні зміни в часі.',
       lt: 'Suteikite piešiniams ar objektams gyvybės, planuodami jų pokyčius laikui bėgant.',
       lv: 'Atdzīviniet zīmējumus vai priekšmetus, plānojot to pārmaiņas laika gaitā.',
-      et: 'Andke joonistustele või esemetele elu, kavandades nende muutumist ajas.',
+      et: 'Anna joonistustele või esemetele elu, kavandades nende muutumist ajas.',
       be: 'Ажыўляйце малюнкі або прадметы, плануючы іх змены з цягам часу.',
       ka: 'გააცოცხლეთ ნახატები ან საგნები დროში ცვლილებების დაგეგმვით.',
       kk: 'Уақыт ішіндегі өзгерістерді жоспарлап, суреттер мен заттарға жан бітіріңіз.',

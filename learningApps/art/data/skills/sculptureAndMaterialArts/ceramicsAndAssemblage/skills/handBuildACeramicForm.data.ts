@@ -61,7 +61,7 @@ export const handBuildACeramicForm_Skill_Data = buildSkillConfig({
       uk: 'Надавайте глині форми руками, джгутами або пластами.',
       lt: 'Formuokite molį rankomis, voleliais arba plokštėmis.',
       lv: 'Veidojiet mālu ar rokām, māla veltnīšiem vai plāksnēm.',
-      et: 'Vormi savi käte, savirullitud ribade või plaatide abil.',
+      et: 'Vormi savi käte, savirullide või saviplaatide abil.',
       be: 'Надавайце гліне форму рукамі, джгутамі або пласцінамі.',
       ka: 'ხელით, თიხის გრეხილებით ან ფირფიტებით მიეცით თიხას ფორმა.',
       kk: 'Қолмен, ширатылған сазбен немесе тақташалармен сазға пішін беріңіз.',

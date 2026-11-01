@@ -65,7 +65,7 @@ export const createFoundObjectAssemblage_Skill_Data = buildSkillConfig({
       be: 'Аб’ядноўвайце гатовыя прадметы, каб стварыць новы мастацкі сэнс.',
       ka: 'შეაერთეთ არსებული საგნები ახალი მხატვრული მნიშვნელობის შესაქმნელად.',
       kk: 'Бұрыннан бар заттарды біріктіріп, жаңа көркем мағына жасаңыз.',
-      qm: 'Mevcut eşyalarni birleştirip yañı sanat manası yaratın.',
+      qm: 'Mevcut eşyalarni birleştirip yañı sanat manası yaratıñız.',
     },
   },
 });

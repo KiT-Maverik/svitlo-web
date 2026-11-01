@@ -7,7 +7,7 @@ export const planAShotSequence_Skill_Data = buildSkillConfig({
     en: 'Plan a Shot Sequence',
 
     zh: '规划镜头顺序',
-    hi: 'योजना शॉट क्रम',
+    hi: 'शॉट्स के क्रम की योजना बनाएँ',
     es: 'Planificar una secuencia de planos',
     ar: 'تخطيط تسلسل اللقطات',
     fr: 'Planifier une séquence de plans',
@@ -63,7 +63,7 @@ export const planAShotSequence_Skill_Data = buildSkillConfig({
       uk: 'Оберіть і впорядкуйте ракурси камери, щоб чітко показати дію або зміну фокуса.',
       lt: 'Pasirinkite ir išdėstykite kameros rakursus, kad veiksmas ar dėmesio pokytis būtų aiškus.',
       lv: 'Izvēlieties un sakārtojiet kameras skatpunktus, lai skaidri parādītu darbību vai fokusa maiņu.',
-      et: 'Vali ja järjestage kaameravaated, et tegevus või fookuse muutus oleks selge.',
+      et: 'Vali ja järjesta kaameravaated, et tegevus või fookuse muutus oleks selge.',
       be: 'Выбірайце і ўпарадкоўвайце ракурсы камеры, каб выразна паказаць дзеянне або змену фокусу.',
       ka: 'აირჩიეთ და დაალაგეთ კამერის ხედები, რათა მოქმედება ან ფოკუსის ცვლილება მკაფიო იყოს.',
       kk: 'Әрекетті не назардың ауысуын анық көрсету үшін камера көріністерін таңдап, реттеңіз.',
