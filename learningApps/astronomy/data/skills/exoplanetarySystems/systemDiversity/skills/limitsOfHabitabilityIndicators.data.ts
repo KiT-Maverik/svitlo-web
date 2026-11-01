@@ -5,7 +5,7 @@ export const limitsOfHabitabilityIndicators_Skill_Data = buildSkillConfig({
   id: 'b1bc3c4a-0c8b-4a3d-ae57-a628f672aaa5',
   name: {
     en: 'Limits of Habitability Indicators',
-      zh: '宜居性指标的局限',
+    zh: '宜居性指标的局限',
     hi: 'रहने योग्य होने के संकेतों की सीमाएँ',
     es: 'Límites de los indicadores de habitabilidad',
     ar: 'حدود مؤشرات قابلية السكن',
@@ -39,7 +39,7 @@ export const limitsOfHabitabilityIndicators_Skill_Data = buildSkillConfig({
       'Evaluate why receiving suitable starlight or being Earth-sized does not establish a habitable world.',
     frontend: {
       en: 'Recognize why an Earth-sized planet in the right orbit is not automatically habitable.',
-          zh: '认识为什么一颗位于合适轨道、大小类似地球的行星不一定适合生命生存。',
+      zh: '认识为什么一颗位于合适轨道、大小类似地球的行星不一定适合生命生存。',
       hi: 'समझें कि पृथ्वी के आकार का ग्रह सही कक्षा में होने पर भी अपने आप रहने योग्य नहीं हो जाता।',
       es: 'Reconoce por qué un planeta del tamaño de la Tierra en una órbita adecuada no es automáticamente habitable.',
       ar: 'افهم لماذا لا يكون الكوكب بحجم الأرض وفي مدار مناسب صالحًا للسكن بالضرورة.',
