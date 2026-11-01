@@ -17,7 +17,7 @@ export const angleTypes_Skill_Data = buildSkillConfig({
     es: 'Distinguir ángulos agudos, rectos y obtusos',
     ar: 'التمييز بين الزوايا الحادة والقائمة والمنفرجة',
     fr: 'Distinguer les angles aigus, droits et obtus',
-    bn: 'সূক্ষ্ম সমকোণ ও স্থূলকোণ আলাদা করা',
+    bn: 'সূক্ষ্মকোণ, সমকোণ ও স্থূলকোণ আলাদা করা',
     pt: 'Distinguir ângulos agudos, retos e obtusos',
     ur: 'حاد قائمہ اور منفرجہ زاویوں میں فرق',
     id: 'Membedakan sudut lancip, siku-siku, dan tumpul',
