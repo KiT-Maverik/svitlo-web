@@ -9,7 +9,7 @@ export const designGarmentSilhouettes_Skill_Data = buildSkillConfig({
     zh: '设计服装廓形',
     hi: 'परिधान की आकृति डिज़ाइन करें',
     es: 'Diseñar siluetas de prendas',
-    ar: 'تصميم ظلال الملابس',
+    ar: 'تصميم الأشكال الخارجية للملابس',
     fr: 'Concevoir les silhouettes des vêtements',
     bn: 'পোশাকের সিলুয়েট নকশা করুন',
     pt: 'Desenhar silhuetas de vestuário',

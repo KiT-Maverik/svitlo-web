@@ -15,7 +15,7 @@ export const digitalImages_SkillGroup_Data = buildSkillGroupConfig({
     zh: '使用像素、形状、图层和局部调整创作数字图像。',
     hi: 'पिक्सेल, आकृतियों, परतों और चुनिंदा बदलावों से डिजिटल चित्र बनाएँ।',
     es: 'Crear imágenes digitales con píxeles, formas, capas y ediciones selectivas.',
-    ar: 'إنشاء صور رقمية باستخدام البكسلات والأشكال والطبقات والتعديلات الانتقائية.',
+    ar: 'الصور الرقمية',
     fr: 'Créer des images numériques avec des pixels, des formes, des calques et des retouches ciblées.',
     bn: 'পিক্সেল, আকার, স্তর ও নির্বাচিত সম্পাদনা দিয়ে ডিজিটাল ছবি তৈরি করুন।',
     pt: 'Criar imagens digitais com pixels, formas, camadas e edições seletivas.',
