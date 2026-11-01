@@ -65,7 +65,7 @@ export const orbitalResonances_Skill_Data = buildSkillConfig({
       be: 'Распазнавайце, калі паўторныя суадносіны пэрыядаў абарачэньня па арбітах уплываюць на сыстэму.',
       ka: 'ამოიცანით, როდის მოქმედებს ორბიტული პერიოდების განმეორებადი შეფარდებები სისტემაზე.',
       kk: 'Орбиталық кезеңдердің қайталанатын қатынастары жүйеге қашан әсер ететінін анықтаңыз.',
-      qm: 'Orbita devirleri arasında tekrarlanğan vaqıt münasebetleriniñ sistemağa qachon tesir etkenini tanıñız.',
+      qm: 'Orbita devirleri arasında tekrarlanğan vaqıt münasebetleriniñ sistemağa qaçan tesir etkenini tanıñız.',
     },
   },
 });

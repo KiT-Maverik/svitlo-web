@@ -38,7 +38,7 @@ export const interstellarDust_Skill_Data = buildSkillConfig({
     methodological: 'Explain extinction, reddening and infrared emission caused by dust along astronomical sightlines.',
     frontend: {
       en: 'See how interstellar dust dims, reddens and re-emits starlight.',
-      qm: 'Yıldızlararası toznıñ yıldız yarığını nasıl zayıflattığını, qırmızılaştırğanını ve başqa dalğa uzunlıqlarında qayta saçqanını ögreniñiz.',
+      qm: 'Yıldızlararası toznıñ yıldız yarığını nasıl zayıflattığını, qırmızılaştırğanını ve energiyanı infraqırmızı şavle şeklinde qayta çıqarğanını ögreniñiz.',
       zh: '了解星际尘埃如何使星光变暗、变红，并重新辐射能量。',
       hi: 'जानें कि तारों के बीच की धूल तारों के प्रकाश को मंद, लाल और पुनः उत्सर्जित कैसे करती है।',
       es: 'Descubre cómo el polvo interestelar atenúa, enrojece y vuelve a emitir la luz estelar.',
