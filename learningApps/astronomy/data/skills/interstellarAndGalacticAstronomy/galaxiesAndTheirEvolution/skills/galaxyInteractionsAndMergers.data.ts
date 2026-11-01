@@ -40,7 +40,7 @@ export const galaxyInteractionsAndMergers_Skill_Data = buildSkillConfig({
       en: 'See how encounters and mergers can reshape galaxies and trigger new stars.',
       qm: 'Galaktikalarnıñ yaqınlaşuvı ve birleşüvi olarnıñ şeklini nasıl deñiştirgenini ve yañı yıldızlarnıñ doğuvına nasıl sebep olğanını ögreniñiz.',
       zh: '了解星系相遇和合并如何改变星系结构、气体分布和恒星形成活动。',
-      hi: 'जानें कि टकराव और विलय आकाशगंगाओं का आकार बदलकर नए तारों का निर्माण कैसे बढ़ाते हैं।',
+      hi: 'जानें कि आकाशगंगाओं की पारस्परिक क्रियाएँ और विलय उनकी संरचना, गैस और तारा निर्माण को कैसे बदलते हैं।',
       es: 'Observa cómo los encuentros y las fusiones transforman galaxias y favorecen la formación de estrellas.',
       ar: 'اكتشف كيف يمكن للتقارب والاندماج إعادة تشكيل المجرات وتحفيز تكوّن نجوم جديدة.',
       fr: 'Observe comment les rencontres et les fusions transforment les galaxies et déclenchent la formation d\'étoiles.',
