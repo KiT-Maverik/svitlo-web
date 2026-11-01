@@ -45,7 +45,7 @@ export const composeDecomposeShapes_Skill_Data = buildSkillConfig({
       es: 'Divide una figura plana en piezas sin huecos ni superposiciones y vuelve a unirlas. El área total se conserva, pero el contorno puede cambiar.',
       ar: 'قسّم شكلًا مستويًا إلى أجزاء بلا فجوات أو تداخل، ثم أعد تركيبها. تبقى المساحة وقد يتغير المحيط الخارجي.',
       fr: "Découpe une figure plane sans trou ni chevauchement puis rassemble les pièces. L'aire reste la même, mais le contour peut changer.",
-      bn: 'ফাঁক বা ওভারল্যাপ ছাড়া আকৃতি ভাগ করো ও আবার জোড়ো। মোট ক্ষেত্রফল একই থাকে, বাইরের সীমানা বদলাতে পারে।',
+      bn: 'ফাঁক না রেখে বা অংশগুলো একটির ওপর আরেকটি না বসিয়ে আকৃতি ভাগ করো ও আবার জোড়ো। মোট ক্ষেত্রফল একই থাকে, বাইরের সীমানা বদলাতে পারে।',
       pt: 'Divida uma figura plana sem lacunas nem sobreposições e junte as peças novamente. A área é mantida, mas o contorno pode mudar.',
       ur: 'ہموار شکل کو بغیر خلا چھوڑے یا ایک دوسرے پر چڑھائے حصوں میں بانٹیں اور دوبارہ جوڑیں۔ رقبہ برابر رہتا ہے مگر بیرونی حد بدل سکتی ہے۔',
       id: 'Bagi bangun datar menjadi potongan tanpa celah atau tumpang tindih lalu susun lagi. Luas tetap, tepi luar bisa berubah.',
