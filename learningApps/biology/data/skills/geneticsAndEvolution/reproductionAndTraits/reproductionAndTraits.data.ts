@@ -60,7 +60,7 @@ export const reproductionAndTraits_SkillGroup_Data = buildSkillGroupConfig({
       ja: '子が親や血縁のある個体に似ていても、必ずしも同じではない理由を学ぼう。',
       ko: '자손이 부모를 닮아도 완전히 똑같지는 않은 이유를 알아보세요.',
       tr: 'Yavruların akrabalarına neden benzediğini ama her zaman aynı olmadığını keşfet.',
-      vi: 'Khám phá vì sao con cháu giống họ hàng nhưng không phải lúc nào cũng giống hệt.',
+      vi: 'Khám phá vì sao con cái có những đặc điểm giống bố mẹ nhưng không hoàn toàn giống nhau.',
       ta: 'சந்ததிகள் உறவினர்களைப் போல இருந்தாலும் எப்போதும் ஒரே மாதிரி இல்லாததன் காரணத்தை அறியுங்கள்.',
       te: 'సంతానం తమ బంధువులను పోలి ఉన్నా ఎప్పుడూ ఒకేలా ఎందుకు ఉండదో తెలుసుకోండి.',
       mr: 'संतती नातेवाईकांसारखी का दिसते, पण नेहमी तंतोतंत एकसारखी का नसते ते शोधा.',

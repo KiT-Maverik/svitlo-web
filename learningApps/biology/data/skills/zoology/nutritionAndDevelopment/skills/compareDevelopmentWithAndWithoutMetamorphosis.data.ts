@@ -50,7 +50,7 @@ export const compareDevelopmentWithAndWithoutMetamorphosis_Skill_Data = buildSki
       ja: '発育中に体の形が大きく変わる場合と、幼体が成体に似たまま成長する場合を比べよう。',
       ko: '몸의 구조가 크게 바뀌는 변태 발달과 어린 개체가 성체와 비슷한 형태로 성장하는 발달을 비교해 보세요.',
       tr: 'Gelişirken biçim değiştiren hayvanlarla değiştirmeyenleri karşılaştır.',
-      vi: 'So sánh động vật thay đổi hình dạng khi phát triển với động vật không thay đổi hình dạng.',
+      vi: 'So sánh quá trình phát triển có biến thái mạnh về cấu tạo với quá trình phát triển mà con non có hình dạng gần giống con trưởng thành.',
       ta: 'வளர்ச்சியின்போது வடிவம் மாறும் விலங்குகளையும் மாறாத விலங்குகளையும் ஒப்பிடு.',
       te: 'అభివృద్ధిలో ఆకారం మారే జంతువులను, మారని జంతువులతో పోల్చండి.',
       mr: 'वाढताना रूप बदलणारे प्राणी आणि रूप न बदलणारे प्राणी यांची तुलना करा.',

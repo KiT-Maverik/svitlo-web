@@ -50,7 +50,7 @@ export const relateBodyCoveringsToTheirFunctions_Skill_Data = buildSkillConfig({
       ja: '毛皮、羽毛、うろこ、皮膚が動物の体をどう守るか説明しよう。',
       ko: '털, 깃털, 비늘, 피부가 동물의 몸을 어떻게 보호하는지 설명해 보세요.',
       tr: 'Kürk, tüy, pul ve derinin hayvanların vücudunu nasıl koruduğunu açıkla.',
-      vi: 'Giải thích cách lông mao, lông vũ, vảy và da bảo vệ cơ thể động vật.',
+      vi: 'Giải thích cách lông thú, lông vũ, vảy và da giúp bảo vệ, giữ ấm hoặc hạn chế mất nước ở động vật.',
       ta: 'உரோமம், இறகுகள், செதில்கள் மற்றும் தோல் விலங்குகளின் உடலை எவ்வாறு பாதுகாக்கின்றன என்பதை விளக்கு.',
       te: 'బొచ్చు, ఈకలు, పొలుసులు, చర్మం జంతువుల శరీరాన్ని ఎలా రక్షిస్తాయో వివరించండి.',
       mr: 'लोकर, पिसे, खवले आणि त्वचा प्राण्यांच्या शरीराचे रक्षण कसे करतात हे स्पष्ट करा.',

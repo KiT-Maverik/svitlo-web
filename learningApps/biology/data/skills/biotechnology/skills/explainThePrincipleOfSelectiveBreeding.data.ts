@@ -50,7 +50,7 @@ export const explainThePrincipleOfSelectiveBreeding_Skill_Data = buildSkillConfi
       ja: '選抜育種では、望ましい遺伝的特徴を持つ個体を世代を重ねて選び、繁殖させることを理解しよう。',
       ko: '선발 육종에서 원하는 유전 형질을 가진 개체를 여러 세대에 걸쳐 선택하고 번식시키는 원리를 알아보세요.',
       tr: 'Seçici yetiştirmenin kalıtsal özellikleri nesiller boyunca nasıl geliştirdiğini anla.',
-      vi: 'Hiểu cách chọn giống phát triển các tính trạng di truyền qua nhiều thế hệ.',
+      vi: 'Hiểu cách chọn giống lựa chọn và nhân giống các cá thể mang tính trạng di truyền mong muốn qua nhiều thế hệ.',
       ta: 'தேர்ந்தெடுத்த இனப்பெருக்கம் பல தலைமுறைகளாக மரபுவழிப் பண்புகளை எவ்வாறு மேம்படுத்துகிறது என்பதைப் புரிந்துகொள்.',
       te: 'ఎంపిక చేసిన సంతానోత్పత్తి తరతరాలుగా వారసత్వ లక్షణాలను ఎలా అభివృద్ధి చేస్తుందో అర్థం చేసుకోండి.',
       mr: 'निवडक प्रजननामुळे अनेक पिढ्यांमध्ये आनुवंशिक गुणधर्म कसे विकसित होतात हे समजून घ्या.',

@@ -50,7 +50,7 @@ export const relateLimbStructureToLocomotion_Skill_Data = buildSkillConfig({
       ja: '脚や翼などの形と、歩く・泳ぐ・掘る・飛ぶ動作を結びつけて考えよう。',
       ko: '다리·지느러미·날개의 형태를 걷기, 헤엄치기, 땅파기, 날기와 연결해 보세요.',
       tr: 'Uzuvların biçimleriyle yürüme, yüzme, kazma veya uçma arasındaki ilişkiyi kur.',
-      vi: 'Liên hệ hình dạng các chi với đi bộ, bơi, đào hoặc bay.',
+      vi: 'Liên hệ hình dạng chân, vây và cánh với hoạt động đi, bơi, đào hoặc bay.',
       ta: 'கைகால்களின் வடிவத்தை நடத்தல், நீந்துதல், தோண்டுதல் அல்லது பறத்தலுடன் தொடர்புபடுத்து.',
       te: 'అవయవాల ఆకారాలను నడక, ఈత, తవ్వడం, ఎగరడంతో అనుసంధానించండి.',
       mr: 'अवयवांच्या आकारांचा चालणे, पोहणे, खणणे किंवा उडणे यांच्याशी संबंध जोडा.',
