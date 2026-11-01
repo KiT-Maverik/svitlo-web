@@ -46,7 +46,7 @@ export const keplersThirdLaw_Skill_Data = buildSkillConfig({
       fr: 'Reliez la période orbitale d’un objet à la taille de son orbite et à la masse responsable de la gravitation.',
       bn: 'কোনো বস্তুর পরিক্রমণকালকে তার কক্ষপথের আকার ও মহাকর্ষ সৃষ্টিকারী ভরের সঙ্গে সম্পর্কিত করো।',
       pt: 'Relacione o período orbital de um objeto com o tamanho da órbita e a massa responsável pela atração gravitacional.',
-      ur: 'کسی جرم کے مداری دورانیے کو اس کے مدار کے حجم اور کششِ ثقل پیدا کرنے والی کمیت سے جوڑیں۔',
+      ur: 'کسی جرم کے مداری دورانیے کو اس کے مدار کے نیم بڑے محور کی لمبائی اور کششِ ثقل پیدا کرنے والی کمیت سے جوڑیں۔',
       id: 'Hubungkan periode orbit suatu benda dengan ukuran orbitnya dan massa yang menghasilkan gaya gravitasi.',
       de: 'Setze die Umlaufzeit eines Körpers in Beziehung zur Größe seiner Bahn und zur gravitativ wirkenden Masse.',
       ja: '天体の公転周期と軌道の大きさ、および重力を生む質量との関係を学びます。',
