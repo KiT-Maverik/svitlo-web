@@ -22,7 +22,7 @@ export const equalities_SkillGroup_Data = buildSkillGroupConfig({
     bn: 'সমতা',
     pt: 'Igualdades',
     ur: 'مساوات',
-    id: 'Kesamaan',
+    id: 'Kesetaraan nilai',
     de: 'Gleichungen und Gleichheiten',
     ja: '等式',
     ko: '등식',
