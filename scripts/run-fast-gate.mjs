@@ -139,6 +139,22 @@ function runGate(changed) {
     }
   }
   const targets = [...plan.affected].sort();
+  // Authored textbook taxonomy imports @svitlo/engine/taxonomy. Its exported declarations
+  // exist only after the shared Engine build; data/ is now included in textbook tsconfigs.
+  // Build this prerequisite for affected textbooks even when their manifests have not
+  // yet declared an explicit Engine dependency.
+  const textbookTaxonomyChanged = targets.some(name => {
+    const pkg = all.get(name);
+    return pkg?.path.startsWith('learningApps/') &&
+      fs.existsSync(path.join(repoRoot, pkg.path, 'data/skills'));
+  });
+  if (textbookTaxonomyChanged) {
+    ensureSharedDependencies('@svitlo/engine');
+    if (!built.has('@svitlo/engine')) {
+      exec('npm', ['run', 'build', '--workspace', '@svitlo/engine']);
+      built.add('@svitlo/engine');
+    }
+  }
   for (const name of targets) {
     const pkg = all.get(name);
     if (!pkg?.scripts?.typecheck) continue;

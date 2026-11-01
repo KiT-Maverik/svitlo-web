@@ -1,0 +1,208 @@
+name: Agent CI Artifacts
+
+# One reusable CI tool, invoked only on demand or when a draft PR becomes ready.
+# This workflow must exist on the default branch before comment/manual triggers work.
+on:
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'Existing same-repository pull request number to operate on'
+        required: true
+        type: number
+      operation:
+        description: 'Generate complete reference library, or remove it from this PR'
+        required: true
+        type: choice
+        default: generate
+        options:
+          - generate
+          - cleanup
+  pull_request:
+    branches: [main]
+    types: [ready_for_review]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: agent-ci-artifacts-${{ github.event.issue.number || github.event.pull_request.number || inputs.pr_number }}
+  cancel-in-progress: false
+
+jobs:
+  resolve:
+    name: Authorize command and resolve source PR
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'pull_request' ||
+      (github.event_name == 'issue_comment' &&
+       github.event.issue.pull_request &&
+       github.event.comment.author_association == 'OWNER' &&
+       (github.event.comment.body == '/agent-artifacts generate' ||
+        github.event.comment.body == '/agent-artifacts cleanup'))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      pr: ${{ steps.request.outputs.pr }}
+      head_sha: ${{ steps.request.outputs.head_sha }}
+      branch: ${{ steps.request.outputs.branch }}
+      operation: ${{ steps.request.outputs.operation }}
+    steps:
+      - name: Resolve trusted PR context without checking out code
+        id: request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const event = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'));
+          const isComment = process.env.GITHUB_EVENT_NAME === 'issue_comment';
+          const isPR = process.env.GITHUB_EVENT_NAME === 'pull_request';
+          const pr = isComment ? event.issue.number : isPR ? event.pull_request.number : Number(event.inputs.pr_number);
+          if (!Number.isSafeInteger(pr) || pr < 1) throw Error('Valid PR number required');
+          const operation = isPR ? 'cleanup'
+            : isComment ? event.comment.body.trim().split(' ')[1] : event.inputs.operation;
+          if (!['generate', 'cleanup'].includes(operation)) throw Error('Invalid operation');
+          const response = await fetch('https://api.github.com/repos/' +
+            process.env.GITHUB_REPOSITORY + '/pulls/' + pr, {
+              headers: {
+                authorization: 'Bearer ' + process.env.GH_TOKEN,
+                accept: 'application/vnd.github+json',
+                'x-github-api-version': '2022-11-28',
+              },
+            });
+          if (!response.ok) throw Error('Unable to read PR: HTTP ' + response.status);
+          const pull = await response.json();
+          if (pull.state !== 'open') throw Error('PR must be open');
+          if (pull.head.repo?.full_name !== process.env.GITHUB_REPOSITORY) {
+            throw Error('Only PR branches from this repository are allowed');
+          }
+          if (pull.head.ref === pull.base.repo.default_branch) {
+            throw Error('Cannot write artifacts to the default branch');
+          }
+          if (!/^[a-zA-Z0-9][a-zA-Z0-9._\/-]*$/.test(pull.head.ref) ||
+              pull.head.ref.includes('..') || pull.head.ref.endsWith('/') ||
+              pull.head.ref.startsWith('-')) throw Error('Unsafe branch ref');
+          const entries = {
+            pr: String(pr), head_sha: pull.head.sha,
+            branch: pull.head.ref, operation,
+          };
+          fs.appendFileSync(process.env.GITHUB_OUTPUT,
+            Object.entries(entries).map(([k,v]) => k + '=' + v).join('\n') + '\n');
+          NODE
+
+  generate:
+    name: Build complete Markdown reference library (read-only source)
+    needs: resolve
+    if: needs.resolve.outputs.operation == 'generate'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.resolve.outputs.head_sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install only the TypeScript parser, not the full monorepo
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install --prefix "$RUNNER_TEMP/agent-tools" --no-save --ignore-scripts --no-audit --no-fund 'typescript@5'
+          mkdir -p node_modules
+          ln -s "$RUNNER_TEMP/agent-tools/node_modules/typescript" node_modules/typescript
+      - name: Generate every textbook in every supported language
+        run: |
+          node --check scripts/generate-translation-review-artifacts.mjs
+          node --check scripts/generate-skills-taxonomy.mjs
+          node scripts/generate-translation-review-artifacts.mjs
+      - name: Upload isolated CI result for trusted publish job
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-reference-library
+          path: .agent-ci-artifacts/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 1
+      - name: Remove runner-only data
+        if: always()
+        run: |
+          rm -rf -- .agent-ci-artifacts "$RUNNER_TEMP/agent-tools"
+          rm -f -- node_modules/typescript
+
+  publish:
+    name: Commit review documents to source PR branch
+    needs: [resolve, generate]
+    if: needs.resolve.outputs.operation == 'generate' && needs.generate.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.resolve.outputs.head_sha }}
+          persist-credentials: true
+      - name: Replace previous PR-scoped reference library
+        shell: bash
+        run: rm -rf -- .agent-ci-artifacts
+      - uses: actions/download-artifact@v4
+        with:
+          name: agent-reference-library
+          path: .agent-ci-artifacts/
+      - name: Validate downloaded files and commit only agent artifacts
+        env:
+          TARGET_BRANCH: ${{ needs.resolve.outputs.branch }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s .agent-ci-artifacts/manifest.json
+          test -n "$(find .agent-ci-artifacts/taxonomies -type f -name '*.md' -print -quit)"
+          if find .agent-ci-artifacts -type l -print -quit | grep -q .; then
+            echo 'Refusing symlinks in agent artifacts'; exit 1
+          fi
+          if find .agent-ci-artifacts -type f ! -name '*.md' ! -name 'manifest.json' -print -quit | grep -q .; then
+            echo 'Refusing unexpected artifact file type'; exit 1
+          fi
+          git add -A -- .agent-ci-artifacts
+          if git diff --cached --quiet; then
+            echo 'Agent reference library is unchanged'; exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore(agent-ci): refresh temporary review reference library'
+          git push origin "HEAD:refs/heads/$TARGET_BRANCH"
+
+  cleanup:
+    name: Remove PR-scoped artifacts before merge
+    needs: resolve
+    if: needs.resolve.outputs.operation == 'cleanup'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.resolve.outputs.head_sha }}
+          persist-credentials: true
+      - name: Delete tracked reference library from the PR branch
+        env:
+          TARGET_BRANCH: ${{ needs.resolve.outputs.branch }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rm -r --ignore-unmatch -- .agent-ci-artifacts
+          if git diff --cached --quiet; then
+            echo 'No tracked agent artifacts remain'; exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore(agent-ci): clean temporary review artifacts before merge'
+          git push origin "HEAD:refs/heads/$TARGET_BRANCH"
