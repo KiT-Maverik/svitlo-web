@@ -61,7 +61,7 @@ export const analyzeMusicalForm_Skill_Data = buildSkillConfig({
       uk: 'Знайдіть повторення, контраст і розвиток у структурі музичного твору.',
       lt: 'Raskite pasikartojimą, kontrastą ir raidą kūrinio struktūroje.',
       lv: 'Atrodiet atkārtojumus, kontrastus un attīstību skaņdarba struktūrā.',
-      et: 'Leidke teose struktuuris kordused, kontrastid ja areng.',
+      et: 'Leia teose struktuuris kordused, kontrastid ja areng.',
       be: 'Знайдзіце паўторы, кантраст і развіццё ў структуры музычнага твора.',
       ka: 'მუსიკალური ნაწარმოების სტრუქტურაში იპოვეთ გამეორება, კონტრასტი და განვითარება.',
       kk: 'Музыкалық шығарма құрылымындағы қайталауды, қарама-қарсылықты және дамуды анықтаңыз.',

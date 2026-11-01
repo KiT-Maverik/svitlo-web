@@ -61,7 +61,7 @@ export const singVocalHarmony_Skill_Data = buildSkillConfig({
       uk: 'Співайте власну гармонійну партію, поки інші голоси звучать одночасно.',
       lt: 'Dainuokite savo harmonijos partiją, kol kiti balsai skamba tuo pačiu metu.',
       lv: 'Dziediet savu harmonijas partiju, kamēr vienlaikus skan citas balsis.',
-      et: 'Laulge oma harmooniahäält samal ajal, kui kõlavad teised hääled.',
+      et: 'Laula oma harmooniahäält samal ajal, kui kõlavad teised hääled.',
       be: 'Спявайце сваю гарманічную партыю, пакуль іншыя галасы гучаць адначасова.',
       ka: 'საკუთარი ჰარმონიული პარტია იმღერეთ, სანამ სხვა ხმებიც ერთდროულად ჟღერს.',
       kk: 'Басқа дауыстар қатар естілгенде, өзіңіздің гармониялық партияңызды айтыңыз.',
