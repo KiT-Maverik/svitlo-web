@@ -27,7 +27,7 @@ export const arrayModel_Skill_Data = buildSkillConfig({
     tr: 'Çarpma — Dizi modeli',
     vi: 'Phép nhân — Mô hình mảng',
     ta: 'பெருக்கல் — வரிசை மாதிரி',
-    te: 'గుణకారం — అరే నమూనా',
+    te: 'గుణకారం — వరుసలు, నిలువు వరుసల నమూనా',
     mr: 'गुणाकार — चौकोनी मांडणी',
     ms: 'Pendaraban — Model tatasusunan',
     he: 'כפל — מערך מלבני',
