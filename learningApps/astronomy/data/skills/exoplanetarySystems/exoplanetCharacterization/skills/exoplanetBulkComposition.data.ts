@@ -66,7 +66,7 @@ export const exoplanetBulkComposition_Skill_Data = buildSkillConfig({
       be: 'Паводле масы і радыюсу дасьледуйце магчымы склад плянэты, не дапускаючы адзінага адказу.',
       ka: 'გამოიყენეთ მასა და რადიუსი პლანეტის შესაძლო შემადგენლობის შესასწავლად, ერთი პასუხის წინასწარ დაშვების გარეშე.',
       kk: 'Ғаламшардың массасы мен радиусына сүйеніп, ықтимал құрамын зерттеңіз, бірақ бір ғана жауап бар деп ойламаңыз.',
-      qm: 'Seyyareniñ kütlesi ve radiusı yardımınen onıñ olası maddelerini tetqiq etiñiz, tek bir cevap olğanını farz etmeñiz.',
+      qm: 'Seyyareniñ kütlesi ve radiusı yardımınen onıñ mümkün içki terkibini tetqiq etiñiz, tek bir cevap olğanını farz etmeñiz.',
     },
   },
 });
