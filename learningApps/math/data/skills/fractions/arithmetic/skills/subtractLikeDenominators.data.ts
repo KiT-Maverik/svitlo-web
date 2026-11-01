@@ -22,7 +22,7 @@ export const subtractLikeDenominators_Skill_Data = buildSkillConfig({
     ur: 'ایک مکمل کے اندر یکساں مخرج والے کسر منفی کرنا',
     id: 'Mengurangkan pecahan berpenyebut sama dalam satu keseluruhan',
     de: 'Brüche mit gleichem Nenner innerhalb eines Ganzen subtrahieren',
-    ja: '1の範囲で分母が同じ分数を引く',
+    ja: '同じ全体を基準に分母が同じ分数を引く',
     ko: '한 전체 범위에서 분모가 같은 분수 빼기',
     tr: 'Bir bütün içinde paydaları eşit kesirleri çıkarma',
     vi: 'Trừ các phân số cùng mẫu số trong phạm vi một đơn vị',
