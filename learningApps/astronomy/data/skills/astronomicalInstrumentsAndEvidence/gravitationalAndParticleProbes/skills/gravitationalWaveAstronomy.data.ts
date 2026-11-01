@@ -5,6 +5,7 @@ export const gravitationalWaveAstronomy_Skill_Data = buildSkillConfig({
   id: 'f6c506b9-73e7-4394-b518-d485c5965573',
   name: {
     en: 'Gravitational-Wave Astronomy',
+    qm: 'Gravitatsion dalğa astronomiyası',
     bn: 'মহাকর্ষীয় তরঙ্গ জ্যোতির্বিজ্ঞান',
     ur: 'ثقلی لہروں کی فلکیات',
     ta: 'ஈர்ப்பு அலை வானியல்',
@@ -38,6 +39,7 @@ export const gravitationalWaveAstronomy_Skill_Data = buildSkillConfig({
       'Interpret gravitational-wave detections as evidence about accelerating compact massive systems and compare the signals with electromagnetic observations.',
     frontend: {
       en: 'Find out what gravitational-wave signals tell us about massive, rapidly changing systems.',
+      qm: 'Gravitatsion dalğa signalları büyük kütleli ve tez deñişken sistemalar aqqında neler bildirgenini ögreniñiz.',
       bn: 'মহাকর্ষীয় তরঙ্গের সংকেত থেকে দ্রুত পরিবর্তনশীল বিশাল ভরের ব্যবস্থা সম্পর্কে কী জানা যায়, তা দেখো।',
       ur: 'جانیں کہ ثقلی لہروں کے اشارے تیزی سے بدلنے والے بھاری نظاموں کے بارے میں کیا بتاتے ہیں۔',
       ta: 'ஈர்ப்பு அலைச் சமிக்ஞைகள் மிகப் பெரிய நிறையுடைய வேகமாக மாறும் அமைப்புகளைப் பற்றி என்ன தெரிவிக்கின்றன என்பதை அறியுங்கள்.',

@@ -12,6 +12,7 @@ export const gravitationalAndParticleProbes_SkillGroup_Data = buildSkillGroupCon
   id: '13ffe4cf-acb8-40f7-b43a-59b10d38eb18',
   name: {
     en: 'Gravitational and Particle Probes',
+    qm: 'Cazibe ve zerreler yardımınen araştırmalar',
     bn: 'মহাকর্ষীয় ও কণাভিত্তিক অনুসন্ধান',
     ur: 'کششِ ثقل اور ذرات سے تحقیق',
     ta: 'ஈர்ப்பு விசை மற்றும் துகள்கள் மூலம் ஆய்வு',
@@ -51,6 +52,7 @@ export const gravitationalAndParticleProbes_SkillGroup_Data = buildSkillGroupCon
       'Gravitational lensing, gravitational waves and astrophysical particles supply information that differs from ordinary electromagnetic imaging and spectroscopy; a multimessenger inference combines distinct independent signals. Lensing is observed through light affected by gravity and is not itself a non-electromagnetic measurement.',
     frontend: {
       en: 'Investigate how gravity and particles provide evidence beyond ordinary astronomical images.',
+      qm: 'Yalñız astronomik suretlerden tışarı, cazibe quveti ve zerreler nasıl delil bergenini araştırıñız.',
       bn: 'মহাকর্ষ ও কণা কীভাবে সাধারণ জ্যোতির্বৈজ্ঞানিক ছবির বাইরে অতিরিক্ত প্রমাণ দেয়, তা অনুসন্ধান করো।',
       ur: 'جانیں کہ کششِ ثقل اور ذرات عام فلکیاتی تصویروں سے بڑھ کر شواہد کیسے فراہم کرتے ہیں۔',
       ta: 'வழக்கமான வானியல் படங்களைத் தாண்டி ஈர்ப்பு விசையும் துகள்களும் எவ்வாறு சான்றுகளை வழங்குகின்றன என்பதை ஆராயுங்கள்.',

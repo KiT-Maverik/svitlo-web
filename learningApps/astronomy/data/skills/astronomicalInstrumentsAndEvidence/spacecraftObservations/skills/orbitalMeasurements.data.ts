@@ -5,6 +5,7 @@ export const orbitalMeasurements_Skill_Data = buildSkillConfig({
   id: '79b59e3b-2b35-4c85-8831-4928338c4114',
   name: {
     en: 'Orbital Measurements',
+    qm: 'Orbitadan ölçüvler',
     bn: 'কক্ষপথ থেকে পরিমাপ',
     ur: 'مدار سے پیمائشیں',
     ta: 'சுற்றுப்பாதை அளவீடுகள்',
@@ -38,6 +39,7 @@ export const orbitalMeasurements_Skill_Data = buildSkillConfig({
       'Explain how repeated observations from an orbiting spacecraft support mapping and temporal monitoring.',
     frontend: {
       en: 'Understand how repeated observations from orbit help map changing worlds.',
+      qm: 'Orbitadan tekrarlanğan közetüvler deñişken dünyalarnı haritağa tüşürmege nasıl yardım etkenini añlañız.',
       bn: 'কক্ষপথ থেকে বারবার পর্যবেক্ষণ কীভাবে জ্যোতিষ্কের মানচিত্র তৈরি ও পরিবর্তন অনুসরণে সাহায্য করে, তা বোঝো।',
       ur: 'سمجھیں کہ مدار سے بار بار مشاہدے اجرامِ فلکی کے نقشے بنانے اور ان میں تبدیلیوں پر نظر رکھنے میں کیسے مدد دیتے ہیں۔',
       ta: 'சுற்றுப்பாதையிலிருந்து மீண்டும் மீண்டும் கண்காணிப்பது விண்பொருட்களின் வரைபடங்களை உருவாக்கவும் அவற்றின் மாற்றங்களைக் கண்காணிக்கவும் எவ்வாறு உதவுகிறது என்பதைப் புரிந்துகொள்ளுங்கள்.',

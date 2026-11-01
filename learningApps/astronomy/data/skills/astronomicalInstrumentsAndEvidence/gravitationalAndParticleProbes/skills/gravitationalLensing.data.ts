@@ -5,6 +5,7 @@ export const gravitationalLensing_Skill_Data = buildSkillConfig({
   id: '86e0f7d4-1237-450e-b4c6-ec9664ea84a9',
   name: {
     en: 'Gravitational Lensing',
+    qm: 'Gravitatsion linzalanma',
     bn: 'মহাকর্ষীয় লেন্সিং',
     ur: 'ثقلی عدسہ کاری',
     ta: 'ஈர்ப்பு வில்லையாக்கம்',
@@ -38,6 +39,7 @@ export const gravitationalLensing_Skill_Data = buildSkillConfig({
       'Interpret bending, magnification and distortion of background light by intervening gravity as evidence about mass and source geometry.',
     frontend: {
       en: 'See how gravity bends and magnifies light, revealing otherwise hidden mass.',
+      qm: 'Cazibe quveti yarıqnı nasıl egip ve büyütip, gizli kütleni köstergenini ögreniñiz.',
       bn: 'মহাকর্ষ কীভাবে আলো বাঁকায় ও বড় করে এবং লুকানো ভর প্রকাশ করে, তা জানো।',
       ur: 'جانیں کہ کششِ ثقل روشنی کو کیسے موڑتی اور بڑا کرتی ہے اور چھپا ہوا کمیت کیسے ظاہر ہوتا ہے۔',
       ta: 'ஈர்ப்பு விசை ஒளியை எவ்வாறு வளைத்து பெரிதாக்குகிறது, அதன் மூலம் மறைந்துள்ள நிறை எவ்வாறு வெளிப்படுகிறது என்பதை அறியுங்கள்.',

@@ -5,6 +5,7 @@ export const astronomicalLightCurves_Skill_Data = buildSkillConfig({
   id: '6a45ace0-a769-4235-85fd-948dcd7361aa',
   name: {
     en: 'Astronomical Light Curves',
+    qm: 'Astronomik yarıq egri çizgileri',
     bn: 'জ্যোতির্বৈজ্ঞানিক আলোক বক্ররেখা',
     ur: 'فلکیاتی نوری منحنیات',
     ta: 'வானியல் ஒளிவளைவுகள்',
@@ -38,6 +39,7 @@ export const astronomicalLightCurves_Skill_Data = buildSkillConfig({
       'Interpret changes in brightness over time as evidence for rotation, variability, eclipses or transiting objects.',
     frontend: {
       en: 'Read a brightness-over-time graph for clues to changes in a celestial object.',
+      qm: 'Kök cisminiñ vaqt boyunca parlaqlığını köstergen grafikni oqup, deñişmeler aqqında işaretler tapıñız.',
       bn: 'সময়ের সঙ্গে উজ্জ্বলতা বদলের লেখচিত্র পড়ে জ্যোতিষ্কের পরিবর্তনের সূত্র খোঁজো।',
       ur: 'وقت کے ساتھ روشنائی کے بدلنے کا گراف پڑھ کر آسمانی جسم میں تبدیلی کے اشارے تلاش کریں۔',
       ta: 'காலப்போக்கில் ஒளிர்வு மாறும் வரைபடத்தைப் படித்து விண்பொருளில் ஏற்படும் மாற்றங்களுக்கான தடயங்களைத் தேடுங்கள்.',

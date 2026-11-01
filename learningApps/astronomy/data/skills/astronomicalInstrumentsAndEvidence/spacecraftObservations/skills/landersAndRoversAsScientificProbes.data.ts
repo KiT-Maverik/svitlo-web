@@ -5,6 +5,7 @@ export const landersAndRoversAsScientificProbes_Skill_Data = buildSkillConfig({
   id: 'bf514e0a-7d8d-4671-80b7-9924a93c665c',
   name: {
     en: 'Landers and Rovers as Scientific Probes',
+    qm: 'Qonuv apparatları ve roverler ilmiy alet olaraq',
     bn: 'বৈজ্ঞানিক অনুসন্ধানে অবতরণযান ও রোভার',
     ur: 'سائنسی تحقیق میں لینڈرز اور روورز',
     ta: 'அறிவியல் ஆய்வுக் கருவிகளாக தரையிறங்கும் கலங்களும் ஆய்வு ஊர்திகளும்',
@@ -38,6 +39,7 @@ export const landersAndRoversAsScientificProbes_Skill_Data = buildSkillConfig({
       'Interpret the local environmental evidence obtained by landed missions without treating vehicle design as an astronomy competency.',
     frontend: {
       en: 'Learn what surface probes and rovers can discover from local measurements.',
+      qm: 'Yer üstüne qonğan apparatlar ve roverler yerli ölçüvlerden neler ögrenebilegenini araştırıñız.',
       bn: 'পৃষ্ঠে সরাসরি পরিমাপ করে অবতরণযান ও রোভার কী আবিষ্কার করতে পারে, তা জানো।',
       ur: 'جانیں کہ لینڈرز اور روورز سطح پر براہِ راست پیمائش سے کیا دریافت کر سکتے ہیں۔',
       ta: 'தரையில் நேரடியாக அளவிட்டு தரையிறங்கும் கலங்களும் ஆய்வு ஊர்திகளும் எதைக் கண்டறிய முடியும் என்பதை அறியுங்கள்.',
