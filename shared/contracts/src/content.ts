@@ -16,6 +16,7 @@ export { defineContentBlockCatalog } from './types/content/blocks';
 export type * from './types/content/locale.types';
 export type * from './types/content/lesson.types';
 export type * from './types/content/lessonV2.types';
+export type * from './types/content/flashcard.types';
 export { defineLessonV2Data } from './types/content/lessonV2.types';
 export type * from './types/content/section.types';
 export type * from './types/content/quiz.types';

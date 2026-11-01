@@ -1,6 +1,7 @@
 import { DEFAULT_SUPPORTED_LANGUAGES } from '@svitlo/engine';
 import { defineLessonV2Data, type LessonV2 } from '@svitlo/engine/content';
 import type { howLightMovesDefinition } from '@/data/lessons/1/howLightMoves/howLightMoves.definition';
+import { howLightMovesFlashcards } from './flashcards/index.data';
 import { howLightMoves_Locale } from './howLightMoves';
 import { howLightMovesQuestionsData } from './questions/index.data';
 import { practiceData } from './sections/practice/practice.data';
@@ -11,6 +12,7 @@ export const howLightMovesData = defineLessonV2Data({
   id: 'd3048d21-8690-5255-b62c-984c69ac272c',
   slug: 'howLightMoves',
   title: howLightMoves_Locale.name,
+  flashcards: howLightMovesFlashcards,
   parameters: {
     requireQuiz: true,
     languages: [
