@@ -63,7 +63,7 @@ export const twoDigitNoRegroup_Skill_Data = buildSkillConfig({
       uk: 'Ти можеш додавати й віднімати двоцифрові числа окремо за десятками й одиницями, коли не потрібен розрядний обмін.',
       lt: 'Gali sudėti ar atimti dviženklius skaičius atskirai skaičiuodamas dešimtis ir vienetus, kai nereikia pergrupuoti.',
       lv: 'Tu vari saskaitīt vai atņemt divciparu skaitļus, atsevišķi rēķinot desmitus un vienus, ja pārgrupēšana nav vajadzīga.',
-      et: 'Sa oskad kahekohalisi arve liita või lahutada, arvutades kümnelis­ed ja ühelis­ed eraldi, kui ümberrühmitamine pole vajalik.',
+      et: 'Sa oskad kahekohalisi arve liita või lahutada, arvutades kümnelised ja ühelised eraldi, kui ümberrühmitamine pole vajalik.',
       be: 'Ты можаш складаць і адымаць двухзначныя лікі асобна па дзясятках і адзінках, калі разрадны абмен не патрэбны.',
       ka: 'შეგიძლია ორნიშნა რიცხვები შეკრიბო ან გამოაკლო, ათეულებისა და ერთეულების ცალკე გამოთვლით, როცა გადაჯგუფება საჭირო არ არის.',
       kk: 'Қайта топтастыру қажет болмағанда екі таңбалы сандардың ондықтары мен бірліктерін бөлек есептеп қоса немесе азайта аласың.',
