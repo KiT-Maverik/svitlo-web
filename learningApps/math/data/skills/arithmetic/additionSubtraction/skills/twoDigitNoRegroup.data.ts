@@ -12,7 +12,7 @@ export const twoDigitNoRegroup_Skill_Data = buildSkillConfig({
     kk: 'Қосу және азайту — екі таңбалы сандар қайта топтастырусыз',
     en: 'Addition and subtraction — 2-digit · Without regrouping',
     qm: 'Qoşuv ve çıqaruv — eki raqamlı sayılar, razryad deñiştirmeden',
-    zh: '加减法 — 2-位数 · 不进退位',
+    zh: '加减法 — 两位数 · 不进位不退位',
     hi: 'जोड़ और घटाव — 2-अंकीय · बिना पुनर्समूहन',
     es: 'Suma y resta — 2-cifras · Sin reagrupación',
     ar: 'الجمع والطرح — 2-أرقام · دون إعادة التجميع',
