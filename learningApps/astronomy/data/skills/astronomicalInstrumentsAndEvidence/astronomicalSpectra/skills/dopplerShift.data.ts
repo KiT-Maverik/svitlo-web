@@ -5,6 +5,7 @@ export const dopplerShift_Skill_Data = buildSkillConfig({
   id: '07adc502-1c59-4109-b03d-92828c606ca3',
   name: {
     en: 'Doppler Shift',
+    qm: 'Doppler tayuvı',
     bn: 'ডপলার সরণ',
     ur: 'ڈاپلر انزياح',
     ta: 'டாப்ளர் இடப்பெயர்ச்சி',
@@ -38,6 +39,7 @@ export const dopplerShift_Skill_Data = buildSkillConfig({
       'Interpret wavelength shifts due to relative radial motion, distinguishing this local effect from cosmological expansion.',
     frontend: {
       en: 'Use shifts in wavelength to investigate motion toward or away from an observer.',
+      qm: 'Dalğa uzunlığınıñ deñişüvine baqıp, cisimniñ közeticige yaqınlaşqanını ya da uzaqlaşqanını araştırıñız.',
       bn: 'তরঙ্গদৈর্ঘ্যের পরিবর্তন থেকে বস্তু পর্যবেক্ষকের দিকে আসছে, না দূরে যাচ্ছে, তা অনুসন্ধান করো।',
       ur: 'طولِ موج میں تبدیلیوں سے معلوم کریں کہ کوئی جسم مشاہدہ کرنے والے کی طرف آ رہا ہے یا اس سے دور جا رہا ہے۔',
       ta: 'அலைநீள மாற்றங்களைப் பயன்படுத்தி ஒரு பொருள் பார்வையாளரை நோக்கி அல்லது அவரிடமிருந்து விலகி நகர்வதை ஆய்வு செய்யுங்கள்.',

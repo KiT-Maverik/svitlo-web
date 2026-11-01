@@ -5,6 +5,7 @@ export const multiwavelengthObservation_Skill_Data = buildSkillConfig({
   id: '5e2bd763-fd57-423f-b7c4-f8a82e94bcc8',
   name: {
     en: 'Multiwavelength Observation',
+    qm: 'Çeşit dalğa uzunlıqlarında közetüv',
     bn: 'বহু-তরঙ্গদৈর্ঘ্য পর্যবেক্ষণ',
     ur: 'کئی طولِ موجوں پر مشاہدہ',
     ta: 'பல அலைநீளக் கண்காணிப்பு',
@@ -38,6 +39,7 @@ export const multiwavelengthObservation_Skill_Data = buildSkillConfig({
       'Relate observations in different electromagnetic bands to distinct physical components and processes within one object.',
     frontend: {
       en: 'Combine images and measurements from different kinds of light to understand a celestial object.',
+      qm: 'Bir kök cismini añlamaq içün çeşit yarıq türlerinde alınğan suretlerni ve ölçüvlerni birleştiriñiz.',
       bn: 'একটি জ্যোতিষ্ক বুঝতে বিভিন্ন ধরনের আলো থেকে পাওয়া ছবি ও পরিমাপ একত্র করো।',
       ur: 'کسی آسمانی جسم کو سمجھنے کے لیے روشنی کی مختلف اقسام سے حاصل تصاویر اور پیمائشیں یکجا کریں۔',
       ta: 'ஒரு விண்பொருளை புரிந்துகொள்ள ஒளியின் பல்வேறு வகைகளில் எடுத்த படங்களையும் அளவீடுகளையும் இணைத்துப் பாருங்கள்.',

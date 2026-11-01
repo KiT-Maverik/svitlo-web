@@ -5,6 +5,7 @@ export const stellarParallax_Skill_Data = buildSkillConfig({
   id: '7192ef38-85e2-4ca1-9b4c-0b33d46dca00',
   name: {
     en: 'Stellar Parallax',
+    qm: 'Yıldız parallaksı',
     bn: 'নাক্ষত্রিক লম্বন',
     ur: 'نجمی اختلافِ منظر',
     ta: 'விண்மீன் இடமாறு தோற்றம்',
@@ -38,6 +39,7 @@ export const stellarParallax_Skill_Data = buildSkillConfig({
       'Infer distances to nearby stars from the apparent displacement caused by changing observing positions.',
     frontend: {
       en: "Use a nearby star's changing apparent position to estimate its distance.",
+      qm: 'Yaqın yıldıznıñ körüngen yeri deñişkenine baqıp, onıñ mesafesini esaplañız.',
       bn: 'কাছের নক্ষত্রের আপাত অবস্থান বদল থেকে তার দূরত্বের অনুমান করো।',
       ur: 'قریب کے ستارے کی ظاہری جگہ بدلنے سے اس کا فاصلہ معلوم کرنے کی کوشش کریں۔',
       ta: 'அருகிலுள்ள விண்மீனின் தோற்ற நிலை மாற்றத்தை வைத்து அதன் தொலைவை மதிப்பிடுங்கள்.',

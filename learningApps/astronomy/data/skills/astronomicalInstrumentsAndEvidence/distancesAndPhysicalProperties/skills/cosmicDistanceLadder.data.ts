@@ -5,6 +5,7 @@ export const cosmicDistanceLadder_Skill_Data = buildSkillConfig({
   id: '7eb2719c-130e-4a4d-8266-7940ef7a2a9c',
   name: {
     en: 'Cosmic Distance Ladder',
+    qm: 'Kosmik mesafe basamaqları',
     bn: 'মহাজাগতিক দূরত্বের সিঁড়ি',
     ur: 'کائناتی فاصلوں کی سیڑھی',
     ta: 'அண்டத் தொலைவு ஏணி',
@@ -38,6 +39,7 @@ export const cosmicDistanceLadder_Skill_Data = buildSkillConfig({
       'Explain why different distance indicators apply across different ranges and how calibration errors can propagate.',
     frontend: {
       en: 'See why astronomers use different methods to measure distances across the universe.',
+      qm: 'Astronomlar Kâinatnıñ çeşit uzaqlıqlarını ölçmek içün ne içün ayrı usullar qullanğanlarını ögreniñiz.',
       bn: 'মহাবিশ্বের দূরত্ব মাপতে জ্যোতির্বিজ্ঞানীরা কেন বিভিন্ন পদ্ধতি ব্যবহার করেন, তা জানো।',
       ur: 'جانیں کہ ماہرینِ فلکیات کائنات میں فاصلے ناپنے کے لیے مختلف طریقے کیوں استعمال کرتے ہیں۔',
       ta: 'பிரபஞ்சத்தில் வெவ்வேறு தொலைவுகளை அளக்க வானியலாளர்கள் ஏன் பல முறைகளைப் பயன்படுத்துகிறார்கள் என்பதை அறியுங்கள்.',

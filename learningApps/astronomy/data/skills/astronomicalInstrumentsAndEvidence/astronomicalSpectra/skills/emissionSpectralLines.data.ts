@@ -5,6 +5,7 @@ export const emissionSpectralLines_Skill_Data = buildSkillConfig({
   id: 'b7e6fe95-cc11-4e73-902b-270d21adc38b',
   name: {
     en: 'Emission Spectral Lines',
+    qm: 'Çıqaruv spektr çizgileri',
     bn: 'নিঃসরণ বর্ণক্রম রেখা',
     ur: 'اخراجی طیفی خطوط',
     ta: 'உமிழ்வு நிறமாலை வரிகள்',
@@ -37,6 +38,7 @@ export const emissionSpectralLines_Skill_Data = buildSkillConfig({
     methodological: 'Interpret discrete bright features produced by matter radiating at characteristic wavelengths.',
     frontend: {
       en: 'Recognize bright spectral lines as clues to the material producing light.',
+      qm: 'Parlaq spektr çizgilerini yarıq çıqarğan maddeniñ işaretleri olaraq tanıñız.',
       bn: 'বর্ণক্রমের উজ্জ্বল রেখা থেকে কোন পদার্থ আলো নির্গত করছে তার সূত্র খুঁজে নাও।',
       ur: 'روشن طیفی خطوط کو روشنی خارج کرنے والے مادے کے بارے میں اشارے کے طور پر پہچانیں۔',
       ta: 'பிரகாசமான நிறமாலை வரிகள் ஒளியை வெளியிடும் பொருளைப் பற்றிய தடயங்கள் என்பதை அறியுங்கள்.',

@@ -5,6 +5,7 @@ export const standardCandles_Skill_Data = buildSkillConfig({
   id: 'a2c155f8-e6d3-4991-8ba2-ba5ddfc067e0',
   name: {
     en: 'Standard Candles',
+    qm: 'Standart şamlar',
     bn: 'মানক আলোকউৎস',
     ur: 'معیاری شمعیں',
     ta: 'தரநிலை ஒளி மூலங்கள்',
@@ -38,6 +39,7 @@ export const standardCandles_Skill_Data = buildSkillConfig({
       'Explain how calibrated luminosity indicators support distance estimates beyond direct parallax measurements.',
     frontend: {
       en: 'Discover how objects of known brightness can help estimate distances.',
+      qm: 'Parlaqlığı belli cisimlerniñ mesafeni esaplamağa nasıl yardım etkenini ögreniñiz.',
       bn: 'নির্দিষ্ট উজ্জ্বলতা জানা থাকা বস্তু কীভাবে দূরত্ব নির্ণয়ে সাহায্য করে, তা জানো।',
       ur: 'جانیں کہ معلوم روشنائی والے اجرام فاصلے کا اندازہ لگانے میں کیسے مدد دیتے ہیں۔',
       ta: 'அறியப்பட்ட உள்ளார்ந்த ஒளிர்வு கொண்ட பொருட்கள் தொலைவை மதிப்பிட எவ்வாறு உதவுகின்றன என்பதை அறியுங்கள்.',

@@ -5,6 +5,7 @@ export const astronomicalDistanceUnits_Skill_Data = buildSkillConfig({
   id: '44b45776-82b4-4ef3-ba99-e80a65cec906',
   name: {
     en: 'Astronomical Distance Units',
+    qm: 'Astronomik mesafe birlikleri',
     bn: 'জ্যোতির্বৈজ্ঞানিক দূরত্বের একক',
     ur: 'فلکیاتی فاصلے کی اکائیاں',
     ta: 'வானியல் தொலைவு அலகுகள்',
@@ -38,6 +39,7 @@ export const astronomicalDistanceUnits_Skill_Data = buildSkillConfig({
       'Interpret astronomical units, light-years and parsecs as units of length, relate their scales and distinguish light-travel distance from travel duration.',
     frontend: {
       en: 'Compare astronomical units, light-years and parsecs as measures of distance.',
+      qm: 'Astronomik birlik, yarıq yılı ve parsekni mesafe ölçüleri olaraq teñeştiriñiz.',
       bn: 'দূরত্বের একক হিসেবে জ্যোতির্বৈজ্ঞানিক একক, আলোকবর্ষ ও পারসেকের তুলনা করো।',
       ur: 'فلکیاتی اکائی، نوری سال اور پارسیک کا فاصلے کی پیمائشوں کے طور پر موازنہ کریں۔',
       ta: 'வானியல் அலகு, ஒளியாண்டு, பார்செக் ஆகியவற்றைத் தொலைவு அளவுகளாக ஒப்பிடுங்கள்.',

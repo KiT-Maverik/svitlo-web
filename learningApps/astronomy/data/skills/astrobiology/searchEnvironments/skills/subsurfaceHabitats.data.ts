@@ -5,6 +5,7 @@ export const subsurfaceHabitats_Skill_Data = buildSkillConfig({
   id: '8e905a02-c42b-4f1f-b804-3444d99bb7cb',
   name: {
     en: 'Subsurface Habitats',
+    qm: 'Yer astındaki yaşayış yerleri',
     bn: 'পৃষ্ঠের নিচের আবাসস্থল',
     ur: 'سطح کے نیچے رہائش گاہیں',
     ta: 'மேற்பரப்புக்குக் கீழுள்ள வாழிடங்கள்',
@@ -38,6 +39,7 @@ export const subsurfaceHabitats_Skill_Data = buildSkillConfig({
       'Explain why liquid environments protected under ice or rock can be relevant even when a surface is hostile.',
     frontend: {
       en: 'Discover why oceans hidden beneath ice or rock could be promising places to investigate.',
+      qm: 'Buz ya da taş astında gizlengen okeanlar ne içün araştırmağa degerli yaşayış yerleri olabilgenini ögreniñiz.',
       bn: 'বরফ বা শিলার নিচে লুকানো মহাসাগর কেন অনুসন্ধানের জন্য আশাব্যঞ্জক হতে পারে, তা জানো।',
       ur: 'جانیں کہ برف یا چٹان کے نیچے چھپے سمندر تحقیق کے لیے امید افزا مقامات کیوں ہو سکتے ہیں۔',
       ta: 'பனி அல்லது பாறையின் அடியில் மறைந்துள்ள பெருங்கடல்கள் ஆய்வுக்கு ஏற்ற இடங்களாக ஏன் இருக்கலாம் என்பதை அறியுங்கள்.',

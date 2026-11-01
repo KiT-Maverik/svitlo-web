@@ -5,6 +5,7 @@ export const continuousSpectra_Skill_Data = buildSkillConfig({
   id: 'e5572740-41a8-4414-b212-e92fc2323dd0',
   name: {
     en: 'Continuous Spectra',
+    qm: 'Uzluksiz spektrler',
     bn: 'অবিচ্ছিন্ন বর্ণক্রম',
     ur: 'مسلسل طیف',
     ta: 'தொடர்ச்சியான நிறமாலை',
@@ -38,6 +39,7 @@ export const continuousSpectra_Skill_Data = buildSkillConfig({
       'Infer broad thermal properties from the distribution of emitted light across wavelengths while recognizing idealized blackbody assumptions.',
     frontend: {
       en: "Use a continuous spectrum to explore an object's temperature and emitted light.",
+      qm: 'Uzluksiz spektr yardımınen bir cisminiñ sıcaklığını ve çıqarğan yarığını araştırıñız.',
       bn: 'একটি অবিচ্ছিন্ন বর্ণক্রম ব্যবহার করে বস্তুর তাপমাত্রা ও নির্গত আলো অনুসন্ধান করো।',
       ur: 'مسلسل طیف کی مدد سے کسی جسم کا درجہ حرارت اور اس سے خارج ہونے والی روشنی کا مطالعہ کریں۔',
       ta: 'தொடர்ச்சியான நிறமாலையைப் பயன்படுத்தி ஒரு பொருளின் வெப்பநிலையையும் அது வெளியிடும் ஒளியையும் ஆராயுங்கள்.',
