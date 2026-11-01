@@ -32,7 +32,7 @@ export const stellarMass_Skill_Data = buildSkillConfig({
     be: 'Маса зорак',
     ka: 'ვარსკვლავების მასა',
     kk: 'Жұлдыздардың массасы',
-    qm: 'Yulduzlarnıñ kütlesi',
+    qm: 'Yıldızlarnıñ kütlesi',
   },
   description: {
     methodological: 'Determine or constrain stellar mass from orbital dynamics or other model-dependent observations.',
@@ -65,7 +65,7 @@ export const stellarMass_Skill_Data = buildSkillConfig({
       be: 'Выкарыстоўвайце арбітальныя вымярэньні і мадэлі для ацэнкі масы зоркі.',
       ka: 'გამოიყენეთ ორბიტული გაზომვები და მოდელები ვარსკვლავის მასის შესაფასებლად.',
       kk: 'Жұлдыз массасын бағалау үшін орбиталық өлшемдер мен модельдерді қолданыңыз.',
-      qm: 'Yulduznıñ kütlesini baalamaq içün orbital ölçevler ve modellerden faydalanıñız.',
+      qm: 'Yıldıznıñ kütlesini baalamaq içün orbital ölçevler ve modellerden faydalanıñız.',
     },
   },
 });

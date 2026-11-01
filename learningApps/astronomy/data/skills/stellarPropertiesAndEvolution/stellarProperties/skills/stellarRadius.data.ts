@@ -32,7 +32,7 @@ export const stellarRadius_Skill_Data = buildSkillConfig({
     be: 'Радыюс зоркі',
     ka: 'ვარსკვლავის რადიუსი',
     kk: 'Жұлдыз радиусы',
-    qm: 'Yulduznıñ radiusı',
+    qm: 'Yıldıznıñ radiusı',
   },
   description: {
     methodological: "Infer a star's size from luminosity, temperature, eclipses or other relevant evidence.",
@@ -65,7 +65,7 @@ export const stellarRadius_Skill_Data = buildSkillConfig({
       be: 'Даведайцеся, як астраномы вызначаюць радыюс зоркі паводле яе сьвятла і іншых назіраньняў.',
       ka: 'გაიგეთ, როგორ ადგენენ ასტრონომები ვარსკვლავის რადიუსს სინათლისა და სხვა დაკვირვებების მიხედვით.',
       kk: 'Астрономдардың жұлдыз радиусын жарығы мен өзге бақылаулар арқылы қалай анықтайтынын біліңіз.',
-      qm: 'Astronomlar yulduznıñ radiusını onıñ yarığı ve başqa közetüvlerge köre nasıl belgilegenini ögreniñiz.',
+      qm: 'Astronomlar yıldıznıñ radiusını onıñ yarığı ve başqa közetüvlerge köre nasıl belgilegenini ögreniñiz.',
     },
   },
 });

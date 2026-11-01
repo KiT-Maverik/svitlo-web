@@ -32,7 +32,7 @@ export const supergiants_Skill_Data = buildSkillConfig({
     be: 'Звышгіганты',
     ka: 'ზეგიგანტები',
     kk: 'Аса алып жұлдыздар',
-    qm: 'Pek büyük dev yulduzlar',
+    qm: 'Pek büyük dev yıldızlar',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const supergiants_Skill_Data = buildSkillConfig({
       be: 'Распазнавайце вялізныя памеры і высокую сьвяцільнасьць эвалюцыянавалых масіўных зорак.',
       ka: 'ამოიცანით განვითარებული მასიური ვარსკვლავების უზარმაზარი ზომები და მაღალი ნათობა.',
       kk: 'Эволюцияланған массивті жұлдыздардың алып өлшемі мен жоғары жарқырауын таныңыз.',
-      qm: 'Evolyutsiya keçken büyük kütleli yulduzlarnıñ pek büyük ölçülerini ve yüksek parlaqlığını tanıñız.',
+      qm: 'Evolyutsiya keçken büyük kütleli yıldızlarnıñ pek büyük ölçülerini ve yüksek parlaqlığını tanıñız.',
     },
   },
 });

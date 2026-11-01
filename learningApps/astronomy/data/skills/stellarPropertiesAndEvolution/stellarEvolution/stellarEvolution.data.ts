@@ -40,7 +40,7 @@ export const stellarEvolution_SkillGroup_Data = buildSkillGroupConfig({
     be: 'Эвалюцыя зорак',
     ka: 'ვარსკვლავთა ევოლუცია',
     kk: 'Жұлдыздардың эволюциясы',
-    qm: 'Yulduzlarnıñ evolyutsiyası',
+    qm: 'Yıldızlarnıñ evolyutsiyası',
   },
   skills: {
     advancedStellarFusion: advancedStellarFusion_Skill_Data,
@@ -81,7 +81,7 @@ export const stellarEvolution_SkillGroup_Data = buildSkillGroupConfig({
       be: 'Даведайцеся, як зоркі зьмяняюцца, паступова вычэрпваючы ядзернае паліва.',
       ka: 'გაიგეთ, როგორ იცვლებიან ვარსკვლავები ბირთვული საწვავის ამოწურვისას.',
       kk: 'Жұлдыздар ядролық отынын тауыса келе қалай өзгеретінін біліңіз.',
-      qm: 'Yulduzlar yadroviy yaqıtlarını sarf etken sayın nasıl deñişkenini ögreniñiz.',
+      qm: 'Yıldızlar yadroviy yaqıtlarını sarf etken sayın nasıl deñişkenini ögreniñiz.',
     },
   },
 });

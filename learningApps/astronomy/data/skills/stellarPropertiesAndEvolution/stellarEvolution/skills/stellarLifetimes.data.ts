@@ -32,7 +32,7 @@ export const stellarLifetimes_Skill_Data = buildSkillConfig({
     be: 'Працягласьць жыцьця зорак',
     ka: 'ვარსკვლავების სიცოცხლის ხანგრძლივობა',
     kk: 'Жұлдыздардың өмір сүру ұзақтығы',
-    qm: 'Yulduzlarnıñ ömür uzunlığı',
+    qm: 'Yıldızlarnıñ ömür uzunlığı',
   },
   description: {
     methodological: 'Compare the evolutionary timescales of stars with different initial masses.',
@@ -65,7 +65,7 @@ export const stellarLifetimes_Skill_Data = buildSkillConfig({
       be: 'Параўнайце працягласьць жыцьця зорак у залежнасьці ад іх пачатковай масы.',
       ka: 'შეადარეთ ვარსკვლავების სიცოცხლის ხანგრძლივობა მათი საწყისი მასების მიხედვით.',
       kk: 'Жұлдыздардың өмір ұзақтығын олардың бастапқы массасына қарай салыстырыңыз.',
-      qm: 'Yulduzlarnıñ ömür uzunlığını başlanğıç kütlelerine köre muqayese etiñiz.',
+      qm: 'Yıldızlarnıñ ömür uzunlığını başlanğıç kütlelerine köre muqayese etiñiz.',
     },
   },
 });

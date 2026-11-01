@@ -32,7 +32,7 @@ export const stellarTemperature_Skill_Data = buildSkillConfig({
     be: 'Тэмпэратура зорак',
     ka: 'ვარსკვლავების ტემპერატურა',
     kk: 'Жұлдыздардың температурасы',
-    qm: 'Yulduzlarnıñ sıcaqlığı',
+    qm: 'Yıldızlarnıñ sıcaqlığı',
   },
   description: {
     methodological: 'Explain how stellar spectra and emitted energy distributions constrain effective temperature.',
@@ -65,7 +65,7 @@ export const stellarTemperature_Skill_Data = buildSkillConfig({
       be: 'Дасьледуйце тэмпэратуру зорак паводле колераў і спэктральных асаблівасьцяў іхнага сьвятла.',
       ka: 'გამოიყენეთ ვარსკვლავების სინათლის ფერები და სპექტრული ნიშნები მათი ტემპერატურის შესასწავლად.',
       kk: 'Жұлдыз температурасын зерттеу үшін оның жарығының түстері мен спектрлік белгілерін пайдаланыңыз.',
-      qm: 'Yulduz yarığınıñ renkleri ve spektr belgilerine köre sıcaqlığını araştırıñız.',
+      qm: 'Yıldız yarığınıñ renkleri ve spektr belgilerine köre sıcaqlığını araştırıñız.',
     },
   },
 });

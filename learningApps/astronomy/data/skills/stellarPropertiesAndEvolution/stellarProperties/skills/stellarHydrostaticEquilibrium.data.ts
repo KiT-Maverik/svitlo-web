@@ -32,7 +32,7 @@ export const stellarHydrostaticEquilibrium_Skill_Data = buildSkillConfig({
     be: 'Гідрастатычная раўнавага зорак',
     ka: 'ვარსკვლავების ჰიდროსტატიკური წონასწორობა',
     kk: 'Жұлдыздардың гидростатикалық тепе-теңдігі',
-    qm: 'Yulduzlarnıñ gidrostatik muvanazatı',
+    qm: 'Yıldızlarnıñ gidrostatik muvanazatı',
   },
   description: {
     methodological:
@@ -66,7 +66,7 @@ export const stellarHydrostaticEquilibrium_Skill_Data = buildSkillConfig({
       be: 'Зразумейце, як гравітацыя і ўнутраны ціск падтрымліваюць раўнавагу зоркі.',
       ka: 'გაიგეთ, როგორ ინარჩუნებს გრავიტაცია და შიდა წნევა ვარსკვლავის წონასწორობას.',
       kk: 'Гравитация мен ішкі қысым жұлдыз тепе-теңдігін қалай сақтайтынын түсініңіз.',
-      qm: 'Çekim quveti ve içki basım yulduznıñ muvanazatını nasıl saqlağanını añlañız.',
+      qm: 'Cazibe quveti ve içki basım yıldıznıñ muvanazatını nasıl saqlağanını añlañız.',
     },
   },
 });
