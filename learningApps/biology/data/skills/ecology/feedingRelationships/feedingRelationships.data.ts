@@ -7,6 +7,7 @@ export const feedingRelationships_SkillGroup_Data = buildSkillGroupConfig({
   id: "68f19202-48b2-407f-8a10-12a4de57359d",
   name: {
     en: "Feeding Relationships",
+    qm: 'Beslenüv alâqaları',
     zh: '食物关系',
     hi: 'आहार संबंध',
     es: 'Relaciones alimentarias',
@@ -46,6 +47,7 @@ export const feedingRelationships_SkillGroup_Data = buildSkillGroupConfig({
     methodological: "Matter and energy pass between organisms, and decomposers return matter to the environment; a disrupted relationship affects subsequent links.",
     frontend: {
       en: "Explore how food relationships transfer matter and energy through ecosystems.",
+      qm: 'Beslenüv alâqaları vastasınen madde ve energiyanıñ ekosistemada nasıl keçkenini ögreniñiz.',
       zh: '探索物质和能量如何通过生态系统中的食物关系传递。',
       hi: 'जानें कि आहार संबंध पारितंत्रों में पदार्थ और ऊर्जा का स्थानांतरण कैसे करते हैं।',
       es: 'Explora cómo las relaciones alimentarias transfieren materia y energía en los ecosistemas.',
