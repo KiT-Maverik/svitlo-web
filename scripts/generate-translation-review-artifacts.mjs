@@ -1,195 +1,134 @@
 #!/usr/bin/env node
 /**
- * Materialize temporary, language-focused review views from canonical Code taxonomies.
- * Uses the existing read-only Skills Code -> Markdown generator; does not write to Git.
- *
- * One book / one locale:
- *   node scripts/generate-translation-review-artifacts.mjs --package learningApps/astronomy --locale qm
- * One book / all locales:
- *   node scripts/generate-translation-review-artifacts.mjs --package learningApps/astronomy --all-locales
- * All textbooks / one locale:
- *   node scripts/generate-translation-review-artifacts.mjs --all-packages --locale qm
- * All textbooks / all locales:
- *   node scripts/generate-translation-review-artifacts.mjs --all-packages --all-locales
- *
- * Optional: --out-dir /absolute/path/outside/repository
+ * Build one complete, PR-scoped agent reference library from canonical Code.
+ * On-demand only. No CLI modes: discover every Code Skills textbook and locale.
+ * Output: .agent-ci-artifacts/taxonomies/<textbook>/<locale>.md + manifest.json
+ * The CI workflow owns committing and cleaning this directory on the PR branch.
  */
 import fs from 'node:fs';
-import os from 'node:os';
 import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import ts from 'typescript';
 
-const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const learningAppsRoot = path.join(repoRoot, 'learningApps');
-const generator = path.join(repoRoot, 'scripts/generate-skills-taxonomy.mjs');
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const output = path.join(root, '.agent-ci-artifacts');
+const generator = path.join(root, 'scripts/generate-skills-taxonomy.mjs');
 
-function fail(message) {
-  throw new Error(message);
+if (process.argv.length !== 2) {
+  throw new Error('No modes or arguments: run "node scripts/generate-translation-review-artifacts.mjs"');
 }
-
-function usage() {
-  return [
-    'Usage: node scripts/generate-translation-review-artifacts.mjs',
-    '  (--package learningApps/<textbook> | --all-packages)',
-    '  (--locale <language-key> | --all-locales)',
-    '  [--out-dir <absolute-or-relative-path-outside-repository>]',
-  ].join('\n');
-}
-
-function options(argv) {
-  const o = { package: null, locale: null, allPackages: false, allLocales: false, outDir: null };
-  const seen = new Set();
-  for (let i = 0; i < argv.length; i++) {
-    const arg = argv[i];
-    if (arg === '--help') {
-      process.stdout.write(usage() + '\n');
-      process.exit(0);
-    }
-    if (!['--package', '--locale', '--all-packages', '--all-locales', '--out-dir'].includes(arg)) {
-      fail('Unknown option ' + arg + '\n' + usage());
-    }
-    if (seen.has(arg)) fail('Repeated option ' + arg);
-    seen.add(arg);
-    if (arg === '--all-packages' || arg === '--all-locales') {
-      o[arg === '--all-packages' ? 'allPackages' : 'allLocales'] = true;
-    } else {
-      const value = argv[++i];
-      if (!value || value.startsWith('--')) fail('Missing value for ' + arg);
-      o[arg === '--package' ? 'package' : arg === '--locale' ? 'locale' : 'outDir'] = value;
-    }
-  }
-  if (Boolean(o.package) === o.allPackages || Boolean(o.locale) === o.allLocales) fail(usage());
-  return o;
-}
-
 function unwrap(node) {
   while (node && (ts.isAsExpression(node) || ts.isSatisfiesExpression(node) || ts.isParenthesizedExpression(node))) {
     node = node.expression;
   }
   return node;
 }
-
-function supportedLocales() {
-  const file = path.join(repoRoot, 'shared/contracts/src/types/languages.ts');
-  const ast = ts.createSourceFile(file, fs.readFileSync(file, 'utf8'), ts.ScriptTarget.Latest, true);
-  let found = null;
-  for (const statement of ast.statements) {
+function localesFromCode() {
+  const file = path.join(root, 'shared/contracts/src/types/languages.ts');
+  const source = ts.createSourceFile(file, fs.readFileSync(file, 'utf8'), ts.ScriptTarget.Latest, true);
+  let locales;
+  for (const statement of source.statements) {
     if (!ts.isVariableStatement(statement)) continue;
     for (const declaration of statement.declarationList.declarations) {
       if (!ts.isIdentifier(declaration.name) || declaration.name.text !== 'DEFAULT_SUPPORTED_LANGUAGES') continue;
-      const value = unwrap(declaration.initializer);
-      if (!ts.isArrayLiteralExpression(value)) fail('Unexpected supported languages registry syntax');
-      found = value.elements.map(item => {
-        const entry = unwrap(item);
-        if (!ts.isObjectLiteralExpression(entry)) fail('Unexpected language definition');
-        const prop = entry.properties.find(p => ts.isPropertyAssignment(p) && p.name.getText(ast) === 'language');
-        if (!prop || !ts.isStringLiteral(prop.initializer)) fail('Missing literal language key');
-        return prop.initializer.text;
+      const array = unwrap(declaration.initializer);
+      if (!ts.isArrayLiteralExpression(array)) throw new Error('Unexpected language registry shape');
+      locales = array.elements.map(node => {
+        const obj = unwrap(node);
+        if (!ts.isObjectLiteralExpression(obj)) throw new Error('Unexpected language definition');
+        const property = obj.properties.find(p => ts.isPropertyAssignment(p) && p.name.getText(source) === 'language');
+        if (!property || !ts.isStringLiteral(property.initializer)) throw new Error('Missing language code');
+        return property.initializer.text;
       });
     }
   }
-  if (!found?.length || new Set(found).size !== found.length) fail('Language registry missing or has duplicate keys');
-  return found;
+  if (!locales?.length || new Set(locales).size !== locales.length) throw new Error('Invalid language roster');
+  return locales;
 }
-
-function textbookPackages(o) {
-  if (o.package) {
-    if (!/^learningApps\/[a-z][a-z0-9-]*$/i.test(o.package)) {
-      fail('Invalid textbook package path: ' + o.package);
+function packagesFromCode() {
+  const apps = path.join(root, 'learningApps');
+  return fs.readdirSync(apps, { withFileTypes: true })
+    .filter(x => x.isDirectory() && fs.existsSync(path.join(apps, x.name, 'data/skills')))
+    .map(x => ({ name: x.name, package: 'learningApps/' + x.name }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+function commitSha() {
+  const r = spawnSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' });
+  return r.status === 0 ? r.stdout.trim() : null;
+}
+function canonicalLinks(markdown, appName, destination) {
+  // Original generated links are relative to <textbook>/docs/generated/skills/.
+  // Relocate links to the committed artifact's own directory.
+  const originalDir = path.join(root, 'learningApps', appName, 'docs/generated/skills');
+  return markdown.replace(/\[([^\]]+\.data\.ts)\]\(([^)]+)\)/g, (_, label, url) => {
+    const target = path.resolve(originalDir, decodeURI(url));
+    const prefix = path.join(root, 'learningApps', appName, 'data/skills') + path.sep;
+    if (!target.startsWith(prefix) || !target.endsWith('.data.ts')) {
+      throw new Error('Invalid generated canonical link: ' + url);
     }
-    const taxonomy = path.join(repoRoot, o.package, 'data/skills');
-    if (!fs.existsSync(taxonomy) || !fs.statSync(taxonomy).isDirectory()) {
-      fail('No canonical Code Skills taxonomy: ' + o.package);
-    }
-    return [o.package];
-  }
-  const packages = fs.readdirSync(learningAppsRoot, { withFileTypes: true })
-    .filter(item => item.isDirectory() && fs.existsSync(path.join(learningAppsRoot, item.name, 'data/skills')))
-    .map(item => 'learningApps/' + item.name)
-    .sort();
-  if (!packages.length) fail('No Code Skills taxonomies found');
-  return packages;
+    return '[' + label + '](' + encodeURI(path.relative(path.dirname(destination), target).split(path.sep).join('/')) + ')';
+  });
 }
 
-function safeOutputDir(value) {
-  const output = value ? path.resolve(value) : fs.mkdtempSync(path.join(os.tmpdir(), 'svitlo-translation-review-'));
-  const relative = path.relative(repoRoot, output);
-  if (relative === '' || (!relative.startsWith('..' + path.sep) && relative !== '..' && !path.isAbsolute(relative))) {
-    fail('Review artifacts must be outside the repository, never in tracked textbook docs: ' + output);
-  }
-  if (fs.existsSync(output) && fs.readdirSync(output).length) fail('Output directory must be empty: ' + output);
-  fs.mkdirSync(output, { recursive: true });
-  return output;
-}
-
-function currentCommit() {
-  const result = spawnSync('git', ['rev-parse', 'HEAD'], { cwd: repoRoot, encoding: 'utf8' });
-  return result.status === 0 ? result.stdout.trim() : null;
-}
-
-const args = options(process.argv.slice(2));
-const locales = supportedLocales();
-const selectedLocales = args.allLocales ? locales : [args.locale];
-for (const locale of selectedLocales) {
-  if (!locales.includes(locale)) fail('Unsupported language key ' + locale + '. Supported: ' + locales.join(', '));
-}
-const packages = textbookPackages(args);
-const outDir = safeOutputDir(args.outDir);
+const languages = localesFromCode();
+const textbooks = packagesFromCode();
+if (!textbooks.length) throw new Error('No canonical Code Skills taxonomies available');
 const manifest = {
   schemaVersion: 1,
-  createdAt: new Date().toISOString(),
-  sourceCommit: currentCommit(),
-  scope: { packages, locales: selectedLocales },
+  kind: 'pr-scoped-agent-ci-artifacts',
+  sourceCommit: commitSha(),
+  generatedAt: new Date().toISOString(),
+  packages: textbooks.map(t => t.package),
+  locales: languages,
   generated: [],
   failures: [],
 };
-
+fs.rmSync(output, { recursive: true, force: true });
+fs.mkdirSync(path.join(output, 'taxonomies'), { recursive: true });
 function saveManifest() {
-  fs.writeFileSync(path.join(outDir, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
+  fs.writeFileSync(path.join(output, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
 }
-// Preserve a usable inventory even if a large all-textbooks/all-locales run is interrupted.
 saveManifest();
-
-for (const textbook of packages) {
-  for (const locale of selectedLocales) {
-    const proc = spawnSync(process.execPath, [generator, '--package', textbook, '--locale', locale, '--stdout'], {
-      cwd: repoRoot,
-      encoding: 'utf8',
-      maxBuffer: 32 * 1024 * 1024,
-      timeout: 180_000,
+for (const textbook of textbooks) {
+  for (const locale of languages) {
+    const result = spawnSync(process.execPath, [
+      generator, '--package', textbook.package, '--locale', locale, '--stdout',
+    ], {
+      cwd: root, encoding: 'utf8', timeout: 180_000, maxBuffer: 32 * 1024 * 1024,
     });
-    if (proc.error || proc.status !== 0 || !proc.stdout?.startsWith('<!-- GENERATED FROM CODE; DO NOT EDIT. -->')) {
-      const error = (proc.error?.message ?? proc.stderr ?? 'Missing/invalid Markdown output').trim();
-      manifest.failures.push({ textbook, locale, error: error.slice(0, 2000) });
+    const raw = result.stdout || '';
+    if (result.error || result.status !== 0 || !raw.startsWith('<!-- GENERATED FROM CODE; DO NOT EDIT. -->')) {
+      const error = String(result.error?.message || result.stderr || 'No valid Markdown generated').trim().slice(0, 1500);
+      manifest.failures.push({ textbook: textbook.package, locale, error });
+      process.stderr.write('::warning::Could not generate ' + textbook.name + '/' + locale + ': ' + error.replace(/\n/g, ' ') + '\n');
       saveManifest();
-      process.stderr.write('FAILED ' + textbook + ' / ' + locale + ': ' + error.slice(0, 500) + '\n');
       continue;
     }
-    const file = path.join(textbook.slice('learningApps/'.length), 'taxonomy.' + locale + '.md');
-    const destination = path.join(outDir, file);
+    const relative = 'taxonomies/' + textbook.name + '/' + locale + '.md';
+    const destination = path.join(output, relative);
     fs.mkdirSync(path.dirname(destination), { recursive: true });
-    fs.writeFileSync(destination, proc.stdout, 'utf8');
-    const match = heading => proc.stdout.match(new RegExp('^' + heading + ': (\\d+)$', 'm'));
+    const markdown = canonicalLinks(raw, textbook.name, destination);
+    fs.writeFileSync(destination, markdown, 'utf8');
+    const count = label => Number(markdown.match(new RegExp('^' + label + ': (\\d+)$', 'm'))?.[1]);
     manifest.generated.push({
-      textbook,
+      textbook: textbook.package,
       locale,
-      file: file.split(path.sep).join('/'),
-      counts: {
-        domains: Number(match('Domains')?.[1]),
-        groups: Number(match('Groups')?.[1]),
-        skills: Number(match('Skills')?.[1]),
-      },
+      path: '.agent-ci-artifacts/' + relative,
+      domains: count('Domains'),
+      groups: count('Groups'),
+      skills: count('Skills'),
     });
     saveManifest();
-    process.stdout.write('Generated ' + file + '\n');
+    process.stdout.write('Generated ' + relative + '\n');
   }
 }
-saveManifest();
 process.stdout.write(
-  'Review bundle: ' + outDir + ' (' + manifest.generated.length + ' generated, ' +
-  manifest.failures.length + ' failed, source ' + (manifest.sourceCommit ?? 'unknown') + ')\n',
+  'Agent review library: ' + manifest.generated.length + ' documents, ' +
+  manifest.failures.length + ' failed, ' + textbooks.length + ' textbooks, ' +
+  languages.length + ' locales; source ' + manifest.sourceCommit + '\n',
 );
-if (manifest.failures.length || !manifest.generated.length) process.exitCode = 1;
+if (!manifest.generated.length) {
+  throw new Error('No review Markdown generated; inspect .agent-ci-artifacts/manifest.json');
+}
