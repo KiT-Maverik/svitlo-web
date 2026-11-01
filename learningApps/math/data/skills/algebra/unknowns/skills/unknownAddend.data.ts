@@ -45,7 +45,7 @@ export const unknownAddend_Skill_Data = buildSkillConfig({
       es: 'Puedes encontrar un sumando desconocido restando el sumando conocido de la suma y comprobarlo al sumar.',
       ar: 'يمكنك إيجاد الحد المفقود في الجمع بطرح الحد المعروف من المجموع، ثم التحقق بالجمع.',
       fr: 'Tu peux trouver un terme manquant dans une addition en soustrayant le terme connu de la somme, puis vérifier en additionnant.',
-      bn: 'যোগফল থেকে জানা যোগ্য সংখ্যাটি বিয়োগ করে অজানা যোগ্য সংখ্যা বের করতে পারো, তারপর যোগ দিয়ে যাচাই করতে পারো।',
+      bn: 'যোগফল থেকে জানা যোগপদটি বিয়োগ করে অজানা যোগপদ বের করতে পারো, তারপর যোগ দিয়ে যাচাই করতে পারো।',
       pt: 'Você pode achar a parcela desconhecida subtraindo a parcela conhecida da soma e conferir somando.',
       ur: 'آپ مجموعے میں سے معلوم جمع ہونے والا عدد منفی کر کے نامعلوم عدد نکال سکتے ہیں، پھر جمع سے پڑتال کر سکتے ہیں۔',
       id: 'Kamu bisa mencari bilangan yang ditambahkan tetapi belum diketahui dengan mengurangi jumlah akhir oleh bilangan yang sudah diketahui, lalu memeriksa dengan penjumlahan.',
